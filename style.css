@@ -1,0 +1,26 @@
+body{background-image:url(bg.jpg); background-position:top; background-size:100%; text-align:center;}
+h1{color:#ffffcc;}
+a{color:#c0c0c0;}
+a.bl{color:black;}
+/*a.menu{border: solid 1px black; background-color: black; width:100; margin:20px;}*/
+div{background-color: #c6c6c6; border:solid 1px white; margin: auto;}
+div.allmenu{border:hidden; width:816; margin:0 auto;}
+div.allmenuh{border:hidden; width:836; margin:0 auto}
+div.mbox{border: solid 1px black; background-color: red; width:200; margin:1px; float:left; cursor:default;}
+div.mboxsel{border: solid 1px red; background-color: black; width: 220; margin:1px; float:left; cursor:default;}
+div.title{width:80%; margin-top:25px; margin-bottom:20px;}
+div.main{width:70%; margin-bottom:20px; margin-top:50px; padding:20px; text-align:top; border-radius:25px; opacity:0.8;}
+div.main2{width:60%; margin-bottom:20px; margin-top:50px; padding:20px; text-align:top; border-radius:25px; opacity:0.85;}
+div.bottom{width:80%; margin-bottom:25px; padding:10px;}
+label{color:#c0c0c0; border-style:hidden; margin:auto; font-family: Arial; font-size:24px;}
+td{color:black; font-family: Arial; font-size: 24px;}
+p{color:#black; border-style:hidden; margin: auto; font-size:48px; font-family:Arial;}
+p.alert{color:black; border:solid 2px darkred; background-color:red; width:50%; margin-top:25px; margin-bottom:25px;}
+p.menu{color:black; font-family:Arial; font-size:24px; text-decoration:bold;}
+p.menusel{color:red; font-family:Arial; font-size:24px; text-decoration:bold;}
+img{opacity:1;}
+.formbtnh{background-color:#3399ff; border: solid 1px black; color:black; font-size:48px; padding-left:120px; padding-right:120px; border-radius:5px;}
+.formbtn{background-color:black; border: solid 1px yellow; color:yellow; font-size:48px; padding-left:120px; padding-right:120px; border-radius:5px;}
+.formfld{background-color:gray; border: solid 1px yellow; color:black; font-size:48px;}
+.formfld:focus{background-color: black; border: solid 1px black; color:white; font-size:48px;}
+
