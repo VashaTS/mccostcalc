@@ -69,7 +69,6 @@ $recipe['dropper']='cobblestone:7,redstone:1';
 $recipe['bow']='stick:3,string:3';
 $recipe['item_frame']='stick:8,leather:1';
 $recipe['painting']='stick:8,wool:1';
-$recipe['potion_fire_resist_8']='glass:1,nether_wart:0.3333,magma_cream:0.3333,redstone:0.3333';
 $recipe['magma_cream']='slime_ball:1,blaze_powder:1';
 $recipe['blaze_powder']='blaze_rod:0.5';
 $recipe['iron_trapdoor']='iron:4';
@@ -82,7 +81,13 @@ $recipe['boat']='planks:5';
 $recipe['nether_bricks']='nether_brick:4';
 $recipe['nether_brick']='netherrack:1,coal:0.125';
 $recipe['arrow']='flint:0.25,stick:0.25,feather:0.25';
+$recipe['smooth_sandstone']='sandstone:1';
+$recipe['chiseled_sandstone']='sandstone_slab:2';
 $recipe['bow']='stick:3,string:3';
+$recipe['potion_of_fire_resistance_8']='potion_of_fire_resistance_3:1,redstone:0.3333';
+$recipe['potion_of_fire_resistance_3']='akward_potion:1,magma_cream:0.3333';
+$recipe['akward_potion']='water_bottle:1,nether_wart:0.3333';
+$recipe['water_bottle']='end';
 $recipe['iron']='end';
 $recipe['redstone']='end';
 $recipe['wood']='end';
@@ -161,19 +166,26 @@ echo('<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
 echo('<div class="main"><table border="0" width="100%"><tr width="100%"><td width="50%">');
 echo('<form name="things" action="index.php" method="POST"><p>Select items</p>');
 for($i=1;$i<=8;$i+=1) echo('<span id="f'.$i.'" style="display: none;"><img id="f'.$i.'img" src="#" width="64" height="64"><input type="hidden" name="f'.$i.'h" value="" id="f'.$i.'hi"><input id="f'.$i.'f" name="f'.$i.'f" type="text" class="formfld" size="3" maxlength="4"><a href="#" onclick="hideLine(parentNode.id)"><img src="gfx/x.png" id="x"></a></span>');
-echo('</td><td width="50%">');
-$itemsToCraft=Array('piston','sticky_piston','hopper','daylight_sensor','redstone_lamp','redstone_repeater','redstone_comparator','redstone_torch','dispenser','dropper','iron_trapdoor','iron_door','jukebox','rail','powered_rail','activator_rail','detector_rail','minecart','bookshelf','beacon',
+echo('</td><td width="50%"><a class="bl" href="#" id="t_blocks" onclick="displayBl(this.id)";>Blocks</a> <a class="bl" id="t_potions" onclick="displayBl(this.id)" href=#">Potions</a>');
+$itemsBlocks=Array('piston','sticky_piston','hopper','daylight_sensor','redstone_lamp','redstone_repeater','redstone_comparator','redstone_torch','dispenser','dropper','iron_trapdoor','iron_door','jukebox','rail','powered_rail','activator_rail','detector_rail','minecart','bookshelf','beacon',
 'cobblestone_slab','stone_bricks','stone_brick_stairs','stone_brick_slab','chiseled_stone_bricks','planks','wood_stairs','plank_slab','bricks','bricks_stairs','bricks_slab','emerald_block','diamond_block','gold_block',
 'iron_block','redstone_block','slime_block','lapis_block','coal_block','quartz_block','quartz_stairs','quartz_slab','chiseled_quartz_block','quartz_pillar','anvil','enchantment_table','ladder','sign','fence','fence_gate','boat','wooden_trapdoor','wooden_door','chest',
-'torch','corase_dirt','sandstone','sandstone_stairs','sandstone_slab','note_block','bed','armor_stand','item_frame','painting','arrow','nether_bricks','nether_bricks_stairs','nether_bricks_slab');
-foreach($itemsToCraft as $it){
+'torch','corase_dirt','sandstone','sandstone_stairs','sandstone_slab','smooth_sandstone','chiseled_sandstone','note_block','bed','armor_stand','item_frame','painting','arrow','nether_bricks','nether_bricks_stairs','nether_bricks_slab');
+echo('<div id="it_blocks" style="border:none;">');
+foreach($itemsBlocks as $it){
 	echo('<a href="#" title="'.ucwords(str_replace('_',' ',$it)).'" id="'.$it.'" onclick="addItem(this.id)" style="vertical-align:top;"><img src="gfx/'.$it.'.png" width="64" height="64" border="0" alt="'.ucwords(str_replace('_',' ',$it)).'" id="'.$it.'"></a>');
 }
+echo('</div><div id="it_potions" style="display: none; border: none;">');
+$itemsPotions=Array('potion_of_fire_resistance_8','potion_of_fire_resistance_3');
+foreach($itemsPotions as $it){
+	echo('<a href="#" title="'.ucwords(str_replace('_',' ',$it)).':00" id="'.$it.'" onclick="addItem(this.id)" style="vertical-align:top;"><img src="gfx/'.$it.'.png" width="64" height="64" border="0" alt="'.ucwords(str_replace('_',' ',$it)).':00" id="'.$it.'"></a>');
+}
+echo('</div>');
 echo('</td></tr><tr><td colspan="2"><input type="submit" name="submit" value="Go!" class="formbtn" id="gobtn" onmouseover="btnh(this.id)" onmouseout="btnd(this.id)"></form></td></tr></table>');
 if(isset($_POST['submit'])){
-	$stck=Array('blaze_rod'=>64,'coal'=>64,'cobblestone'=>64,'diamond'=>64,'dirt'=>64,'emerald'=>64,'feather'=>64,'gold'=>64,'lapis'=>64,'leather'=>64,'iron'=>64,'nether_star'=>64,'nether_wart'=>64,'netherrack'=>64,'obsidian'=>64,'quartz'=>64,'redstone'=>64,'sand'=>64,'slime_ball'=>64,'stone'=>64,'string'=>64,'sugar_cane'=>64,'wood'=>64,'wool'=>64,
-	'clay_ball'=>16,'ender_pearl'=>16,'egg'=>16,'armor_stand'=>16,'sign'=>16,
-	'bow'=>1,'bed'=>1);
+	$stck=Array('blaze_rod'=>64,'coal'=>64,'cobblestone'=>64,'diamond'=>64,'dirt'=>64,'emerald'=>64,'feather'=>64,'gold'=>64,'lapis'=>64,'leather'=>64,'iron'=>64,'nether_star'=>64,'nether_wart'=>64,'netherrack'=>64,'obsidian'=>64,'quartz'=>64,'redstone'=>64,'sand'=>64,'slime_ball'=>64,'stone'=>64,'string'=>64,'sugar_cane'=>64,'wood'=>64,'wool'=>64,'clay_ball'=>64,
+	'ender_pearl'=>16,'egg'=>16,'armor_stand'=>16,'sign'=>16,
+	'bow'=>1,'bed'=>1,'water_bottle'=>1);
 	echo('</div><div class="main2">');
 	$ra=Array();
 	for($j=1;$j<=8;$j+=1){ // 8 input slots

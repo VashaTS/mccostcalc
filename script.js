@@ -62,6 +62,11 @@ function addItem(tid) {
 		document.getElementById('f8hi').value=tid;
 	}
 }
+function displayBl(aid) {
+	document.getElementById("it_blocks").style.display = 'none';
+	document.getElementById("it_potions").style.display = 'none';
+	document.getElementById("i"+aid).style.display = 'block';
+}
 function hideLine(lid) {
 	document.getElementById(lid).style.display = 'none';
 	document.getElementById(lid+"f").value='';
