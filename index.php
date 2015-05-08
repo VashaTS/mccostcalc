@@ -188,7 +188,7 @@ if(isset($_POST['submit'])){
 	foreach($ra as $ak=>$av){
 		echo('<p><img title="'.ucwords(str_replace('_',' ',$ak)).'" src="gfx/'.$ak.'.png"> x ');
 		if(($av-floor($av))==0) echo $av;
-		else echo((floor($av)+1));
+		else echo((floor($av)+1)); // 1=>1, 1.1=>2
 		if($av>64) echo(' ('.round($av/$stck[$ak],2).' stacks)'); //stacks
 		if(round($av/$stck[$ak],2)>54) echo(' ['.round(($av/$stck[$ak])/54,2).' double chests]'); //double chests
 		echo('</p>');
