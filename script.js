@@ -20,46 +20,46 @@ function setupRollover(thisImage) {
 	}
 }
 
-function addItem(tid) {
+function addItem(tid,rtid) {
 	if (document.getElementById('f1').style.display == 'none') {
 		document.getElementById('f1').style.display = 'block';
 		document.getElementById('f1img').src = "gfx/" + tid + ".png";
-		document.getElementById('f1hi').value=tid;
+		document.getElementById('f1hi').value=rtid;
 	}
 	else if (document.getElementById('f2').style.display == 'none') {
 		document.getElementById('f2').style.display = 'block';
 		document.getElementById('f2img').src = "gfx/" + tid + ".png";
-		document.getElementById('f2hi').value=tid;
+		document.getElementById('f2hi').value=rtid;
 	}
 	else if (document.getElementById('f3').style.display == 'none') {
 		document.getElementById('f3').style.display = 'block';
 		document.getElementById('f3img').src = "gfx/" + tid + ".png";
-		document.getElementById('f3hi').value=tid;
+		document.getElementById('f3hi').value=rtid;
 	}
 	else if (document.getElementById('f4').style.display == 'none') {
 		document.getElementById('f4').style.display = 'block';
 		document.getElementById('f4img').src = "gfx/" + tid + ".png";
-		document.getElementById('f4hi').value=tid;
+		document.getElementById('f4hi').value=rtid;
 	}
 	else if (document.getElementById('f5').style.display == 'none') {
 		document.getElementById('f5').style.display = 'block';
 		document.getElementById('f5img').src = "gfx/" + tid + ".png";
-		document.getElementById('f5hi').value=tid;
+		document.getElementById('f5hi').value=rtid;
 	}
 	else if (document.getElementById('f6').style.display == 'none') {
 		document.getElementById('f6').style.display = 'block';
 		document.getElementById('f6img').src = "gfx/" + tid + ".png";
-		document.getElementById('f6hi').value=tid;
+		document.getElementById('f6hi').value=rtid;
 	}
 	else if (document.getElementById('f7').style.display == 'none') {
 		document.getElementById('f7').style.display = 'block';
 		document.getElementById('f7img').src = "gfx/" + tid + ".png";
-		document.getElementById('f7hi').value=tid;
+		document.getElementById('f7hi').value=rtid;
 	}
 	else if (document.getElementById('f8').style.display == 'none') {
 		document.getElementById('f8').style.display = 'block';
 		document.getElementById('f8img').src = "gfx/" + tid + ".png";
-		document.getElementById('f8hi').value=tid;
+		document.getElementById('f8hi').value=rtid;
 	}
 }
 function displayBl(aid) {

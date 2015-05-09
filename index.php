@@ -84,8 +84,21 @@ $recipe['arrow']='flint:0.25,stick:0.25,feather:0.25';
 $recipe['smooth_sandstone']='sandstone:1';
 $recipe['chiseled_sandstone']='sandstone_slab:2';
 $recipe['bow']='stick:3,string:3';
-$recipe['potion_of_fire_resistance_8']='potion_of_fire_resistance_3:1,redstone:0.3333';
-$recipe['potion_of_fire_resistance_3']='akward_potion:1,magma_cream:0.3333';
+$recipe['sugar']='sugar_cane:1';
+$recipe['glistering_melon']='melon:1,gold_nugget:8';
+$recipe['gold_nugget']='gold:0.1111';
+$recipe['brewing_stand']='cobblestone:3,blaze_rod:1';
+$recipe['cauldron']='iron:7';
+$recipe['potion_of_fire_resistance_8+00']='potion_of_fire_resistance_3+00:1,redstone:0.3333';
+$recipe['potion_of_fire_resistance_3+00']='akward_potion:1,magma_cream:0.3333';
+$recipe['potion_of_regeneration_0+45']='akward_potion:1;ghast_tear:0.3333';
+$recipe['potion_of_regeneration_2+00']='potion_of_regeneration_0+45:1,redstone:0.3333';
+$recipe['potion_of_regeneration_II_0+22']='potion_of_regeneration_0+45:1,glowstone_dust:0.3333';
+$recipe['potion_of_swiftness_3+00']='akward_potion:1,sugar:0.3333';
+$recipe['potion_of_swiftness_8+00']='potion_of_swiftness_3+00:1,redstone:0.3333';
+$recipe['potion_of_swiftness_II_1+30']='potion_of_swiftness_3+00:1,glowstone_dust:0.3333';
+$recipe['potion_of_healing']='akward_potion:1,glistering_melon:0.3333';
+$recipe['potion_of_healing_II']='potion_of_healing:1,glowstone_dust:0.3333';
 $recipe['akward_potion']='water_bottle:1,nether_wart:0.3333';
 $recipe['water_bottle']='end';
 $recipe['iron']='end';
@@ -116,6 +129,9 @@ $recipe['blaze_rod']='end';
 $recipe['netherrack']='end';
 $recipe['flint']='end';
 $recipe['feather']='end';
+$recipe['ghast_tear']='end';
+$recipe['glowstone_dust']='end';
+$recipe['melon']='end';
 
 function craft($item,$qty){
 	global $recipe;
@@ -170,20 +186,21 @@ echo('</td><td width="50%"><a class="bl" href="#" id="t_blocks" onclick="display
 $itemsBlocks=Array('piston','sticky_piston','hopper','daylight_sensor','redstone_lamp','redstone_repeater','redstone_comparator','redstone_torch','dispenser','dropper','iron_trapdoor','iron_door','jukebox','rail','powered_rail','activator_rail','detector_rail','minecart','bookshelf','beacon',
 'cobblestone_slab','stone_bricks','stone_brick_stairs','stone_brick_slab','chiseled_stone_bricks','planks','wood_stairs','plank_slab','bricks','bricks_stairs','bricks_slab','emerald_block','diamond_block','gold_block',
 'iron_block','redstone_block','slime_block','lapis_block','coal_block','quartz_block','quartz_stairs','quartz_slab','chiseled_quartz_block','quartz_pillar','anvil','enchantment_table','ladder','sign','fence','fence_gate','boat','wooden_trapdoor','wooden_door','chest',
-'torch','corase_dirt','sandstone','sandstone_stairs','sandstone_slab','smooth_sandstone','chiseled_sandstone','note_block','bed','armor_stand','item_frame','painting','arrow','nether_bricks','nether_bricks_stairs','nether_bricks_slab');
+'torch','corase_dirt','sandstone','sandstone_stairs','sandstone_slab','smooth_sandstone','chiseled_sandstone','note_block','bed','armor_stand','item_frame','painting','arrow','nether_bricks','nether_bricks_stairs','nether_bricks_slab','brewing_stand','cauldron');
 echo('<div id="it_blocks" style="border:none;">');
 foreach($itemsBlocks as $it){
-	echo('<a href="#" title="'.ucwords(str_replace('_',' ',$it)).'" id="'.$it.'" onclick="addItem(this.id)" style="vertical-align:top;"><img src="gfx/'.$it.'.png" width="64" height="64" border="0" alt="'.ucwords(str_replace('_',' ',$it)).'" id="'.$it.'"></a>');
+	echo('<a href="#" title="'.ucwords(str_replace('_',' ',$it)).'" id="'.$it.'" onclick="addItem(this.id,this.id)" style="vertical-align:top;"><img src="gfx/'.$it.'.png" width="64" height="64" border="0" alt="'.ucwords(str_replace('_',' ',$it)).'" id="'.$it.'"></a>');
 }
 echo('</div><div id="it_potions" style="display: none; border: none;">');
-$itemsPotions=Array('potion_of_fire_resistance_8','potion_of_fire_resistance_3');
+$itemsPotions=Array('potion_of_regeneration_0+45','potion_of_regeneration_2+00','potion_of_regeneration_II_0+22','potion_of_swiftness_3+00','potion_of_swiftness_8+00','potion_of_swiftness_II_1+30','potion_of_fire_resistance_8+00','potion_of_fire_resistance_3+00','potion_of_healing','potion_of_healing_II');
 foreach($itemsPotions as $it){
-	echo('<a href="#" title="'.ucwords(str_replace('_',' ',$it)).':00" id="'.$it.'" onclick="addItem(this.id)" style="vertical-align:top;"><img src="gfx/'.$it.'.png" width="64" height="64" border="0" alt="'.ucwords(str_replace('_',' ',$it)).':00" id="'.$it.'"></a>');
+	$realimg=explode('+',$it);
+	echo('<a href="#" title="'.ucwords(str_replace('+',':',str_replace('_',' ',$it))).'" id="'.$realimg[0].'" onclick="addItem(this.id,\''.$it.'\')" style="vertical-align:top;"><img src="gfx/'.$realimg[0].'.png" width="64" height="64" border="0" alt="'.ucwords(str_replace('+',':',str_replace('_',' ',$it))).'" id="'.$realimg[0].'"></a>');
 }
 echo('</div>');
 echo('</td></tr><tr><td colspan="2"><input type="submit" name="submit" value="Go!" class="formbtn" id="gobtn" onmouseover="btnh(this.id)" onmouseout="btnd(this.id)"></form></td></tr></table>');
 if(isset($_POST['submit'])){
-	$stck=Array('blaze_rod'=>64,'coal'=>64,'cobblestone'=>64,'diamond'=>64,'dirt'=>64,'emerald'=>64,'feather'=>64,'gold'=>64,'lapis'=>64,'leather'=>64,'iron'=>64,'nether_star'=>64,'nether_wart'=>64,'netherrack'=>64,'obsidian'=>64,'quartz'=>64,'redstone'=>64,'sand'=>64,'slime_ball'=>64,'stone'=>64,'string'=>64,'sugar_cane'=>64,'wood'=>64,'wool'=>64,'clay_ball'=>64,
+	$stck=Array('blaze_rod'=>64,'coal'=>64,'cobblestone'=>64,'diamond'=>64,'dirt'=>64,'emerald'=>64,'feather'=>64,'glowstone_dust'=>64,'gold'=>64,'lapis'=>64,'leather'=>64,'iron'=>64,'melon'=>64,'nether_star'=>64,'nether_wart'=>64,'netherrack'=>64,'obsidian'=>64,'quartz'=>64,'redstone'=>64,'sand'=>64,'slime_ball'=>64,'stone'=>64,'string'=>64,'sugar_cane'=>64,'wood'=>64,'wool'=>64,'clay_ball'=>64,
 	'ender_pearl'=>16,'egg'=>16,'armor_stand'=>16,'sign'=>16,
 	'bow'=>1,'bed'=>1,'water_bottle'=>1);
 	echo('</div><div class="main2">');
@@ -197,11 +214,12 @@ if(isset($_POST['submit'])){
 		}
 	}
 	echo('<p>You will need:</p>');
+	//print_r($ra); //debug option
 	foreach($ra as $ak=>$av){
 		echo('<p><img title="'.ucwords(str_replace('_',' ',$ak)).'" src="gfx/'.$ak.'.png"> x ');
 		if(($av-floor($av))==0) echo $av;
 		else echo((floor($av)+1)); // 1=>1, 1.1=>2
-		if($av>64) echo(' ('.round($av/$stck[$ak],2).' stacks)'); //stacks
+		if($av>$stck[$ak]) echo(' ('.round($av/$stck[$ak],2).' stacks)'); //stacks
 		if(round($av/$stck[$ak],2)>54) echo(' ['.round(($av/$stck[$ak])/54,2).' double chests]'); //double chests
 		echo('</p>');
 	}
