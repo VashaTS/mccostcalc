@@ -64,6 +64,7 @@ function addItem(tid,rtid) {
 }
 function displayBl(aid) {
 	document.getElementById("it_blocks").style.display = 'none';
+	document.getElementById("it_items").style.display = 'none';
 	document.getElementById("it_potions").style.display = 'none';
 	document.getElementById("i"+aid).style.display = 'block';
 }
