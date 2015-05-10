@@ -61,6 +61,16 @@ function addItem(tid,rtid) {
 		document.getElementById('f8img').src = "gfx/" + tid + ".png";
 		document.getElementById('f8hi').value=rtid;
 	}
+	else if (document.getElementById('f9').style.display == 'none') {
+		document.getElementById('f9').style.display = 'block';
+		document.getElementById('f9img').src = "gfx/" + tid + ".png";
+		document.getElementById('f9hi').value=rtid;
+	}
+	else if (document.getElementById('f10').style.display == 'none') {
+		document.getElementById('f10').style.display = 'block';
+		document.getElementById('f10img').src = "gfx/" + tid + ".png";
+		document.getElementById('f10hi').value=rtid;
+	}
 }
 function displayBl(aid) {
 	document.getElementById("it_blocks").style.display = 'none';
@@ -71,6 +81,7 @@ function displayBl(aid) {
 function hideLine(lid) {
 	document.getElementById(lid).style.display = 'none';
 	document.getElementById(lid+"f").value='';
+	document.getElementById(lid+"hi").value='';
 }
 
 function btnh(iid) {
