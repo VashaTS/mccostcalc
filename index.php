@@ -104,10 +104,12 @@ $recipe['lead']='slime_ball:0.5,string:2';
 $recipe['flint_and_steel']='flint:1,iron:1';
 $recipe['bread']='wheat:3';
 $recipe['glass_pane']='glass:0.375';
-$recipe['trapped_chest']='chest:1,tipwire_hook:1';
+$recipe['trapped_chest']='chest:1,tripwire_hook:1';
 $recipe['tripwire_hook']='iron:0.5,stick:0.5,planks:0.5';
 $recipe['fermented_spider_eye']='sugar:1,spider_eye:1,mushroom:1';
 $recipe['nether_brick_fence']='nether_bricks:1';
+$recipe['mossy_stone_bricks']='stone_bricks:1,vines:1';
+$recipe['cracked_stone_bricks']='stone_bricks:1,coal:0.125';
 $recipe['potion_of_fire_resistance_8+00']='potion_of_fire_resistance_3+00:1,redstone:0.3333';
 $recipe['potion_of_fire_resistance_3+00']='akward_potion:1,magma_cream:0.3333';
 $recipe['potion_of_regeneration_0+45']='akward_potion:1;ghast_tear:0.3333';
@@ -178,6 +180,7 @@ $recipe['rabbit_foot']='end';
 $recipe['pufferfish']='end';
 $recipe['spider_eye']='end';
 $recipe['mushroom']='end';
+$recipe['vines']='end';
 
 function craft($item,$qty){
 	global $recipe;
@@ -210,7 +213,7 @@ function craft($item,$qty){
 		$nitemsq=Array();
 	}while($allend!=0);
 	foreach($items as $key=>$val){
-		$re[$val]=$itemsq[$key];
+		$re[$val]+=$itemsq[$key];
 	}
 	return $re;
 }
@@ -230,8 +233,8 @@ echo('<form name="things" action="index.php" method="POST"><p>Select items</p>')
 for($i=1;$i<=10;$i+=1) echo('<span id="f'.$i.'" style="display: none;"><img id="f'.$i.'img" src="#" width="64" height="64"><input type="hidden" name="f'.$i.'h" value="" id="f'.$i.'hi"><input id="f'.$i.'f" name="f'.$i.'f" type="text" class="formfld" size="3" maxlength="4"><a href="#" onclick="hideLine(parentNode.id)"><img src="gfx/x.png" id="x"></a></span>');
 echo('</td><td width="50%"><a class="bl" href="#" id="t_blocks" onclick="displayBl(this.id)";>Blocks</a> <a class="bl" href="#" id="t_items" onclick="displayBl(this.id)";>Items</a> <a class="bl" id="t_potions" onclick="displayBl(this.id)" href=#">Potions</a>');
 $itemsBlocks=Array('piston','sticky_piston','hopper','daylight_sensor','redstone_lamp','redstone_repeater','redstone_comparator','redstone_torch','dispenser','dropper','iron_trapdoor','iron_door','jukebox','rail','powered_rail','activator_rail','detector_rail','minecart','bookshelf','beacon',
-'cobblestone_slab','stone_bricks','stone_brick_stairs','stone_brick_slab','chiseled_stone_bricks','planks','wood_stairs','plank_slab','bricks','bricks_stairs','bricks_slab','emerald_block','diamond_block','gold_block',
-'iron_block','redstone_block','slime_block','lapis_block','coal_block','quartz_block','quartz_stairs','quartz_slab','chiseled_quartz_block','quartz_pillar','anvil','enchantment_table','ladder','sign','fence','fence_gate','boat','wooden_trapdoor','wooden_door','chest','crafting_table','ender_chest',
+'cobblestone_slab','stone_bricks','stone_brick_stairs','stone_brick_slab','chiseled_stone_bricks','mossy_stone_bricks','cracked_stone_bricks','planks','wood_stairs','plank_slab','bricks','bricks_stairs','bricks_slab','emerald_block','diamond_block','gold_block',
+'iron_block','redstone_block','slime_block','lapis_block','coal_block','quartz_block','quartz_stairs','quartz_slab','chiseled_quartz_block','quartz_pillar','anvil','enchantment_table','ladder','sign','fence','fence_gate','boat','wooden_trapdoor','wooden_door','chest','trapped_chest','crafting_table','ender_chest',
 'torch','corase_dirt','sandstone','sandstone_stairs','sandstone_slab','smooth_sandstone','chiseled_sandstone','note_block','bed','item_frame','painting','nether_bricks','nether_bricks_stairs','nether_bricks_slab','nether_brick_fence','brewing_stand','cauldron','iron_bars','furnace','glass','glass_pane');
 echo('<div id="it_blocks" style="border:none;">');
 foreach($itemsBlocks as $it){
@@ -255,28 +258,31 @@ foreach($itemsPotions as $it){
 echo('</div>');
 echo('</td></tr><tr><td colspan="2"><input type="submit" name="submit" value="Go!" class="formbtn" id="gobtn" onmouseover="btnh(this.id)" onmouseout="btnd(this.id)"></form></td></tr></table>');
 if(isset($_POST['submit'])){
-	$stck=Array('apple'=>64,'blaze_rod'=>64,'carrot'=>64,'clay_ball'=>64,'coal'=>64,'cobblestone'=>64,'coca_beans'=>64,'diamond'=>64,'dirt'=>64,'emerald'=>64,'feather'=>64,'flint'=>64,'glowstone'=>64,'glowstone_dust'=>64,'gold'=>64,'lapis'=>64,'leather'=>64,'iron'=>64,'melon'=>64,'nether_star'=>64,'nether_wart'=>64,'netherrack'=>64,'mushroom'=>64,'obsidian'=>64,'pufferfish'=>64,'quartz'=>64,'rabbit_foot'=>64,'redstone'=>64,'sand'=>64,'slime_ball'=>64,'spider_eye'=>64,'stone'=>64,'string'=>64,'sugar_cane'=>64,'wood'=>64,'wool'=>64,'wheat'=>64,
+	$stck=Array('apple'=>64,'blaze_rod'=>64,'carrot'=>64,'clay_ball'=>64,'coal'=>64,'cobblestone'=>64,'coca_beans'=>64,'diamond'=>64,'dirt'=>64,'emerald'=>64,'feather'=>64,'flint'=>64,'glowstone'=>64,'glowstone_dust'=>64,'gold'=>64,'lapis'=>64,'leather'=>64,'iron'=>64,'melon'=>64,'nether_star'=>64,'nether_wart'=>64,'netherrack'=>64,'mushroom'=>64,'obsidian'=>64,'pufferfish'=>64,'quartz'=>64,'rabbit_foot'=>64,'redstone'=>64,'sand'=>64,'slime_ball'=>64,'spider_eye'=>64,'stone'=>64,'string'=>64,'sugar_cane'=>64,'vines'=>64,'wood'=>64,'wool'=>64,'wheat'=>64,
 	'ender_pearl'=>16,'egg'=>16,'armor_stand'=>16,'sign'=>16,
 	'bow'=>1,'bed'=>1,'milk'=>1,'water_bottle'=>1);
 	echo('</div><div class="main2">');
 	$ra=Array();
-	for($j=1;$j<=8;$j+=1){ // 8 input slots
+	for($j=1;$j<=10;$j+=1){ // 10 input slots
 		if(strlen($_POST['f'.$j.'h'])>2){ //if isset
 			$ta=craft($_POST['f'.$j.'h'],$_POST['f'.$j.'f']); //actually check the recipe
+			//print_r($ta); //debugg option
 			foreach($ta as $taik=>$tai){ //for each item in the recipe
-				$ra[$taik]+=$tai; //add to the results array
+				$ra[$taik]=$ra[$taik]+$tai; //add to the results array
 			}
 		}
 	}
 	echo('<p>You will need:</p>');
 	//print_r($ra); //debug option
-	foreach($ra as $ak=>$av){
-		echo('<p><img title="'.ucwords(str_replace('_',' ',$ak)).'" src="gfx/'.$ak.'.png"> x ');
-		if(($av-floor($av))==0) echo $av;
-		else echo((floor($av)+1)); // 1=>1, 1.1=>2
-		if($av>$stck[$ak]) echo(' ('.round($av/$stck[$ak],2).' stacks)'); //stacks
-		if(round($av/$stck[$ak],2)>54) echo(' ['.round(($av/$stck[$ak])/54,2).' double chests]'); //double chests
-		echo('</p>');
+	foreach($ra as $ak=>$av){ //fort each raw material needed
+		if($av>0){ //if amount of items is greater than 0
+			echo('<p><img title="'.ucwords(str_replace('_',' ',$ak)).'" src="gfx/'.$ak.'.png"> x '); //display image 
+			if(($av-floor($av))==0) echo $av; //display amount if integer
+			else echo((floor($av)+1)); //display amount if float  (1=>1, 1.1=>2)
+			if($av>$stck[$ak]) echo(' ('.round($av/$stck[$ak],2).' stacks)'); //stacks
+			if(round($av/$stck[$ak],2)>54) echo(' ['.round(($av/$stck[$ak])/54,2).' double chests]'); //double chests
+			echo('</p>');
+		}
 	}
 }
 echo('</div></body></html>');
