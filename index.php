@@ -11,6 +11,7 @@ $recipe['powered_rail']='gold:1,stick:0.1667,redstone:0.1667';
 $recipe['redstone_torch']='stick:1,redstone:1';
 $recipe['redstone_lamp']='redstone:4,glowstone:1';
 $recipe['stone_preassure_plate']='stone:2';
+$recipe['wooden_preassure_plate']='planks:2';
 $recipe['hopper']='iron:5,chest:1';
 $recipe['daylight_sensor']='quartz:3,glass:3,plank_slab:3';
 $recipe['minecart']='iron:5';
@@ -26,6 +27,7 @@ $recipe['stone_bricks']='stone:1';
 $recipe['wood_stairs']='planks:1.5';
 $recipe['quartz_stairs']='quartz_block:1.5';
 $recipe['bricks_stairs']='bricks:1.5';
+$recipe['cobblestone_stairs']='cobblestone:1.5';
 $recipe['emerald_block']='emerald:9';
 $recipe['quartz_block']='quartz:4';
 $recipe['enchantment_table']='obsidian:4,diamond:2,book:1';
@@ -103,6 +105,7 @@ $recipe['clock']='gold:4,redstone:1';
 $recipe['lead']='slime_ball:0.5,string:2';
 $recipe['flint_and_steel']='flint:1,iron:1';
 $recipe['bread']='wheat:3';
+$recipe['steak']='raw_beef:1,coal:0.125';
 $recipe['glass_pane']='glass:0.375';
 $recipe['trapped_chest']='chest:1,tripwire_hook:1';
 $recipe['tripwire_hook']='iron:0.5,stick:0.5,planks:0.5';
@@ -110,9 +113,13 @@ $recipe['fermented_spider_eye']='sugar:1,spider_eye:1,mushroom:1';
 $recipe['nether_brick_fence']='nether_bricks:1';
 $recipe['mossy_stone_bricks']='stone_bricks:1,vines:1';
 $recipe['cracked_stone_bricks']='stone_bricks:1,coal:0.125';
+$recipe['mossy_cobblestone']='cobblestone:1,vines:1';
+$recipe['glowstone']='glowstone_dust:4';
+$recipe['TNT']='sand:4,gunpowder:5';
+$recipe['lever']='cobblestone:1,stick:1';
 $recipe['potion_of_fire_resistance_8+00']='potion_of_fire_resistance_3+00:1,redstone:0.3333';
 $recipe['potion_of_fire_resistance_3+00']='akward_potion:1,magma_cream:0.3333';
-$recipe['potion_of_regeneration_0+45']='akward_potion:1;ghast_tear:0.3333';
+$recipe['potion_of_regeneration_0+45']='akward_potion:1,ghast_tear:0.3333';
 $recipe['potion_of_regeneration_2+00']='potion_of_regeneration_0+45:1,redstone:0.3333';
 $recipe['potion_of_regeneration_II_0+22']='potion_of_regeneration_0+45:1,glowstone_dust:0.3333';
 $recipe['potion_of_swiftness_3+00']='akward_potion:1,sugar:0.3333';
@@ -147,7 +154,6 @@ $recipe['gold']='end';
 $recipe['quartz']='end';
 $recipe['sand']='end';
 $recipe['coal']='end';
-$recipe['glowstone']='end';
 $recipe['stone']='end';
 $recipe['sugar_cane']='end';
 $recipe['leather']='end';
@@ -181,6 +187,19 @@ $recipe['pufferfish']='end';
 $recipe['spider_eye']='end';
 $recipe['mushroom']='end';
 $recipe['vines']='end';
+$recipe['raw_beef']='end';
+$recipe['gunpowder']='end';
+
+//these are results of killing 1000 of each mob
+$mob['rabbit_foot']='rabbit:38.4615'; 
+$mob['raw_rabbit']='rabit:1.9569';
+$mob['rabbit_hide']='rabit:2.1598';
+$mob['raw_beef']='cow:0.5552';
+$mob['leather']='cow:1.1389';
+$mob['ghast_tear']='ghast:2.0366';
+//$mob['gunpowder']='ghast:1.0080'; //creepers are better for gunpowder
+$mob['gunpowder']='creeper:1.0183';
+
 
 function craft($item,$qty){
 	global $recipe;
@@ -231,18 +250,26 @@ echo('<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
 echo('<div class="main"><table border="0" width="100%"><tr width="100%"><td width="50%">');
 echo('<form name="things" action="index.php" method="POST"><p>Select items</p>');
 for($i=1;$i<=10;$i+=1) echo('<span id="f'.$i.'" style="display: none;"><img id="f'.$i.'img" src="#" width="64" height="64"><input type="hidden" name="f'.$i.'h" value="" id="f'.$i.'hi"><input id="f'.$i.'f" name="f'.$i.'f" type="text" class="formfld" size="3" maxlength="4"><a href="#" onclick="hideLine(parentNode.id)"><img src="gfx/x.png" id="x"></a></span>');
-echo('</td><td width="50%"><a class="bl" href="#" id="t_blocks" onclick="displayBl(this.id)";>Blocks</a> <a class="bl" href="#" id="t_items" onclick="displayBl(this.id)";>Items</a> <a class="bl" id="t_potions" onclick="displayBl(this.id)" href=#">Potions</a>');
-$itemsBlocks=Array('piston','sticky_piston','hopper','daylight_sensor','redstone_lamp','redstone_repeater','redstone_comparator','redstone_torch','dispenser','dropper','iron_trapdoor','iron_door','jukebox','rail','powered_rail','activator_rail','detector_rail','minecart','bookshelf','beacon',
-'cobblestone_slab','stone_bricks','stone_brick_stairs','stone_brick_slab','chiseled_stone_bricks','mossy_stone_bricks','cracked_stone_bricks','planks','wood_stairs','plank_slab','bricks','bricks_stairs','bricks_slab','emerald_block','diamond_block','gold_block',
-'iron_block','redstone_block','slime_block','lapis_block','coal_block','quartz_block','quartz_stairs','quartz_slab','chiseled_quartz_block','quartz_pillar','anvil','enchantment_table','ladder','sign','fence','fence_gate','boat','wooden_trapdoor','wooden_door','chest','trapped_chest','crafting_table','ender_chest',
-'torch','corase_dirt','sandstone','sandstone_stairs','sandstone_slab','smooth_sandstone','chiseled_sandstone','note_block','bed','item_frame','painting','nether_bricks','nether_bricks_stairs','nether_bricks_slab','nether_brick_fence','brewing_stand','cauldron','iron_bars','furnace','glass','glass_pane');
+echo('</td><td width="50%"><a class="bl" href="#" id="t_blocks" onclick="displayBl(this.id)";>Blocks</a> <a class="bl" href="#" id="t_redstone" onclick="displayBl(this.id)";>Redstone</a> <a class="bl" id="t_potions" onclick="displayBl(this.id)" href=#">Potions</a> <a class="bl" href="#" id="t_items" onclick="displayBl(this.id)";>Other</a> ');
+$itemsBlocks=Array('jukebox','rail','powered_rail','activator_rail','detector_rail','minecart','bookshelf','beacon','cobblestone_slab','cobblestone_stairs','stone_bricks',
+'stone_brick_stairs','stone_brick_slab','chiseled_stone_bricks','mossy_stone_bricks','cracked_stone_bricks','planks','wood_stairs','plank_slab','bricks','bricks_stairs',
+'bricks_slab','emerald_block','diamond_block','gold_block','iron_block','redstone_block','slime_block','lapis_block','coal_block','quartz_block','quartz_stairs','quartz_slab',
+'chiseled_quartz_block','quartz_pillar','anvil','enchantment_table','ladder','sign','fence','fence_gate','boat','wooden_trapdoor','wooden_door','chest','trapped_chest',
+'crafting_table','ender_chest','torch','corase_dirt','sandstone','sandstone_stairs','sandstone_slab','smooth_sandstone','chiseled_sandstone','note_block','bed','item_frame',
+'painting','nether_bricks','nether_bricks_stairs','nether_bricks_slab','nether_brick_fence','brewing_stand','cauldron','iron_bars','furnace','glass','glass_pane','TNT');
 echo('<div id="it_blocks" style="border:none;">');
 foreach($itemsBlocks as $it){
 	echo('<a href="#" title="'.ucwords(str_replace('_',' ',$it)).'" id="'.$it.'" onclick="addItem(this.id,this.id)" style="vertical-align:top;"><img src="gfx/'.$it.'.png" width="64" height="64" border="0" alt="'.ucwords(str_replace('_',' ',$it)).'" id="'.$it.'"></a>');
 }
 echo('</div><div id="it_items" style="display: none; border: none;">');
-$itemsItems=Array('arrow','bow','clock','lead','flint_and_steel','golden_apple','enchanted_golden_apple','cookie','cake','bread','armor_stand');
+$itemsItems=Array('arrow','bow','clock','lead','flint_and_steel','golden_apple','enchanted_golden_apple','cookie','cake','bread','steak','armor_stand');
 foreach($itemsItems as $it){
+	echo('<a href="#" title="'.ucwords(str_replace('_',' ',$it)).'" id="'.$it.'" onclick="addItem(this.id,this.id)" style="vertical-align:top;"><img src="gfx/'.$it.'.png" width="64" height="64" border="0" alt="'.ucwords(str_replace('_',' ',$it)).'" id="'.$it.'"></a>');
+}
+echo('</div><div id="it_redstone" style="display: none; border: none;">');
+$itemsRedstone=Array('piston','sticky_piston','hopper','daylight_sensor','redstone_lamp','redstone_repeater','redstone_comparator','redstone_torch','dispenser','dropper',
+'iron_trapdoor','iron_door','lever','stone_preassure_plate','wooden_preassure_plate');
+foreach($itemsRedstone as $it){
 	echo('<a href="#" title="'.ucwords(str_replace('_',' ',$it)).'" id="'.$it.'" onclick="addItem(this.id,this.id)" style="vertical-align:top;"><img src="gfx/'.$it.'.png" width="64" height="64" border="0" alt="'.ucwords(str_replace('_',' ',$it)).'" id="'.$it.'"></a>');
 }
 echo('</div><div id="it_potions" style="display: none; border: none;">');
@@ -256,9 +283,16 @@ foreach($itemsPotions as $it){
 	echo('<a href="#" title="'.ucwords(str_replace('+',':',str_replace('_',' ',$it))).'" id="'.$realimg[0].'" onclick="addItem(this.id,\''.$it.'\')" style="vertical-align:top;"><img src="gfx/'.$realimg[0].'.png" width="64" height="64" border="0" alt="'.ucwords(str_replace('+',':',str_replace('_',' ',$it))).'" id="'.$realimg[0].'"></a>');
 }
 echo('</div>');
-echo('</td></tr><tr><td colspan="2"><input type="submit" name="submit" value="Go!" class="formbtn" id="gobtn" onmouseover="btnh(this.id)" onmouseout="btnd(this.id)"></form></td></tr></table>');
+echo('</td></tr><tr><td colspan="2"><label>Mode:<select class="formfld" name="doMobs"><option value="false"');
+if(isset($_POST['submit'])&($_POST['doMobs']=='false')) echo(' selected="selected"');
+echo('>Blocks only</option><option value="true"');
+if(isset($_POST['submit'])&($_POST['doMobs']=='true')) echo(' selected="selected"');
+echo('>Include Mobs</option></select></label> <input type="submit" name="submit" value="Go!" class="formbtn" id="gobtn" onmouseover="btnh(this.id)" onmouseout="btnd(this.id)"></form></td></tr></table>');
 if(isset($_POST['submit'])){
-	$stck=Array('apple'=>64,'blaze_rod'=>64,'carrot'=>64,'clay_ball'=>64,'coal'=>64,'cobblestone'=>64,'coca_beans'=>64,'diamond'=>64,'dirt'=>64,'emerald'=>64,'feather'=>64,'flint'=>64,'glowstone'=>64,'glowstone_dust'=>64,'gold'=>64,'lapis'=>64,'leather'=>64,'iron'=>64,'melon'=>64,'nether_star'=>64,'nether_wart'=>64,'netherrack'=>64,'mushroom'=>64,'obsidian'=>64,'pufferfish'=>64,'quartz'=>64,'rabbit_foot'=>64,'redstone'=>64,'sand'=>64,'slime_ball'=>64,'spider_eye'=>64,'stone'=>64,'string'=>64,'sugar_cane'=>64,'vines'=>64,'wood'=>64,'wool'=>64,'wheat'=>64,
+	$stck=Array('apple'=>64,'blaze_rod'=>64,'carrot'=>64,'clay_ball'=>64,'coal'=>64,'cobblestone'=>64,'coca_beans'=>64,'diamond'=>64,'dirt'=>64,'emerald'=>64,'feather'=>64,
+	'flint'=>64,'ghast_tear'=>64,'glowstone'=>64,'glowstone_dust'=>64,'gold'=>64,'lapis'=>64,'leather'=>64,'iron'=>64,'melon'=>64,'nether_star'=>64,'nether_wart'=>64,
+	'netherrack'=>64,'mushroom'=>64,'obsidian'=>64,'pufferfish'=>64,'quartz'=>64,'rabbit_foot'=>64,'raw_beef'=>64,'redstone'=>64,'sand'=>64,'slime_ball'=>64,'spider_eye'=>64,
+	'stone'=>64,'string'=>64,'sugar_cane'=>64,'vines'=>64,'wood'=>64,'wool'=>64,'wheat'=>64,
 	'ender_pearl'=>16,'egg'=>16,'armor_stand'=>16,'sign'=>16,
 	'bow'=>1,'bed'=>1,'milk'=>1,'water_bottle'=>1);
 	echo('</div><div class="main2">');
@@ -276,12 +310,18 @@ if(isset($_POST['submit'])){
 	//print_r($ra); //debug option
 	foreach($ra as $ak=>$av){ //fort each raw material needed
 		if($av>0){ //if amount of items is greater than 0
-			echo('<p><img title="'.ucwords(str_replace('_',' ',$ak)).'" src="gfx/'.$ak.'.png"> x '); //display image 
-			if(($av-floor($av))==0) echo $av; //display amount if integer
-			else echo((floor($av)+1)); //display amount if float  (1=>1, 1.1=>2)
-			if($av>$stck[$ak]) echo(' ('.round($av/$stck[$ak],2).' stacks)'); //stacks
-			if(round($av/$stck[$ak],2)>54) echo(' ['.round(($av/$stck[$ak])/54,2).' double chests]'); //double chests
-			echo('</p>');
+			if(isset($mob[$ak])&($_POST['doMobs']=='true')){
+				$mq=explode(':',$mob[$ak]);
+				echo('<p><img src="gfx/'.$mq[0].'.png">You have to kill an average of '.round(($mq[1]*$av),0).' '.ucwords($mq[0]).'</p>');
+			}
+			else{ 
+				echo('<p><img title="'.ucwords(str_replace('_',' ',$ak)).'" src="gfx/'.$ak.'.png"> x '); //display image 
+				if(($av-floor($av))==0) echo $av; //display amount if integer
+				else echo((floor($av)+1)); //display amount if float  (1=>1, 1.1=>2)
+				if($av>$stck[$ak]) echo(' ('.round($av/$stck[$ak],2).' stacks)'); //stacks
+				if(round($av/$stck[$ak],2)>54) echo(' ['.round(($av/$stck[$ak])/54,2).' double chests]'); //double chests
+				echo('</p>');
+			}
 		}
 	}
 }
