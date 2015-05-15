@@ -117,6 +117,7 @@ $recipe['mossy_cobblestone']='cobblestone:1,vines:1';
 $recipe['glowstone']='glowstone_dust:4';
 $recipe['TNT']='sand:4,gunpowder:5';
 $recipe['lever']='cobblestone:1,stick:1';
+$recipe['cooked_porkchop']='raw_porkchop:1,coal:0.125';
 $recipe['potion_of_fire_resistance_8+00']='potion_of_fire_resistance_3+00:1,redstone:0.3333';
 $recipe['potion_of_fire_resistance_3+00']='akward_potion:1,magma_cream:0.3333';
 $recipe['potion_of_regeneration_0+45']='akward_potion:1,ghast_tear:0.3333';
@@ -189,6 +190,7 @@ $recipe['mushroom']='end';
 $recipe['vines']='end';
 $recipe['raw_beef']='end';
 $recipe['gunpowder']='end';
+$recipe['raw_porkchop']='end';
 
 //these are results of killing 1000 of each mob
 $mob['rabbit_foot']='rabbit:38.4615'; 
@@ -199,6 +201,9 @@ $mob['leather']='cow:1.1389';
 $mob['ghast_tear']='ghast:2.0366';
 //$mob['gunpowder']='ghast:1.0080'; //creepers are better for gunpowder
 $mob['gunpowder']='creeper:1.0183';
+$mob['slime_ball']='tiny_slime:1';
+$mob['gold']='zombie_pigman:15'; //accumulated ingots + nuggets
+$mob['raw_porkchop']='pig:0.5';
 
 
 function craft($item,$qty){
@@ -262,7 +267,7 @@ foreach($itemsBlocks as $it){
 	echo('<a href="#" title="'.ucwords(str_replace('_',' ',$it)).'" id="'.$it.'" onclick="addItem(this.id,this.id)" style="vertical-align:top;"><img src="gfx/'.$it.'.png" width="64" height="64" border="0" alt="'.ucwords(str_replace('_',' ',$it)).'" id="'.$it.'"></a>');
 }
 echo('</div><div id="it_items" style="display: none; border: none;">');
-$itemsItems=Array('arrow','bow','clock','lead','flint_and_steel','golden_apple','enchanted_golden_apple','cookie','cake','bread','steak','armor_stand');
+$itemsItems=Array('arrow','bow','clock','lead','flint_and_steel','golden_apple','enchanted_golden_apple','cookie','cake','bread','steak','cooked_porkchop','armor_stand');
 foreach($itemsItems as $it){
 	echo('<a href="#" title="'.ucwords(str_replace('_',' ',$it)).'" id="'.$it.'" onclick="addItem(this.id,this.id)" style="vertical-align:top;"><img src="gfx/'.$it.'.png" width="64" height="64" border="0" alt="'.ucwords(str_replace('_',' ',$it)).'" id="'.$it.'"></a>');
 }
@@ -291,7 +296,7 @@ echo('>Include Mobs</option></select></label> <input type="submit" name="submit"
 if(isset($_POST['submit'])){
 	$stck=Array('apple'=>64,'blaze_rod'=>64,'carrot'=>64,'clay_ball'=>64,'coal'=>64,'cobblestone'=>64,'coca_beans'=>64,'diamond'=>64,'dirt'=>64,'emerald'=>64,'feather'=>64,
 	'flint'=>64,'ghast_tear'=>64,'glowstone'=>64,'glowstone_dust'=>64,'gold'=>64,'lapis'=>64,'leather'=>64,'iron'=>64,'melon'=>64,'nether_star'=>64,'nether_wart'=>64,
-	'netherrack'=>64,'mushroom'=>64,'obsidian'=>64,'pufferfish'=>64,'quartz'=>64,'rabbit_foot'=>64,'raw_beef'=>64,'redstone'=>64,'sand'=>64,'slime_ball'=>64,'spider_eye'=>64,
+	'netherrack'=>64,'mushroom'=>64,'obsidian'=>64,'pufferfish'=>64,'quartz'=>64,'rabbit_foot'=>64,'raw_beef'=>64,'raw_porkchop'=>64,'redstone'=>64,'sand'=>64,'slime_ball'=>64,'spider_eye'=>64,
 	'stone'=>64,'string'=>64,'sugar_cane'=>64,'vines'=>64,'wood'=>64,'wool'=>64,'wheat'=>64,
 	'ender_pearl'=>16,'egg'=>16,'armor_stand'=>16,'sign'=>16,
 	'bow'=>1,'bed'=>1,'milk'=>1,'water_bottle'=>1);
