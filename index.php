@@ -118,6 +118,13 @@ $recipe['glowstone']='glowstone_dust:4';
 $recipe['TNT']='sand:4,gunpowder:5';
 $recipe['lever']='cobblestone:1,stick:1';
 $recipe['cooked_porkchop']='raw_porkchop:1,coal:0.125';
+$recipe['stone_button']='stone:1';
+$recipe['wooden_button']='planks:1';
+$recipe['gold_preassure_plate']='gold:2';
+$recipe['iron_preassure_plate']='iron:2';
+$recipe['prismarine']='prismarine_shard:4';
+$recipe['prismarine_bricks']='prismarine_shard:9';
+$recipe['dark_prismarine']='prismarine_shard:8,ink_sac:1';
 $recipe['potion_of_fire_resistance_8+00']='potion_of_fire_resistance_3+00:1,redstone:0.3333';
 $recipe['potion_of_fire_resistance_3+00']='akward_potion:1,magma_cream:0.3333';
 $recipe['potion_of_regeneration_0+45']='akward_potion:1,ghast_tear:0.3333';
@@ -191,6 +198,8 @@ $recipe['vines']='end';
 $recipe['raw_beef']='end';
 $recipe['gunpowder']='end';
 $recipe['raw_porkchop']='end';
+$recipe['prismarine_shard']='end';
+$recipe['ink_sac']='end';
 
 //these are results of killing 1000 of each mob
 $mob['rabbit_foot']='rabbit:38.4615'; 
@@ -202,8 +211,10 @@ $mob['ghast_tear']='ghast:2.0366';
 //$mob['gunpowder']='ghast:1.0080'; //creepers are better for gunpowder
 $mob['gunpowder']='creeper:1.0183';
 $mob['slime_ball']='tiny_slime:1';
-$mob['gold']='zombie_pigman:15'; //accumulated ingots + nuggets
+$mob['gold']='zombie_pigmen:15'; //accumulated ingots + nuggets
 $mob['raw_porkchop']='pig:0.5';
+$mob['feather']='chicken:1';
+$mob['ink_sac']='squid:0.5';
 
 
 function craft($item,$qty){
@@ -273,7 +284,7 @@ foreach($itemsItems as $it){
 }
 echo('</div><div id="it_redstone" style="display: none; border: none;">');
 $itemsRedstone=Array('piston','sticky_piston','hopper','daylight_sensor','redstone_lamp','redstone_repeater','redstone_comparator','redstone_torch','dispenser','dropper',
-'iron_trapdoor','iron_door','lever','stone_preassure_plate','wooden_preassure_plate');
+'iron_trapdoor','iron_door','lever','stone_preassure_plate','wooden_preassure_plate','gold_preassure_plate','iron_preassure_plate','stone_button','wooden_button');
 foreach($itemsRedstone as $it){
 	echo('<a href="#" title="'.ucwords(str_replace('_',' ',$it)).'" id="'.$it.'" onclick="addItem(this.id,this.id)" style="vertical-align:top;"><img src="gfx/'.$it.'.png" width="64" height="64" border="0" alt="'.ucwords(str_replace('_',' ',$it)).'" id="'.$it.'"></a>');
 }
@@ -317,7 +328,7 @@ if(isset($_POST['submit'])){
 		if($av>0){ //if amount of items is greater than 0
 			if(isset($mob[$ak])&($_POST['doMobs']=='true')){
 				$mq=explode(':',$mob[$ak]);
-				echo('<p><img src="gfx/'.$mq[0].'.png">You have to kill an average of '.round(($mq[1]*$av),0).' '.ucwords($mq[0]).'</p>');
+				echo('<p><img src="gfx/'.$mq[0].'.png"> Kill an average of '.round(($mq[1]*$av),0).' '.ucwords(str_replace('_',' ',$mq[0])).'</p>');
 			}
 			else{ 
 				echo('<p><img title="'.ucwords(str_replace('_',' ',$ak)).'" src="gfx/'.$ak.'.png"> x '); //display image 
