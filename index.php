@@ -26,6 +26,23 @@ $recipe['white_glass']='glass:1,bone_meal:0.125';
 $recipe['orange_glass']='glass:1,orange_dye:0.125';
 $recipe['magenta_glass']='glass:1,magenta_dye:0.125';
 $recipe['light_blue_glass']='glass:1,light_blue_dye:0.125';
+$recipe['yellow_glass']='glass:1,yellow_dye:0.125';
+$recipe['lime_glass']='glass:1,lime_dye:0.125';
+$recipe['pink_glass']='glass:1,pink_dye:0.125';
+$recipe['gray_glass']='glass:1,gray_dye:0.125';
+$recipe['light_gray_glass']='glass:1,light_gray_dye:0.125';
+$recipe['cyan_glass']='glass:1,cyan_dye:0.125';
+$recipe['purple_glass']='glass:1,purple_dye:0.125';
+$recipe['blue_glass']='glass:1,lapis:0.125';
+$recipe['brown_glass']='glass:1,coca_beans:0.125';
+$recipe['green_glass']='glass:1,green_dye:0.125';
+$recipe['red_glass']='glass:1,red_dye:0.125';
+$recipe['black_glass']='glass:1,ink_sac:0.125';
+$recipe['cyan_dye']='lapis:0.5,green_dye:0.5';
+$recipe['light_gray_dye']='bone_meal:0.6666,ink_sac:0.3333';
+$recipe['gray_dye']='bone_meal:0.5,ink_sac:0.5';
+$recipe['lime_dye']='green_dye:0.5,bone_meal:0.5';
+$recipe['green_dye']='cactus:1,coal:0.125';
 $recipe['light_blue_dye']='lapis:0.5,bone_meal:0.5';
 $recipe['orange_dye']='yellow_dye:0.5,red_dye:0.5';
 $recipe['magenta_dye']='pink_dye:0.5,purple_dye:0.5';
@@ -227,6 +244,7 @@ $recipe['raw_mutton']='end';
 $recipe['bone']='end';
 $recipe['red_dye']='end';
 $recipe['yellow_dye']='end';
+$recipe['cactus']='end';
 
 //these are results of killing 1000 of each mob
 $mob['rabbit_foot']='rabbit:38.4615'; 
@@ -306,7 +324,8 @@ $itemsBlocks=Array('jukebox','rail','powered_rail','activator_rail','detector_ra
 'coal_block','quartz_block','quartz_stairs','quartz_slab','chiseled_quartz_block','quartz_pillar','anvil','enchantment_table','ladder','sign','fence','fence_gate','boat',
 'wooden_trapdoor','wooden_door','chest','trapped_chest','crafting_table','ender_chest','torch','corase_dirt','sandstone','sandstone_stairs','sandstone_slab','smooth_sandstone',
 'chiseled_sandstone','red_sandstone','note_block','bed','item_frame','painting','nether_bricks','nether_bricks_stairs','nether_bricks_slab','nether_brick_fence','brewing_stand',
-'cauldron','iron_bars','furnace','glass','white_glass','orange_glass','magenta_glass','light_blue_glass','glass_pane','TNT',
+'cauldron','iron_bars','furnace','glass','white_glass','orange_glass','magenta_glass','light_blue_glass','yellow_glass','lime_glass','pink_glass','gray_glass','light_gray_glass',
+'cyan_glass','purple_glass','blue_glass','brown_glass','green_glass','red_glass','black_glass','glass_pane','TNT',
 'prismarine','prismarine_bricks','dark_prismarine','sea_lantern');
 echo('<div id="it_blocks" style="border:none;">');
 foreach($itemsBlocks as $it){
@@ -340,7 +359,7 @@ echo('>Blocks only</option><option value="true"');
 if(isset($_POST['submit'])&($_POST['doMobs']=='true')) echo(' selected="selected"');
 echo('>Include Mobs</option></select></label> <input type="submit" name="submit" value="Go!" class="formbtn" id="gobtn" onmouseover="btnh(this.id)" onmouseout="btnd(this.id)"></form></td></tr></table>');
 if(isset($_POST['submit'])){
-	$stck=Array('apple'=>64,'bone'=>64,'blaze_rod'=>64,'carrot'=>64,'clay_ball'=>64,'coal'=>64,'cobblestone'=>64,'coca_beans'=>64,'diamond'=>64,'dirt'=>64,'emerald'=>64,'feather'=>64,
+	$stck=Array('apple'=>64,'bone'=>64,'blaze_rod'=>64,'cactus'=>64,'carrot'=>64,'clay_ball'=>64,'coal'=>64,'cobblestone'=>64,'coca_beans'=>64,'diamond'=>64,'dirt'=>64,'emerald'=>64,'feather'=>64,
 	'flint'=>64,'ghast_tear'=>64,'glowstone'=>64,'glowstone_dust'=>64,'gold'=>64,'ink_sac'=>64,'iron'=>64,'lapis'=>64,'leather'=>64,'melon'=>64,'nether_star'=>64,'nether_wart'=>64,
 	'netherrack'=>64,'red_mushroom'=>64,'brown_mushroom'=>64,'obsidian'=>64,'prismarine_crystals'=>64,'prismarine_shard'=>64,'pufferfish'=>64,'quartz'=>64,'rabbit_foot'=>64,'raw_beef'=>64,'raw_mutton'=>64,
 	'raw_porkchop'=>64,'red_dye'=>64,'red_sand'=>64,'redstone'=>64,'sand'=>64,'slime_ball'=>64,'soulsand'=>64,'spider_eye'=>64,'stone'=>64,'string'=>64,'sugar_cane'=>64,'vines'=>64,
@@ -376,12 +395,13 @@ if(isset($_POST['submit'])){
 				if(($av-floor($av))==0) echo $av; //display amount if integer
 				else echo((floor($av)+1)); //display amount if float  (1=>1, 1.1=>2)
 				if($av>$stck[$ak]) echo(' ('.round($av/$stck[$ak],2).' stacks)'); //stacks
-				if(round($av/$stck[$ak],2)>54) echo(' ['.round(($av/$stck[$ak])/54,2).' double chests]'); //double chests
+				if((round($av/$stck[$ak],2)>=27)&(round($av/$stck[$ak],2)<54)) echo(' ['.round(($av/$stck[$ak])/27,2).' chests]'); //chests				
+				if(round($av/$stck[$ak],2)>=54) echo(' ['.round(($av/$stck[$ak])/54,2).' double chests]'); //double chests
 				echo('</p>');
 			}
 		}
 	}
-	foreach($mobsToKill as $mk=>$mv){
+	if($_POST['doMobs']=='true') foreach($mobsToKill as $mk=>$mv){
 		echo('<p><img src="gfx/'.$mk.'.png"> Kill an average of '.$mv.' '.ucwords(str_replace('_',' ',$mk)));
 		if($mv>1) echo('s');
 		echo('</p>');
