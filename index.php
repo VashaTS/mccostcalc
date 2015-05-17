@@ -22,6 +22,16 @@ $recipe['paper']='sugar_cane:1';
 $recipe['chest']='planks:8';
 $recipe['stick']='planks:0.5';
 $recipe['glass']='sand:1,coal:0.125';
+$recipe['white_glass']='glass:1,bone_meal:0.125';
+$recipe['orange_glass']='glass:1,orange_dye:0.125';
+$recipe['magenta_glass']='glass:1,magenta_dye:0.125';
+$recipe['light_blue_glass']='glass:1,light_blue_dye:0.125';
+$recipe['light_blue_dye']='lapis:0.5,bone_meal:0.5';
+$recipe['orange_dye']='yellow_dye:0.5,red_dye:0.5';
+$recipe['magenta_dye']='pink_dye:0.5,purple_dye:0.5';
+$recipe['pink_dye']='bone_meal:0.5,red_dye:0.5';
+$recipe['purple_dye']='lapis:0.5,red_dye:0.5';
+$recipe['bone_meal']='bone:0.3333';
 $recipe['plank_slab']='planks:0.5';
 $recipe['stone_bricks']='stone:1';
 $recipe['wood_stairs']='planks:1.5';
@@ -39,6 +49,7 @@ $recipe['anvil']='iron:4,iron_block:3';
 $recipe['iron_block']='iron:9';
 $recipe['corase_dirt']='dirt:0.5,gravel:0.5';
 $recipe['sandstone']='sand:4';
+$recipe['red_sandstone']='red_sand:4';
 $recipe['sandstone_stairs']='sandstone:1.5';
 $recipe['stone_brick_stairs']='stone_bricks:1.5';
 $recipe['nether_bricks_stairs']='nether_bricks:1.5';
@@ -109,7 +120,7 @@ $recipe['steak']='raw_beef:1,coal:0.125';
 $recipe['glass_pane']='glass:0.375';
 $recipe['trapped_chest']='chest:1,tripwire_hook:1';
 $recipe['tripwire_hook']='iron:0.5,stick:0.5,planks:0.5';
-$recipe['fermented_spider_eye']='sugar:1,spider_eye:1,mushroom:1';
+$recipe['fermented_spider_eye']='sugar:1,spider_eye:1,brown_mushroom:1';
 $recipe['nether_brick_fence']='nether_bricks:1';
 $recipe['mossy_stone_bricks']='stone_bricks:1,vines:1';
 $recipe['cracked_stone_bricks']='stone_bricks:1,coal:0.125';
@@ -118,6 +129,7 @@ $recipe['glowstone']='glowstone_dust:4';
 $recipe['TNT']='sand:4,gunpowder:5';
 $recipe['lever']='cobblestone:1,stick:1';
 $recipe['cooked_porkchop']='raw_porkchop:1,coal:0.125';
+$recipe['cooked_mutton']='raw_mutton:1,coal:0.125';
 $recipe['stone_button']='stone:1';
 $recipe['wooden_button']='planks:1';
 $recipe['gold_preassure_plate']='gold:2';
@@ -125,6 +137,13 @@ $recipe['iron_preassure_plate']='iron:2';
 $recipe['prismarine']='prismarine_shard:4';
 $recipe['prismarine_bricks']='prismarine_shard:9';
 $recipe['dark_prismarine']='prismarine_shard:8,ink_sac:1';
+$recipe['sea_lantern']='prismarine_crystals:5,prismarine_shard:4';
+$recipe['hay_bale']='wheat:9';
+$recipe['nether_star']='wither_skeleton_skull:3,soulsand:4';
+$recipe['mossy_cobblestone']='cobblestone:1,vines:1';
+$recipe['cobblestone_wall']='cobblestone:1';
+$recipe['mossy_cobblestone_wall']='mossy_cobblestone:1';
+$recipe['flower_pot']='brick:3';
 $recipe['potion_of_fire_resistance_8+00']='potion_of_fire_resistance_3+00:1,redstone:0.3333';
 $recipe['potion_of_fire_resistance_3+00']='akward_potion:1,magma_cream:0.3333';
 $recipe['potion_of_regeneration_0+45']='akward_potion:1,ghast_tear:0.3333';
@@ -165,7 +184,6 @@ $recipe['coal']='end';
 $recipe['stone']='end';
 $recipe['sugar_cane']='end';
 $recipe['leather']='end';
-$recipe['nether_star']='end';
 $recipe['obsidian']='end';
 $recipe['emerald']='end';
 $recipe['diamond']='end';
@@ -193,13 +211,22 @@ $recipe['milk']='end';
 $recipe['rabbit_foot']='end';
 $recipe['pufferfish']='end';
 $recipe['spider_eye']='end';
-$recipe['mushroom']='end';
+$recipe['brown_mushroom']='end';
+$recipe['red_mushroom']='end';
 $recipe['vines']='end';
 $recipe['raw_beef']='end';
 $recipe['gunpowder']='end';
 $recipe['raw_porkchop']='end';
 $recipe['prismarine_shard']='end';
 $recipe['ink_sac']='end';
+$recipe['prismarine_crystals']='end';
+$recipe['red_sand']='end';
+$recipe['wither_skeleton_skull']='end';
+$recipe['soulsand']='end';
+$recipe['raw_mutton']='end';
+$recipe['bone']='end';
+$recipe['red_dye']='end';
+$recipe['yellow_dye']='end';
 
 //these are results of killing 1000 of each mob
 $mob['rabbit_foot']='rabbit:38.4615'; 
@@ -215,7 +242,13 @@ $mob['gold']='zombie_pigmen:15'; //accumulated ingots + nuggets
 $mob['raw_porkchop']='pig:0.5';
 $mob['feather']='chicken:1';
 $mob['ink_sac']='squid:0.5';
-
+$mob['prismarine_crystals']='guardian:4.5454'; //because it only drops when raw fish fails
+$mob['prismarine_shard']='guardian:1';
+$mob['string']='spider:1';
+$mob['spider_eye']='spider:3';
+$mob['raw_mutton']='sheep:0.6667';
+$mob['blaze_rod']='blaze:2';
+$mob['bone']='skeleton:1';
 
 function craft($item,$qty){
 	global $recipe;
@@ -267,18 +300,20 @@ echo('<div class="main"><table border="0" width="100%"><tr width="100%"><td widt
 echo('<form name="things" action="index.php" method="POST"><p>Select items</p>');
 for($i=1;$i<=10;$i+=1) echo('<span id="f'.$i.'" style="display: none;"><img id="f'.$i.'img" src="#" width="64" height="64"><input type="hidden" name="f'.$i.'h" value="" id="f'.$i.'hi"><input id="f'.$i.'f" name="f'.$i.'f" type="text" class="formfld" size="3" maxlength="4"><a href="#" onclick="hideLine(parentNode.id)"><img src="gfx/x.png" id="x"></a></span>');
 echo('</td><td width="50%"><a class="bl" href="#" id="t_blocks" onclick="displayBl(this.id)";>Blocks</a> <a class="bl" href="#" id="t_redstone" onclick="displayBl(this.id)";>Redstone</a> <a class="bl" id="t_potions" onclick="displayBl(this.id)" href=#">Potions</a> <a class="bl" href="#" id="t_items" onclick="displayBl(this.id)";>Other</a> ');
-$itemsBlocks=Array('jukebox','rail','powered_rail','activator_rail','detector_rail','minecart','bookshelf','beacon','cobblestone_slab','cobblestone_stairs','stone_bricks',
-'stone_brick_stairs','stone_brick_slab','chiseled_stone_bricks','mossy_stone_bricks','cracked_stone_bricks','planks','wood_stairs','plank_slab','bricks','bricks_stairs',
-'bricks_slab','emerald_block','diamond_block','gold_block','iron_block','redstone_block','slime_block','lapis_block','coal_block','quartz_block','quartz_stairs','quartz_slab',
-'chiseled_quartz_block','quartz_pillar','anvil','enchantment_table','ladder','sign','fence','fence_gate','boat','wooden_trapdoor','wooden_door','chest','trapped_chest',
-'crafting_table','ender_chest','torch','corase_dirt','sandstone','sandstone_stairs','sandstone_slab','smooth_sandstone','chiseled_sandstone','note_block','bed','item_frame',
-'painting','nether_bricks','nether_bricks_stairs','nether_bricks_slab','nether_brick_fence','brewing_stand','cauldron','iron_bars','furnace','glass','glass_pane','TNT');
+$itemsBlocks=Array('jukebox','rail','powered_rail','activator_rail','detector_rail','minecart','bookshelf','beacon','cobblestone_slab','cobblestone_stairs','cobblestone_wall',
+'mossy_cobblestone','mossy_cobblestone_wall','stone_bricks','stone_brick_stairs','stone_brick_slab','chiseled_stone_bricks','mossy_stone_bricks','cracked_stone_bricks','planks',
+'wood_stairs','plank_slab','bricks','bricks_stairs','bricks_slab','hay_bale','emerald_block','diamond_block','gold_block','iron_block','redstone_block','slime_block','lapis_block',
+'coal_block','quartz_block','quartz_stairs','quartz_slab','chiseled_quartz_block','quartz_pillar','anvil','enchantment_table','ladder','sign','fence','fence_gate','boat',
+'wooden_trapdoor','wooden_door','chest','trapped_chest','crafting_table','ender_chest','torch','corase_dirt','sandstone','sandstone_stairs','sandstone_slab','smooth_sandstone',
+'chiseled_sandstone','red_sandstone','note_block','bed','item_frame','painting','nether_bricks','nether_bricks_stairs','nether_bricks_slab','nether_brick_fence','brewing_stand',
+'cauldron','iron_bars','furnace','glass','white_glass','orange_glass','magenta_glass','light_blue_glass','glass_pane','TNT',
+'prismarine','prismarine_bricks','dark_prismarine','sea_lantern');
 echo('<div id="it_blocks" style="border:none;">');
 foreach($itemsBlocks as $it){
 	echo('<a href="#" title="'.ucwords(str_replace('_',' ',$it)).'" id="'.$it.'" onclick="addItem(this.id,this.id)" style="vertical-align:top;"><img src="gfx/'.$it.'.png" width="64" height="64" border="0" alt="'.ucwords(str_replace('_',' ',$it)).'" id="'.$it.'"></a>');
 }
 echo('</div><div id="it_items" style="display: none; border: none;">');
-$itemsItems=Array('arrow','bow','clock','lead','flint_and_steel','golden_apple','enchanted_golden_apple','cookie','cake','bread','steak','cooked_porkchop','armor_stand');
+$itemsItems=Array('arrow','bow','clock','lead','flint_and_steel','golden_apple','enchanted_golden_apple','cookie','cake','bread','steak','cooked_porkchop','cooked_mutton','armor_stand','flower_pot');
 foreach($itemsItems as $it){
 	echo('<a href="#" title="'.ucwords(str_replace('_',' ',$it)).'" id="'.$it.'" onclick="addItem(this.id,this.id)" style="vertical-align:top;"><img src="gfx/'.$it.'.png" width="64" height="64" border="0" alt="'.ucwords(str_replace('_',' ',$it)).'" id="'.$it.'"></a>');
 }
@@ -305,10 +340,11 @@ echo('>Blocks only</option><option value="true"');
 if(isset($_POST['submit'])&($_POST['doMobs']=='true')) echo(' selected="selected"');
 echo('>Include Mobs</option></select></label> <input type="submit" name="submit" value="Go!" class="formbtn" id="gobtn" onmouseover="btnh(this.id)" onmouseout="btnd(this.id)"></form></td></tr></table>');
 if(isset($_POST['submit'])){
-	$stck=Array('apple'=>64,'blaze_rod'=>64,'carrot'=>64,'clay_ball'=>64,'coal'=>64,'cobblestone'=>64,'coca_beans'=>64,'diamond'=>64,'dirt'=>64,'emerald'=>64,'feather'=>64,
-	'flint'=>64,'ghast_tear'=>64,'glowstone'=>64,'glowstone_dust'=>64,'gold'=>64,'lapis'=>64,'leather'=>64,'iron'=>64,'melon'=>64,'nether_star'=>64,'nether_wart'=>64,
-	'netherrack'=>64,'mushroom'=>64,'obsidian'=>64,'pufferfish'=>64,'quartz'=>64,'rabbit_foot'=>64,'raw_beef'=>64,'raw_porkchop'=>64,'redstone'=>64,'sand'=>64,'slime_ball'=>64,'spider_eye'=>64,
-	'stone'=>64,'string'=>64,'sugar_cane'=>64,'vines'=>64,'wood'=>64,'wool'=>64,'wheat'=>64,
+	$stck=Array('apple'=>64,'bone'=>64,'blaze_rod'=>64,'carrot'=>64,'clay_ball'=>64,'coal'=>64,'cobblestone'=>64,'coca_beans'=>64,'diamond'=>64,'dirt'=>64,'emerald'=>64,'feather'=>64,
+	'flint'=>64,'ghast_tear'=>64,'glowstone'=>64,'glowstone_dust'=>64,'gold'=>64,'ink_sac'=>64,'iron'=>64,'lapis'=>64,'leather'=>64,'melon'=>64,'nether_star'=>64,'nether_wart'=>64,
+	'netherrack'=>64,'red_mushroom'=>64,'brown_mushroom'=>64,'obsidian'=>64,'prismarine_crystals'=>64,'prismarine_shard'=>64,'pufferfish'=>64,'quartz'=>64,'rabbit_foot'=>64,'raw_beef'=>64,'raw_mutton'=>64,
+	'raw_porkchop'=>64,'red_dye'=>64,'red_sand'=>64,'redstone'=>64,'sand'=>64,'slime_ball'=>64,'soulsand'=>64,'spider_eye'=>64,'stone'=>64,'string'=>64,'sugar_cane'=>64,'vines'=>64,
+	'wither_skeleton_skull'=>64,'wood'=>64,'wool'=>64,'wheat'=>64,'yellow_dye'=>64,
 	'ender_pearl'=>16,'egg'=>16,'armor_stand'=>16,'sign'=>16,
 	'bow'=>1,'bed'=>1,'milk'=>1,'water_bottle'=>1);
 	echo('</div><div class="main2">');
