@@ -359,12 +359,17 @@ if(isset($_POST['submit'])){
 		}
 	}
 	echo('<p>You will need:</p>');
-	//print_r($ra); //debug option
+	foreach($ra as $ak=>$av){ //to avoid double mob results - sea lantern for example
+		if(isset($mob[$ak])){
+			$mq=explode(':',$mob[$ak]);
+			if($mobsToKill[($mq[0])]<round(($mq[1]*$av),0)) $mobsToKill[($mq[0])]=round(($mq[1]*$av),0);
+		}
+	}
+	//print_r($mobsToKill);
 	foreach($ra as $ak=>$av){ //fort each raw material needed
 		if($av>0){ //if amount of items is greater than 0
 			if(isset($mob[$ak])&($_POST['doMobs']=='true')){
-				$mq=explode(':',$mob[$ak]);
-				echo('<p><img src="gfx/'.$mq[0].'.png"> Kill an average of '.round(($mq[1]*$av),0).' '.ucwords(str_replace('_',' ',$mq[0])).'</p>');
+				//do nothing
 			}
 			else{ 
 				echo('<p><img title="'.ucwords(str_replace('_',' ',$ak)).'" src="gfx/'.$ak.'.png"> x '); //display image 
@@ -375,6 +380,11 @@ if(isset($_POST['submit'])){
 				echo('</p>');
 			}
 		}
+	}
+	foreach($mobsToKill as $mk=>$mv){
+		echo('<p><img src="gfx/'.$mk.'.png"> Kill an average of '.$mv.' '.ucwords(str_replace('_',' ',$mk)));
+		if($mv>1) echo('s');
+		echo('</p>');
 	}
 }
 echo('</div></body></html>');
