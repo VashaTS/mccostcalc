@@ -247,18 +247,18 @@ $recipe['yellow_dye']='end';
 $recipe['cactus']='end';
 
 //these are results of killing 1000 of each mob
-$mob['rabbit_foot']='rabbit:38.4615'; 
-$mob['raw_rabbit']='rabit:1.9569';
-$mob['rabbit_hide']='rabit:2.1598';
-$mob['raw_beef']='cow:0.5552';
-$mob['leather']='cow:1.1389';
-$mob['ghast_tear']='ghast:2.0366';
-//$mob['gunpowder']='ghast:1.0080'; //creepers are better for gunpowder
-$mob['gunpowder']='creeper:1.0183';
+$mob['rabbit_foot']='rabbit:40'; 
+$mob['raw_rabbit']='rabit:2';
+$mob['rabbit_hide']='rabit:2';
+$mob['raw_beef']='cow:0.5';
+$mob['leather']='cow:1';
+$mob['ghast_tear']='ghast:2';
+$mob['gunpowder']='creeper:1';
 $mob['slime_ball']='tiny_slime:1';
 $mob['gold']='zombie_pigmen:15'; //accumulated ingots + nuggets
 $mob['raw_porkchop']='pig:0.5';
 $mob['feather']='chicken:1';
+$mob['raw_chicken']='chicken:1';
 $mob['ink_sac']='squid:0.5';
 $mob['prismarine_crystals']='guardian:4.5454'; //because it only drops when raw fish fails
 $mob['prismarine_shard']='guardian:1';
@@ -267,6 +267,33 @@ $mob['spider_eye']='spider:3';
 $mob['raw_mutton']='sheep:0.6667';
 $mob['blaze_rod']='blaze:2';
 $mob['bone']='skeleton:1';
+$mob['ender_pearl']='enderman:2';
+$mob['wither_skeleton_skull']='wither_skeleton:40';
+$mob['iron']='iron_golem:0.25';
+
+$ml3['rabbit_foot']='rabbit:18.1818';
+$ml3['raw_rabbit']='rabit:0.5';
+$ml3['rabbit_hide']='rabit:0.5';
+$ml3['raw_beef']='cow:0.2857';
+$ml3['leather']='cow:0.4';
+$ml3['ghast_tear']='ghast:0.5';
+$ml3['gunpowder']='creeper:0.4';
+$ml3['slime_ball']='tiny_slime:0.4';
+$ml3['gold']='zombie_pigmen:3.667'; //accumulated ingots + nuggets
+$ml3['raw_porkchop']='pig:0.2857';
+$ml3['feather']='chicken:0.4';
+$ml3['raw_chicken']='chicken:1'; //unaffected by looting
+$ml3['ink_sac']='squid:0.2857';
+$ml3['prismarine_crystals']='guardian:4.5454'; //Looting 3 = no looting. Looting I is best for them
+$ml3['prismarine_shard']='guardian:0.4';
+$ml3['string']='spider:0.4';
+$ml3['spider_eye']='spider:1.2165';
+$ml3['raw_mutton']='sheep:0.6667'; //unaffected by looting
+$ml3['blaze_rod']='blaze:0.5';
+$ml3['bone']='skeleton:0.4';
+$ml3['ender_pearl']='enderman:0.5';
+$ml3['wither_skeleton_skull']='wither_skeleton:18.1818';
+$ml3['iron']='iron_golem:0.25'; //looting is not effective on golems
 
 function craft($item,$qty){
 	global $recipe;
@@ -318,12 +345,12 @@ echo('<div class="main"><table border="0" width="100%"><tr width="100%"><td widt
 echo('<form name="things" action="index.php" method="POST"><p>Select items</p>');
 for($i=1;$i<=10;$i+=1) echo('<span id="f'.$i.'" style="display: none;"><img id="f'.$i.'img" src="#" width="64" height="64"><input type="hidden" name="f'.$i.'h" value="" id="f'.$i.'hi"><input id="f'.$i.'f" name="f'.$i.'f" type="text" class="formfld" size="3" maxlength="4"><a href="#" onclick="hideLine(parentNode.id)"><img src="gfx/x.png" id="x"></a></span>');
 echo('</td><td width="50%"><a class="bl" href="#" id="t_blocks" onclick="displayBl(this.id)";>Blocks</a> <a class="bl" href="#" id="t_redstone" onclick="displayBl(this.id)";>Redstone</a> <a class="bl" id="t_potions" onclick="displayBl(this.id)" href=#">Potions</a> <a class="bl" href="#" id="t_items" onclick="displayBl(this.id)";>Other</a> ');
-$itemsBlocks=Array('jukebox','rail','powered_rail','activator_rail','detector_rail','minecart','bookshelf','beacon','cobblestone_slab','cobblestone_stairs','cobblestone_wall',
+$itemsBlocks=Array('jukebox','bookshelf','beacon','cobblestone_slab','cobblestone_stairs','cobblestone_wall',
 'mossy_cobblestone','mossy_cobblestone_wall','stone_bricks','stone_brick_stairs','stone_brick_slab','chiseled_stone_bricks','mossy_stone_bricks','cracked_stone_bricks','planks',
 'wood_stairs','plank_slab','bricks','bricks_stairs','bricks_slab','hay_bale','emerald_block','diamond_block','gold_block','iron_block','redstone_block','slime_block','lapis_block',
-'coal_block','quartz_block','quartz_stairs','quartz_slab','chiseled_quartz_block','quartz_pillar','anvil','enchantment_table','ladder','sign','fence','fence_gate','boat',
+'coal_block','quartz_block','quartz_stairs','quartz_slab','chiseled_quartz_block','quartz_pillar','anvil','enchantment_table','ladder','sign','fence','fence_gate',
 'wooden_trapdoor','wooden_door','chest','trapped_chest','crafting_table','ender_chest','torch','corase_dirt','sandstone','sandstone_stairs','sandstone_slab','smooth_sandstone',
-'chiseled_sandstone','red_sandstone','note_block','bed','item_frame','painting','nether_bricks','nether_bricks_stairs','nether_bricks_slab','nether_brick_fence','brewing_stand',
+'chiseled_sandstone','red_sandstone','nether_bricks','nether_bricks_stairs','nether_bricks_slab','nether_brick_fence','brewing_stand',
 'cauldron','iron_bars','furnace','glass','white_glass','orange_glass','magenta_glass','light_blue_glass','yellow_glass','lime_glass','pink_glass','gray_glass','light_gray_glass',
 'cyan_glass','purple_glass','blue_glass','brown_glass','green_glass','red_glass','black_glass','glass_pane','TNT',
 'prismarine','prismarine_bricks','dark_prismarine','sea_lantern');
@@ -332,7 +359,7 @@ foreach($itemsBlocks as $it){
 	echo('<a href="#" title="'.ucwords(str_replace('_',' ',$it)).'" id="'.$it.'" onclick="addItem(this.id,this.id)" style="vertical-align:top;"><img src="gfx/'.$it.'.png" width="64" height="64" border="0" alt="'.ucwords(str_replace('_',' ',$it)).'" id="'.$it.'"></a>');
 }
 echo('</div><div id="it_items" style="display: none; border: none;">');
-$itemsItems=Array('arrow','bow','clock','lead','flint_and_steel','golden_apple','enchanted_golden_apple','cookie','cake','bread','steak','cooked_porkchop','cooked_mutton','armor_stand','flower_pot');
+$itemsItems=Array('note_block','rail','powered_rail','activator_rail','detector_rail','minecart','boat','bed','item_frame','painting','arrow','bow','clock','lead','flint_and_steel','golden_apple','enchanted_golden_apple','cookie','cake','bread','steak','cooked_porkchop','cooked_mutton','armor_stand','flower_pot');
 foreach($itemsItems as $it){
 	echo('<a href="#" title="'.ucwords(str_replace('_',' ',$it)).'" id="'.$it.'" onclick="addItem(this.id,this.id)" style="vertical-align:top;"><img src="gfx/'.$it.'.png" width="64" height="64" border="0" alt="'.ucwords(str_replace('_',' ',$it)).'" id="'.$it.'"></a>');
 }
@@ -357,7 +384,9 @@ echo('</td></tr><tr><td colspan="2"><label>Mode:<select class="formfld" name="do
 if(isset($_POST['submit'])&($_POST['doMobs']=='false')) echo(' selected="selected"');
 echo('>Blocks only</option><option value="true"');
 if(isset($_POST['submit'])&($_POST['doMobs']=='true')) echo(' selected="selected"');
-echo('>Include Mobs</option></select></label> <input type="submit" name="submit" value="Go!" class="formbtn" id="gobtn" onmouseover="btnh(this.id)" onmouseout="btnd(this.id)"></form></td></tr></table>');
+echo('>Include Mobs</option><option value="looting"');
+if(isset($_POST['submit'])&($_POST['doMobs']=='looting')) echo(' selected="selected"');
+echo('>Mobs with Looting III</option></select></label> <input type="submit" name="submit" value="Go!" class="formbtn" id="gobtn" onmouseover="btnh(this.id)" onmouseout="btnd(this.id)"></form></td></tr></table>');
 if(isset($_POST['submit'])){
 	$stck=Array('apple'=>64,'bone'=>64,'blaze_rod'=>64,'cactus'=>64,'carrot'=>64,'clay_ball'=>64,'coal'=>64,'cobblestone'=>64,'coca_beans'=>64,'diamond'=>64,'dirt'=>64,'emerald'=>64,'feather'=>64,
 	'flint'=>64,'ghast_tear'=>64,'glowstone'=>64,'glowstone_dust'=>64,'gold'=>64,'ink_sac'=>64,'iron'=>64,'lapis'=>64,'leather'=>64,'melon'=>64,'nether_star'=>64,'nether_wart'=>64,
@@ -380,14 +409,20 @@ if(isset($_POST['submit'])){
 	echo('<p>You will need:</p>');
 	foreach($ra as $ak=>$av){ //to avoid double mob results - sea lantern for example
 		if(isset($mob[$ak])){
-			$mq=explode(':',$mob[$ak]);
-			if($mobsToKill[($mq[0])]<round(($mq[1]*$av),0)) $mobsToKill[($mq[0])]=round(($mq[1]*$av),0);
+			if($_POST['doMobs']=='true'){
+				$mq=explode(':',$mob[$ak]);
+				if($mobsToKill[($mq[0])]<round(($mq[1]*$av),0)) $mobsToKill[($mq[0])]=round(($mq[1]*$av),0);
+			}
+			else if($_POST['doMobs']=='looting'){
+				$mq=explode(':',$ml3[$ak]);
+				if($mobsToKill[($mq[0])]<round(($mq[1]*$av),0)) $mobsToKill[($mq[0])]=round(($mq[1]*$av),0);
+			}
 		}
 	}
 	//print_r($mobsToKill);
 	foreach($ra as $ak=>$av){ //fort each raw material needed
 		if($av>0){ //if amount of items is greater than 0
-			if(isset($mob[$ak])&($_POST['doMobs']=='true')){
+			if(isset($mob[$ak])&(($_POST['doMobs']=='true')|($_POST['doMobs']=='looting'))){
 				//do nothing
 			}
 			else{ 
@@ -401,7 +436,7 @@ if(isset($_POST['submit'])){
 			}
 		}
 	}
-	if($_POST['doMobs']=='true') foreach($mobsToKill as $mk=>$mv){
+	if(($_POST['doMobs']=='true')|($_POST['doMobs']=='looting')) foreach($mobsToKill as $mk=>$mv){
 		echo('<p><img src="gfx/'.$mk.'.png"> Kill an average of '.$mv.' '.ucwords(str_replace('_',' ',$mk)));
 		if($mv>1) echo('s');
 		echo('</p>');
