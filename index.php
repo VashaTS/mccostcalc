@@ -21,7 +21,7 @@ $recipe['book']='paper:3,leather:1';
 $recipe['paper']='sugar_cane:1';
 $recipe['chest']='planks:8';
 $recipe['stick']='planks:0.5';
-$recipe['glass']='sand:1,coal:0.125';
+$recipe['glass']='sand:1,fuel:1';
 $recipe['white_glass']='glass:1,bone_meal:0.125';
 $recipe['orange_glass']='glass:1,orange_dye:0.125';
 $recipe['magenta_glass']='glass:1,magenta_dye:0.125';
@@ -42,7 +42,7 @@ $recipe['cyan_dye']='lapis:0.5,green_dye:0.5';
 $recipe['light_gray_dye']='bone_meal:0.6666,ink_sac:0.3333';
 $recipe['gray_dye']='bone_meal:0.5,ink_sac:0.5';
 $recipe['lime_dye']='green_dye:0.5,bone_meal:0.5';
-$recipe['green_dye']='cactus:1,coal:0.125';
+$recipe['green_dye']='cactus:1,fuel:1';
 $recipe['light_blue_dye']='lapis:0.5,bone_meal:0.5';
 $recipe['orange_dye']='yellow_dye:0.5,red_dye:0.5';
 $recipe['magenta_dye']='pink_dye:0.5,purple_dye:0.5';
@@ -106,10 +106,10 @@ $recipe['iron_door']='iron:2';
 $recipe['wooden_door']='planks:2';
 $recipe['jukebox']='planks:8,diamond:1';
 $recipe['bricks']='brick:4';
-$recipe['brick']='clay_ball:1,coal:0.125';
+$recipe['brick']='clay_ball:1,fuel:1';
 $recipe['boat']='planks:5';
 $recipe['nether_bricks']='nether_brick:4';
-$recipe['nether_brick']='netherrack:1,coal:0.125';
+$recipe['nether_brick']='netherrack:1,fuel:1';
 $recipe['arrow']='flint:0.25,stick:0.25,feather:0.25';
 $recipe['smooth_sandstone']='sandstone:1';
 $recipe['chiseled_sandstone']='sandstone_slab:2';
@@ -133,20 +133,20 @@ $recipe['clock']='gold:4,redstone:1';
 $recipe['lead']='slime_ball:0.5,string:2';
 $recipe['flint_and_steel']='flint:1,iron:1';
 $recipe['bread']='wheat:3';
-$recipe['steak']='raw_beef:1,coal:0.125';
+$recipe['steak']='raw_beef:1,fuel:1';
 $recipe['glass_pane']='glass:0.375';
 $recipe['trapped_chest']='chest:1,tripwire_hook:1';
 $recipe['tripwire_hook']='iron:0.5,stick:0.5,planks:0.5';
 $recipe['fermented_spider_eye']='sugar:1,spider_eye:1,brown_mushroom:1';
 $recipe['nether_brick_fence']='nether_bricks:1';
 $recipe['mossy_stone_bricks']='stone_bricks:1,vines:1';
-$recipe['cracked_stone_bricks']='stone_bricks:1,coal:0.125';
+$recipe['cracked_stone_bricks']='stone_bricks:1,fuel:1';
 $recipe['mossy_cobblestone']='cobblestone:1,vines:1';
 $recipe['glowstone']='glowstone_dust:4';
 $recipe['TNT']='sand:4,gunpowder:5';
 $recipe['lever']='cobblestone:1,stick:1';
-$recipe['cooked_porkchop']='raw_porkchop:1,coal:0.125';
-$recipe['cooked_mutton']='raw_mutton:1,coal:0.125';
+$recipe['cooked_porkchop']='raw_porkchop:1,fuel:1';
+$recipe['cooked_mutton']='raw_mutton:1,fuel:1';
 $recipe['stone_button']='stone:1';
 $recipe['wooden_button']='planks:1';
 $recipe['gold_preassure_plate']='gold:2';
@@ -161,6 +161,9 @@ $recipe['mossy_cobblestone']='cobblestone:1,vines:1';
 $recipe['cobblestone_wall']='cobblestone:1';
 $recipe['mossy_cobblestone_wall']='mossy_cobblestone:1';
 $recipe['flower_pot']='brick:3';
+$recipe['charcoal']='wood:1.6667'; //5 wood makes 3 charcoal, to avoid endless loop
+$recipe['compass']='iron:4,redstone:1';
+$recipe['fishing_rod']='stick:3,string:2';
 $recipe['potion_of_fire_resistance_8+00']='potion_of_fire_resistance_3+00:1,redstone:0.3333';
 $recipe['potion_of_fire_resistance_3+00']='akward_potion:1,magma_cream:0.3333';
 $recipe['potion_of_regeneration_0+45']='akward_potion:1,ghast_tear:0.3333';
@@ -245,6 +248,9 @@ $recipe['bone']='end';
 $recipe['red_dye']='end';
 $recipe['yellow_dye']='end';
 $recipe['cactus']='end';
+$recipe['lava']='end';
+$recipe['sappling']='end';
+$recipe['fuel']='end';
 
 //these are results of killing 1000 of each mob
 $mob['rabbit_foot']='rabbit:40'; 
@@ -295,8 +301,16 @@ $ml3['ender_pearl']='enderman:0.5';
 $ml3['wither_skeleton_skull']='wither_skeleton:18.1818';
 $ml3['iron']='iron_golem:0.25'; //looting is not effective on golems
 
-function craft($item,$qty){
-	global $recipe;
+$fuel['coal']=8;
+$fuel['charcoal']=8;
+$fuel['lava']=100;
+$fuel['blaze_rod']=12;
+$fuel['planks']=1.5;
+$fuel['sappling']=0.5;
+$fuel['coal_block']=80;
+
+function craft($item,$qty,$ft){
+	global $recipe, $fuel;
 	$items=Array();
 	$itemsq=Array();
 	$nitems=Array();
@@ -326,7 +340,8 @@ function craft($item,$qty){
 		$nitemsq=Array();
 	}while($allend!=0);
 	foreach($items as $key=>$val){
-		$re[$val]+=$itemsq[$key];
+		if($val=='fuel') $re[$ft]+=($itemsq[$key]/$fuel[$ft]);
+		else $re[$val]+=$itemsq[$key];
 	}
 	return $re;
 }
@@ -359,7 +374,8 @@ foreach($itemsBlocks as $it){
 	echo('<a href="#" title="'.ucwords(str_replace('_',' ',$it)).'" id="'.$it.'" onclick="addItem(this.id,this.id)" style="vertical-align:top;"><img src="gfx/'.$it.'.png" width="64" height="64" border="0" alt="'.ucwords(str_replace('_',' ',$it)).'" id="'.$it.'"></a>');
 }
 echo('</div><div id="it_items" style="display: none; border: none;">');
-$itemsItems=Array('note_block','rail','powered_rail','activator_rail','detector_rail','minecart','boat','bed','item_frame','painting','arrow','bow','clock','lead','flint_and_steel','golden_apple','enchanted_golden_apple','cookie','cake','bread','steak','cooked_porkchop','cooked_mutton','armor_stand','flower_pot');
+$itemsItems=Array('note_block','rail','powered_rail','activator_rail','detector_rail','minecart','boat','bed','item_frame','painting','arrow','bow','clock','compass','lead',
+'flint_and_steel','golden_apple','enchanted_golden_apple','cookie','cake','bread','steak','cooked_porkchop','cooked_mutton','armor_stand','flower_pot','fishing_rod');
 foreach($itemsItems as $it){
 	echo('<a href="#" title="'.ucwords(str_replace('_',' ',$it)).'" id="'.$it.'" onclick="addItem(this.id,this.id)" style="vertical-align:top;"><img src="gfx/'.$it.'.png" width="64" height="64" border="0" alt="'.ucwords(str_replace('_',' ',$it)).'" id="'.$it.'"></a>');
 }
@@ -380,7 +396,13 @@ foreach($itemsPotions as $it){
 	echo('<a href="#" title="'.ucwords(str_replace('+',':',str_replace('_',' ',$it))).'" id="'.$realimg[0].'" onclick="addItem(this.id,\''.$it.'\')" style="vertical-align:top;"><img src="gfx/'.$realimg[0].'.png" width="64" height="64" border="0" alt="'.ucwords(str_replace('+',':',str_replace('_',' ',$it))).'" id="'.$realimg[0].'"></a>');
 }
 echo('</div>');
-echo('</td></tr><tr><td colspan="2"><label>Mode:<select class="formfld" name="doMobs"><option value="false"');
+echo('</td></tr><tr><td colspan="2"><label>Fuel:<select class="formfld" name="fuelType">');
+foreach($fuel as $k=>$v){
+	echo('<option value="'.$k.'"');
+	if(isset($_POST['submit'])&($_POST['fuelType']==$k)) echo(' selected="selected"');	
+	echo('>'.ucwords(str_replace('_',' ',$k)).'</option>');
+}
+echo('</select></label><label>Mode:<select class="formfld" name="doMobs"><option value="false"');
 if(isset($_POST['submit'])&($_POST['doMobs']=='false')) echo(' selected="selected"');
 echo('>Blocks only</option><option value="true"');
 if(isset($_POST['submit'])&($_POST['doMobs']=='true')) echo(' selected="selected"');
@@ -399,7 +421,7 @@ if(isset($_POST['submit'])){
 	$ra=Array();
 	for($j=1;$j<=10;$j+=1){ // 10 input slots
 		if(strlen($_POST['f'.$j.'h'])>2){ //if isset
-			$ta=craft($_POST['f'.$j.'h'],$_POST['f'.$j.'f']); //actually check the recipe
+			$ta=craft($_POST['f'.$j.'h'],$_POST['f'.$j.'f'],$_POST['fuelType']); //actually check the recipe
 			//print_r($ta); //debugg option
 			foreach($ta as $taik=>$tai){ //for each item in the recipe
 				$ra[$taik]=$ra[$taik]+$tai; //add to the results array
