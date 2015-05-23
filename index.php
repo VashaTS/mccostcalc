@@ -67,6 +67,10 @@ $recipe['iron_block']='iron:9';
 $recipe['corase_dirt']='dirt:0.5,gravel:0.5';
 $recipe['sandstone']='sand:4';
 $recipe['red_sandstone']='red_sand:4';
+$recipe['smooth_red_sandstone']='red_sandstone:1';
+$recipe['red_sandstone_slab']='red_sandstone:0.5';
+$recipe['red_sandstone_stairs']='red_sandstone:1.5';
+$recipe['chiseled_red_sandstone']='red_sandstone_slab:2';
 $recipe['sandstone_stairs']='sandstone:1.5';
 $recipe['stone_brick_stairs']='stone_bricks:1.5';
 $recipe['nether_bricks_stairs']='nether_bricks:1.5';
@@ -372,7 +376,7 @@ $itemsBlocks=Array('jukebox','bookshelf','beacon','cobblestone_slab','cobbleston
 'wood_stairs','plank_slab','bricks','bricks_stairs','bricks_slab','hay_bale','emerald_block','diamond_block','gold_block','iron_block','redstone_block','slime_block','lapis_block',
 'coal_block','quartz_block','quartz_stairs','quartz_slab','chiseled_quartz_block','quartz_pillar','anvil','enchantment_table','ladder','sign','fence','fence_gate',
 'wooden_trapdoor','wooden_door','chest','trapped_chest','crafting_table','ender_chest','torch','corase_dirt','sandstone','sandstone_stairs','sandstone_slab','smooth_sandstone',
-'chiseled_sandstone','red_sandstone','nether_bricks','nether_bricks_stairs','nether_bricks_slab','nether_brick_fence','brewing_stand',
+'chiseled_sandstone','red_sandstone','red_sandstone_stairs','red_sandstone_slab','smooth_red_sandstone','chiseled_red_sandstone','nether_bricks','nether_bricks_stairs','nether_bricks_slab','nether_brick_fence','brewing_stand',
 'cauldron','iron_bars','furnace','glass','white_glass','orange_glass','magenta_glass','light_blue_glass','yellow_glass','lime_glass','pink_glass','gray_glass','light_gray_glass',
 'cyan_glass','purple_glass','blue_glass','brown_glass','green_glass','red_glass','black_glass','glass_pane','TNT',
 'prismarine','prismarine_bricks','dark_prismarine','sea_lantern');
