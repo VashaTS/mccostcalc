@@ -310,7 +310,8 @@ $fuel['sappling']=0.5;
 $fuel['coal_block']=80;
 
 function craft($item,$qty,$ft){
-	global $recipe, $fuel;
+	global $recipe;
+	global $fuel;
 	$items=Array();
 	$itemsq=Array();
 	$nitems=Array();
@@ -329,6 +330,13 @@ function craft($item,$qty,$ft){
 					$nitemsq[count($nitemsq)]=($t2[1]*$itemsq[$k]);
 				}
 			}
+			else if($v=='fuel'){
+				$allend+=1;
+				//echo('<br><b>'.$v.' - '.$ft.' - '.$fuel[$ft].'</b><br>'); //debug option
+				$nitems[count($nitems)]=$ft;
+				$nitemsq[count($nitemsq)]=($itemsq[$k]/$fuel[$ft]);
+				
+			}
 			else{
 				$nitems[count($nitems)]=$v;
 				$nitemsq[count($nitemsq)]=$itemsq[$k];
@@ -340,8 +348,7 @@ function craft($item,$qty,$ft){
 		$nitemsq=Array();
 	}while($allend!=0);
 	foreach($items as $key=>$val){
-		if($val=='fuel') $re[$ft]+=($itemsq[$key]/$fuel[$ft]);
-		else $re[$val]+=$itemsq[$key];
+		$re[$val]+=$itemsq[$key];
 	}
 	return $re;
 }
@@ -399,7 +406,7 @@ echo('</div>');
 echo('</td></tr><tr><td colspan="2"><label>Fuel:<select class="formfld" name="fuelType">');
 foreach($fuel as $k=>$v){
 	echo('<option value="'.$k.'"');
-	if(isset($_POST['submit'])&($_POST['fuelType']==$k)) echo(' selected="selected"');	
+	if(isset($_POST['submit'])) if(($_POST['fuelType']==$k)) echo(' selected="selected"');	
 	echo('>'.ucwords(str_replace('_',' ',$k)).'</option>');
 }
 echo('</select></label><label>Mode:<select class="formfld" name="doMobs"><option value="false"');
@@ -408,15 +415,15 @@ echo('>Blocks only</option><option value="true"');
 if(isset($_POST['submit'])&($_POST['doMobs']=='true')) echo(' selected="selected"');
 echo('>Include Mobs</option><option value="looting"');
 if(isset($_POST['submit'])&($_POST['doMobs']=='looting')) echo(' selected="selected"');
-echo('>Mobs with Looting III</option></select></label> <input type="submit" name="submit" value="Go!" class="formbtn" id="gobtn" onmouseover="btnh(this.id)" onmouseout="btnd(this.id)"></form></td></tr></table>');
+echo('>Mobs + Looting III</option></select></label> <input type="submit" name="submit" value="Go!" class="formbtn" id="gobtn" onmouseover="btnh(this.id)" onmouseout="btnd(this.id)"></form></td></tr></table>');
 if(isset($_POST['submit'])){
 	$stck=Array('apple'=>64,'bone'=>64,'blaze_rod'=>64,'cactus'=>64,'carrot'=>64,'clay_ball'=>64,'coal'=>64,'cobblestone'=>64,'coca_beans'=>64,'diamond'=>64,'dirt'=>64,'emerald'=>64,'feather'=>64,
 	'flint'=>64,'ghast_tear'=>64,'glowstone'=>64,'glowstone_dust'=>64,'gold'=>64,'ink_sac'=>64,'iron'=>64,'lapis'=>64,'leather'=>64,'melon'=>64,'nether_star'=>64,'nether_wart'=>64,
 	'netherrack'=>64,'red_mushroom'=>64,'brown_mushroom'=>64,'obsidian'=>64,'prismarine_crystals'=>64,'prismarine_shard'=>64,'pufferfish'=>64,'quartz'=>64,'rabbit_foot'=>64,'raw_beef'=>64,'raw_mutton'=>64,
-	'raw_porkchop'=>64,'red_dye'=>64,'red_sand'=>64,'redstone'=>64,'sand'=>64,'slime_ball'=>64,'soulsand'=>64,'spider_eye'=>64,'stone'=>64,'string'=>64,'sugar_cane'=>64,'vines'=>64,
+	'raw_porkchop'=>64,'red_dye'=>64,'red_sand'=>64,'redstone'=>64,'sand'=>64,'sappling'=>64,'slime_ball'=>64,'soulsand'=>64,'spider_eye'=>64,'stone'=>64,'string'=>64,'sugar_cane'=>64,'vines'=>64,
 	'wither_skeleton_skull'=>64,'wood'=>64,'wool'=>64,'wheat'=>64,'yellow_dye'=>64,
 	'ender_pearl'=>16,'egg'=>16,'armor_stand'=>16,'sign'=>16,
-	'bow'=>1,'bed'=>1,'milk'=>1,'water_bottle'=>1);
+	'bow'=>1,'bed'=>1,'lava'=>1,'milk'=>1,'water_bottle'=>1);
 	echo('</div><div class="main2">');
 	$ra=Array();
 	for($j=1;$j<=10;$j+=1){ // 10 input slots
@@ -441,7 +448,6 @@ if(isset($_POST['submit'])){
 			}
 		}
 	}
-	//print_r($mobsToKill);
 	foreach($ra as $ak=>$av){ //fort each raw material needed
 		if($av>0){ //if amount of items is greater than 0
 			if(isset($mob[$ak])&(($_POST['doMobs']=='true')|($_POST['doMobs']=='looting'))){
