@@ -330,6 +330,8 @@ $mob['bone']='skeleton:1';
 $mob['ender_pearl']='enderman:2';
 $mob['wither_skeleton_skull']='wither_skeleton:40';
 $mob['iron']='iron_golem:0.25';
+$mob['glowstone_dust']='witch:2.58';
+$mob['redstone']='witch:2.58';
 
 $ml3['rabbit_foot']='rabbit:18.1818';
 $ml3['raw_rabbit']='rabit:0.5';
@@ -354,6 +356,8 @@ $ml3['bone']='skeleton:0.4';
 $ml3['ender_pearl']='enderman:0.5';
 $ml3['wither_skeleton_skull']='wither_skeleton:18.1818';
 $ml3['iron']='iron_golem:0.25'; //looting is not effective on golems
+$ml3['glowstone_dust']='witch:1.57';
+$ml3['redstone']='witch:1.57';
 
 $fuel['coal']=8;
 $fuel['charcoal']=8;
@@ -426,8 +430,7 @@ $itemsBlocks=Array('jukebox','bookshelf','beacon','cobblestone_slab','cobbleston
 'coal_block','quartz_block','quartz_stairs','quartz_slab','chiseled_quartz_block','quartz_pillar','anvil','enchantment_table','ladder','sign','fence','fence_gate',
 'chest','trapped_chest','crafting_table','ender_chest','torch','corase_dirt','sandstone','sandstone_stairs','sandstone_slab','smooth_sandstone',
 'chiseled_sandstone','red_sandstone','red_sandstone_stairs','red_sandstone_slab','smooth_red_sandstone','chiseled_red_sandstone','nether_bricks','nether_bricks_stairs','nether_bricks_slab','nether_brick_fence','brewing_stand',
-'cauldron','iron_bars','furnace','glass','glass_pane','TNT',
-'prismarine','prismarine_bricks','dark_prismarine','sea_lantern');
+'cauldron','iron_bars','furnace','glass','glass_pane','TNT','prismarine','prismarine_bricks','dark_prismarine','sea_lantern','glowstone');
 echo('<div id="it_blocks" style="border:none;">');
 foreach($itemsBlocks as $it){
 	echo('<a href="#" title="'.ucwords(str_replace('_',' ',$it)).'" id="'.$it.'" onclick="addItem(this.id,this.id)" style="vertical-align:top;"><img src="gfx/'.$it.'.png" width="64" height="64" border="0" alt="'.ucwords(str_replace('_',' ',$it)).'" id="'.$it.'"></a>');
@@ -547,7 +550,10 @@ if(isset($_POST['submit'])){
 	}
 	if(($_POST['doMobs']=='true')|($_POST['doMobs']=='looting')) foreach($mobsToKill as $mk=>$mv){
 		echo('<p><img src="gfx/'.$mk.'.png"> Kill an average of '.$mv.' '.ucwords(str_replace('_',' ',$mk)));
-		if($mv>1) echo('s');
+		if($mv>1){
+			if($mk=='witch') echo('e');
+			echo('s');
+		}
 		if(($_POST['doMobs']=='looting')&($mk=='ghast')) echo('<h3>Are you sure you can kill Ghasts with looting III ?</h3>');
 		if(($_POST['doMobs']=='looting')&($mk=='iron_golem')) echo('<h3>Looting III has no effect on Iron Golem drops</h3>');
 		echo('</p>');
