@@ -1,4 +1,5 @@
 body{background-image:url(bg.jpg); background-position:top; background-size:100%; text-align:center;}
+h3{font-family:Arial; text-shadow: 0 0 2px #880000;}
 a{color:#c0c0c0;}
 a.bl{color:black;}
 div{background-color: #c6c6c6; border:solid 1px white; margin: auto;}

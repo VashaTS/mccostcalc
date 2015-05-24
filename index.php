@@ -181,35 +181,69 @@ $recipe['mossy_cobblestone']='cobblestone:1,vines:1';
 $recipe['cobblestone_wall']='cobblestone:1';
 $recipe['mossy_cobblestone_wall']='mossy_cobblestone:1';
 $recipe['flower_pot']='brick:3';
-$recipe['charcoal']='wood:1.6667'; //5 wood makes 3 charcoal, to avoid endless loop
+$recipe['charcoal']='wood:1.6667'; //5 wood makes 3 charcoal, to avoid endless fuel loops
 $recipe['compass']='iron:4,redstone:1';
 $recipe['fishing_rod']='stick:3,string:2';
-$recipe['potion_of_fire_resistance_8+00']='potion_of_fire_resistance_3+00:1,redstone:0.3333';
-$recipe['potion_of_fire_resistance_3+00']='akward_potion:1,magma_cream:0.3333';
 $recipe['potion_of_regeneration_0+45']='akward_potion:1,ghast_tear:0.3333';
 $recipe['potion_of_regeneration_2+00']='potion_of_regeneration_0+45:1,redstone:0.3333';
 $recipe['potion_of_regeneration_II_0+22']='potion_of_regeneration_0+45:1,glowstone_dust:0.3333';
+$recipe['splash_potion_of_regeneration_0+33']='potion_of_regeneration_0+45:1,gunpowder:0.3333';
+$recipe['splash_potion_of_regeneration_1+30']='potion_of_regeneration_2+00:1,gunpowder:0.3333';
+$recipe['splash_potion_of_regeneration_II_0+16']='potion_of_regeneration_II_0+22:1,gunpowder:0.3333';
 $recipe['potion_of_swiftness_3+00']='akward_potion:1,sugar:0.3333';
 $recipe['potion_of_swiftness_8+00']='potion_of_swiftness_3+00:1,redstone:0.3333';
 $recipe['potion_of_swiftness_II_1+30']='potion_of_swiftness_3+00:1,glowstone_dust:0.3333';
-$recipe['potion_of_healing']='akward_potion:1,glistering_melon:0.3333';
-$recipe['potion_of_healing_II']='potion_of_healing:1,glowstone_dust:0.3333';
-$recipe['potion_of_night_vision_3+00']='akward_potion:1,golden_carrot:0.3333';
-$recipe['potion_of_night_vision_8+00']='potion_of_night_vision_3+00:1,redstone:0.3333';
-$recipe['potion_of_strength_3+00']='akward_potion:1,blaze_powder:0.3333';
-$recipe['potion_of_strength_8+00']='potion_of_strength_3+00:1,redstone:0.3333';
-$recipe['potion_of_strength_II_1+30']='potion_of_strength_3+00:1,glowstone_dust:0.3333';
-$recipe['potion_of_leaping_3+00']='akward_potion:1,rabbit_foot:0.3333';
-$recipe['potion_of_leaping_II_1+30']='potion_of_leaping_3+00:1,glowstone_dust:0.3333';
-$recipe['potion_of_water_breathing_3+00']='akward_potion:1,pufferfish:0.3333';
-$recipe['potion_of_water_breathing_8+00']='potion_of_water_breathing_3+00:1,redstone:0.3333';
-$recipe['potion_of_invisibility_3+00']='potion_of_night_vision_3+00:1,fermented_spider_eye:0.3333';
-$recipe['potion_of_invisibility_8+00']='potion_of_night_vision_8+00:1,fermented_spider_eye:0.3333';
-$recipe['potion_of_weakness_1+30']='water_bottle:1,fermented_spider_eye:0.3333';
-$recipe['potion_of_weakness_4+00']='potion_of_weakness_1+30:1,redstone:0.3333';
+$recipe['splash_potion_of_swiftness_2+15']='potion_of_swiftness_3+00:1,gunpowder:0.3333';
+$recipe['splash_potion_of_swiftness_6_00']='potion_of_swiftness_8+00:1,gunpowder:0:3333';
+$recipe['splash_potion_of_swiftness_II_1+07']='potion_of_swiftness_II_1+30:1,gunpowder:0.3333';
+$recipe['potion_of_fire_resistance_3+00']='akward_potion:1,magma_cream:0.3333';
+$recipe['potion_of_fire_resistance_8+00']='potion_of_fire_resistance_3+00:1,redstone:0.3333';
+$recipe['splash_potion_of_fire_resistance_2+15']='potion_of_fire_resistance_3+00:1,gunpowder:0.3333';
+$recipe['splash_potion_of_fire_resistance_6+00']='potion_of_fire_resistance_8+00:1,gunpowder:0.3333';
 $recipe['potion_of_poison_0+45']='akward_potion:1,spider_eye:0.3333';
 $recipe['potion_of_poison_2+00']='potion_of_poison_0+45:1,redstone:0.3333';
 $recipe['potion_of_poison_II_0+22']='potion_of_poison_0+45:1,glowstone_dust:0.3333';
+$recipe['splash_potion_of_poison_0+33']='potion_of_poison_0+45:1,gunpowder:0.3333';
+$recipe['splash_potion_of_poison_1+30']='potion_of_poison_2+00:1,gunpowder:0.3333';
+$recipe['splash_potion_of_poison_II_0+16']='potion_of_poison_II_0+22:1,gunpowder:0.3333';
+$recipe['potion_of_healing']='akward_potion:1,glistering_melon:0.3333';
+$recipe['potion_of_healing_II']='potion_of_healing:1,glowstone_dust:0.3333';
+$recipe['splash_potion_of_healing']='potion_of_healing:1,gunpowder:0.3333';
+$recipe['splash_potion_of_healing_II']='potion_of_healing_II:1,gunpowder:0.3333';
+$recipe['potion_of_night_vision_3+00']='akward_potion:1,golden_carrot:0.3333';
+$recipe['potion_of_night_vision_8+00']='potion_of_night_vision_3+00:1,redstone:0.3333';
+$recipe['splash_potion_of_night_vision_2+15']='potion_of_night_vision_3+00:1,gunpowder:0.3333';
+$recipe['splash_potion_of_night_vision_6+00']='potion_of_night_vision_8+00:1,gunpowder:0.3333';
+$recipe['potion_of_weakness_1+30']='water_bottle:1,fermented_spider_eye:0.3333';
+$recipe['potion_of_weakness_4+00']='potion_of_weakness_1+30:1,redstone:0.3333';
+$recipe['splash_potion_of_weakness_1+07']='potion_of_weakness_1+30:1,gunpowder:0.3333';
+$recipe['splash_potion_of_weakness_3+00']='potion_of_weakness_4+00:1,gunpowder:0.3333';
+$recipe['potion_of_strength_3+00']='akward_potion:1,blaze_powder:0.3333';
+$recipe['potion_of_strength_8+00']='potion_of_strength_3+00:1,redstone:0.3333';
+$recipe['potion_of_strength_II_1+30']='potion_of_strength_3+00:1,glowstone_dust:0.3333';
+$recipe['splash_potion_of_strength_2+15']='potion_of_strength_3+00:1,gunpowder:0.3333';
+$recipe['splash_potion_of_strength_6+00']='potion_of_strength_8+00:1,gunpowder:0.3333';
+$recipe['splash_potion_of_strength_II_1+07']='potion_of_strength_II_1+30:1,gunpowder:0.3333';
+$recipe['potion_of_slowness_1+30']='potion_of_swiftness_3+00:1,fermented_spider_eye:0.3333';
+$recipe['potion_of_slowness_4+00']='potion_of_slowness_1+30:1,redstone:0.3333';
+$recipe['splash_potion_of_slowness_1+07']='potion_of_slowness_1+30:1,gunpowder:0.3333';
+$recipe['splash_potion_of_slowness_3+00']='potion_of_slowness_4+00:1,gunpowder:0.3333';
+$recipe['potion_of_leaping_3+00']='akward_potion:1,rabbit_foot:0.3333';
+$recipe['potion_of_leaping_II_1+30']='potion_of_leaping_3+00:1,glowstone_dust:0.3333';
+$recipe['splash_potion_of_leaping_2+15']='potion_of_leaping_3+00:1,gunpowder:0.3333';
+$recipe['splash_potion_of_leaping_II_1+07']='potion_of_leaping_II_1+30:1,gunpowder:0.3333';
+$recipe['potion_of_harming']='potion_of_healing:1,fermanted_spider_eye:0.3333';
+$recipe['potion_of_harming_II']='potion_of_healing_II:1,fermented_spider_eye:0.3333';
+$recipe['splash_potion_of_harming']='potion_of_harming:1,gunpowder:0.3333';
+$recipe['splash_potion_of_harming_II']='potion_of_harming_II:1,gunpowder:0.3333';
+$recipe['potion_of_water_breathing_3+00']='akward_potion:1,pufferfish:0.3333';
+$recipe['potion_of_water_breathing_8+00']='potion_of_water_breathing_3+00:1,redstone:0.3333';
+$recipe['splash_potion_of_water_breathing_2+15']='potion_of_water_breathing_3+00:1,gunpowder:0.3333';
+$recipe['splash_potion_of_water_breathing_6+00']='potion_of_water_breathing_8+00:1,gunpowder:0.3333';
+$recipe['potion_of_invisibility_3+00']='potion_of_night_vision_3+00:1,fermented_spider_eye:0.3333';
+$recipe['potion_of_invisibility_8+00']='potion_of_night_vision_8+00:1,fermented_spider_eye:0.3333';
+$recipe['splash_potion_of_invisibility_2+15']='potion_of_invisibility_3+00:1,gunpowder:0.3333';
+$recipe['splash_potion_of_invisibility_6+00']='potion_of_invisibility_8+00:1,gunpowder:0.3333';
 $recipe['akward_potion']='water_bottle:1,nether_wart:0.3333';
 $recipe['water_bottle']='end';
 $recipe['iron']='end';
@@ -419,16 +453,37 @@ foreach($itemsRedstone as $it){
 	echo('<a href="#" title="'.ucwords(str_replace('_',' ',$it)).'" id="'.$it.'" onclick="addItem(this.id,this.id)" style="vertical-align:top;"><img src="gfx/'.$it.'.png" width="64" height="64" border="0" alt="'.ucwords(str_replace('_',' ',$it)).'" id="'.$it.'"></a>');
 }
 echo('</div><div id="it_potions" style="display: none; border: none;">');
-$itemsPotions=Array('potion_of_regeneration_0+45','potion_of_regeneration_2+00','potion_of_regeneration_II_0+22','potion_of_swiftness_3+00','potion_of_swiftness_8+00',
-'potion_of_swiftness_II_1+30','potion_of_fire_resistance_8+00','potion_of_fire_resistance_3+00','potion_of_poison_0+45','potion_of_poison_2+00','potion_of_poison_II_0+22',
-'potion_of_healing','potion_of_healing_II','potion_of_night_vision_3+00','potion_of_night_vision_8+00','potion_of_weakness_1+30','potion_of_weakness_4+00','potion_of_strength_3+00',
-'potion_of_strength_8+00','potion_of_strength_II_1+30','potion_of_leaping_3+00','potion_of_leaping_II_1+30','potion_of_water_breathing_3+00','potion_of_water_breathing_8+00',
-'potion_of_invisibility_3+00','potion_of_invisibility_8+00');
+$itemsPotions=Array(
+Array(0=>'Regeneration',1=>'potion_of_regeneration_0+45',2=>'potion_of_regeneration_2+00',3=>'potion_of_regeneration_II_0+22',4=>'splash_potion_of_regeneration_0+33',5=>'splash_potion_of_regeneration_1+30',6=>'splash_potion_of_regeneration_II_0+16'),
+Array(0=>'Swiftness',1=>'potion_of_swiftness_3+00',2=>'potion_of_swiftness_8+00',3=>'potion_of_swiftness_II_1+30',4=>'splash_potion_of_swiftness_2+15',5=>'splash_potion_of_swiftness_6+00',6=>'splash_potion_of_swiftness_II_1+07'),
+Array(0=>'Fire Resistance',1=>'potion_of_fire_resistance_3+00',2=>'potion_of_fire_resistance_8+00',3=>'n',4=>'splash_potion_of_fire_resistance_2+15',5=>'splash_potion_of_fire_resistance_6+00',6=>'n'),
+Array(0=>'Poison',1=>'potion_of_poison_0+45',2=>'potion_of_poison_2+00',3=>'potion_of_poison_II_0+22',4=>'splash_potion_of_poison_0+33',5=>'splash_potion_of_poison_1+30',6=>'splash_potion_of_poison_II_0+16'),
+Array(0=>'Healing',1=>'potion_of_healing',2=>'n',3=>'potion_of_healing_II',4=>'splash_potion_of_healing',5=>'n',6=>'splash_potion_of_healing_II'),
+Array(0=>'Night Vision',1=>'potion_of_night_vision_3+00',2=>'potion_of_night_vision_8+00',3=>'n',4=>'splash_potion_of_night_vision_2+15',5=>'splash_potion_of_night_vision_6+00',6=>'n'),
+Array(0=>'Weakness',1=>'potion_of_weakness_1+30',2=>'potion_of_weakness_4+00',3=>'n',4=>'splash_potion_of_weakness_1+07',5=>'splash_potion_of_weakness_3+00',6=>'n'),
+Array(0=>'Strength',1=>'potion_of_strength_3+00',2=>'potion_of_strength_8+00',3=>'potion_of_strength_II_1+30',4=>'splash_potion_of_strength_2+15',5=>'splash_potion_of_strength_6+00',6=>'splash_potion_of_strength_II_1+07'),
+Array(0=>'Slowness',1=>'potion_of_slowness_1+30',2=>'potion_of_slowness_4+00',3=>'n',4=>'splash_potion_of_slowness_1+07',5=>'splash_potion_of_slowness_3+00',6=>'n'),
+Array(0=>'Leaping',1=>'potion_of_leaping_3+00',2=>'n',3=>'potion_of_leaping_II_1+30',4=>'splash_potion_of_leaping_2+15',5=>'n',6=>'splash_potion_of_leaping_II_1+07'),
+Array(0=>'Harming',1=>'potion_of_harming',2=>'n',3=>'potion_of_harming_II',4=>'splash_potion_of_harming',5=>'n',6=>'splash_potion_of_harming_II'),
+Array(0=>'Water Breathing',1=>'potion_of_water_breathing_3+00',2=>'potion_of_water_breathing_8+00',3=>'n',4=>'splash_potion_of_water_breathing_2+15',5=>'splash_potion_of_water_breathing_6+00',6=>'n'),
+Array(0=>'Invisibility',1=>'potion_of_invisibility_3+00',2=>'potion_of_invisibility_8+00',3=>'n',4=>'splash_potion_of_invisibility_2+15',5=>'splash_potion_of_invisibility_6+00',6=>'n'));
+echo('<table border="1"><tr><th>Potions</th><th>std</th><th>ext</th><th>II</th><th>spl</th><th>ext spl</th><th>II spl</th></tr>');
 foreach($itemsPotions as $it){
-	$realimg=explode('+',$it);
-	echo('<a href="#" title="'.ucwords(str_replace('+',':',str_replace('_',' ',$it))).'" id="'.$realimg[0].'" onclick="addItem(this.id,\''.$it.'\')" style="vertical-align:top;"><img src="gfx/'.$realimg[0].'.png" width="64" height="64" border="0" alt="'.ucwords(str_replace('+',':',str_replace('_',' ',$it))).'" id="'.$realimg[0].'"></a>');
+	echo('<tr><td>'.$it[0].'</td><td>');
+	$realimg=explode('+',$it[1]);
+	echo('<a href="#" title="'.ucwords(str_replace('+',':',str_replace('_',' ',$it[1]))).'" id="'.$realimg[0].'" onclick="addItem(this.id,\''.$it[1].'\')" style="vertical-align:top;"><img src="gfx/'.$realimg[0].'.png" width="64" height="64" border="0" alt="'.ucwords(str_replace('+',':',str_replace('_',' ',$it[1]))).'" id="'.$realimg[0].'"></a></td>');
+	for($pin=2;$pin<=6;$pin+=1){
+		echo('<td>');
+		if($it[$pin]!='n'){
+			$realimg=explode('+',$it[$pin]);
+			echo('<a href="#" title="'.ucwords(str_replace('+',':',str_replace('_',' ',$it[$pin]))).'" id="'.$realimg[0].'" onclick="addItem(this.id,\''.$it[$pin].'\')" style="vertical-align:top;"><img src="gfx/'.$realimg[0].'.png" width="64" height="64" border="0" alt="'.ucwords(str_replace('+',':',str_replace('_',' ',$it[$pin]))).'" id="'.$realimg[0].'"></a>');	
+		}
+		else echo('&nbsp;');
+		echo('</td>');
+	}
+	echo('</tr>');
 }
-echo('</div>');
+echo('</table></div>');
 echo('</td></tr><tr><td colspan="2"><label>Fuel:<select class="formfld" name="fuelType">');
 foreach($fuel as $k=>$v){
 	echo('<option value="'.$k.'"');
@@ -444,7 +499,7 @@ if(isset($_POST['submit'])&($_POST['doMobs']=='looting')) echo(' selected="selec
 echo('>Mobs + Looting III</option></select></label> <input type="submit" name="submit" value="Go!" class="formbtn" id="gobtn" onmouseover="btnh(this.id)" onmouseout="btnd(this.id)"></form></td></tr></table>');
 if(isset($_POST['submit'])){
 	$stck=Array('apple'=>64,'bone'=>64,'blaze_rod'=>64,'cactus'=>64,'carrot'=>64,'clay_ball'=>64,'coal'=>64,'cobblestone'=>64,'coca_beans'=>64,'diamond'=>64,'dirt'=>64,'emerald'=>64,'feather'=>64,
-	'flint'=>64,'ghast_tear'=>64,'glowstone'=>64,'glowstone_dust'=>64,'gold'=>64,'ink_sac'=>64,'iron'=>64,'lapis'=>64,'leather'=>64,'melon'=>64,'nether_star'=>64,'nether_wart'=>64,
+	'flint'=>64,'ghast_tear'=>64,'glowstone'=>64,'glowstone_dust'=>64,'gold'=>64,'gunpowder'=>64,'ink_sac'=>64,'iron'=>64,'lapis'=>64,'leather'=>64,'melon'=>64,'nether_star'=>64,'nether_wart'=>64,
 	'netherrack'=>64,'red_mushroom'=>64,'brown_mushroom'=>64,'obsidian'=>64,'prismarine_crystals'=>64,'prismarine_shard'=>64,'pufferfish'=>64,'quartz'=>64,'rabbit_foot'=>64,'raw_beef'=>64,'raw_mutton'=>64,
 	'raw_porkchop'=>64,'red_dye'=>64,'red_sand'=>64,'redstone'=>64,'sand'=>64,'sappling'=>64,'slime_ball'=>64,'soulsand'=>64,'spider_eye'=>64,'stone'=>64,'string'=>64,'sugar_cane'=>64,'vines'=>64,
 	'wither_skeleton_skull'=>64,'wood'=>64,'wool'=>64,'wheat'=>64,'yellow_dye'=>64,
@@ -493,6 +548,8 @@ if(isset($_POST['submit'])){
 	if(($_POST['doMobs']=='true')|($_POST['doMobs']=='looting')) foreach($mobsToKill as $mk=>$mv){
 		echo('<p><img src="gfx/'.$mk.'.png"> Kill an average of '.$mv.' '.ucwords(str_replace('_',' ',$mk)));
 		if($mv>1) echo('s');
+		if(($_POST['doMobs']=='looting')&($mk=='ghast')) echo('<h3>Are you sure you can kill Ghasts with looting III ?</h3>');
+		if(($_POST['doMobs']=='looting')&($mk=='iron_golem')) echo('<h3>Looting III has no effect on Iron Golem drops</h3>');
 		echo('</p>');
 	}
 }
