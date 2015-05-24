@@ -77,6 +77,7 @@ function displayBl(aid) {
 	document.getElementById("it_items").style.display = 'none';
 	document.getElementById("it_potions").style.display = 'none';
 	document.getElementById("it_redstone").style.display = 'none';
+	document.getElementById("it_colored").style.display = 'none';
 	document.getElementById("i"+aid).style.display = 'block';
 }
 function hideLine(lid) {

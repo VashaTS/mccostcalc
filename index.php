@@ -139,6 +139,22 @@ $recipe['flint_and_steel']='flint:1,iron:1';
 $recipe['bread']='wheat:3';
 $recipe['steak']='raw_beef:1,fuel:1';
 $recipe['glass_pane']='glass:0.375';
+$recipe['white_glass_pane']='white_glass:0.375';
+$recipe['orange_glass_pane']='orange_glass:0.375';
+$recipe['magenta_glass_pane']='magenta_glass:0.375';
+$recipe['light_blue_glass_pane']='light_blue_glass:0.375';
+$recipe['yellow_glass_pane']='yellow_glass:0.375';
+$recipe['lime_glass_pane']='lime_glass:0.375';
+$recipe['pink_glass_pane']='pink_glass:0.375';
+$recipe['gray_glass_pane']='gray_glass:0.375';
+$recipe['light_gray_glass_pane']='light_gray_glass:0.375';
+$recipe['cyan_glass_pane']='cyan_glass:0.375';
+$recipe['purple_glass_pane']='purple_glass:0.375';
+$recipe['blue_glass_pane']='blue_glass:0.375';
+$recipe['brown_glass_pane']='brown_glass:0.375';
+$recipe['green_glass_pane']='green_glass:0.375';
+$recipe['red_glass_pane']='red_glass:0.375';
+$recipe['black_glass_pane']='black_glass:0.375';
 $recipe['trapped_chest']='chest:1,tripwire_hook:1';
 $recipe['tripwire_hook']='iron:0.5,stick:0.5,planks:0.5';
 $recipe['fermented_spider_eye']='sugar:1,spider_eye:1,brown_mushroom:1';
@@ -336,7 +352,6 @@ function craft($item,$qty,$ft){
 			}
 			else if($v=='fuel'){
 				$allend+=1;
-				//echo('<br><b>'.$v.' - '.$ft.' - '.$fuel[$ft].'</b><br>'); //debug option
 				$nitems[count($nitems)]=$ft;
 				$nitemsq[count($nitemsq)]=($itemsq[$k]/$fuel[$ft]);
 				
@@ -370,18 +385,25 @@ echo('<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
 echo('<div class="main"><table border="0" width="100%"><tr width="100%"><td width="50%">');
 echo('<form name="things" action="index.php" method="POST"><p>Select items</p>');
 for($i=1;$i<=10;$i+=1) echo('<span id="f'.$i.'" style="display: none;"><img id="f'.$i.'img" src="#" width="64" height="64"><input type="hidden" name="f'.$i.'h" value="" id="f'.$i.'hi"><input id="f'.$i.'f" name="f'.$i.'f" type="text" class="formfld" size="3" maxlength="4"><a href="#" onclick="hideLine(parentNode.id)"><img src="gfx/x.png" id="x"></a></span>');
-echo('</td><td width="50%"><a class="bl" href="#" id="t_blocks" onclick="displayBl(this.id)";>Blocks</a> <a class="bl" href="#" id="t_redstone" onclick="displayBl(this.id)";>Redstone</a> <a class="bl" id="t_potions" onclick="displayBl(this.id)" href=#">Potions</a> <a class="bl" href="#" id="t_items" onclick="displayBl(this.id)";>Other</a> ');
+echo('</td><td width="50%"><a class="bl" href="#" id="t_blocks" onclick="displayBl(this.id)";>Blocks</a> <a class="bl" href="#" id="t_colored" onclick="displayBl(this.id)";>Colored</a> <a class="bl" href="#" id="t_redstone" onclick="displayBl(this.id)";>Redstone</a> <a class="bl" id="t_potions" onclick="displayBl(this.id)" href=#">Potions</a> <a class="bl" href="#" id="t_items" onclick="displayBl(this.id)";>Other</a> ');
 $itemsBlocks=Array('jukebox','bookshelf','beacon','cobblestone_slab','cobblestone_stairs','cobblestone_wall',
 'mossy_cobblestone','mossy_cobblestone_wall','stone_bricks','stone_brick_stairs','stone_brick_slab','chiseled_stone_bricks','mossy_stone_bricks','cracked_stone_bricks','planks',
 'wood_stairs','plank_slab','bricks','bricks_stairs','bricks_slab','hay_bale','emerald_block','diamond_block','gold_block','iron_block','redstone_block','slime_block','lapis_block',
 'coal_block','quartz_block','quartz_stairs','quartz_slab','chiseled_quartz_block','quartz_pillar','anvil','enchantment_table','ladder','sign','fence','fence_gate',
-'wooden_trapdoor','wooden_door','chest','trapped_chest','crafting_table','ender_chest','torch','corase_dirt','sandstone','sandstone_stairs','sandstone_slab','smooth_sandstone',
+'chest','trapped_chest','crafting_table','ender_chest','torch','corase_dirt','sandstone','sandstone_stairs','sandstone_slab','smooth_sandstone',
 'chiseled_sandstone','red_sandstone','red_sandstone_stairs','red_sandstone_slab','smooth_red_sandstone','chiseled_red_sandstone','nether_bricks','nether_bricks_stairs','nether_bricks_slab','nether_brick_fence','brewing_stand',
-'cauldron','iron_bars','furnace','glass','white_glass','orange_glass','magenta_glass','light_blue_glass','yellow_glass','lime_glass','pink_glass','gray_glass','light_gray_glass',
-'cyan_glass','purple_glass','blue_glass','brown_glass','green_glass','red_glass','black_glass','glass_pane','TNT',
+'cauldron','iron_bars','furnace','glass','glass_pane','TNT',
 'prismarine','prismarine_bricks','dark_prismarine','sea_lantern');
 echo('<div id="it_blocks" style="border:none;">');
 foreach($itemsBlocks as $it){
+	echo('<a href="#" title="'.ucwords(str_replace('_',' ',$it)).'" id="'.$it.'" onclick="addItem(this.id,this.id)" style="vertical-align:top;"><img src="gfx/'.$it.'.png" width="64" height="64" border="0" alt="'.ucwords(str_replace('_',' ',$it)).'" id="'.$it.'"></a>');
+}
+$itemsColored=Array('white_glass','orange_glass','magenta_glass','light_blue_glass','yellow_glass','lime_glass','pink_glass','gray_glass','light_gray_glass','cyan_glass',
+'purple_glass','blue_glass','brown_glass','green_glass','red_glass','black_glass','white_glass_pane','orange_glass_pane','magenta_glass_pane','light_blue_glass_pane',
+'yellow_glass_pane','lime_glass_pane','pink_glass_pane','gray_glass_pane','light_gray_glass_pane','cyan_glass_pane','purple_glass_pane','blue_glass_pane','brown_glass_pane',
+'green_glass_pane','red_glass_pane','black_glass_pane');
+echo('</div><div id="it_colored" style="display: none; border: none;">');
+foreach($itemsColored as $it){
 	echo('<a href="#" title="'.ucwords(str_replace('_',' ',$it)).'" id="'.$it.'" onclick="addItem(this.id,this.id)" style="vertical-align:top;"><img src="gfx/'.$it.'.png" width="64" height="64" border="0" alt="'.ucwords(str_replace('_',' ',$it)).'" id="'.$it.'"></a>');
 }
 echo('</div><div id="it_items" style="display: none; border: none;">');
@@ -392,7 +414,7 @@ foreach($itemsItems as $it){
 }
 echo('</div><div id="it_redstone" style="display: none; border: none;">');
 $itemsRedstone=Array('piston','sticky_piston','hopper','daylight_sensor','redstone_lamp','redstone_repeater','redstone_comparator','redstone_torch','dispenser','dropper',
-'iron_trapdoor','iron_door','lever','stone_preassure_plate','wooden_preassure_plate','gold_preassure_plate','iron_preassure_plate','stone_button','wooden_button');
+'iron_trapdoor','iron_door','wooden_trapdoor','wooden_door','lever','stone_preassure_plate','wooden_preassure_plate','gold_preassure_plate','iron_preassure_plate','stone_button','wooden_button');
 foreach($itemsRedstone as $it){
 	echo('<a href="#" title="'.ucwords(str_replace('_',' ',$it)).'" id="'.$it.'" onclick="addItem(this.id,this.id)" style="vertical-align:top;"><img src="gfx/'.$it.'.png" width="64" height="64" border="0" alt="'.ucwords(str_replace('_',' ',$it)).'" id="'.$it.'"></a>');
 }
