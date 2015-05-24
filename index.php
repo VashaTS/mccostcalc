@@ -184,6 +184,8 @@ $recipe['flower_pot']='brick:3';
 $recipe['charcoal']='wood:1.6667'; //5 wood makes 3 charcoal, to avoid endless fuel loops
 $recipe['compass']='iron:4,redstone:1';
 $recipe['fishing_rod']='stick:3,string:2';
+$recipe['hardened_clay']='clay:1,fuel:1';
+$recipe['clay']='clay_ball:0.25';
 $recipe['potion_of_regeneration_0+45']='akward_potion:1,ghast_tear:0.3333';
 $recipe['potion_of_regeneration_2+00']='potion_of_regeneration_0+45:1,redstone:0.3333';
 $recipe['potion_of_regeneration_II_0+22']='potion_of_regeneration_0+45:1,glowstone_dust:0.3333';
@@ -423,14 +425,14 @@ echo('<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
 echo('<div class="main"><table border="0" width="100%"><tr width="100%"><td width="50%">');
 echo('<form name="things" action="index.php" method="POST"><p>Select items</p>');
 for($i=1;$i<=10;$i+=1) echo('<span id="f'.$i.'" style="display: none;"><img id="f'.$i.'img" src="#" width="64" height="64"><input type="hidden" name="f'.$i.'h" value="" id="f'.$i.'hi"><input id="f'.$i.'f" name="f'.$i.'f" type="text" class="formfld" size="3" maxlength="4"><a href="#" onclick="hideLine(parentNode.id)"><img src="gfx/x.png" id="x"></a></span>');
-echo('</td><td width="50%"><a class="bl" href="#" id="t_blocks" onclick="displayBl(this.id)";>Blocks</a> <a class="bl" href="#" id="t_colored" onclick="displayBl(this.id)";>Colored</a> <a class="bl" href="#" id="t_redstone" onclick="displayBl(this.id)";>Redstone</a> <a class="bl" id="t_potions" onclick="displayBl(this.id)" href=#">Potions</a> <a class="bl" href="#" id="t_items" onclick="displayBl(this.id)";>Other</a> ');
+echo('</td><td width="50%"><a class="bl" href="#" id="t_blocks" onclick="displayBl(this.id)";>Blocks</a> <a class="bl" href="#" id="t_colored" onclick="displayBl(this.id)";>Colored</a> <a class="bl" href="#" id="t_redstone" onclick="displayBl(this.id)";>Redstone</a> <a class="bl" id="t_potions" onclick="displayBl(this.id)" href=#">Potions</a> <a class="bl" href="#" id="t_items" onclick="displayBl(this.id)";>Other</a><br>&nbsp;<br> ');
 $itemsBlocks=Array('jukebox','bookshelf','beacon','cobblestone_slab','cobblestone_stairs','cobblestone_wall',
 'mossy_cobblestone','mossy_cobblestone_wall','stone_bricks','stone_brick_stairs','stone_brick_slab','chiseled_stone_bricks','mossy_stone_bricks','cracked_stone_bricks','planks',
 'wood_stairs','plank_slab','bricks','bricks_stairs','bricks_slab','hay_bale','emerald_block','diamond_block','gold_block','iron_block','redstone_block','slime_block','lapis_block',
 'coal_block','quartz_block','quartz_stairs','quartz_slab','chiseled_quartz_block','quartz_pillar','anvil','enchantment_table','ladder','sign','fence','fence_gate',
 'chest','trapped_chest','crafting_table','ender_chest','torch','corase_dirt','sandstone','sandstone_stairs','sandstone_slab','smooth_sandstone',
 'chiseled_sandstone','red_sandstone','red_sandstone_stairs','red_sandstone_slab','smooth_red_sandstone','chiseled_red_sandstone','nether_bricks','nether_bricks_stairs','nether_bricks_slab','nether_brick_fence','brewing_stand',
-'cauldron','iron_bars','furnace','glass','glass_pane','TNT','prismarine','prismarine_bricks','dark_prismarine','sea_lantern','glowstone');
+'cauldron','iron_bars','furnace','glass','glass_pane','TNT','prismarine','prismarine_bricks','dark_prismarine','sea_lantern','glowstone','hardened_clay');
 echo('<div id="it_blocks" style="border:none;">');
 foreach($itemsBlocks as $it){
 	echo('<a href="#" title="'.ucwords(str_replace('_',' ',$it)).'" id="'.$it.'" onclick="addItem(this.id,this.id)" style="vertical-align:top;"><img src="gfx/'.$it.'.png" width="64" height="64" border="0" alt="'.ucwords(str_replace('_',' ',$it)).'" id="'.$it.'"></a>');

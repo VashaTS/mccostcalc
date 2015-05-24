@@ -1,7 +1,9 @@
 body{background-image:url(bg.jpg); background-position:top; background-size:100%; text-align:center;}
 h3{font-family:Arial; text-shadow: 0 0 2px #880000;}
 a{color:#c0c0c0;}
-a.bl{color:black;}
+a.bl{color:black; border:solid 2px blue; background-color:skyblue; margin-top:5px; margin-left:5px; margin-right:5px; margin-bottom:20px; padding:8px; border-radius:5px; text-decoration: none;}
+a.bl:hover{color:skyblue; border:solid 2px blue; background-color:black;}
+span{padding:20px;}
 div{background-color: #c6c6c6; border:solid 1px white; margin: auto;}
 div.main{width:70%; margin-bottom:20px; margin-top:50px; padding:20px; text-align:top; border-radius:25px; opacity:0.8;}
 div.main2{width:60%; margin-bottom:20px; margin-top:50px; padding:20px; text-align:top; border-radius:25px; opacity:0.85;}
@@ -11,6 +13,6 @@ p{color:#black; border-style:hidden; margin: auto; font-size:48px; font-family:A
 img{opacity:1;}
 .formbtnh{background-color:#3399ff; border: solid 1px black; color:black; font-size:48px; padding-left:120px; padding-right:120px; border-radius:5px;}
 .formbtn{background-color:black; border: solid 1px yellow; color:yellow; font-size:48px; padding-left:120px; padding-right:120px; border-radius:5px;}
-.formfld{background-color:gray; border: solid 1px yellow; color:black; font-size:48px;}
-.formfld:focus{background-color: black; border: solid 1px black; color:white; font-size:48px;}
+.formfld{background-color:gray; border: solid 1px yellow; color:black; font-size:48px; border-radius:5px;}
+.formfld:focus{background-color: black; border: solid 1px black; color:white; font-size:48px; border-radius:5px;}
 
