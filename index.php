@@ -185,7 +185,23 @@ $recipe['charcoal']='wood:1.6667'; //5 wood makes 3 charcoal, to avoid endless f
 $recipe['compass']='iron:4,redstone:1';
 $recipe['fishing_rod']='stick:3,string:2';
 $recipe['hardened_clay']='clay:1,fuel:1';
-$recipe['clay']='clay_ball:0.25';
+$recipe['clay']='clay_ball:4';
+$recipe['white_stained_clay']='hardened_clay:1,bone_meal:0.125';
+$recipe['orange_stained_clay']='hardened_clay:1,orange_dye:0.125';
+$recipe['magenta_stained_clay']='hardened_clay:1,magenta_dye:0.125';
+$recipe['light_blue_stained_clay']='hardened_clay:1,light_blue_dye:0.125';
+$recipe['yellow_stained_clay']='hardened_clay:1,yellow_dye:0.125';
+$recipe['lime_stained_clay']='hardened_clay:1,lime_dye:0.125';
+$recipe['pink_stained_clay']='hardened_clay:1,pink_dye:0.125';
+$recipe['gray_stained_clay']='hardened_clay:1,gray_dye:0.125';
+$recipe['light_gray_stained_clay']='hardened_clay:1,light_gray_dye:0.125';
+$recipe['cyan_stained_clay']='hardened_clay:1,cyan_dye:0.125';
+$recipe['purple_stained_clay']='hardened_clay:1,purple_dye:0.125';
+$recipe['blue_stained_clay']='hardened_clay:1,lapis:0.125';
+$recipe['brown_stained_clay']='hardened_clay:1,coca_beans:0.125';
+$recipe['green_stained_clay']='hardened_clay:1,green_dye:0.125';
+$recipe['red_stained_clay']='hardened_clay:1,red_dye:0.125';
+$recipe['black_stained_clay']='hardened_clay:1,ink_sac:0.125';
 $recipe['potion_of_regeneration_0+45']='akward_potion:1,ghast_tear:0.3333';
 $recipe['potion_of_regeneration_2+00']='potion_of_regeneration_0+45:1,redstone:0.3333';
 $recipe['potion_of_regeneration_II_0+22']='potion_of_regeneration_0+45:1,glowstone_dust:0.3333';
@@ -424,7 +440,7 @@ echo('<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
 </head><body>');
 echo('<div class="main"><table border="0" width="100%"><tr width="100%"><td width="50%">');
 echo('<form name="things" action="index.php" method="POST"><p>Select items</p>');
-for($i=1;$i<=10;$i+=1) echo('<span id="f'.$i.'" style="display: none;"><img id="f'.$i.'img" src="#" width="64" height="64"><input type="hidden" name="f'.$i.'h" value="" id="f'.$i.'hi"><input id="f'.$i.'f" name="f'.$i.'f" type="text" class="formfld" size="3" maxlength="4"><a href="#" onclick="hideLine(parentNode.id)"><img src="gfx/x.png" id="x"></a></span>');
+for($i=1;$i<=10;$i+=1) echo('<span id="f'.$i.'" style="display: none;"><img id="f'.$i.'img" src="#" width="64" height="64"><input type="hidden" name="f'.$i.'h" value="" id="f'.$i.'hi"><input id="f'.$i.'f" name="f'.$i.'f" type="text" class="formfld" size="3" maxlength="5"><a href="#" onclick="hideLine(parentNode.id)"><img src="gfx/x.png" id="x"></a></span>');
 echo('</td><td width="50%"><a class="bl" href="#" id="t_blocks" onclick="displayBl(this.id)";>Blocks</a> <a class="bl" href="#" id="t_colored" onclick="displayBl(this.id)";>Colored</a> <a class="bl" href="#" id="t_redstone" onclick="displayBl(this.id)";>Redstone</a> <a class="bl" id="t_potions" onclick="displayBl(this.id)" href=#">Potions</a> <a class="bl" href="#" id="t_items" onclick="displayBl(this.id)";>Other</a><br>&nbsp;<br> ');
 $itemsBlocks=Array('jukebox','bookshelf','beacon','cobblestone_slab','cobblestone_stairs','cobblestone_wall',
 'mossy_cobblestone','mossy_cobblestone_wall','stone_bricks','stone_brick_stairs','stone_brick_slab','chiseled_stone_bricks','mossy_stone_bricks','cracked_stone_bricks','planks',
@@ -440,7 +456,9 @@ foreach($itemsBlocks as $it){
 $itemsColored=Array('white_glass','orange_glass','magenta_glass','light_blue_glass','yellow_glass','lime_glass','pink_glass','gray_glass','light_gray_glass','cyan_glass',
 'purple_glass','blue_glass','brown_glass','green_glass','red_glass','black_glass','white_glass_pane','orange_glass_pane','magenta_glass_pane','light_blue_glass_pane',
 'yellow_glass_pane','lime_glass_pane','pink_glass_pane','gray_glass_pane','light_gray_glass_pane','cyan_glass_pane','purple_glass_pane','blue_glass_pane','brown_glass_pane',
-'green_glass_pane','red_glass_pane','black_glass_pane');
+'green_glass_pane','red_glass_pane','black_glass_pane','white_stained_clay','orange_stained_clay','magenta_stained_clay','light_blue_stained_clay','yellow_stained_clay',
+'lime_stained_clay','pink_stained_clay','gray_stained_clay','light_gray_stained_clay','cyan_stained_clay','purple_stained_clay','blue_stained_clay','brown_stained_clay',
+'green_stained_clay','red_stained_clay','black_stained_clay');
 echo('</div><div id="it_colored" style="display: none; border: none;">');
 foreach($itemsColored as $it){
 	echo('<a href="#" title="'.ucwords(str_replace('_',' ',$it)).'" id="'.$it.'" onclick="addItem(this.id,this.id)" style="vertical-align:top;"><img src="gfx/'.$it.'.png" width="64" height="64" border="0" alt="'.ucwords(str_replace('_',' ',$it)).'" id="'.$it.'"></a>');

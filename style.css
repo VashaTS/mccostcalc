@@ -3,7 +3,7 @@ h3{font-family:Arial; text-shadow: 0 0 2px #880000;}
 a{color:#c0c0c0;}
 a.bl{color:black; border:solid 2px blue; background-color:skyblue; margin-top:5px; margin-left:5px; margin-right:5px; margin-bottom:20px; padding:8px; border-radius:5px; text-decoration: none;}
 a.bl:hover{color:skyblue; border:solid 2px blue; background-color:black;}
-span{padding:20px;}
+span{padding:0px;}
 div{background-color: #c6c6c6; border:solid 1px white; margin: auto;}
 div.main{width:70%; margin-bottom:20px; margin-top:50px; padding:20px; text-align:top; border-radius:25px; opacity:0.8;}
 div.main2{width:60%; margin-bottom:20px; margin-top:50px; padding:20px; text-align:top; border-radius:25px; opacity:0.85;}
