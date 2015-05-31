@@ -386,8 +386,7 @@ $fuel['sappling']=0.5;
 $fuel['coal_block']=80;
 
 function craft($item,$qty,$ft){
-	global $recipe;
-	global $fuel;
+	global $recipe,$fuel;
 	$items=Array();
 	$itemsq=Array();
 	$nitems=Array();
@@ -438,7 +437,7 @@ echo('<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
 	<link rel="stylesheet" type="text/css" href="style.css" />
 	<script src="script.js" language="javascript"></script>
 </head><body>');
-echo('<div class="main"><table border="0" width="100%"><tr width="100%"><td width="50%">');
+echo('<h1>mccostcalc</h1><div class="main"><table border="0" width="100%"><tr width="100%"><td width="50%">');
 echo('<form name="things" action="index.php" method="POST"><p>Select items</p>');
 for($i=1;$i<=10;$i+=1) echo('<span id="f'.$i.'" style="display: none;"><img id="f'.$i.'img" src="#" width="64" height="64"><input type="hidden" name="f'.$i.'h" value="" id="f'.$i.'hi"><input id="f'.$i.'f" name="f'.$i.'f" type="text" class="formfld" size="3" maxlength="5"><a href="#" onclick="hideLine(parentNode.id)"><img src="gfx/x.png" id="x"></a></span>');
 echo('</td><td width="50%"><a class="bl" href="#" id="t_blocks" onclick="displayBl(this.id)";>Blocks</a> <a class="bl" href="#" id="t_colored" onclick="displayBl(this.id)";>Colored</a> <a class="bl" href="#" id="t_redstone" onclick="displayBl(this.id)";>Redstone</a> <a class="bl" id="t_potions" onclick="displayBl(this.id)" href=#">Potions</a> <a class="bl" href="#" id="t_items" onclick="displayBl(this.id)";>Other</a><br>&nbsp;<br> ');
