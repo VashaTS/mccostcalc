@@ -325,6 +325,7 @@ $recipe['sappling']='end';
 $recipe['fuel']='end';
 
 //enderio
+/*
 $recipe['basic_capacitor_bank']='redstone_block:1,iron:4,basic_capacitor:4';
 $recipe['capacitor_bank']='redstone_block:1,electrical_steel:4,double-layer_capacitor:4';
 $recipe['vibrant_capacitor_bank']='vibrant_crystal:1,electrical_steel:4,octatic_capacitor:4';
@@ -345,10 +346,10 @@ $recipe['ender_energy_conduit']='conduit_binder:0.75,vibrant_alloy:0.375';
 $recipe['silicon']='sand:2'; //SAG mill
 $recipe['vibrant_crystal']='vibrant_alloy_nugget:8,emerald:1';
 $recipe['vibrant_alloy_nugget']='vibrant_alloy:0.1111';
-$recipe['binder_composite']='gravel:0.75,sand:0.25:clay_ball:0.125';
+$recipe['binder_composite']='gravel:0.75,sand:0.25,clay_ball:0.125';
 $recipe['conduit_binder']='binder_composite:0.25';
 $recipe['copper']='end';
-
+*/
 //these are results of killing 1000 of each mob
 $mob['rabbit_foot']='rabbit:40'; 
 $mob['raw_rabbit']='rabit:2';
@@ -465,7 +466,9 @@ echo('<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
 	<link rel="stylesheet" type="text/css" href="style.css" />
 	<script src="script.js" language="javascript"></script>
 </head><body>');
-echo('<h1>Minecraft Crafting Materials Calculator</h1><div class="main"><table border="0" width="100%"><tr width="100%"><td colspan="2"><a class="bl" href="#" id="t_blocks" onclick="displayBl(this.id)";>Blocks</a> <a class="bl" href="#" id="t_colored" onclick="displayBl(this.id)";>Colored</a> <a class="bl" href="#" id="t_redstone" onclick="displayBl(this.id)";>Redstone</a> <a class="bl" id="t_potions" onclick="displayBl(this.id)" href=#">Potions</a> <a class="bl" href="#" id="t_items" onclick="displayBl(this.id)";>Other</a> <a class="bl" href="#" id="t_enderio" onclick="displayBl(this.id)";>EnderIO</a></td></tr><tr width="100%"><td width="50%">');
+echo('<h1>Minecraft Crafting Materials Calculator</h1><div class="main"><table border="0" width="100%"><tr width="100%"><td colspan="2"><a class="bl" href="#" id="t_blocks" onclick="displayBl(this.id)";>Blocks</a> <a class="bl" href="#" id="t_colored" onclick="displayBl(this.id)";>Colored</a> <a class="bl" href="#" id="t_redstone" onclick="displayBl(this.id)";>Redstone</a> <a class="bl" id="t_potions" onclick="displayBl(this.id)" href=#">Potions</a> <a class="bl" href="#" id="t_items" onclick="displayBl(this.id)";>Other</a>');
+//echo(' <a class="bl" href="#" id="t_enderio" onclick="displayBl(this.id)";>EnderIO</a>');
+echo('</td></tr><tr width="100%"><td width="50%">');
 echo('<form name="things" action="index.php" method="POST"><p>Select items</p>');
 for($i=1;$i<=10;$i+=1) echo('<span id="f'.$i.'" style="display: none;"><img id="f'.$i.'img" src="#" width="64" height="64"><input type="hidden" name="f'.$i.'h" value="" id="f'.$i.'hi"><input id="f'.$i.'f" name="f'.$i.'f" type="text" class="formfld" size="3" maxlength="5"><a href="#" onclick="hideLine(parentNode.id)"><img src="gfx/x.png" id="x"></a></span>');
 echo('</td><td width="50%"><br>&nbsp;<br> ');
@@ -496,12 +499,12 @@ $itemsItems=Array('note_block','rail','powered_rail','activator_rail','detector_
 foreach($itemsItems as $it){
 	echo('<a href="#" title="'.ucwords(str_replace('_',' ',$it)).'" id="'.$it.'" onclick="addItem(this.id,this.id)" style="vertical-align:top;"><img src="gfx/'.$it.'.png" width="64" height="64" border="0" alt="'.ucwords(str_replace('_',' ',$it)).'" id="'.$it.'"></a>');
 }
-echo('</div><div id="it_enderio" style="display: none; border: none;">');
-$itemsEnderio=Array('basic_capacitor_bank','capacitor_bank','vibrant_capacitor_bank','basic_capacitor','double-layer_capacitor','octatic_capacitor','SAG_mill',
-'alloy_smelter','energy_conduit','enhanced_energy_conduit','ender_energy_conduit');
-foreach($itemsEnderio as $it){
-	echo('<a href="#" title="'.ucwords(str_replace('_',' ',$it)).'" id="'.$it.'" onclick="addItem(this.id,this.id)" style="vertical-align:top;"><img src="gfx/'.$it.'.png" width="64" height="64" border="0" alt="'.ucwords(str_replace('_',' ',$it)).'" id="'.$it.'"></a>');
-}
+//echo('</div><div id="it_enderio" style="display: none; border: none;">');
+//$itemsEnderio=Array('basic_capacitor_bank','capacitor_bank','vibrant_capacitor_bank','basic_capacitor','double-layer_capacitor','octatic_capacitor','SAG_mill',
+//'alloy_smelter','energy_conduit','enhanced_energy_conduit','ender_energy_conduit');
+//foreach($itemsEnderio as $it){
+//	echo('<a href="#" title="'.ucwords(str_replace('_',' ',$it)).'" id="'.$it.'" onclick="addItem(this.id,this.id)" style="vertical-align:top;"><img src="gfx/'.$it.'.png" width="64" height="64" border="0" alt="'.ucwords(str_replace('_',' ',$it)).'" id="'.$it.'"></a>');
+//}
 echo('</div><div id="it_redstone" style="display: none; border: none;">');
 $itemsRedstone=Array('piston','sticky_piston','hopper','daylight_sensor','redstone_lamp','redstone_repeater','redstone_comparator','redstone_torch','dispenser','dropper',
 'iron_trapdoor','iron_door','wooden_trapdoor','wooden_door','lever','stone_preassure_plate','wooden_preassure_plate','gold_preassure_plate','iron_preassure_plate','stone_button','wooden_button');
