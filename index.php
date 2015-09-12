@@ -385,7 +385,7 @@ $ml3['leather']='cow:0.4';
 $ml3['ghast_tear']='ghast:0.5';
 $ml3['gunpowder']='creeper:0.4';
 $ml3['slime_ball']='tiny_slime:0.4';
-$ml3['gold']='zombie_pigmen:3.667'; //accumulated ingots + nuggets
+$ml3['gold']='zombie_pigmen:3.667'; //accumulated ingots + (nuggets/9)
 $ml3['raw_porkchop']='pig:0.2857';
 $ml3['feather']='chicken:0.4';
 $ml3['raw_chicken']='chicken:1'; //unaffected by looting
@@ -422,7 +422,7 @@ function craft($item,$qty,$ft){
 	do{
 		$allend=0;
 		foreach($items as $k=>$v){
-			if(!isset($recipe[$v])) echo('Error processing item: <b>'.$v.'</b><br>');
+			if(!isset($recipe[$v])) echo('Error processing item: <b>'.$v.'</b>. Please report to sajmon313@gmail.com<br>');
 			else{
 				if($recipe[$v]!='end'){
 					$allend+=1;
@@ -468,7 +468,7 @@ echo('<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
 </head><body>');
 echo('<h1>Minecraft Crafting Materials Calculator</h1><div class="main"><table border="0" width="100%"><tr width="100%"><td colspan="2"><a class="bl" href="#" id="t_blocks" onclick="displayBl(this.id)";>Blocks</a> <a class="bl" href="#" id="t_colored" onclick="displayBl(this.id)";>Colored</a> <a class="bl" href="#" id="t_redstone" onclick="displayBl(this.id)";>Redstone</a> <a class="bl" id="t_potions" onclick="displayBl(this.id)" href=#">Potions</a> <a class="bl" href="#" id="t_items" onclick="displayBl(this.id)";>Other</a>');
 //echo(' <a class="bl" href="#" id="t_enderio" onclick="displayBl(this.id)";>EnderIO</a>');
-echo('</td></tr><tr width="100%"><td width="50%">');
+echo('</td></tr><tr width="100%"><td width="30%">');
 echo('<form name="things" action="index.php" method="POST"><p>Select items</p>');
 for($i=1;$i<=10;$i+=1) echo('<span id="f'.$i.'" style="display: none;"><img id="f'.$i.'img" src="#" width="64" height="64"><input type="hidden" name="f'.$i.'h" value="" id="f'.$i.'hi"><input id="f'.$i.'f" name="f'.$i.'f" type="text" class="formfld" size="3" maxlength="5"><a href="#" onclick="hideLine(parentNode.id)"><img src="gfx/x.png" id="x"></a></span>');
 echo('</td><td width="50%"><br>&nbsp;<br> ');
@@ -616,14 +616,15 @@ if(isset($_POST['submit'])){
 	}
 }
 echo('</div>');
-/*echo('<div class="main2"><script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<!-- mcc -->
+echo('<div class="main2"><script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- mc -->
 <ins class="adsbygoogle"
-     style="display:inline-block;width:468px;height:15px"
+     style="display:block"
      data-ad-client="ca-pub-5875141216022917"
-     data-ad-slot="3678870665"></ins>
+     data-ad-slot="8334223862"
+     data-ad-format="auto"></ins>
 <script>
 (adsbygoogle = window.adsbygoogle || []).push({});
-</script></div>');*/
+</script></div>');
 echo('</body></html>');
 ?>
