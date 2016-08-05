@@ -16,4 +16,6 @@ img{opacity:1;}
 .formbtn{background-color:black; border: solid 1px yellow; color:yellow; font-size:48px; padding-left:120px; padding-right:120px; border-radius:5px;}
 .formfld{background-color:gray; border: solid 1px yellow; color:black; font-size:48px; border-radius:5px;}
 .formfld:focus{background-color: black; border: solid 1px black; color:white; font-size:48px; border-radius:5px;}
+.nrm{border: 0px; padding: 3px;}
+.hgl{border: solid 3px red; padding: 0px;}
 

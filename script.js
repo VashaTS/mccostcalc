@@ -1,5 +1,3 @@
-window.onload = rolloverInit;
-
 function rolloverInit() {
 	for (var i=0; i<document.images.length; i++) {
 		if (document.images[i].parentNode.tagName == "A") {
@@ -78,7 +76,6 @@ function displayBl(aid) {
 	document.getElementById("it_potions").style.display = 'none';
 	document.getElementById("it_redstone").style.display = 'none';
 	document.getElementById("it_colored").style.display = 'none';
-	//document.getElementById("it_enderio").style.display = 'none';
 	document.getElementById("i"+aid).style.display = 'block';
 }
 function hideLine(lid) {
@@ -92,4 +89,21 @@ function btnh(iid) {
 }
 function btnd(iid) {
 	document.getElementById(iid).className="formbtn";
+}
+function imgh(iid) {
+	document.getElementById(iid).className="hgl";
+}
+function imgd(iid) {
+	document.getElementById(iid).className="nrm";
+}
+function ajaxsubmit() {
+	$.ajax({
+		type: "POST",
+		url: "index.php?process=yes",
+		dataType: "html",
+		data: $('#things').serialize(), 
+		success: function(response){
+			$("#resultdiv").html(response);
+		}
+	});
 }
