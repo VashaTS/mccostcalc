@@ -167,6 +167,8 @@ $recipe['TNT']='sand:4,gunpowder:5';
 $recipe['lever']='cobblestone:1,stick:1';
 $recipe['cooked_porkchop']='raw_porkchop:1,fuel:1';
 $recipe['cooked_mutton']='raw_mutton:1,fuel:1';
+$recipe['cooked_chicken']='raw_chicken:1,fuel:1';
+$recipe['cooked_rabbit']='raw_rabbit:1,fuel:1';
 $recipe['stone_button']='stone:1';
 $recipe['wooden_button']='planks:1';
 $recipe['gold_preassure_plate']='gold:2';
@@ -317,6 +319,8 @@ $recipe['red_sand']='end';
 $recipe['wither_skeleton_skull']='end';
 $recipe['soulsand']='end';
 $recipe['raw_mutton']='end';
+$recipe['raw_chicken']='end';
+$recipe['raw_rabbit']='end';
 $recipe['bone']='end';
 $recipe['red_dye']='end';
 $recipe['yellow_dye']='end';
@@ -339,6 +343,7 @@ $mob['gold']='zombie_pigmen:15'; //accumulated ingots + nuggets
 $mob['raw_porkchop']='pig:0.5';
 $mob['feather']='chicken:1';
 $mob['raw_chicken']='chicken:1';
+$mob['raw_rabbit']='rabbit:1';
 $mob['ink_sac']='squid:0.5';
 $mob['prismarine_crystals']='guardian:4.5454'; //because it only drops when raw fish fails
 $mob['prismarine_shard']='guardian:1';
@@ -364,7 +369,7 @@ $ml3['slime_ball']='tiny_slime:0.4';
 $ml3['gold']='zombie_pigmen:3.667'; //accumulated ingots + (nuggets/9)
 $ml3['raw_porkchop']='pig:0.2857';
 $ml3['feather']='chicken:0.4';
-$ml3['raw_chicken']='chicken:1'; //unaffected by looting
+$ml3['raw_chicken']='chicken:0.5'; //apparently in 1.9+ looting affects it
 $ml3['ink_sac']='squid:0.2857';
 $ml3['prismarine_crystals']='guardian:4.5454'; //Looting 3 = no looting. Looting I is best for them
 $ml3['prismarine_shard']='guardian:0.4';
@@ -433,18 +438,17 @@ function craft($item,$qty,$ft){
 }
 
 if($_GET['process']=='yes'){
-	$stck=Array('apple'=>64,'bone'=>64,'blaze_rod'=>64,'cactus'=>64,'carrot'=>64,'clay_ball'=>64,'coal'=>64,'cobblestone'=>64,'coca_beans'=>64,'copper'=>64,'diamond'=>64,'dirt'=>64,'emerald'=>64,'feather'=>64,
+	$stck=Array('apple'=>64,'bone'=>64,'blaze_rod'=>64,'cactus'=>64,'carrot'=>64,'clay_ball'=>64,'coal'=>64,'cobblestone'=>64,'coca_beans'=>64,'chorus_fruit'=>64,'diamond'=>64,'dirt'=>64,'emerald'=>64,'feather'=>64,
 	'flint'=>64,'ghast_tear'=>64,'glowstone'=>64,'glowstone_dust'=>64,'gold'=>64,'gravel'=>64,'gunpowder'=>64,'ink_sac'=>64,'iron'=>64,'lapis'=>64,'leather'=>64,'melon'=>64,'nether_star'=>64,'nether_wart'=>64,
-	'netherrack'=>64,'red_mushroom'=>64,'brown_mushroom'=>64,'obsidian'=>64,'prismarine_crystals'=>64,'prismarine_shard'=>64,'pufferfish'=>64,'quartz'=>64,'rabbit_foot'=>64,'raw_beef'=>64,'raw_mutton'=>64,
-	'raw_porkchop'=>64,'red_dye'=>64,'red_sand'=>64,'redstone'=>64,'sand'=>64,'sappling'=>64,'slime_ball'=>64,'soulsand'=>64,'spider_eye'=>64,'stone'=>64,'string'=>64,'sugar_cane'=>64,'vines'=>64,
-	'wither_skeleton_skull'=>64,'wood'=>64,'wool'=>64,'wheat'=>64,'yellow_dye'=>64,
+	'netherrack'=>64,'red_mushroom'=>64,'brown_mushroom'=>64,'obsidian'=>64,'prismarine_crystals'=>64,'prismarine_shard'=>64,'pufferfish'=>64,'quartz'=>64,'rabbit_foot'=>64,'raw_beef'=>64,'raw_chicken'=>64,
+	'raw_mutton'=>64,'raw_porkchop'=>64,'raw_rabbit'=>64,'red_dye'=>64,'red_sand'=>64,'redstone'=>64,'sand'=>64,'sappling'=>64,'slime_ball'=>64,'soulsand'=>64,'spider_eye'=>64,'stone'=>64,'string'=>64,
+	'sugar_cane'=>64,'vines'=>64,'wither_skeleton_skull'=>64,'wood'=>64,'wool'=>64,'wheat'=>64,'yellow_dye'=>64,
 	'ender_pearl'=>16,'egg'=>16,'armor_stand'=>16,'sign'=>16,
 	'bow'=>1,'bed'=>1,'lava'=>1,'milk'=>1,'water_bottle'=>1);
 	$ra=Array();
 	for($j=1;$j<=10;$j+=1){ // 10 input slots
-		if(strlen($_POST['f'.$j.'h'])>2){ //if isset
+		if(strlen($_POST['f'.$j.'h'])>2){ //if isset replacement
 			$ta=craft($_POST['f'.$j.'h'],$_POST['f'.$j.'f'],$_POST['fuelType']); //actually check the recipe
-			//print_r($ta); //debugg option
 			foreach($ta as $taik=>$tai){ //for each item in the recipe
 				$ra[$taik]=$ra[$taik]+$tai; //add to the results array
 			}
@@ -532,7 +536,7 @@ foreach($itemsColored as $it){
 echo('</div><div id="it_items" style="display: none; border: none;">');
 $itemsItems=Array('anvil','enchantment_table','ladder','sign',
 'chest','trapped_chest','crafting_table','ender_chest','torch','rail','powered_rail','activator_rail','detector_rail','minecart','boat','bed','item_frame','painting','arrow','bow','clock','compass','lead',
-'flint_and_steel','golden_apple','enchanted_golden_apple','cookie','cake','bread','steak','cooked_porkchop','cooked_mutton','armor_stand','flower_pot','fishing_rod','cauldron','brewing_stand');
+'flint_and_steel','golden_apple','enchanted_golden_apple','cookie','cake','bread','steak','cooked_porkchop','cooked_mutton','cooked_chicken','cooked_rabbit','armor_stand','flower_pot','fishing_rod','cauldron','brewing_stand','end_rod');
 foreach($itemsItems as $it){
 	echo('<a href="#" title="'.ucwords(str_replace('_',' ',$it)).'" id="'.$it.'" onclick="addItem(this.id,this.id)" style="vertical-align:top;"><img onmouseover="imgh(this.id)" onmouseout="imgd(this.id)" class="nrm" src="gfx/'.$it.'.png" width="64" height="64" alt="'.ucwords(str_replace('_',' ',$it)).'" id="'.$it.'_i"></a>');
 }
