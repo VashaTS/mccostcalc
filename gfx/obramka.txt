@@ -1,5 +1,0 @@
-gimp: zaznaczenie:
-
-zmniejsz 1
-obramuj 2
-zmiêkcz 3

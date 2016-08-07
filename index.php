@@ -15,6 +15,10 @@ $recipe['wooden_preassure_plate']='planks:2';
 $recipe['hopper']='iron:5,chest:1';
 $recipe['daylight_sensor']='quartz:3,glass:3,plank_slab:3';
 $recipe['minecart']='iron:5';
+$recipe['minecart_with_chest']='minecart:1,chest:1';
+$recipe['minecart_with_furnace']='minecart:1,furnace:1';
+$recipe['minecart_with_TNT']='minecart:1,TNT:1';
+$recipe['minecart_with_hopper']='minecart:1,hopper:1';
 $recipe['bookshelf']='planks:6,book:3';
 $recipe['beacon']='obsidian:3,glass:5,nether_star:1';
 $recipe['book']='paper:3,leather:1';
@@ -205,6 +209,19 @@ $recipe['red_stained_clay']='hardened_clay:1,red_dye:0.125';
 $recipe['black_stained_clay']='hardened_clay:1,ink_sac:0.125';
 $recipe['end_rod']='blaze_rod:0.25,popped_chorus_fruit:0.25';
 $recipe['popped_chorus_fruit']='chorus_fruit:1,fuel:1';
+$recipe['carrot_on_a_stick']='carrot:1,fishing_rod:1';
+$recipe['full_diamond_armor']='diamond_helmet:1,diamond_chestplate:1,diamond_leggings:1,diamond_boots:1';
+$recipe['diamond_helmet']='diamond:5';
+$recipe['diamond_chestplate']='diamond:8';
+$recipe['diamond_leggings']='diamond:7';
+$recipe['diamond_boots']='diamond:4';
+$recipe['full_iron_armor']='iron_helmet:1,iron_chestplate:1,iron_leggings:1,iron_boots:1';
+$recipe['iron_helmet']='iron:5';
+$recipe['iron_chestplate']='iron:8';
+$recipe['iron_leggings']='iron:7';
+$recipe['iron_boots']='iron:4';
+$recipe['end_crystal']='glass:7,ghast_tear:1,eye_of_ender:1';
+$recipe['enchanting_room']='bookshelf:15,enchantment_table:1';
 $recipe['potion_of_regeneration_0+45']='akward_potion:1,ghast_tear:0.3333';
 $recipe['potion_of_regeneration_2+00']='potion_of_regeneration_0+45:1,redstone:0.3333';
 $recipe['potion_of_regeneration_II_0+22']='potion_of_regeneration_0+45:1,glowstone_dust:0.3333';
@@ -359,8 +376,8 @@ $mob['glowstone_dust']='witch:2.58';
 $mob['redstone']='witch:2.58';
 
 $ml3['rabbit_foot']='rabbit:18.1818';
-$ml3['raw_rabbit']='rabit:0.5';
-$ml3['rabbit_hide']='rabit:0.5';
+$ml3['raw_rabbit']='rabbit:0.5';
+$ml3['rabbit_hide']='rabbit:0.5';
 $ml3['raw_beef']='cow:0.2857';
 $ml3['leather']='cow:0.4';
 $ml3['ghast_tear']='ghast:0.5';
@@ -508,7 +525,7 @@ echo('<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
 	<script src="script.js" language="javascript"></script>
 	
 </head><body>');
-echo('<h1>Minecraft Crafting Materials Calculator 1.8-dev</h1><div class="main"><table border="0" width="100%"><tr width="100%"><td colspan="2"><a class="bl" href="#" id="t_blocks" onclick="displayBl(this.id)";>Building blocks</a> <a class="bl" href="#" id="t_colored" onclick="displayBl(this.id)";>Colored</a> <a class="bl" href="#" id="t_redstone" onclick="displayBl(this.id)";>Redstone</a> <a class="bl" id="t_potions" onclick="displayBl(this.id)" href=#">Potions</a> <a class="bl" href="#" id="t_items" onclick="displayBl(this.id)";>Other</a>');
+echo('<h1>Minecraft Crafting Materials Calculator 1.9-dev</h1><div class="main"><table border="0" width="100%"><tr width="100%"><td colspan="2"><a class="bl" href="#" id="t_blocks" onclick="displayBl(this.id)";>Building blocks</a> <a class="bl" href="#" id="t_colored" onclick="displayBl(this.id)";>16 Colors</a> <a class="bl" href="#" id="t_redstone" onclick="displayBl(this.id)";>Redstone</a> <a class="bl" id="t_potions" onclick="displayBl(this.id)" href=#">Potions</a> <a class="bl" href="#" id="t_items" onclick="displayBl(this.id)";>Other</a> <a class="bl" href="#" id="t_sets" onclick="displayBl(this.id)";>Sets</a>');
 echo('</td></tr><tr width="100%"><td width="30%">');
 echo('<form name="things" id="things" action="index.php" method="POST"><p>Select items</p>');
 for($i=1;$i<=10;$i+=1) echo('<span id="f'.$i.'" style="display: none;"><img id="f'.$i.'img" src="#" width="64" height="64"><input type="hidden" name="f'.$i.'h" value="" id="f'.$i.'hi"><input id="f'.$i.'f" name="f'.$i.'f" type="text" class="formfld" size="3" maxlength="5"><a href="#" onclick="hideLine(parentNode.id)"><img src="gfx/x.png" id="x"></a></span>');
@@ -521,7 +538,7 @@ $itemsBlocks=Array('note_block','jukebox','bookshelf','beacon','cobblestone_slab
 'iron_bars','furnace','glass','glass_pane','TNT','prismarine','prismarine_bricks','dark_prismarine','sea_lantern','glowstone','hardened_clay');
 echo('<div id="it_blocks" style="border:none;">');
 foreach($itemsBlocks as $it){
-	echo('<a href="#" title="'.ucwords(str_replace('_',' ',$it)).'" id="'.$it.'" onclick="addItem(this.id,this.id)" style="vertical-align:top;"><img onmouseover="imgh(this.id)" onmouseout="imgd(this.id)" class="nrm" src="gfx/'.$it.'.png" width="64" height="64" alt="'.ucwords(str_replace('_',' ',$it)).'" id="'.$it.'_i"></a>');
+	echo('<a href="#" title="'.ucwords(str_replace('_',' ',$it)).'" id="'.$it.'" onclick="addItem(this.id,this.id,\''.ucwords(str_replace('_',' ',$it)).'\')" style="vertical-align:top;"><img onmouseover="imgh(this.id)" onmouseout="imgd(this.id)" class="nrm" src="gfx/'.$it.'.png" width="64" height="64" alt="'.ucwords(str_replace('_',' ',$it)).'" id="'.$it.'_i"></a>');
 }
 $itemsColored=Array('white_glass','orange_glass','magenta_glass','light_blue_glass','yellow_glass','lime_glass','pink_glass','gray_glass','light_gray_glass','cyan_glass',
 'purple_glass','blue_glass','brown_glass','green_glass','red_glass','black_glass','white_glass_pane','orange_glass_pane','magenta_glass_pane','light_blue_glass_pane',
@@ -531,20 +548,26 @@ $itemsColored=Array('white_glass','orange_glass','magenta_glass','light_blue_gla
 'green_stained_clay','red_stained_clay','black_stained_clay');
 echo('</div><div id="it_colored" style="display: none; border: none;">');
 foreach($itemsColored as $it){
-	echo('<a href="#" title="'.ucwords(str_replace('_',' ',$it)).'" id="'.$it.'" onclick="addItem(this.id,this.id)" style="vertical-align:top;"><img onmouseover="imgh(this.id)" onmouseout="imgd(this.id)" class="nrm" src="gfx/'.$it.'.png" width="64" height="64" alt="'.ucwords(str_replace('_',' ',$it)).'" id="'.$it.'_i"></a>');
+	echo('<a href="#" title="'.ucwords(str_replace('_',' ',$it)).'" id="'.$it.'" onclick="addItem(this.id,this.id,\''.ucwords(str_replace('_',' ',$it)).'\')" style="vertical-align:top;"><img onmouseover="imgh(this.id)" onmouseout="imgd(this.id)" class="nrm" src="gfx/'.$it.'.png" width="64" height="64" alt="'.ucwords(str_replace('_',' ',$it)).'" id="'.$it.'_i"></a>');
+}
+echo('</div><div id="it_sets" style="display: none; border: none;">');
+$itemsSets=Array('full_diamond_armor','full_iron_armor','enchanting_room');
+foreach($itemsSets as $key=>$it){
+	echo('<a href="#" title="'.ucwords(str_replace('_',' ',$it)).'" id="'.$it.'" onclick="addItem(this.id,this.id,\''.ucwords(str_replace('_',' ',$it)).'\')" style="vertical-align:top;"><img onmouseover="imgh(this.id)" onmouseout="imgd(this.id)" class="nrm" src="gfx/'.$it.'.png" width="64" height="64" alt="'.ucwords(str_replace('_',' ',$it)).'" id="'.$it.'_i"></a>');
 }
 echo('</div><div id="it_items" style="display: none; border: none;">');
 $itemsItems=Array('anvil','enchantment_table','ladder','sign',
-'chest','trapped_chest','crafting_table','ender_chest','torch','rail','powered_rail','activator_rail','detector_rail','minecart','boat','bed','item_frame','painting','arrow','bow','clock','compass','lead',
-'flint_and_steel','golden_apple','enchanted_golden_apple','cookie','cake','bread','steak','cooked_porkchop','cooked_mutton','cooked_chicken','cooked_rabbit','armor_stand','flower_pot','fishing_rod','cauldron','brewing_stand','end_rod');
+'chest','trapped_chest','crafting_table','ender_chest','torch','rail','powered_rail','activator_rail','detector_rail','minecart','minecart_with_chest','minecart_with_furnace','minecart_with_TNT','minecart_with_hopper','boat','bed','item_frame','painting','arrow','bow','clock','compass','lead',
+'flint_and_steel','golden_apple','enchanted_golden_apple','cookie','cake','bread','steak','cooked_porkchop','cooked_mutton','cooked_chicken','cooked_rabbit','armor_stand','flower_pot','fishing_rod',
+'carrot_on_a_stick','cauldron','brewing_stand','diamond_helmet','diamond_chestplate','diamond_leggings','diamond_boots','iron_helmet','iron_chestplate','iron_leggings','iron_boots','end_rod','end_crystal');
 foreach($itemsItems as $it){
-	echo('<a href="#" title="'.ucwords(str_replace('_',' ',$it)).'" id="'.$it.'" onclick="addItem(this.id,this.id)" style="vertical-align:top;"><img onmouseover="imgh(this.id)" onmouseout="imgd(this.id)" class="nrm" src="gfx/'.$it.'.png" width="64" height="64" alt="'.ucwords(str_replace('_',' ',$it)).'" id="'.$it.'_i"></a>');
+	echo('<a href="#" title="'.ucwords(str_replace('_',' ',$it)).'" id="'.$it.'" onclick="addItem(this.id,this.id,\''.ucwords(str_replace('_',' ',$it)).'\')" style="vertical-align:top;"><img onmouseover="imgh(this.id)" onmouseout="imgd(this.id)" class="nrm" src="gfx/'.$it.'.png" width="64" height="64" alt="'.ucwords(str_replace('_',' ',$it)).'" id="'.$it.'_i"></a>');
 }
 echo('</div><div id="it_redstone" style="display: none; border: none;">');
 $itemsRedstone=Array('piston','sticky_piston','hopper','daylight_sensor','redstone_lamp','redstone_repeater','redstone_comparator','redstone_torch','dispenser','dropper',
 'iron_trapdoor','iron_door','wooden_trapdoor','wooden_door','lever','stone_preassure_plate','wooden_preassure_plate','gold_preassure_plate','iron_preassure_plate','stone_button','wooden_button');
 foreach($itemsRedstone as $it){
-	echo('<a href="#" title="'.ucwords(str_replace('_',' ',$it)).'" id="'.$it.'" onclick="addItem(this.id,this.id)" style="vertical-align:top;"><img onmouseover="imgh(this.id)" onmouseout="imgd(this.id)" class="nrm" src="gfx/'.$it.'.png" width="64" height="64" border="0" alt="'.ucwords(str_replace('_',' ',$it)).'" id="'.$it.'_i"></a>');
+	echo('<a href="#" title="'.ucwords(str_replace('_',' ',$it)).'" id="'.$it.'" onclick="addItem(this.id,this.id,\''.ucwords(str_replace('_',' ',$it)).'\')" style="vertical-align:top;"><img onmouseover="imgh(this.id)" onmouseout="imgd(this.id)" class="nrm" src="gfx/'.$it.'.png" width="64" height="64" border="0" alt="'.ucwords(str_replace('_',' ',$it)).'" id="'.$it.'_i"></a>');
 }
 echo('</div><div id="it_potions" style="display: none; border: none;">');
 $itemsPotions=Array(
@@ -565,12 +588,12 @@ echo('<table border="1"><tr><th>Potions</th><th>std</th><th>ext</th><th>II</th><
 foreach($itemsPotions as $it){
 	echo('<tr><td>'.$it[0].'</td><td>');
 	$realimg=explode('+',$it[1]);
-	echo('<a href="#" title="'.ucwords(str_replace('+',':',str_replace('_',' ',$it[1]))).'" id="'.$realimg[0].'" onclick="addItem(this.id,\''.$it[1].'\')" style="vertical-align:top;"><img class="nrm" onmouseover="imgh(this.id)" onmouseout="imgd(this.id)" src="gfx/'.$realimg[0].'.png" width="64" height="64" border="0" alt="'.ucwords(str_replace('+',':',str_replace('_',' ',$it[1]))).'" id="'.$realimg[0].'_i"></a></td>');
+	echo('<a href="#" title="'.ucwords(str_replace('+',':',str_replace('_',' ',$it[1]))).'" id="'.$realimg[0].'" onclick="addItem(this.id,\''.$it[1].'\',\''.ucwords(str_replace('+',':',str_replace('_',' ',$it[1]))).'\')" style="vertical-align:top;"><img class="nrm" onmouseover="imgh(this.id)" onmouseout="imgd(this.id)" src="gfx/'.$realimg[0].'.png" width="64" height="64" border="0" alt="'.ucwords(str_replace('+',':',str_replace('_',' ',$it[1]))).'" id="'.$realimg[0].'_i"></a></td>');
 	for($pin=2;$pin<=6;$pin+=1){
 		echo('<td>');
 		if($it[$pin]!='n'){
 			$realimg=explode('+',$it[$pin]);
-			echo('<a href="#" title="'.ucwords(str_replace('+',':',str_replace('_',' ',$it[$pin]))).'" id="'.$realimg[0].'" onclick="addItem(this.id,\''.$it[$pin].'\')" style="vertical-align:top;"><img class="nrm" onmouseover="imgh(this.id)" onmouseout="imgd(this.id)" src="gfx/'.$realimg[0].'.png" width="64" height="64" border="0" alt="'.ucwords(str_replace('+',':',str_replace('_',' ',$it[$pin]))).'" id="'.$realimg[0].'_i"></a>');	
+			echo('<a href="#" title="'.ucwords(str_replace('+',':',str_replace('_',' ',$it[$pin]))).'" id="'.$realimg[0].'" onclick="addItem(this.id,\''.$it[$pin].'\',\''.ucwords(str_replace('+',':',str_replace('_',' ',$it[$pin]))).'\')" style="vertical-align:top;"><img class="nrm" onmouseover="imgh(this.id)" onmouseout="imgd(this.id)" src="gfx/'.$realimg[0].'.png" width="64" height="64" border="0" alt="'.ucwords(str_replace('+',':',str_replace('_',' ',$it[$pin]))).'" id="'.$realimg[0].'_i"></a>');	
 		}
 		else echo('&nbsp;');
 		echo('</td>');
