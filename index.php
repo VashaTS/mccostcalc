@@ -637,6 +637,6 @@ echo('<div class="main2"><script async src="//pagead2.googlesyndication.com/page
 <script>
 (adsbygoogle = window.adsbygoogle || []).push({});
 </script></div>');
-echo('</body></html>');
+echo('<hr><a href="https://github.com/VashaTS/mccostcalc">Github</a> | <a href="http://i.imgur.com/SrNvrg4.gif">Cookie policy</a> | <a href="http://i.imgur.com/9TelxLN.jpg">Policy on everything else</a></body></html>');
 }
 ?>
