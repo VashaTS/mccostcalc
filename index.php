@@ -229,6 +229,11 @@ $recipe['golden_helmet']='gold:5';
 $recipe['golden_chestplate']='gold:8';
 $recipe['golden_leggings']='gold:7';
 $recipe['golden_boots']='gold:4';
+$recipe['full_leather_armor']='leather_helmet:1,leather_chestplate:1,leather_leggings:1,leather_boots:1';
+$recipe['leather_helmet']='leather:5';
+$recipe['leather_chestplate']='leather:8';
+$recipe['leather_leggings']='leather:7';
+$recipe['leather_boots']='leather:4';
 $recipe['end_crystal']='glass:7,ghast_tear:1,eye_of_ender:1';
 $recipe['enchanting_room']='bookshelf:15,enchantment_table:1';
 $recipe['end_stone_bricks']='end_stone:1';
@@ -599,7 +604,7 @@ foreach($itemsColored as $it){
 	echo('<a href="#" title="'.ucwords(str_replace('_',' ',$it)).'" id="'.$it.'" onclick="addItem(this.id,this.id,\''.ucwords(str_replace('_',' ',$it)).'\')" style="vertical-align:top;"><img onmouseover="imgh(this.id)" onmouseout="imgd(this.id)" class="nrm" src="gfx/'.$it.'.png" width="64" height="64" alt="'.ucwords(str_replace('_',' ',$it)).'" id="'.$it.'_i"></a>');
 }
 echo('</div><div id="it_sets" style="display: none; border: none;">');
-$itemsSets=Array('full_diamond_armor','full_iron_armor','full_golden_armor','enchanting_room');
+$itemsSets=Array('full_diamond_armor','full_iron_armor','full_golden_armor','full_leather_armor','enchanting_room');
 foreach($itemsSets as $key=>$it){
 	echo('<a href="#" title="'.ucwords(str_replace('_',' ',$it)).'" id="'.$it.'" onclick="addItem(this.id,this.id,\''.ucwords(str_replace('_',' ',$it)).'\')" style="vertical-align:top;"><img onmouseover="imgh(this.id)" onmouseout="imgd(this.id)" class="nrm" src="gfx/'.$it.'.png" width="64" height="64" alt="'.ucwords(str_replace('_',' ',$it)).'" id="'.$it.'_i"></a>');
 }
@@ -607,7 +612,7 @@ echo('</div><div id="it_items" style="display: none; border: none;">');
 $itemsItems=Array('anvil','enchantment_table','ladder','sign',
 'chest','trapped_chest','crafting_table','ender_chest','torch','rail','powered_rail','activator_rail','detector_rail','minecart','minecart_with_chest','minecart_with_furnace','minecart_with_TNT','minecart_with_hopper','boat','bed','item_frame','painting','arrow','spectral_arrow','bow','clock','compass','lead',
 'flint_and_steel','golden_apple','enchanted_golden_apple','cookie','cake','bread','steak','cooked_porkchop','cooked_mutton','cooked_chicken','cooked_rabbit','armor_stand','flower_pot','fishing_rod',
-'carrot_on_a_stick','cauldron','brewing_stand','end_rod','end_crystal','diamond_helmet','diamond_chestplate','diamond_leggings','diamond_boots','iron_helmet','iron_chestplate','iron_leggings','iron_boots','golden_helmet','golden_chestplate','golden_leggings','golden_boots');
+'carrot_on_a_stick','cauldron','brewing_stand','end_rod','end_crystal','diamond_helmet','diamond_chestplate','diamond_leggings','diamond_boots','iron_helmet','iron_chestplate','iron_leggings','iron_boots','golden_helmet','golden_chestplate','golden_leggings','golden_boots','leather_helmet','leather_chestplate','leather_leggings','leather_boots');
 foreach($itemsItems as $it){
 	echo('<a href="#" title="'.ucwords(str_replace('_',' ',$it)).'" id="'.$it.'" onclick="addItem(this.id,this.id,\''.ucwords(str_replace('_',' ',$it)).'\')" style="vertical-align:top;"><img onmouseover="imgh(this.id)" onmouseout="imgd(this.id)" class="nrm" src="gfx/'.$it.'.png" width="64" height="64" alt="'.ucwords(str_replace('_',' ',$it)).'" id="'.$it.'_i"></a>');
 }
