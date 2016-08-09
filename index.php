@@ -231,65 +231,97 @@ $recipe['potion_of_regeneration_0+45']='akward_potion:1,ghast_tear:0.3333,blaze_
 $recipe['potion_of_regeneration_1+30']='potion_of_regeneration_0+45:1,redstone:0.3333,blaze_powder:0.0166';
 $recipe['potion_of_regeneration_II_0+22']='potion_of_regeneration_0+45:1,glowstone_dust:0.3333,blaze_powder:0.0166';
 $recipe['splash_potion_of_regeneration_0+45']='potion_of_regeneration_0+45:1,gunpowder:0.3333,blaze_powder:0.0166';
-$recipe['splash_potion_of_regeneration_1+30']='potion_of_regeneration_2+00:1,gunpowder:0.3333,blaze_powder:0.0166';
+$recipe['splash_potion_of_regeneration_1+30']='potion_of_regeneration_1+30:1,gunpowder:0.3333,blaze_powder:0.0166';
 $recipe['splash_potion_of_regeneration_II_0+22']='potion_of_regeneration_II_0+22:1,gunpowder:0.3333,blaze_powder:0.0166';
+$recipe['lingering_potion_of_regeneration_0+11']='splash_potion_of_regeneration_0+45:1,dragon_breath:0.3333,blaze_powder:0.0166';
+$recipe['lingering_potion_of_regeneration_0+22']='splash_potion_of_regeneration_1+30:1,dragon_breath:0.3333,blaze_powder:0.0166';
+$recipe['lingering_potion_of_regeneration_II_0+05']='splash_potion_of_regeneration_II_0+22:1,dragon_breath:0.3333,blaze_powder:0.0166';
 $recipe['potion_of_swiftness_3+00']='akward_potion:1,sugar:0.3333,blaze_powder:0.0166';
 $recipe['potion_of_swiftness_8+00']='potion_of_swiftness_3+00:1,redstone:0.3333,blaze_powder:0.0166';
 $recipe['potion_of_swiftness_II_1+30']='potion_of_swiftness_3+00:1,glowstone_dust:0.3333,blaze_powder:0.0166';
 $recipe['splash_potion_of_swiftness_3+00']='potion_of_swiftness_3+00:1,gunpowder:0.3333,blaze_powder:0.0166';
 $recipe['splash_potion_of_swiftness_8_00']='potion_of_swiftness_8+00:1,gunpowder:0:3333,blaze_powder:0.0166';
 $recipe['splash_potion_of_swiftness_II_1+30']='potion_of_swiftness_II_1+30:1,gunpowder:0.3333,blaze_powder:0.0166';
+$recipe['lingering_potion_of_swiftness_0+45']='splash_potion_of_swiftness_3+00:1,dragon_breath:0.3333,blaze_powder:0.0166';
+$recipe['lingering_potion_of_swiftness_2+00']='splash_potion_of_swiftness_8+00:1,dragon_breath:0.3333,blaze_powder:0.0166';
+$recipe['lingering_potion_of_swiftness_II_0+22']='splash_potion_of_swiftness_II_1+30:1,dragon_breath:0.3333,blaze_powder:0.0166';
 $recipe['potion_of_fire_resistance_3+00']='akward_potion:1,magma_cream:0.3333,blaze_powder:0.0166';
 $recipe['potion_of_fire_resistance_8+00']='potion_of_fire_resistance_3+00:1,redstone:0.3333,blaze_powder:0.0166';
 $recipe['splash_potion_of_fire_resistance_3+00']='potion_of_fire_resistance_3+00:1,gunpowder:0.3333,blaze_powder:0.0166';
 $recipe['splash_potion_of_fire_resistance_8+00']='potion_of_fire_resistance_8+00:1,gunpowder:0.3333,blaze_powder:0.0166';
+$recipe['lingering_potion_of_fire_resistance_0+45']='splash_potion_of_fire_resistance_3+00:1,dragon_breath:0.3333,blaze_powder:0.0166';
+$recipe['lingering_potion_of_fire_resistance_2+00']='splash_potion_of_fire_resistance_8+00:1,dragon_breath:0.3333,blaze_powder:0.0166';
 $recipe['potion_of_poison_0+45']='akward_potion:1,spider_eye:0.3333,blaze_powder:0.0166';
 $recipe['potion_of_poison_1+30']='potion_of_poison_0+45:1,redstone:0.3333,blaze_powder:0.0166';
 $recipe['potion_of_poison_II_0+21']='potion_of_poison_0+45:1,glowstone_dust:0.3333,blaze_powder:0.0166';
 $recipe['splash_potion_of_poison_0+45']='potion_of_poison_0+45:1,gunpowder:0.3333,blaze_powder:0.0166';
-$recipe['splash_potion_of_poison_1+30']='potion_of_poison_2+00:1,gunpowder:0.3333,blaze_powder:0.0166';
+$recipe['splash_potion_of_poison_1+30']='potion_of_poison_1+30:1,gunpowder:0.3333,blaze_powder:0.0166';
 $recipe['splash_potion_of_poison_II_0+21']='potion_of_poison_II_0+21:1,gunpowder:0.3333,blaze_powder:0.0166';
+$recipe['lingering_potion_of_poison_0+11']='splash_potion_of_poison_0+45:1,dragon_breath:0.3333,blaze_powder:0.0166';
+$recipe['lingering_potion_of_poison_0+22']='splash_potion_of_poison_1+30:1,dragon_breath:0.3333,blaze_powder:0.0166';
+$recipe['lingering_potion_of_poison_II_0+05']='splash_potion_of_poison_II_0+21:1,dragon_breath:0.3333,blaze_powder:0.0166';
 $recipe['potion_of_healing']='akward_potion:1,glistering_melon:0.3333,blaze_powder:0.0166';
 $recipe['potion_of_healing_II']='potion_of_healing:1,glowstone_dust:0.3333,blaze_powder:0.0166';
 $recipe['splash_potion_of_healing']='potion_of_healing:1,gunpowder:0.3333,blaze_powder:0.0166';
 $recipe['splash_potion_of_healing_II']='potion_of_healing_II:1,gunpowder:0.3333,blaze_powder:0.0166';
+$recipe['lingering_potion_of_healing']='splash_potion_of_healing:1,dragon_breath:0.3333,blaze_powder:0.0166';
+$recipe['lingering_potion_of_healing_II']='splash_potion_of_healing_II:1,dragon_breath:0.3333,blaze_powder:0.0166';
 $recipe['potion_of_night_vision_3+00']='akward_potion:1,golden_carrot:0.3333,blaze_powder:0.0166';
 $recipe['potion_of_night_vision_8+00']='potion_of_night_vision_3+00:1,redstone:0.3333,blaze_powder:0.0166';
 $recipe['splash_potion_of_night_vision_3+00']='potion_of_night_vision_3+00:1,gunpowder:0.3333,blaze_powder:0.0166';
 $recipe['splash_potion_of_night_vision_8+00']='potion_of_night_vision_8+00:1,gunpowder:0.3333,blaze_powder:0.0166';
+$recipe['lingering_potion_of_night_vision_0+45']='splash_potion_of_night_vision_3+00:1,dragon_breath:0.3333,blaze_powser:0.0166';
+$recipe['lingering_potion_of_night_vision_2+00']='splash_potion_of_night_vision_8+00:1,dragon_breath:0.3333,blaze_powder:0.0166';
 $recipe['potion_of_weakness_1+30']='water_bottle:1,fermented_spider_eye:0.3333,blaze_powder:0.0166';
 $recipe['potion_of_weakness_4+00']='potion_of_weakness_1+30:1,redstone:0.3333,blaze_powder:0.0166';
 $recipe['splash_potion_of_weakness_1+30']='potion_of_weakness_1+30:1,gunpowder:0.3333,blaze_powder:0.0166';
 $recipe['splash_potion_of_weakness_4+00']='potion_of_weakness_4+00:1,gunpowder:0.3333,blaze_powder:0.0166';
-$recipe['potion_of_strength_3+00']='akward_potion:1,blaze_powder:0.3333,blaze_powder:0.0166';
-$recipe['potion_of_strength_8+00']='potion_of_strength_3+00:1,redstone:0.3333,blaze_powder:0.0166';
-$recipe['potion_of_strength_II_1+30']='potion_of_strength_3+00:1,glowstone_dust:0.3333,blaze_powder:0.0166';
+$recipe['lingering_potion_of_weakness_0+22']='splash_potion_of_weakness_1+30:1,dragon_breath:0.3333,blaze_powder:0.0166';
+$recipe['lingering_potion_of_weakness_1+00']='splash_potion_of_weakness_4+00:1,dragon_breath:0.3333,blaze_powder:0.0166';
+$recipe['potion_of_strength_3+00']='akward_potion:1,blaze_powder:0.3499';
+$recipe['potion_of_strength_8+00']='potion_of_strength_3+00:1,redstone:0.3499';
+$recipe['potion_of_strength_II_1+30']='potion_of_strength_3+00:1,glowstone_dust:0.3499';
 $recipe['splash_potion_of_strength_3+00']='potion_of_strength_3+00:1,gunpowder:0.3333,blaze_powder:0.0166';
 $recipe['splash_potion_of_strength_8+00']='potion_of_strength_8+00:1,gunpowder:0.3333,blaze_powder:0.0166';
 $recipe['splash_potion_of_strength_II_1+30']='potion_of_strength_II_1+30:1,gunpowder:0.3333,blaze_powder:0.0166';
+$recipe['lingering_potion_of_strength_0+45']='splash_potion_of_strength_3+00:1,dragon_breath:0.3333,blaze_powder:0.0166';
+$recipe['lingering_potion_of_strength_2+00']='splash_potion_of_strength_8+00:1,dragon_breath:0.3333,blaze_powder:0.0166';
+$recipe['lingering_potion_of_strengrh_II_0+22']='splash_potion_of_strength_II_1+30:1,dragon_breath:0.3333,blaze_powder:0.0166';
 $recipe['potion_of_slowness_1+30']='potion_of_swiftness_3+00:1,fermented_spider_eye:0.3333,blaze_powder:0.0166';
 $recipe['potion_of_slowness_4+00']='potion_of_slowness_1+30:1,redstone:0.3333,blaze_powder:0.0166';
 $recipe['splash_potion_of_slowness_1+30']='potion_of_slowness_1+30:1,gunpowder:0.3333,blaze_powder:0.0166';
 $recipe['splash_potion_of_slowness_4+00']='potion_of_slowness_4+00:1,gunpowder:0.3333,blaze_powder:0.0166';
+$recipe['lingering_potion_of_slowness_0+22']='splash_potion_of_slowness_1+30:1,dragon_breath:0.3333,blaze_powder:0.0166';
+$recipe['lingering_potion_of_slowness_1+00']='splash_potion_of_slowness_4+00:1,dragon_breath:0.3333,blaze_powder:0.0166';
 $recipe['potion_of_leaping_3+00']='akward_potion:1,rabbit_foot:0.3333,blaze_powder:0.0166';
 $recipe['potion_of_leaping_8+00']='potion_of_leaping_3+00:1,redstone:0.3,blaze_powder:0.0166';
 $recipe['potion_of_leaping_II_1+30']='potion_of_leaping_3+00:1,glowstone_dust:0.3333,blaze_powder:0.0166';
 $recipe['splash_potion_of_leaping_3+00']='potion_of_leaping_3+00:1,gunpowder:0.3333,blaze_powder:0.0166';
 $recipe['splash_potion_of_leaping_8+00']='potion_of_leaping_8+00:1,gunpowder:0.3333,blaze_powder:0.0166';
 $recipe['splash_potion_of_leaping_II_1+30']='potion_of_leaping_II_1+30:1,gunpowder:0.3333,blaze_powder:0.0166';
+$recipe['lingering_potion_of_leaping_0+45']='splash_potion_of_leaping_3+00:1,dragon_breath:0.3333,blaze_powder:0.0166';
+$recipe['lingering_potion_of_leaping_2+00']='splash_potion_of_leaping_8+00:1,dragon_breath:0.3333,blaze_powder:0.0166';
+$recipe['lingering_potion_of_leaping_II_0+22']='splash_potion_of_leaping_II_1+30:1,dragon_breath:0.3333,blaze_powder:0.0166';
 $recipe['potion_of_harming']='potion_of_healing:1,fermented_spider_eye:0.3333,blaze_powder:0.0166';
 $recipe['potion_of_harming_II']='potion_of_healing_II:1,fermented_spider_eye:0.3333,blaze_powder:0.0166';
 $recipe['splash_potion_of_harming']='potion_of_harming:1,gunpowder:0.3333,blaze_powder:0.0166';
 $recipe['splash_potion_of_harming_II']='potion_of_harming_II:1,gunpowder:0.3333,blaze_powder:0.0166';
+$recipe['lingering_potion_of_harming']='splash_potion_of_harming:1,dragon_breath:0.3333,blaze_powder:0.0166';
+$recipe['lingering_potion_of_harming_II']='splash_potion_of_harming_II:1,dragon_breath:0.3333,blaze_powder:0.0166';
 $recipe['potion_of_water_breathing_3+00']='akward_potion:1,pufferfish:0.3333,blaze_powder:0.0166';
 $recipe['potion_of_water_breathing_8+00']='potion_of_water_breathing_3+00:1,redstone:0.3333,blaze_powder:0.0166';
 $recipe['splash_potion_of_water_breathing_3+00']='potion_of_water_breathing_3+00:1,gunpowder:0.3333,blaze_powder:0.0166';
 $recipe['splash_potion_of_water_breathing_8+00']='potion_of_water_breathing_8+00:1,gunpowder:0.3333,blaze_powder:0.0166';
+$recipe['lingering_potion_of_water_breathing_0+45']='splash_potion_of_water_breathing_3+00:1,dragon_breath:0.3333,blaze_powder:0.0166';
+$recipe['lingering_potion_of_water_breathing_2+00']='splash_potion_of_water_breathing_8+00:1,dragon_breath:0.3333,blaze_powder:0.0166';
 $recipe['potion_of_invisibility_3+00']='potion_of_night_vision_3+00:1,fermented_spider_eye:0.3333,blaze_powder:0.0166';
 $recipe['potion_of_invisibility_8+00']='potion_of_night_vision_8+00:1,fermented_spider_eye:0.3333,blaze_powder:0.0166';
 $recipe['splash_potion_of_invisibility_3+00']='potion_of_invisibility_3+00:1,gunpowder:0.3333,blaze_powder:0.0166';
 $recipe['splash_potion_of_invisibility_8+00']='potion_of_invisibility_8+00:1,gunpowder:0.3333,blaze_powder:0.0166';
+$recipe['lingering_potion_of_invisibility_0+45']='splash_potion_of_invisibility_3+00:1,dragon_breath:0.3333,blaze_powder:0.0166';
+$recipe['lingering_potion_of_invisibility_2+00']='splash_potion_of_invisibility_8+00:1,dragon_breath:0.3333,blaze_powder:0.0166';
 $recipe['splash_water_bottle']='water_bottle:1,gunpowder:0.3333,blaze_powder:0.0166';
+$recipe['lingering_water_bottle']='splash_water_bottle:1,dragon_breath:0.3333,blaze_powder:0.0166';
 $recipe['akward_potion']='water_bottle:1,nether_wart:0.3333,blaze_powder:0.0166';
 $recipe['water_bottle']='end';
 $recipe['iron']='end';
@@ -354,6 +386,7 @@ $recipe['lava']='end';
 $recipe['sappling']='end';
 $recipe['chorus_fruit']='end';
 $recipe['end_stone']='end';
+$recipe['dragon_breath']='end';
 $recipe['fuel']='end';
 
 //these are results of killing 1000 of each mob
@@ -464,11 +497,11 @@ function craft($item,$qty,$ft){
 }
 
 if($_GET['process']=='yes'){
-	$stck=Array('apple'=>64,'bone'=>64,'blaze_rod'=>64,'cactus'=>64,'carrot'=>64,'clay_ball'=>64,'coal'=>64,'cobblestone'=>64,'coca_beans'=>64,'chorus_fruit'=>64,'diamond'=>64,'dirt'=>64,'emerald'=>64,'end_stone'=>64,'feather'=>64,
-	'flint'=>64,'ghast_tear'=>64,'glowstone'=>64,'glowstone_dust'=>64,'gold'=>64,'gravel'=>64,'gunpowder'=>64,'ink_sac'=>64,'iron'=>64,'lapis'=>64,'leather'=>64,'melon'=>64,'nether_star'=>64,'nether_wart'=>64,
-	'netherrack'=>64,'red_mushroom'=>64,'brown_mushroom'=>64,'obsidian'=>64,'prismarine_crystals'=>64,'prismarine_shard'=>64,'pufferfish'=>64,'quartz'=>64,'rabbit_foot'=>64,'raw_beef'=>64,'raw_chicken'=>64,
-	'raw_mutton'=>64,'raw_porkchop'=>64,'raw_rabbit'=>64,'red_dye'=>64,'red_sand'=>64,'redstone'=>64,'sand'=>64,'sappling'=>64,'slime_ball'=>64,'soulsand'=>64,'spider_eye'=>64,'stone'=>64,'string'=>64,
-	'sugar_cane'=>64,'vines'=>64,'wither_skeleton_skull'=>64,'wood'=>64,'wool'=>64,'wheat'=>64,'yellow_dye'=>64,
+	$stck=Array('apple'=>64,'bone'=>64,'blaze_rod'=>64,'cactus'=>64,'carrot'=>64,'clay_ball'=>64,'coal'=>64,'cobblestone'=>64,'coca_beans'=>64,'chorus_fruit'=>64,'diamond'=>64,'dirt'=>64,'dragon_breath'=>64,
+	'emerald'=>64,'end_stone'=>64,'feather'=>64,'flint'=>64,'ghast_tear'=>64,'glowstone'=>64,'glowstone_dust'=>64,'gold'=>64,'gravel'=>64,'gunpowder'=>64,'ink_sac'=>64,'iron'=>64,'lapis'=>64,'leather'=>64,
+	'melon'=>64,'nether_star'=>64,'nether_wart'=>64,'netherrack'=>64,'red_mushroom'=>64,'brown_mushroom'=>64,'obsidian'=>64,'prismarine_crystals'=>64,'prismarine_shard'=>64,'pufferfish'=>64,'quartz'=>64,
+	'rabbit_foot'=>64,'raw_beef'=>64,'raw_chicken'=>64,'raw_mutton'=>64,'raw_porkchop'=>64,'raw_rabbit'=>64,'red_dye'=>64,'red_sand'=>64,'redstone'=>64,'sand'=>64,'sappling'=>64,'slime_ball'=>64,'soulsand'=>64,
+	'spider_eye'=>64,'stone'=>64,'string'=>64,'sugar_cane'=>64,'vines'=>64,'wither_skeleton_skull'=>64,'wood'=>64,'wool'=>64,'wheat'=>64,'yellow_dye'=>64,
 	'ender_pearl'=>16,'egg'=>16,'armor_stand'=>16,'sign'=>16,
 	'bow'=>1,'bed'=>1,'lava'=>1,'milk'=>1,'water_bottle'=>1);
 	$ra=Array();
@@ -580,26 +613,26 @@ foreach($itemsRedstone as $it){
 }
 echo('</div><div id="it_potions" style="display: none; border: none;">');
 $itemsPotions=Array(
-Array(0=>'Water',1=>'n',2=>'n',3=>'n',4=>'splash_water_bottle',5=>'n',6=>'n'),
-Array(0=>'Regeneration',1=>'potion_of_regeneration_0+45',2=>'potion_of_regeneration_1+30',3=>'potion_of_regeneration_II_0+22',4=>'splash_potion_of_regeneration_0+44',5=>'splash_potion_of_regeneration_1+30',6=>'splash_potion_of_regeneration_II_0+22'),
-Array(0=>'Swiftness',1=>'potion_of_swiftness_3+00',2=>'potion_of_swiftness_8+00',3=>'potion_of_swiftness_II_1+30',4=>'splash_potion_of_swiftness_3+00',5=>'splash_potion_of_swiftness_8+00',6=>'splash_potion_of_swiftness_II_1+30'),
-Array(0=>'Fire Resistance',1=>'potion_of_fire_resistance_3+00',2=>'potion_of_fire_resistance_8+00',3=>'n',4=>'splash_potion_of_fire_resistance_3+00',5=>'splash_potion_of_fire_resistance_8+00',6=>'n'),
-Array(0=>'Poison',1=>'potion_of_poison_0+45',2=>'potion_of_poison_1+30',3=>'potion_of_poison_II_0+21',4=>'splash_potion_of_poison_0+45',5=>'splash_potion_of_poison_1+30',6=>'splash_potion_of_poison_II_0+21'),
-Array(0=>'Healing',1=>'potion_of_healing',2=>'n',3=>'potion_of_healing_II',4=>'splash_potion_of_healing',5=>'n',6=>'splash_potion_of_healing_II'),
-Array(0=>'Night Vision',1=>'potion_of_night_vision_3+00',2=>'potion_of_night_vision_8+00',3=>'n',4=>'splash_potion_of_night_vision_3+00',5=>'splash_potion_of_night_vision_8+00',6=>'n'),
-Array(0=>'Weakness',1=>'potion_of_weakness_1+30',2=>'potion_of_weakness_4+00',3=>'n',4=>'splash_potion_of_weakness_1+30',5=>'splash_potion_of_weakness_4+00',6=>'n'),
-Array(0=>'Strength',1=>'potion_of_strength_3+00',2=>'potion_of_strength_8+00',3=>'potion_of_strength_II_1+30',4=>'splash_potion_of_strength_3+00',5=>'splash_potion_of_strength_8+00',6=>'splash_potion_of_strength_II_1+30'),
-Array(0=>'Slowness',1=>'potion_of_slowness_1+30',2=>'potion_of_slowness_4+00',3=>'n',4=>'splash_potion_of_slowness_1+30',5=>'splash_potion_of_slowness_4+00',6=>'n'),
-Array(0=>'Leaping',1=>'potion_of_leaping_3+00',2=>'potion_of_leaping_8+00',3=>'potion_of_leaping_II_1+30',4=>'splash_potion_of_leaping_3+00',5=>'splash_potion_of_leaping_8+00',6=>'splash_potion_of_leaping_II_1+30'),
-Array(0=>'Harming',1=>'potion_of_harming',2=>'n',3=>'potion_of_harming_II',4=>'splash_potion_of_harming',5=>'n',6=>'splash_potion_of_harming_II'),
-Array(0=>'Water Breathing',1=>'potion_of_water_breathing_3+00',2=>'potion_of_water_breathing_8+00',3=>'n',4=>'splash_potion_of_water_breathing_3+00',5=>'splash_potion_of_water_breathing_8+00',6=>'n'),
-Array(0=>'Invisibility',1=>'potion_of_invisibility_3+00',2=>'potion_of_invisibility_8+00',3=>'n',4=>'splash_potion_of_invisibility_3+00',5=>'splash_potion_of_invisibility_8+00',6=>'n'));
+Array(0=>'Water',1=>'n',2=>'n',3=>'n',4=>'splash_water_bottle',5=>'n',6=>'n',7=>'lingering_water_bottle',8=>'n',9=>'n'),
+Array(0=>'Regeneration',1=>'potion_of_regeneration_0+45',2=>'potion_of_regeneration_1+30',3=>'potion_of_regeneration_II_0+22',4=>'splash_potion_of_regeneration_0+44',5=>'splash_potion_of_regeneration_1+30',6=>'splash_potion_of_regeneration_II_0+22',7=>'lingering_potion_of_regeneration_0+11',8=>'lingering_potion_of_regeneration_0+22',9=>'lingering_potion_of_regeneration_II_0+05'),
+Array(0=>'Swiftness',1=>'potion_of_swiftness_3+00',2=>'potion_of_swiftness_8+00',3=>'potion_of_swiftness_II_1+30',4=>'splash_potion_of_swiftness_3+00',5=>'splash_potion_of_swiftness_8+00',6=>'splash_potion_of_swiftness_II_1+30',7=>'lingering_potion_of_swiftness_0+45',8=>'lingering_potion_of_swiftness_2+00',9=>'lingering_potion_of_swiftness_II_0+22'),
+Array(0=>'Fire Resistance',1=>'potion_of_fire_resistance_3+00',2=>'potion_of_fire_resistance_8+00',3=>'n',4=>'splash_potion_of_fire_resistance_3+00',5=>'splash_potion_of_fire_resistance_8+00',6=>'n',7=>'lingering_potion_of_fire_resistance_0+45',8=>'lingering_potion_of_fire_resistance_2+00',9=>'n'),
+Array(0=>'Poison',1=>'potion_of_poison_0+45',2=>'potion_of_poison_1+30',3=>'potion_of_poison_II_0+21',4=>'splash_potion_of_poison_0+45',5=>'splash_potion_of_poison_1+30',6=>'splash_potion_of_poison_II_0+21',7=>'lingering_potion_of_poison_0+11',8=>'lingering_potion_of_poison_0+22',9=>'lingering_potion_of_poison_II_0+05'),
+Array(0=>'Healing',1=>'potion_of_healing',2=>'n',3=>'potion_of_healing_II',4=>'splash_potion_of_healing',5=>'n',6=>'splash_potion_of_healing_II',7=>'lingering_potion_of_healing',8=>'n',9=>'lingering_potion_of_healing_II'),
+Array(0=>'Night Vision',1=>'potion_of_night_vision_3+00',2=>'potion_of_night_vision_8+00',3=>'n',4=>'splash_potion_of_night_vision_3+00',5=>'splash_potion_of_night_vision_8+00',6=>'n',7=>'lingering_potion_of_night_vision_0+45',8=>'lingering_potion_of_night_vision_2+00',9=>'n'),
+Array(0=>'Weakness',1=>'potion_of_weakness_1+30',2=>'potion_of_weakness_4+00',3=>'n',4=>'splash_potion_of_weakness_1+30',5=>'splash_potion_of_weakness_4+00',6=>'n',7=>'lingering_potion_of_weakness_0+22',8=>'lingering_potion_of_weakness_1+00',9=>'n'),
+Array(0=>'Strength',1=>'potion_of_strength_3+00',2=>'potion_of_strength_8+00',3=>'potion_of_strength_II_1+30',4=>'splash_potion_of_strength_3+00',5=>'splash_potion_of_strength_8+00',6=>'splash_potion_of_strength_II_1+30',7=>'lingering_potion_of_strength_0+45',8=>'lingering_potion_of_strength_2+00',9=>'lingering_potion_of_strength_II_0+22'),
+Array(0=>'Slowness',1=>'potion_of_slowness_1+30',2=>'potion_of_slowness_4+00',3=>'n',4=>'splash_potion_of_slowness_1+30',5=>'splash_potion_of_slowness_4+00',6=>'n',7=>'lingering_potion_of_slowness_0+22',8=>'lingering_potion_of_slowness_1+00',9=>'n'),
+Array(0=>'Leaping',1=>'potion_of_leaping_3+00',2=>'potion_of_leaping_8+00',3=>'potion_of_leaping_II_1+30',4=>'splash_potion_of_leaping_3+00',5=>'splash_potion_of_leaping_8+00',6=>'splash_potion_of_leaping_II_1+30',7=>'lingering_potion_of_leaping_0+45',8=>'lingering_potion_of_leaping_2+00',9=>'lingering_potion_of_leaping_II_0+22'),
+Array(0=>'Harming',1=>'potion_of_harming',2=>'n',3=>'potion_of_harming_II',4=>'splash_potion_of_harming',5=>'n',6=>'splash_potion_of_harming_II',7=>'lingering_potion_of_harming',8=>'n',9=>'lingering_potion_of_harming_II'),
+Array(0=>'Water Breathing',1=>'potion_of_water_breathing_3+00',2=>'potion_of_water_breathing_8+00',3=>'n',4=>'splash_potion_of_water_breathing_3+00',5=>'splash_potion_of_water_breathing_8+00',6=>'n',7=>'lingering_potion_of_water_breathing_0+45',8=>'lingering_potion_of_water_breathing_2+00',9=>'n'),
+Array(0=>'Invisibility',1=>'potion_of_invisibility_3+00',2=>'potion_of_invisibility_8+00',3=>'n',4=>'splash_potion_of_invisibility_3+00',5=>'splash_potion_of_invisibility_8+00',6=>'n',7=>'lingering_potion_of_invisibility_0+45',8=>'lingering_potion_of_invisibility_2+00',9=>'n'));
 echo('<table border="1"><tr><th>Potions</th><th>std</th><th>ext</th><th>II</th><th>spl</th><th>ext spl</th><th>II spl</th><th>lng</th><th>lng ext</th><th>lng II</th></tr>');
 foreach($itemsPotions as $it){
-	echo('<tr><td>'.$it[0].'</td><td>');
-	$realimg=explode('+',$it[1]);
-	echo('<a href="#" title="'.ucwords(str_replace('+',':',str_replace('_',' ',$it[1]))).'" id="'.$realimg[0].'" onclick="addItem(this.id,\''.$it[1].'\',\''.ucwords(str_replace('+',':',str_replace('_',' ',$it[1]))).'\')" style="vertical-align:top;"><img class="nrm" onmouseover="imgh(this.id)" onmouseout="imgd(this.id)" src="gfx/'.$realimg[0].'.png" width="64" height="64" border="0" alt="'.ucwords(str_replace('+',':',str_replace('_',' ',$it[1]))).'" id="'.$realimg[0].'_i"></a></td>');
-	for($pin=2;$pin<=6;$pin+=1){
+	echo('<tr><td>'.$it[0].'</td>');
+	//$realimg=explode('+',$it[1]);
+	//echo('<a href="#" title="'.ucwords(str_replace('+',':',str_replace('_',' ',$it[1]))).'" id="'.$realimg[0].'" onclick="addItem(this.id,\''.$it[1].'\',\''.ucwords(str_replace('+',':',str_replace('_',' ',$it[1]))).'\')" style="vertical-align:top;"><img class="nrm" onmouseover="imgh(this.id)" onmouseout="imgd(this.id)" src="gfx/'.$realimg[0].'.png" width="64" height="64" border="0" alt="'.ucwords(str_replace('+',':',str_replace('_',' ',$it[1]))).'" id="'.$realimg[0].'_i"></a></td>');
+	for($pin=1;$pin<=9;$pin+=1){
 		echo('<td>');
 		if($it[$pin]!='n'){
 			$realimg=explode('+',$it[$pin]);
