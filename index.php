@@ -224,9 +224,15 @@ $recipe['iron_helmet']='iron:5';
 $recipe['iron_chestplate']='iron:8';
 $recipe['iron_leggings']='iron:7';
 $recipe['iron_boots']='iron:4';
+$recipe['full_golden_armor']='golden_helmet:1,golden_chestplate:1,golden_leggings:1,golden_boots:1';
+$recipe['golden_helmet']='gold:5';
+$recipe['golden_chestplate']='gold:8';
+$recipe['golden_leggings']='gold:7';
+$recipe['golden_boots']='gold:4';
 $recipe['end_crystal']='glass:7,ghast_tear:1,eye_of_ender:1';
 $recipe['enchanting_room']='bookshelf:15,enchantment_table:1';
 $recipe['end_stone_bricks']='end_stone:1';
+$recipe['spectral_arrow']='glowstone_dust:2,arrow:0.5';
 $recipe['potion_of_regeneration_0+45']='akward_potion:1,ghast_tear:0.3333,blaze_powder:0.0166';
 $recipe['potion_of_regeneration_1+30']='potion_of_regeneration_0+45:1,redstone:0.3333,blaze_powder:0.0166';
 $recipe['potion_of_regeneration_II_0+22']='potion_of_regeneration_0+45:1,glowstone_dust:0.3333,blaze_powder:0.0166';
@@ -567,7 +573,7 @@ echo('<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
 	<script src="script.js" language="javascript"></script>
 	
 </head><body>');
-echo('<h1>Minecraft Crafting Materials Calculator 1.9-dev</h1><div class="main"><table border="0" width="100%"><tr width="100%"><td colspan="2"><a class="bl" href="#" id="t_blocks" onclick="displayBl(this.id)";>Building blocks</a> <a class="bl" href="#" id="t_colored" onclick="displayBl(this.id)";>16 Colors</a> <a class="bl" href="#" id="t_redstone" onclick="displayBl(this.id)";>Redstone</a> <a class="bl" id="t_potions" onclick="displayBl(this.id)" href=#">Potions</a> <a class="bl" href="#" id="t_items" onclick="displayBl(this.id)";>Other</a> <a class="bl" href="#" id="t_sets" onclick="displayBl(this.id)";>Sets</a>');
+echo('<h1>Minecraft Crafting Materials Calculator 1.9</h1><div class="main"><table border="0" width="100%"><tr width="100%"><td colspan="2"><a class="bl" href="#" id="t_blocks" onclick="displayBl(this.id)";>Building blocks</a> <a class="bl" href="#" id="t_colored" onclick="displayBl(this.id)";>16 Colors</a> <a class="bl" href="#" id="t_redstone" onclick="displayBl(this.id)";>Redstone</a> <a class="bl" id="t_potions" onclick="displayBl(this.id)" href=#">Potions</a> <a class="bl" href="#" id="t_items" onclick="displayBl(this.id)";>Other</a> <a class="bl" href="#" id="t_sets" onclick="displayBl(this.id)";>Sets</a>');
 echo('</td></tr><tr width="100%"><td width="30%">');
 echo('<form name="things" id="things" action="index.php" method="POST"><p>Select items</p>');
 for($i=1;$i<=10;$i+=1) echo('<span id="f'.$i.'" style="display: none;"><img id="f'.$i.'img" src="#" width="64" height="64"><input type="hidden" name="f'.$i.'h" value="" id="f'.$i.'hi"><input id="f'.$i.'f" name="f'.$i.'f" type="text" class="formfld" size="3" maxlength="5"><a href="#" onclick="hideLine(parentNode.id)"><img src="gfx/x.png" id="x"></a></span>');
@@ -593,15 +599,15 @@ foreach($itemsColored as $it){
 	echo('<a href="#" title="'.ucwords(str_replace('_',' ',$it)).'" id="'.$it.'" onclick="addItem(this.id,this.id,\''.ucwords(str_replace('_',' ',$it)).'\')" style="vertical-align:top;"><img onmouseover="imgh(this.id)" onmouseout="imgd(this.id)" class="nrm" src="gfx/'.$it.'.png" width="64" height="64" alt="'.ucwords(str_replace('_',' ',$it)).'" id="'.$it.'_i"></a>');
 }
 echo('</div><div id="it_sets" style="display: none; border: none;">');
-$itemsSets=Array('full_diamond_armor','full_iron_armor','enchanting_room');
+$itemsSets=Array('full_diamond_armor','full_iron_armor','full_golden_armor','enchanting_room');
 foreach($itemsSets as $key=>$it){
 	echo('<a href="#" title="'.ucwords(str_replace('_',' ',$it)).'" id="'.$it.'" onclick="addItem(this.id,this.id,\''.ucwords(str_replace('_',' ',$it)).'\')" style="vertical-align:top;"><img onmouseover="imgh(this.id)" onmouseout="imgd(this.id)" class="nrm" src="gfx/'.$it.'.png" width="64" height="64" alt="'.ucwords(str_replace('_',' ',$it)).'" id="'.$it.'_i"></a>');
 }
 echo('</div><div id="it_items" style="display: none; border: none;">');
 $itemsItems=Array('anvil','enchantment_table','ladder','sign',
-'chest','trapped_chest','crafting_table','ender_chest','torch','rail','powered_rail','activator_rail','detector_rail','minecart','minecart_with_chest','minecart_with_furnace','minecart_with_TNT','minecart_with_hopper','boat','bed','item_frame','painting','arrow','bow','clock','compass','lead',
+'chest','trapped_chest','crafting_table','ender_chest','torch','rail','powered_rail','activator_rail','detector_rail','minecart','minecart_with_chest','minecart_with_furnace','minecart_with_TNT','minecart_with_hopper','boat','bed','item_frame','painting','arrow','spectral_arrow','bow','clock','compass','lead',
 'flint_and_steel','golden_apple','enchanted_golden_apple','cookie','cake','bread','steak','cooked_porkchop','cooked_mutton','cooked_chicken','cooked_rabbit','armor_stand','flower_pot','fishing_rod',
-'carrot_on_a_stick','cauldron','brewing_stand','diamond_helmet','diamond_chestplate','diamond_leggings','diamond_boots','iron_helmet','iron_chestplate','iron_leggings','iron_boots','end_rod','end_crystal');
+'carrot_on_a_stick','cauldron','brewing_stand','end_rod','end_crystal','diamond_helmet','diamond_chestplate','diamond_leggings','diamond_boots','iron_helmet','iron_chestplate','iron_leggings','iron_boots','golden_helmet','golden_chestplate','golden_leggings','golden_boots');
 foreach($itemsItems as $it){
 	echo('<a href="#" title="'.ucwords(str_replace('_',' ',$it)).'" id="'.$it.'" onclick="addItem(this.id,this.id,\''.ucwords(str_replace('_',' ',$it)).'\')" style="vertical-align:top;"><img onmouseover="imgh(this.id)" onmouseout="imgd(this.id)" class="nrm" src="gfx/'.$it.'.png" width="64" height="64" alt="'.ucwords(str_replace('_',' ',$it)).'" id="'.$it.'_i"></a>');
 }
@@ -614,7 +620,7 @@ foreach($itemsRedstone as $it){
 echo('</div><div id="it_potions" style="display: none; border: none;">');
 $itemsPotions=Array(
 Array(0=>'Water',1=>'n',2=>'n',3=>'n',4=>'splash_water_bottle',5=>'n',6=>'n',7=>'lingering_water_bottle',8=>'n',9=>'n'),
-Array(0=>'Regeneration',1=>'potion_of_regeneration_0+45',2=>'potion_of_regeneration_1+30',3=>'potion_of_regeneration_II_0+22',4=>'splash_potion_of_regeneration_0+44',5=>'splash_potion_of_regeneration_1+30',6=>'splash_potion_of_regeneration_II_0+22',7=>'lingering_potion_of_regeneration_0+11',8=>'lingering_potion_of_regeneration_0+22',9=>'lingering_potion_of_regeneration_II_0+05'),
+Array(0=>'Regeneration',1=>'potion_of_regeneration_0+45',2=>'potion_of_regeneration_1+30',3=>'potion_of_regeneration_II_0+22',4=>'splash_potion_of_regeneration_0+45',5=>'splash_potion_of_regeneration_1+30',6=>'splash_potion_of_regeneration_II_0+22',7=>'lingering_potion_of_regeneration_0+11',8=>'lingering_potion_of_regeneration_0+22',9=>'lingering_potion_of_regeneration_II_0+05'),
 Array(0=>'Swiftness',1=>'potion_of_swiftness_3+00',2=>'potion_of_swiftness_8+00',3=>'potion_of_swiftness_II_1+30',4=>'splash_potion_of_swiftness_3+00',5=>'splash_potion_of_swiftness_8+00',6=>'splash_potion_of_swiftness_II_1+30',7=>'lingering_potion_of_swiftness_0+45',8=>'lingering_potion_of_swiftness_2+00',9=>'lingering_potion_of_swiftness_II_0+22'),
 Array(0=>'Fire Resistance',1=>'potion_of_fire_resistance_3+00',2=>'potion_of_fire_resistance_8+00',3=>'n',4=>'splash_potion_of_fire_resistance_3+00',5=>'splash_potion_of_fire_resistance_8+00',6=>'n',7=>'lingering_potion_of_fire_resistance_0+45',8=>'lingering_potion_of_fire_resistance_2+00',9=>'n'),
 Array(0=>'Poison',1=>'potion_of_poison_0+45',2=>'potion_of_poison_1+30',3=>'potion_of_poison_II_0+21',4=>'splash_potion_of_poison_0+45',5=>'splash_potion_of_poison_1+30',6=>'splash_potion_of_poison_II_0+21',7=>'lingering_potion_of_poison_0+11',8=>'lingering_potion_of_poison_0+22',9=>'lingering_potion_of_poison_II_0+05'),
@@ -635,8 +641,8 @@ foreach($itemsPotions as $it){
 	for($pin=1;$pin<=9;$pin+=1){
 		echo('<td>');
 		if($it[$pin]!='n'){
-			$realimg=explode('+',$it[$pin]);
-			echo('<a href="#" title="'.ucwords(str_replace('+',':',str_replace('_',' ',$it[$pin]))).'" id="'.$realimg[0].'" onclick="addItem(this.id,\''.$it[$pin].'\',\''.ucwords(str_replace('+',':',str_replace('_',' ',$it[$pin]))).'\')" style="vertical-align:top;"><img class="nrm" onmouseover="imgh(this.id)" onmouseout="imgd(this.id)" src="gfx/'.$realimg[0].'.png" width="64" height="64" border="0" alt="'.ucwords(str_replace('+',':',str_replace('_',' ',$it[$pin]))).'" id="'.$realimg[0].'_i"></a>');	
+			//$realimg=explode('+',$it[$pin]);
+			echo('<a href="#" title="'.ucwords(str_replace('+',':',str_replace('_',' ',$it[$pin]))).'" id="'.$it[$pin].'" onclick="addItem(this.id,\''.$it[$pin].'\',\''.ucwords(str_replace('+',':',str_replace('_',' ',$it[$pin]))).'\')" style="vertical-align:top;"><img class="nrm" onmouseover="imgh(this.id)" onmouseout="imgd(this.id)" src="gfx/'.$it[$pin].'.png" width="64" height="64" border="0" alt="'.ucwords(str_replace('+',':',str_replace('_',' ',$it[$pin]))).'" id="'.$it[$pin].'_i"></a>');	
 		}
 		else echo('&nbsp;');
 		echo('</td>');
