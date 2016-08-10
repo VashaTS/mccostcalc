@@ -246,6 +246,7 @@ $recipe['baked_potato']='potato:1,fuel:1';
 $recipe['bowl']='planks:0.75';
 $recipe['rabbit_stew']='cooked_rabbit:1,baked_potato:1,carrot:1,bowl:1,brown_mushroom:1';
 $recipe['beetroot_soup']='bowl:1,beetroot:6';
+$recipe['cooked_fish']='raw_fish:1,fuel:1';
 $recipe['potion_of_regeneration_0+45']='akward_potion:1,ghast_tear:0.3333,blaze_powder:0.0166';
 $recipe['potion_of_regeneration_1+30']='potion_of_regeneration_0+45:1,redstone:0.3333,blaze_powder:0.0166';
 $recipe['potion_of_regeneration_II_0+22']='potion_of_regeneration_0+45:1,glowstone_dust:0.3333,blaze_powder:0.0166';
@@ -402,12 +403,13 @@ $recipe['red_dye']='end';
 $recipe['yellow_dye']='end';
 $recipe['cactus']='end';
 $recipe['lava']='end';
-$recipe['sappling']='end';
+$recipe['sapling']='end';
 $recipe['chorus_fruit']='end';
 $recipe['end_stone']='end';
 $recipe['dragon_breath']='end';
 $recipe['potato']='end';
 $recipe['beetroot']='end';
+$recipe['raw_fish']='end';
 $recipe['fuel']='end';
 
 //these are results of killing 1000 of each mob
@@ -437,6 +439,7 @@ $mob['wither_skeleton_skull']='wither_skeleton:40';
 $mob['iron']='iron_golem:0.25';
 $mob['glowstone_dust']='witch:2.58';
 $mob['redstone']='witch:2.58';
+$mob['raw_fish']='guardian:2.45'; //not polar bears because guardian farms build for prismarine can be used
 
 $ml3['rabbit_foot']='rabbit:18.1818';
 $ml3['raw_rabbit']='rabbit:0.5';
@@ -463,13 +466,14 @@ $ml3['wither_skeleton_skull']='wither_skeleton:18.1818';
 $ml3['iron']='iron_golem:0.25'; //looting is not effective on golems
 $ml3['glowstone_dust']='witch:1.57';
 $ml3['redstone']='witch:1.57';
+$ml3['raw_fish']='guardian:0.992';
 
 $fuel['coal']=8;
 $fuel['charcoal']=8;
 $fuel['lava']=100;
 $fuel['blaze_rod']=12;
 $fuel['planks']=1.5;
-$fuel['sappling']=0.5;
+$fuel['sapling']=0.5;
 $fuel['coal_block']=80;
 
 function craft($item,$qty,$ft){
@@ -518,10 +522,11 @@ function craft($item,$qty,$ft){
 }
 
 if($_GET['process']=='yes'){
+	//stack size:
 	$stck=Array('apple'=>64,'beetroot'=>64,'bone'=>64,'blaze_rod'=>64,'cactus'=>64,'carrot'=>64,'clay_ball'=>64,'coal'=>64,'cobblestone'=>64,'coca_beans'=>64,'chorus_fruit'=>64,'diamond'=>64,'dirt'=>64,'dragon_breath'=>64,
 	'emerald'=>64,'end_stone'=>64,'feather'=>64,'flint'=>64,'ghast_tear'=>64,'glowstone'=>64,'glowstone_dust'=>64,'gold'=>64,'gravel'=>64,'gunpowder'=>64,'ink_sac'=>64,'iron'=>64,'lapis'=>64,'leather'=>64,
 	'melon'=>64,'nether_star'=>64,'nether_wart'=>64,'netherrack'=>64,'red_mushroom'=>64,'brown_mushroom'=>64,'obsidian'=>64,'potato'=>64,'prismarine_crystals'=>64,'prismarine_shard'=>64,'pufferfish'=>64,'quartz'=>64,
-	'rabbit_foot'=>64,'raw_beef'=>64,'raw_chicken'=>64,'raw_mutton'=>64,'raw_porkchop'=>64,'raw_rabbit'=>64,'red_dye'=>64,'red_sand'=>64,'redstone'=>64,'sand'=>64,'sappling'=>64,'slime_ball'=>64,'soulsand'=>64,
+	'rabbit_foot'=>64,'raw_beef'=>64,'raw_chicken'=>64,'raw_fish'=>64,'raw_mutton'=>64,'raw_porkchop'=>64,'raw_rabbit'=>64,'red_dye'=>64,'red_sand'=>64,'redstone'=>64,'sand'=>64,'sapling'=>64,'slime_ball'=>64,'soulsand'=>64,
 	'spider_eye'=>64,'stone'=>64,'string'=>64,'sugar_cane'=>64,'vines'=>64,'wither_skeleton_skull'=>64,'wood'=>64,'wool'=>64,'wheat'=>64,'yellow_dye'=>64,
 	'ender_pearl'=>16,'egg'=>16,'armor_stand'=>16,'sign'=>16,
 	'bow'=>1,'bed'=>1,'lava'=>1,'milk'=>1,'water_bottle'=>1);
@@ -567,7 +572,7 @@ if($_GET['process']=='yes'){
 		echo('<p><img src="gfx/'.$mk.'.png"> Kill an average of '.$mv.' '.ucwords(str_replace('_',' ',$mk)));
 		if($mv>1){
 			if($mk=='witch') echo('e');
-			echo('s');
+			if(($mk!='zombie_pigmen')&($mk!='sheep')&($mk!='enderman')) echo('s');
 		}
 		if(($_POST['doMobs']=='looting')&($mk=='ghast')) echo('<h3>Are you sure you can kill Ghasts with looting III ?</h3>');
 		if(($_POST['doMobs']=='looting')&($mk=='iron_golem')) echo('<h3>Looting III has no effect on Iron Golem drops</h3>');
@@ -621,7 +626,7 @@ foreach($itemsSets as $key=>$it){
 echo('</div><div id="it_items" style="display: none; border: none;">');
 $itemsItems=Array('anvil','enchantment_table','ladder','sign',
 'chest','trapped_chest','crafting_table','ender_chest','torch','boat','bed','item_frame','painting','arrow','spectral_arrow','bow','clock','compass','lead',
-'flint_and_steel','golden_apple','enchanted_golden_apple','cookie','cake','bread','steak','cooked_porkchop','cooked_mutton','cooked_chicken','cooked_rabbit','baked_potato','rabbit_stew','beetroot_soup','armor_stand','flower_pot','fishing_rod',
+'flint_and_steel','golden_apple','enchanted_golden_apple','cookie','cake','bread','steak','cooked_porkchop','cooked_mutton','cooked_chicken','cooked_rabbit','baked_potato','rabbit_stew','beetroot_soup','cooked_fish','armor_stand','flower_pot','fishing_rod',
 'carrot_on_a_stick','cauldron','brewing_stand','end_rod','end_crystal','diamond_helmet','diamond_chestplate','diamond_leggings','diamond_boots','iron_helmet','iron_chestplate','iron_leggings','iron_boots','golden_helmet','golden_chestplate','golden_leggings','golden_boots','leather_helmet','leather_chestplate','leather_leggings','leather_boots');
 foreach($itemsItems as $it){
 	echo('<a href="#" title="'.ucwords(str_replace('_',' ',$it)).'" id="'.$it.'" onclick="addItem(this.id,this.id,\''.ucwords(str_replace('_',' ',$it)).'\')" style="vertical-align:top;"><img onmouseover="imgh(this.id)" onmouseout="imgd(this.id)" class="nrm" src="gfx/'.$it.'.png" width="64" height="64" alt="'.ucwords(str_replace('_',' ',$it)).'" id="'.$it.'_i"></a>');
