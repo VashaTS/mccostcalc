@@ -247,6 +247,7 @@ $recipe['bowl']='planks:0.75';
 $recipe['rabbit_stew']='cooked_rabbit:1,baked_potato:1,carrot:1,bowl:1,brown_mushroom:1';
 $recipe['beetroot_soup']='bowl:1,beetroot:6';
 $recipe['cooked_fish']='raw_fish:1,fuel:1';
+$recipe['shield']='planks:6,iron:1';
 $recipe['potion_of_regeneration_0+45']='akward_potion:1,ghast_tear:0.3333,blaze_powder:0.0166';
 $recipe['potion_of_regeneration_1+30']='potion_of_regeneration_0+45:1,redstone:0.3333,blaze_powder:0.0166';
 $recipe['potion_of_regeneration_II_0+22']='potion_of_regeneration_0+45:1,glowstone_dust:0.3333,blaze_powder:0.0166';
@@ -598,10 +599,10 @@ echo('</td></tr><tr width="100%"><td width="30%">');
 echo('<form name="things" id="things" action="index.php" method="POST"><p>Select items</p>');
 for($i=1;$i<=10;$i+=1) echo('<span id="f'.$i.'" style="display: none;"><img id="f'.$i.'img" src="#" width="64" height="64"><input type="hidden" name="f'.$i.'h" value="" id="f'.$i.'hi"><input id="f'.$i.'f" name="f'.$i.'f" type="text" class="formfld" size="3" maxlength="5"><a href="#" onclick="hideLine(parentNode.id)"><img src="gfx/x.png" id="x"></a></span>');
 echo('</td><td width="50%"><br>&nbsp;<br> ');
-$itemsBlocks=Array('note_block','jukebox','bookshelf','beacon','cobblestone_slab','cobblestone_stairs','cobblestone_wall',
+$itemsBlocks=Array('note_block','jukebox','bookshelf','beacon','cobblestone','cobblestone_slab','cobblestone_stairs','cobblestone_wall',
 'moss_stone','moss_stone_wall','stone_bricks','stone_brick_stairs','stone_brick_slab','chiseled_stone_bricks','mossy_stone_bricks','cracked_stone_bricks','planks',
 'wood_stairs','plank_slab','fence','fence_gate','bricks','bricks_stairs','bricks_slab','hay_bale','emerald_block','diamond_block','gold_block','iron_block','redstone_block','slime_block','lapis_block',
-'coal_block','quartz_block','quartz_stairs','quartz_slab','chiseled_quartz_block','quartz_pillar','coarse_dirt','sandstone','sandstone_stairs','sandstone_slab','smooth_sandstone',
+'coal_block','quartz_block','quartz_stairs','quartz_slab','chiseled_quartz_block','quartz_pillar','obsidian','coarse_dirt','sandstone','sandstone_stairs','sandstone_slab','smooth_sandstone',
 'chiseled_sandstone','red_sandstone','red_sandstone_stairs','red_sandstone_slab','smooth_red_sandstone','chiseled_red_sandstone','nether_bricks','nether_bricks_stairs','nether_bricks_slab','nether_brick_fence','red_nether_bricks',
 'iron_bars','furnace','glass','glass_pane','TNT','prismarine','prismarine_bricks','dark_prismarine','sea_lantern','glowstone','hardened_clay','purpur_block','purpur_pillar','purpur_stairs','purpur_slab','end_stone_bricks','bone_block','nether_wart_block','magma_block');
 echo('<div id="it_blocks" style="border:none;">');
@@ -627,7 +628,8 @@ echo('</div><div id="it_items" style="display: none; border: none;">');
 $itemsItems=Array('anvil','enchantment_table','ladder','sign',
 'chest','trapped_chest','crafting_table','ender_chest','torch','boat','bed','item_frame','painting','arrow','spectral_arrow','bow','clock','compass','lead',
 'flint_and_steel','golden_apple','enchanted_golden_apple','cookie','cake','bread','steak','cooked_porkchop','cooked_mutton','cooked_chicken','cooked_rabbit','baked_potato','rabbit_stew','beetroot_soup','cooked_fish','armor_stand','flower_pot','fishing_rod',
-'carrot_on_a_stick','cauldron','brewing_stand','end_rod','end_crystal','diamond_helmet','diamond_chestplate','diamond_leggings','diamond_boots','iron_helmet','iron_chestplate','iron_leggings','iron_boots','golden_helmet','golden_chestplate','golden_leggings','golden_boots','leather_helmet','leather_chestplate','leather_leggings','leather_boots');
+'carrot_on_a_stick','cauldron','brewing_stand','end_rod','end_crystal','diamond_helmet','diamond_chestplate','diamond_leggings','diamond_boots','iron_helmet','iron_chestplate','iron_leggings','iron_boots','golden_helmet','golden_chestplate','golden_leggings',
+'golden_boots','leather_helmet','leather_chestplate','leather_leggings','leather_boots','shield');
 foreach($itemsItems as $it){
 	echo('<a href="#" title="'.ucwords(str_replace('_',' ',$it)).'" id="'.$it.'" onclick="addItem(this.id,this.id,\''.ucwords(str_replace('_',' ',$it)).'\')" style="vertical-align:top;"><img onmouseover="imgh(this.id)" onmouseout="imgd(this.id)" class="nrm" src="gfx/'.$it.'.png" width="64" height="64" alt="'.ucwords(str_replace('_',' ',$it)).'" id="'.$it.'_i"></a>');
 }
