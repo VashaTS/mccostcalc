@@ -189,24 +189,24 @@ $recipe['flower_pot']='brick:3';
 $recipe['charcoal']='wood:1.6667'; //5 wood makes 3 charcoal, to avoid endless fuel loops
 $recipe['compass']='iron:4,redstone:1';
 $recipe['fishing_rod']='stick:3,string:2';
-$recipe['hardened_clay']='clay:1,fuel:1';
+$recipe['terracotta']='clay:1,fuel:1';
 $recipe['clay']='clay_ball:4';
-$recipe['white_stained_clay']='hardened_clay:1,bone_meal:0.125';
-$recipe['orange_stained_clay']='hardened_clay:1,orange_dye:0.125';
-$recipe['magenta_stained_clay']='hardened_clay:1,magenta_dye:0.125';
-$recipe['light_blue_stained_clay']='hardened_clay:1,light_blue_dye:0.125';
-$recipe['yellow_stained_clay']='hardened_clay:1,yellow_dye:0.125';
-$recipe['lime_stained_clay']='hardened_clay:1,lime_dye:0.125';
-$recipe['pink_stained_clay']='hardened_clay:1,pink_dye:0.125';
-$recipe['gray_stained_clay']='hardened_clay:1,gray_dye:0.125';
-$recipe['light_gray_stained_clay']='hardened_clay:1,light_gray_dye:0.125';
-$recipe['cyan_stained_clay']='hardened_clay:1,cyan_dye:0.125';
-$recipe['purple_stained_clay']='hardened_clay:1,purple_dye:0.125';
-$recipe['blue_stained_clay']='hardened_clay:1,lapis:0.125';
-$recipe['brown_stained_clay']='hardened_clay:1,coca_beans:0.125';
-$recipe['green_stained_clay']='hardened_clay:1,green_dye:0.125';
-$recipe['red_stained_clay']='hardened_clay:1,red_dye:0.125';
-$recipe['black_stained_clay']='hardened_clay:1,ink_sac:0.125';
+$recipe['white_terracotta']='terracotta:1,bone_meal:0.125';
+$recipe['orange_terracotta']='terracotta:1,orange_dye:0.125';
+$recipe['magenta_terracotta']='terracotta:1,magenta_dye:0.125';
+$recipe['light_blue_terracotta']='terracotta:1,light_blue_dye:0.125';
+$recipe['yellow_terracotta']='terracotta:1,yellow_dye:0.125';
+$recipe['lime_terracotta']='terracotta:1,lime_dye:0.125';
+$recipe['pink_terracotta']='terracotta:1,pink_dye:0.125';
+$recipe['gray_terracotta']='terracotta:1,gray_dye:0.125';
+$recipe['light_gray_terracotta']='terracotta:1,light_gray_dye:0.125';
+$recipe['cyan_terracotta']='terracotta:1,cyan_dye:0.125';
+$recipe['purple_terracotta']='terracotta:1,purple_dye:0.125';
+$recipe['blue_terracotta']='terracotta:1,lapis:0.125';
+$recipe['brown_terracotta']='terracotta:1,coca_beans:0.125';
+$recipe['green_terracotta']='terracotta:1,green_dye:0.125';
+$recipe['red_terracotta']='terracotta:1,red_dye:0.125';
+$recipe['black_terracotta']='terracotta:1,ink_sac:0.125';
 $recipe['end_rod']='blaze_rod:0.25,popped_chorus_fruit:0.25';
 $recipe['popped_chorus_fruit']='chorus_fruit:1,fuel:1';
 $recipe['purpur_block']='popped_chorus_fruit:1';
@@ -248,6 +248,41 @@ $recipe['rabbit_stew']='cooked_rabbit:1,baked_potato:1,carrot:1,bowl:1,brown_mus
 $recipe['beetroot_soup']='bowl:1,beetroot:6';
 $recipe['cooked_fish']='raw_fish:1,fuel:1';
 $recipe['shield']='planks:6,iron:1';
+$recipe['observer']='cobblestone:6,redstone:2,quartz:1'; //1.11
+$recipe['shulker_box']='chest:1,shulker_shell:2';
+$recipe['concrete_powder_white']='sand:0.5,gravel:0.5,bone_meal:0.125'; //1.12
+$recipe['concrete_powder_orange']='sand:0.5,gravel:0.5,orange_dye:0.125';
+$recipe['concrete_powder_magenta']='sand:0.5,gravel:0.5,magenta_dye:0.125';
+$recipe['concrete_powder_light_blue']='sand:0.5,gravel:0.5,light_blue_dye:0.125';
+$recipe['concrete_powder_yellow']='sand:0.5,gravel:0.5,yellow_dye:0.125';
+$recipe['concrete_powder_lime']='sand:0.5,gravel:0.5,lime_dye:0.125';
+$recipe['concrete_powder_pink']='sand:0.5,gravel:0.5,pink_dye:0.125';
+$recipe['concrete_powder_gray']='sand:0.5,gravel:0.5,gray_dye:0.125';
+$recipe['concrete_powder_light_gray']='sand:0.5,gravel:0.5,light_gray_dye:0.125';
+$recipe['concrete_powder_cyan']='sand:0.5,gravel:0.5,cyan_dye:0.125';
+$recipe['concrete_powder_purple']='sand:0.5,gravel:0.5,purple_dye:0.125';
+$recipe['concrete_powder_blue']='sand:0.5,gravel:0.5,lapis:0.125';
+$recipe['concrete_powder_brown']='sand:0.5,gravel:0.5,coca_beans:0.125';
+$recipe['concrete_powder_green']='sand:0.5,gravel:0.5,green_dye:0.125';
+$recipe['concrete_powder_red']='sand:0.5,gravel:0.5,red_dye:0.125';
+$recipe['concrete_powder_black']='sand:0.5,gravel:0.5,ink_sac:0.125';
+$recipe['glazed_terracotta_white']='white_terracotta:1,fuel:1';
+$recipe['glazed_terracotta_orange']='orange_terracotta:1,fuel:1';
+$recipe['glazed_terracotta_magenta']='magenta_terracotta:1,fuel:1';
+$recipe['glazed_terracotta_light_blue']='light_blue_terracotta:1,fuel:1';
+$recipe['glazed_terracotta_yellow']='yellow_terracotta:1,fuel:1';
+$recipe['glazed_terracotta_lime']='lime_terracotta:1,fuel:1';
+$recipe['glazed_terracotta_pink']='pink_terracotta:1,fuel:1';
+$recipe['glazed_terracotta_gray']='gray_terracotta:1,fuel:1';
+$recipe['glazed_terracotta_light_gray']='light_gray_terracotta:1,fuel:1';
+$recipe['glazed_terracotta_cyan']='cyan_terracotta:1,fuel:1';
+$recipe['glazed_terracotta_purple']='purple_terracotta:1,fuel:1';
+$recipe['glazed_terracotta_blue']='blue_terracotta:1,fuel:1';
+$recipe['glazed_terracotta_brown']='brown_terracotta:1,fuel:1';
+$recipe['glazed_terracotta_green']='green_terracotta:1,fuel:1';
+$recipe['glazed_terracotta_red']='red_terracotta:1,fuel:1';
+$recipe['glazed_terracotta_black']='black_terracotta:1,fuel:1';
+
 $recipe['potion_of_regeneration_0+45']='akward_potion:1,ghast_tear:0.3333,blaze_powder:0.0166';
 $recipe['potion_of_regeneration_1+30']='potion_of_regeneration_0+45:1,redstone:0.3333,blaze_powder:0.0166';
 $recipe['potion_of_regeneration_II_0+22']='potion_of_regeneration_0+45:1,glowstone_dust:0.3333,blaze_powder:0.0166';
@@ -411,6 +446,8 @@ $recipe['dragon_breath']='end';
 $recipe['potato']='end';
 $recipe['beetroot']='end';
 $recipe['raw_fish']='end';
+$recipe['shulker_shell']='end';
+$recipe['totem_of_undying']='end';
 $recipe['fuel']='end';
 
 //these are results of killing 1000 of each mob
@@ -441,6 +478,9 @@ $mob['iron']='iron_golem:0.25';
 $mob['glowstone_dust']='witch:2.58';
 $mob['redstone']='witch:2.58';
 $mob['raw_fish']='guardian:2.45'; //not polar bears because guardian farms build for prismarine can be used
+$mob['shulker_shell']='shulker:2';
+$mob['totem_of_undying']='evoker:1';
+$mob['emerald']='vindicator:2';
 
 $ml3['rabbit_foot']='rabbit:18.1818';
 $ml3['raw_rabbit']='rabbit:0.5';
@@ -468,6 +508,9 @@ $ml3['iron']='iron_golem:0.25'; //looting is not effective on golems
 $ml3['glowstone_dust']='witch:1.57';
 $ml3['redstone']='witch:1.57';
 $ml3['raw_fish']='guardian:0.992';
+$ml3['shulker_shell']='shulker:1.4545';
+$ml3['totem_of_undying']='evoker:1'; //looting is not effective on totem
+$ml3['emerald']='vindicator:0.5';
 
 $fuel['coal']=8;
 $fuel['charcoal']=8;
@@ -524,13 +567,7 @@ function craft($item,$qty,$ft){
 
 if($_GET['process']=='yes'){
 	//stack size:
-	$stck=Array('apple'=>64,'beetroot'=>64,'bone'=>64,'blaze_rod'=>64,'cactus'=>64,'carrot'=>64,'clay_ball'=>64,'coal'=>64,'cobblestone'=>64,'coca_beans'=>64,'chorus_fruit'=>64,'diamond'=>64,'dirt'=>64,'dragon_breath'=>64,
-	'emerald'=>64,'end_stone'=>64,'feather'=>64,'flint'=>64,'ghast_tear'=>64,'glowstone'=>64,'glowstone_dust'=>64,'gold'=>64,'gravel'=>64,'gunpowder'=>64,'ink_sac'=>64,'iron'=>64,'lapis'=>64,'leather'=>64,
-	'melon'=>64,'nether_star'=>64,'nether_wart'=>64,'netherrack'=>64,'red_mushroom'=>64,'brown_mushroom'=>64,'obsidian'=>64,'potato'=>64,'prismarine_crystals'=>64,'prismarine_shard'=>64,'pufferfish'=>64,'quartz'=>64,
-	'rabbit_foot'=>64,'raw_beef'=>64,'raw_chicken'=>64,'raw_fish'=>64,'raw_mutton'=>64,'raw_porkchop'=>64,'raw_rabbit'=>64,'red_dye'=>64,'red_sand'=>64,'redstone'=>64,'sand'=>64,'sapling'=>64,'slime_ball'=>64,'soulsand'=>64,
-	'spider_eye'=>64,'stone'=>64,'string'=>64,'sugar_cane'=>64,'vines'=>64,'wither_skeleton_skull'=>64,'wood'=>64,'wool'=>64,'wheat'=>64,'yellow_dye'=>64,
-	'ender_pearl'=>16,'egg'=>16,'armor_stand'=>16,'sign'=>16,
-	'bow'=>1,'bed'=>1,'lava'=>1,'milk'=>1,'water_bottle'=>1);
+	$stck=Array('apple'=>64,'arrow'=>64,'beetroot'=>64,'bone'=>64,'blaze_rod'=>64,'cactus'=>64,'carrot'=>64,'clay_ball'=>64,'coal'=>64,'cobblestone'=>64,'coca_beans'=>64,'chorus_fruit'=>64,'diamond'=>64,'dirt'=>64,'dragon_breath'=>64,'emerald'=>64,'end_stone'=>64,'feather'=>64,'flint'=>64,'ghast_tear'=>64,'glowstone'=>64,'glowstone_dust'=>64,'gold'=>64,'gravel'=>64,'gunpowder'=>64,'ink_sac'=>64,'iron'=>64,'lapis'=>64,'leather'=>64,'melon'=>64,'nether_star'=>64,'nether_wart'=>64,'netherrack'=>64,'observer'=>64,'red_mushroom'=>64,'brown_mushroom'=>64,'obsidian'=>64,'potato'=>64,'prismarine_crystals'=>64,'prismarine_shard'=>64,'pufferfish'=>64,'quartz'=>64,'rabbit_foot'=>64,'raw_beef'=>64,'raw_chicken'=>64,'raw_fish'=>64,'raw_mutton'=>64,'raw_porkchop'=>64,'raw_rabbit'=>64,'red_dye'=>64,'red_sand'=>64,'redstone'=>64,'sand'=>64,'sapling'=>64,'shulker_shell'=>64,'slime_ball'=>64,'soulsand'=>64,'spider_eye'=>64,'stone'=>64,'string'=>64,'sugar_cane'=>64,'vines'=>64,'wither_skeleton_skull'=>64,'wood'=>64,'wool'=>64,'wheat'=>64,'yellow_dye'=>64,'ender_pearl'=>16,'egg'=>16,'armor_stand'=>16,'sign'=>16,'bow'=>1,'bed'=>1,'lava'=>1,'milk'=>1,'shulker_box'=>1,'totem_of_undying'=>1,'water_bottle'=>1);
 	$ra=Array();
 	for($j=1;$j<=10;$j+=1){ // 10 input slots
 		if(strlen($_POST['f'.$j.'h'])>2){ //if isset replacement
@@ -577,6 +614,7 @@ if($_GET['process']=='yes'){
 		}
 		if(($_POST['doMobs']=='looting')&($mk=='ghast')) echo('<h3>Are you sure you can kill Ghasts with looting III ?</h3>');
 		if(($_POST['doMobs']=='looting')&($mk=='iron_golem')) echo('<h3>Looting III has no effect on Iron Golem drops</h3>');
+		if(($_POST['doMobs']=='looting')&($mk=='evoker')) echo('<h3>Looting III has no effect on Totem of Undying drops</h3>');
 		echo('</p>');
 	}
 }
@@ -594,27 +632,17 @@ echo('<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
 	<script src="script.js" language="javascript"></script>
 	
 </head><body>');
-echo('<h1>Minecraft Crafting Materials Calculator 1.10</h1><div class="main"><table border="0" width="100%"><tr width="100%"><td colspan="2"><a class="bl" href="#" id="t_blocks" onclick="displayBl(this.id)";>Building blocks</a> <a class="bl" href="#" id="t_colored" onclick="displayBl(this.id)";>16 Colors</a> <a class="bl" href="#" id="t_redstone" onclick="displayBl(this.id)";>Redstone & Rail</a> <a class="bl" id="t_potions" onclick="displayBl(this.id)" href=#">Potions</a> <a class="bl" href="#" id="t_items" onclick="displayBl(this.id)";>Other</a> <a class="bl" href="#" id="t_sets" onclick="displayBl(this.id)";>Sets</a>');
+echo('<h1>Minecraft Crafting Materials Calculator 1.14</h1><div class="main"><table border="0" width="100%"><tr width="100%"><td colspan="2"><a class="bl" href="#" id="t_blocks" onclick="displayBl(this.id)";>Building blocks</a> <a class="bl" href="#" id="t_colored" onclick="displayBl(this.id)";>16 Colors</a> <a class="bl" href="#" id="t_redstone" onclick="displayBl(this.id)";>Redstone & Rail</a> <a class="bl" id="t_potions" onclick="displayBl(this.id)" href=#">Potions</a> <a class="bl" href="#" id="t_items" onclick="displayBl(this.id)";>Other</a> <a class="bl" href="#" id="t_sets" onclick="displayBl(this.id)";>Sets</a>');
 echo('</td></tr><tr width="100%"><td width="30%">');
 echo('<form name="things" id="things" action="index.php" method="POST"><p>Select items</p>');
 for($i=1;$i<=10;$i+=1) echo('<span id="f'.$i.'" style="display: none;"><img id="f'.$i.'img" src="#" width="64" height="64"><input type="hidden" name="f'.$i.'h" value="" id="f'.$i.'hi"><input id="f'.$i.'f" name="f'.$i.'f" type="text" class="formfld" size="3" maxlength="5"><a href="#" onclick="hideLine(parentNode.id)"><img src="gfx/x.png" id="x"></a></span>');
 echo('</td><td width="50%"><br>&nbsp;<br> ');
-$itemsBlocks=Array('note_block','jukebox','bookshelf','beacon','cobblestone','cobblestone_slab','cobblestone_stairs','cobblestone_wall',
-'moss_stone','moss_stone_wall','stone_bricks','stone_brick_stairs','stone_brick_slab','chiseled_stone_bricks','mossy_stone_bricks','cracked_stone_bricks','planks',
-'wood_stairs','plank_slab','fence','fence_gate','bricks','bricks_stairs','bricks_slab','hay_bale','emerald_block','diamond_block','gold_block','iron_block','redstone_block','slime_block','lapis_block',
-'coal_block','quartz_block','quartz_stairs','quartz_slab','chiseled_quartz_block','quartz_pillar','obsidian','coarse_dirt','sandstone','sandstone_stairs','sandstone_slab','smooth_sandstone',
-'chiseled_sandstone','red_sandstone','red_sandstone_stairs','red_sandstone_slab','smooth_red_sandstone','chiseled_red_sandstone','nether_bricks','nether_bricks_stairs','nether_bricks_slab','nether_brick_fence','red_nether_bricks',
-'iron_bars','furnace','glass','glass_pane','TNT','prismarine','prismarine_bricks','dark_prismarine','sea_lantern','glowstone','hardened_clay','purpur_block','purpur_pillar','purpur_stairs','purpur_slab','end_stone_bricks','bone_block','nether_wart_block','magma_block');
+$itemsBlocks=Array('note_block','jukebox','bookshelf','beacon','cobblestone','cobblestone_slab','cobblestone_stairs','cobblestone_wall','moss_stone','moss_stone_wall','stone_bricks','stone_brick_stairs','stone_brick_slab','chiseled_stone_bricks','mossy_stone_bricks','cracked_stone_bricks','planks','wood_stairs','plank_slab','fence','fence_gate','bricks','bricks_stairs','bricks_slab','hay_bale','emerald_block','diamond_block','gold_block','iron_block','redstone_block','slime_block','lapis_block','coal_block','quartz_block','quartz_stairs','quartz_slab','chiseled_quartz_block','quartz_pillar','obsidian','coarse_dirt','sandstone','sandstone_stairs','sandstone_slab','smooth_sandstone','chiseled_sandstone','red_sandstone','red_sandstone_stairs','red_sandstone_slab','smooth_red_sandstone','chiseled_red_sandstone','nether_bricks','nether_bricks_stairs','nether_bricks_slab','nether_brick_fence','red_nether_bricks','iron_bars','furnace','glass','glass_pane','TNT','prismarine','prismarine_bricks','dark_prismarine','sea_lantern','glowstone','terracotta','purpur_block','purpur_pillar','purpur_stairs','purpur_slab','end_stone_bricks','bone_block','nether_wart_block','magma_block');
 echo('<div id="it_blocks" style="border:none;">');
 foreach($itemsBlocks as $it){
 	echo('<a href="#" title="'.ucwords(str_replace('_',' ',$it)).'" id="'.$it.'" onclick="addItem(this.id,this.id,\''.ucwords(str_replace('_',' ',$it)).'\')" style="vertical-align:top;"><img onmouseover="imgh(this.id)" onmouseout="imgd(this.id)" class="nrm" src="gfx/'.$it.'.png" width="64" height="64" alt="'.ucwords(str_replace('_',' ',$it)).'" id="'.$it.'_i"></a>');
 }
-$itemsColored=Array('white_glass','orange_glass','magenta_glass','light_blue_glass','yellow_glass','lime_glass','pink_glass','gray_glass','light_gray_glass','cyan_glass',
-'purple_glass','blue_glass','brown_glass','green_glass','red_glass','black_glass','white_glass_pane','orange_glass_pane','magenta_glass_pane','light_blue_glass_pane',
-'yellow_glass_pane','lime_glass_pane','pink_glass_pane','gray_glass_pane','light_gray_glass_pane','cyan_glass_pane','purple_glass_pane','blue_glass_pane','brown_glass_pane',
-'green_glass_pane','red_glass_pane','black_glass_pane','white_stained_clay','orange_stained_clay','magenta_stained_clay','light_blue_stained_clay','yellow_stained_clay',
-'lime_stained_clay','pink_stained_clay','gray_stained_clay','light_gray_stained_clay','cyan_stained_clay','purple_stained_clay','blue_stained_clay','brown_stained_clay',
-'green_stained_clay','red_stained_clay','black_stained_clay');
+$itemsColored=Array('white_glass','orange_glass','magenta_glass','light_blue_glass','yellow_glass','lime_glass','pink_glass','gray_glass','light_gray_glass','cyan_glass','purple_glass','blue_glass','brown_glass','green_glass','red_glass','black_glass','white_glass_pane','orange_glass_pane','magenta_glass_pane','light_blue_glass_pane','yellow_glass_pane','lime_glass_pane','pink_glass_pane','gray_glass_pane','light_gray_glass_pane','cyan_glass_pane','purple_glass_pane','blue_glass_pane','brown_glass_pane','green_glass_pane','red_glass_pane','black_glass_pane','white_terracotta','orange_terracotta','magenta_terracotta','light_blue_terracotta','yellow_terracotta','lime_terracotta','pink_terracotta','gray_terracotta','light_gray_terracotta','cyan_terracotta','purple_terracotta','blue_terracotta','brown_terracotta','green_terracotta','red_terracotta','black_terracotta','concrete_powder_white','concrete_powder_orange','concrete_powder_magenta','concrete_powder_light_blue','concrete_powder_yellow','concrete_powder_lime','concrete_powder_pink','concrete_powder_gray','concrete_powder_light_gray','concrete_powder_cyan','concrete_powder_purple','concrete_powder_blue','concrete_powder_brown','concrete_powder_green','concrete_powder_red','concrete_powder_black','glazed_terracotta_white','glazed_terracotta_orange','glazed_terracotta_magenta','glazed_terracotta_light_blue','glazed_terracotta_yellow','glazed_terracotta_lime','glazed_terracotta_pink','glazed_terracotta_gray','glazed_terracotta_light_gray','glazed_terracotta_cyan','glazed_terracotta_purple','glazed_terracotta_blue','glazed_terracotta_brown','glazed_terracotta_green','glazed_terracotta_red','glazed_terracotta_black');
 echo('</div><div id="it_colored" style="display: none; border: none;">');
 foreach($itemsColored as $it){
 	echo('<a href="#" title="'.ucwords(str_replace('_',' ',$it)).'" id="'.$it.'" onclick="addItem(this.id,this.id,\''.ucwords(str_replace('_',' ',$it)).'\')" style="vertical-align:top;"><img onmouseover="imgh(this.id)" onmouseout="imgd(this.id)" class="nrm" src="gfx/'.$it.'.png" width="64" height="64" alt="'.ucwords(str_replace('_',' ',$it)).'" id="'.$it.'_i"></a>');
@@ -625,17 +653,12 @@ foreach($itemsSets as $key=>$it){
 	echo('<a href="#" title="'.ucwords(str_replace('_',' ',$it)).'" id="'.$it.'" onclick="addItem(this.id,this.id,\''.ucwords(str_replace('_',' ',$it)).'\')" style="vertical-align:top;"><img onmouseover="imgh(this.id)" onmouseout="imgd(this.id)" class="nrm" src="gfx/'.$it.'.png" width="64" height="64" alt="'.ucwords(str_replace('_',' ',$it)).'" id="'.$it.'_i"></a>');
 }
 echo('</div><div id="it_items" style="display: none; border: none;">');
-$itemsItems=Array('anvil','enchantment_table','ladder','sign',
-'chest','trapped_chest','crafting_table','ender_chest','torch','boat','bed','item_frame','painting','arrow','spectral_arrow','bow','clock','compass','lead',
-'flint_and_steel','golden_apple','enchanted_golden_apple','cookie','cake','bread','steak','cooked_porkchop','cooked_mutton','cooked_chicken','cooked_rabbit','baked_potato','rabbit_stew','beetroot_soup','cooked_fish','armor_stand','flower_pot','fishing_rod',
-'carrot_on_a_stick','cauldron','brewing_stand','end_rod','end_crystal','diamond_helmet','diamond_chestplate','diamond_leggings','diamond_boots','iron_helmet','iron_chestplate','iron_leggings','iron_boots','golden_helmet','golden_chestplate','golden_leggings',
-'golden_boots','leather_helmet','leather_chestplate','leather_leggings','leather_boots','shield');
+$itemsItems=Array('anvil','enchantment_table','ladder','sign','chest','trapped_chest','crafting_table','ender_chest','shulker_box','torch','boat','bed','item_frame','painting','arrow','spectral_arrow','bow','clock','compass','lead','flint_and_steel','golden_apple','enchanted_golden_apple','cookie','cake','bread','steak','cooked_porkchop','cooked_mutton','cooked_chicken','cooked_rabbit','baked_potato','rabbit_stew','beetroot_soup','cooked_fish','armor_stand','flower_pot','fishing_rod','carrot_on_a_stick','cauldron','brewing_stand','end_rod','end_crystal','diamond_helmet','diamond_chestplate','diamond_leggings','diamond_boots','iron_helmet','iron_chestplate','iron_leggings','iron_boots','golden_helmet','golden_chestplate','golden_leggings','golden_boots','leather_helmet','leather_chestplate','leather_leggings','leather_boots','shield','totem_of_undying');
 foreach($itemsItems as $it){
 	echo('<a href="#" title="'.ucwords(str_replace('_',' ',$it)).'" id="'.$it.'" onclick="addItem(this.id,this.id,\''.ucwords(str_replace('_',' ',$it)).'\')" style="vertical-align:top;"><img onmouseover="imgh(this.id)" onmouseout="imgd(this.id)" class="nrm" src="gfx/'.$it.'.png" width="64" height="64" alt="'.ucwords(str_replace('_',' ',$it)).'" id="'.$it.'_i"></a>');
 }
 echo('</div><div id="it_redstone" style="display: none; border: none;">');
-$itemsRedstone=Array('piston','sticky_piston','hopper','daylight_sensor','redstone_lamp','redstone_repeater','redstone_comparator','redstone_torch','dispenser','dropper',
-'iron_trapdoor','iron_door','wooden_trapdoor','wooden_door','lever','stone_preassure_plate','wooden_preassure_plate','gold_preassure_plate','iron_preassure_plate','stone_button','wooden_button','rail','powered_rail','activator_rail','detector_rail','minecart','minecart_with_chest','minecart_with_furnace','minecart_with_TNT','minecart_with_hopper');
+$itemsRedstone=Array('piston','sticky_piston','hopper','daylight_sensor','redstone_lamp','redstone_repeater','redstone_comparator','redstone_torch','dispenser','dropper','iron_trapdoor','iron_door','wooden_trapdoor','wooden_door','lever','stone_preassure_plate','wooden_preassure_plate','gold_preassure_plate','iron_preassure_plate','stone_button','wooden_button','rail','powered_rail','activator_rail','detector_rail','minecart','minecart_with_chest','minecart_with_furnace','minecart_with_TNT','minecart_with_hopper','observer');
 foreach($itemsRedstone as $it){
 	echo('<a href="#" title="'.ucwords(str_replace('_',' ',$it)).'" id="'.$it.'" onclick="addItem(this.id,this.id,\''.ucwords(str_replace('_',' ',$it)).'\')" style="vertical-align:top;"><img onmouseover="imgh(this.id)" onmouseout="imgd(this.id)" class="nrm" src="gfx/'.$it.'.png" width="64" height="64" border="0" alt="'.ucwords(str_replace('_',' ',$it)).'" id="'.$it.'_i"></a>');
 }
