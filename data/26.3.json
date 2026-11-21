@@ -757,9 +757,10 @@
       "stackSize": 64,
       "icon": "icons/black_carpet.png",
       "recipe": {
-        "black_wool": 0.666667
+        "black_dye": 1.0,
+        "red_carpet": 1.0
       },
-      "recipeType": "crafting_shaped"
+      "recipeType": "crafting_shapeless"
     },
     "black_concrete": {
       "name": "Black Concrete",
@@ -859,7 +860,8 @@
       "stackSize": 64,
       "icon": "icons/black_stained_glass_pane.png",
       "recipe": {
-        "black_stained_glass": 0.375
+        "glass_pane": 1.0,
+        "black_dye": 0.125
       },
       "recipeType": "crafting_shaped"
     },
@@ -986,10 +988,10 @@
       "stackSize": 1,
       "icon": "icons/blue_bed.png",
       "recipe": {
-        "blue_wool": 3.0,
-        "oak_planks": 3.0
+        "blue_dye": 1.0,
+        "white_bed": 1.0
       },
-      "recipeType": "crafting_shaped"
+      "recipeType": "crafting_shapeless"
     },
     "blue_candle": {
       "name": "Blue Candle",
@@ -1008,9 +1010,10 @@
       "stackSize": 64,
       "icon": "icons/blue_carpet.png",
       "recipe": {
-        "blue_wool": 0.666667
+        "blue_dye": 1.0,
+        "red_carpet": 1.0
       },
-      "recipeType": "crafting_shaped"
+      "recipeType": "crafting_shapeless"
     },
     "blue_concrete": {
       "name": "Blue Concrete",
@@ -1126,8 +1129,7 @@
       "stackSize": 64,
       "icon": "icons/blue_stained_glass_pane.png",
       "recipe": {
-        "glass_pane": 1.0,
-        "blue_dye": 0.125
+        "blue_stained_glass": 0.375
       },
       "recipeType": "crafting_shaped"
     },
@@ -1348,10 +1350,10 @@
       "stackSize": 1,
       "icon": "icons/brown_bed.png",
       "recipe": {
-        "brown_dye": 1.0,
-        "white_bed": 1.0
+        "brown_wool": 3.0,
+        "oak_planks": 3.0
       },
-      "recipeType": "crafting_shapeless"
+      "recipeType": "crafting_shaped"
     },
     "brown_candle": {
       "name": "Brown Candle",
@@ -1865,13 +1867,13 @@
     },
     "chiseled_cinnabar": {
       "name": "Chiseled Cinnabar",
-      "category": "other",
+      "category": "building",
       "stackSize": 64,
       "icon": "icons/chiseled_cinnabar.png",
       "recipe": {
-        "cinnabar": 1.0
+        "cinnabar_slab": 2.0
       },
-      "recipeType": "stonecutting"
+      "recipeType": "crafting_shaped"
     },
     "chiseled_copper": {
       "name": "Chiseled Copper",
@@ -1895,13 +1897,13 @@
     },
     "chiseled_nether_bricks": {
       "name": "Chiseled Nether Bricks",
-      "category": "building",
+      "category": "other",
       "stackSize": 64,
       "icon": "icons/chiseled_nether_bricks.png",
       "recipe": {
-        "nether_brick_slab": 2.0
+        "nether_bricks": 1.0
       },
-      "recipeType": "crafting_shaped"
+      "recipeType": "stonecutting"
     },
     "chiseled_polished_blackstone": {
       "name": "Chiseled Polished Blackstone",
@@ -1915,13 +1917,13 @@
     },
     "chiseled_quartz_block": {
       "name": "Chiseled Quartz Block",
-      "category": "other",
+      "category": "building",
       "stackSize": 64,
       "icon": "icons/chiseled_quartz_block.png",
       "recipe": {
-        "quartz_block": 1.0
+        "quartz_slab": 2.0
       },
-      "recipeType": "stonecutting"
+      "recipeType": "crafting_shaped"
     },
     "chiseled_red_sandstone": {
       "name": "Chiseled Red Sandstone",
@@ -1935,13 +1937,13 @@
     },
     "chiseled_resin_bricks": {
       "name": "Chiseled Resin Bricks",
-      "category": "building",
+      "category": "other",
       "stackSize": 64,
       "icon": "icons/chiseled_resin_bricks.png",
       "recipe": {
-        "resin_brick_slab": 2.0
+        "resin_bricks": 1.0
       },
-      "recipeType": "crafting_shaped"
+      "recipeType": "stonecutting"
     },
     "chiseled_sandstone": {
       "name": "Chiseled Sandstone",
@@ -1965,13 +1967,13 @@
     },
     "chiseled_sulfur": {
       "name": "Chiseled Sulfur",
-      "category": "building",
+      "category": "other",
       "stackSize": 64,
       "icon": "icons/chiseled_sulfur.png",
       "recipe": {
-        "sulfur_slab": 2.0
+        "sulfur": 1.0
       },
-      "recipeType": "crafting_shaped"
+      "recipeType": "stonecutting"
     },
     "chiseled_tuff": {
       "name": "Chiseled Tuff",
@@ -1985,13 +1987,13 @@
     },
     "chiseled_tuff_bricks": {
       "name": "Chiseled Tuff Bricks",
-      "category": "building",
+      "category": "other",
       "stackSize": 64,
       "icon": "icons/chiseled_tuff_bricks.png",
       "recipe": {
-        "tuff_brick_slab": 2.0
+        "tuff": 1.0
       },
-      "recipeType": "crafting_shaped"
+      "recipeType": "stonecutting"
     },
     "chorus_fruit": {
       "name": "Chorus Fruit",
@@ -3021,10 +3023,9 @@
       "stackSize": 64,
       "icon": "icons/cyan_cushion.png",
       "recipe": {
-        "cyan_dye": 1.0,
-        "red_cushion": 1.0
+        "cyan_wool_slab": 3.0
       },
-      "recipeType": "crafting_shapeless"
+      "recipeType": "crafting_shaped"
     },
     "cyan_dye": {
       "name": "Cyan Dye",
@@ -3053,10 +3054,11 @@
       "stackSize": 64,
       "icon": "icons/cyan_harness.png",
       "recipe": {
-        "cyan_dye": 1.0,
-        "red_harness": 1.0
+        "leather": 3.0,
+        "glass": 2.0,
+        "cyan_wool": 1.0
       },
-      "recipeType": "crafting_shapeless"
+      "recipeType": "crafting_shaped"
     },
     "cyan_stained_glass": {
       "name": "Cyan Stained Glass",
@@ -3118,10 +3120,9 @@
       "stackSize": 64,
       "icon": "icons/cyan_wool_stairs.png",
       "recipe": {
-        "cyan_dye": 1.0,
-        "red_wool_stairs": 1.0
+        "cyan_wool": 1.5
       },
-      "recipeType": "crafting_shapeless"
+      "recipeType": "crafting_shaped"
     },
     "dandelion": {
       "name": "Dandelion",
@@ -3366,13 +3367,13 @@
     },
     "deepslate_brick_stairs": {
       "name": "Deepslate Brick Stairs",
-      "category": "other",
+      "category": "building",
       "stackSize": 64,
       "icon": "icons/deepslate_brick_stairs.png",
       "recipe": {
-        "cobbled_deepslate": 1.0
+        "deepslate_bricks": 1.5
       },
-      "recipeType": "stonecutting"
+      "recipeType": "crafting_shaped"
     },
     "deepslate_brick_wall": {
       "name": "Deepslate Brick Wall",
@@ -3380,9 +3381,9 @@
       "stackSize": 64,
       "icon": "icons/deepslate_brick_wall.png",
       "recipe": {
-        "cobbled_deepslate": 1.0
+        "deepslate_bricks": 1.0
       },
-      "recipeType": "stonecutting"
+      "recipeType": "crafting_shaped"
     },
     "deepslate_bricks": {
       "name": "Deepslate Bricks",
@@ -3845,13 +3846,13 @@
     },
     "exposed_chiseled_copper": {
       "name": "Exposed Chiseled Copper",
-      "category": "building",
+      "category": "other",
       "stackSize": 64,
       "icon": "icons/exposed_chiseled_copper.png",
       "recipe": {
-        "exposed_cut_copper_slab": 2.0
+        "exposed_copper": 0.25
       },
-      "recipeType": "crafting_shaped"
+      "recipeType": "stonecutting"
     },
     "exposed_copper": {
       "name": "Exposed Copper",
@@ -3945,13 +3946,13 @@
     },
     "exposed_cut_copper_stairs": {
       "name": "Exposed Cut Copper Stairs",
-      "category": "building",
+      "category": "other",
       "stackSize": 64,
       "icon": "icons/exposed_cut_copper_stairs.png",
       "recipe": {
-        "exposed_cut_copper": 1.5
+        "exposed_copper": 0.25
       },
-      "recipeType": "crafting_shaped"
+      "recipeType": "stonecutting"
     },
     "exposed_lightning_rod": {
       "name": "Exposed Lightning Rod",
@@ -4464,10 +4465,10 @@
       "stackSize": 1,
       "icon": "icons/gray_bed.png",
       "recipe": {
-        "gray_wool": 3.0,
-        "oak_planks": 3.0
+        "gray_dye": 1.0,
+        "white_bed": 1.0
       },
-      "recipeType": "crafting_shaped"
+      "recipeType": "crafting_shapeless"
     },
     "gray_candle": {
       "name": "Gray Candle",
@@ -4588,7 +4589,8 @@
       "stackSize": 64,
       "icon": "icons/gray_stained_glass_pane.png",
       "recipe": {
-        "gray_stained_glass": 0.375
+        "glass_pane": 1.0,
+        "gray_dye": 0.125
       },
       "recipeType": "crafting_shaped"
     },
@@ -4651,10 +4653,10 @@
       "stackSize": 1,
       "icon": "icons/green_bed.png",
       "recipe": {
-        "green_wool": 3.0,
-        "oak_planks": 3.0
+        "green_dye": 1.0,
+        "white_bed": 1.0
       },
-      "recipeType": "crafting_shaped"
+      "recipeType": "crafting_shapeless"
     },
     "green_candle": {
       "name": "Green Candle",
@@ -4673,9 +4675,10 @@
       "stackSize": 64,
       "icon": "icons/green_carpet.png",
       "recipe": {
-        "green_wool": 0.666667
+        "green_dye": 1.0,
+        "red_carpet": 1.0
       },
-      "recipeType": "crafting_shaped"
+      "recipeType": "crafting_shapeless"
     },
     "green_concrete": {
       "name": "Green Concrete",
@@ -4776,8 +4779,7 @@
       "stackSize": 64,
       "icon": "icons/green_stained_glass_pane.png",
       "recipe": {
-        "glass_pane": 1.0,
-        "green_dye": 0.125
+        "green_stained_glass": 0.375
       },
       "recipeType": "crafting_shaped"
     },
@@ -4809,10 +4811,9 @@
       "stackSize": 64,
       "icon": "icons/green_wool_slab.png",
       "recipe": {
-        "green_dye": 1.0,
-        "red_wool_slab": 1.0
+        "green_wool": 0.5
       },
-      "recipeType": "crafting_shapeless"
+      "recipeType": "crafting_shaped"
     },
     "green_wool_stairs": {
       "name": "Green Wool Stairs",
@@ -4820,10 +4821,9 @@
       "stackSize": 64,
       "icon": "icons/green_wool_stairs.png",
       "recipe": {
-        "green_dye": 1.0,
-        "red_wool_stairs": 1.0
+        "green_wool": 1.5
       },
-      "recipeType": "crafting_shapeless"
+      "recipeType": "crafting_shaped"
     },
     "grindstone": {
       "name": "Grindstone",
@@ -5468,10 +5468,10 @@
       "stackSize": 1,
       "icon": "icons/light_blue_bed.png",
       "recipe": {
-        "light_blue_dye": 1.0,
-        "white_bed": 1.0
+        "light_blue_wool": 3.0,
+        "oak_planks": 3.0
       },
-      "recipeType": "crafting_shapeless"
+      "recipeType": "crafting_shaped"
     },
     "light_blue_candle": {
       "name": "Light Blue Candle",
@@ -5624,10 +5624,9 @@
       "stackSize": 64,
       "icon": "icons/light_blue_wool_slab.png",
       "recipe": {
-        "light_blue_dye": 1.0,
-        "red_wool_slab": 1.0
+        "light_blue_wool": 0.5
       },
-      "recipeType": "crafting_shapeless"
+      "recipeType": "crafting_shaped"
     },
     "light_blue_wool_stairs": {
       "name": "Light Blue Wool Stairs",
@@ -5852,12 +5851,6 @@
       "stackSize": 64,
       "icon": "icons/lilac.png"
     },
-    "lily_of_the_valley": {
-      "name": "Lily of the Valley",
-      "category": "raw",
-      "stackSize": 64,
-      "icon": "icons/lily_of_the_valley.png"
-    },
     "lime_banner": {
       "name": "Lime Banner",
       "category": "colored",
@@ -5955,10 +5948,10 @@
       "stackSize": 64,
       "icon": "icons/lime_dye.png",
       "recipe": {
-        "green_dye": 0.5,
-        "white_dye": 0.5
+        "sea_pickle": 1.0,
+        "fuel": 1.0
       },
-      "recipeType": "crafting_shapeless"
+      "recipeType": "smelting"
     },
     "lime_glazed_terracotta": {
       "name": "Lime Glazed Terracotta",
@@ -5977,10 +5970,11 @@
       "stackSize": 64,
       "icon": "icons/lime_harness.png",
       "recipe": {
-        "lime_dye": 1.0,
-        "red_harness": 1.0
+        "leather": 3.0,
+        "glass": 2.0,
+        "lime_wool": 1.0
       },
-      "recipeType": "crafting_shapeless"
+      "recipeType": "crafting_shaped"
     },
     "lime_stained_glass": {
       "name": "Lime Stained Glass",
@@ -5999,7 +5993,8 @@
       "stackSize": 64,
       "icon": "icons/lime_stained_glass_pane.png",
       "recipe": {
-        "lime_stained_glass": 0.375
+        "glass_pane": 1.0,
+        "lime_dye": 0.125
       },
       "recipeType": "crafting_shaped"
     },
@@ -6031,10 +6026,9 @@
       "stackSize": 64,
       "icon": "icons/lime_wool_slab.png",
       "recipe": {
-        "lime_dye": 1.0,
-        "red_wool_slab": 1.0
+        "lime_wool": 0.5
       },
-      "recipeType": "crafting_shapeless"
+      "recipeType": "crafting_shaped"
     },
     "lime_wool_stairs": {
       "name": "Lime Wool Stairs",
@@ -6042,10 +6036,9 @@
       "stackSize": 64,
       "icon": "icons/lime_wool_stairs.png",
       "recipe": {
-        "lime_dye": 1.0,
-        "red_wool_stairs": 1.0
+        "lime_wool": 1.5
       },
-      "recipeType": "crafting_shapeless"
+      "recipeType": "crafting_shaped"
     },
     "lingering_potion/awkward": {
       "name": "Awkward Lingering Potion",
@@ -6161,8 +6154,8 @@
       "stackSize": 1,
       "icon": "icons/lingering_potion__long_leaping.png",
       "recipe": {
-        "lingering_potion/leaping": 1,
-        "redstone": 0.333333,
+        "splash_potion/long_leaping": 1,
+        "dragon_breath": 0.333333,
         "blaze_powder": 0.016667
       },
       "recipeType": "brewing"
@@ -6197,8 +6190,8 @@
       "stackSize": 1,
       "icon": "icons/lingering_potion__long_regeneration.png",
       "recipe": {
-        "splash_potion/long_regeneration": 1,
-        "dragon_breath": 0.333333,
+        "lingering_potion/regeneration": 1,
+        "redstone": 0.333333,
         "blaze_powder": 0.016667
       },
       "recipeType": "brewing"
@@ -6221,8 +6214,8 @@
       "stackSize": 1,
       "icon": "icons/lingering_potion__long_slowness.png",
       "recipe": {
-        "lingering_potion/slowness": 1,
-        "redstone": 0.333333,
+        "lingering_potion/long_leaping": 1,
+        "fermented_spider_eye": 0.333333,
         "blaze_powder": 0.016667
       },
       "recipeType": "brewing"
@@ -6233,8 +6226,8 @@
       "stackSize": 1,
       "icon": "icons/lingering_potion__long_strength.png",
       "recipe": {
-        "splash_potion/long_strength": 1,
-        "dragon_breath": 0.333333,
+        "lingering_potion/strength": 1,
+        "redstone": 0.333333,
         "blaze_powder": 0.016667
       },
       "recipeType": "brewing"
@@ -6328,8 +6321,8 @@
       "stackSize": 1,
       "icon": "icons/lingering_potion__poison.png",
       "recipe": {
-        "splash_potion/poison": 1,
-        "dragon_breath": 0.333333,
+        "lingering_potion/awkward": 1,
+        "spider_eye": 0.333333,
         "blaze_powder": 0.016667
       },
       "recipeType": "brewing"
@@ -6340,8 +6333,8 @@
       "stackSize": 1,
       "icon": "icons/lingering_potion__regeneration.png",
       "recipe": {
-        "lingering_potion/awkward": 1,
-        "ghast_tear": 0.333333,
+        "splash_potion/regeneration": 1,
+        "dragon_breath": 0.333333,
         "blaze_powder": 0.016667
       },
       "recipeType": "brewing"
@@ -6364,8 +6357,8 @@
       "stackSize": 1,
       "icon": "icons/lingering_potion__slowness.png",
       "recipe": {
-        "splash_potion/slowness": 1,
-        "dragon_breath": 0.333333,
+        "lingering_potion/swiftness": 1,
+        "fermented_spider_eye": 0.333333,
         "blaze_powder": 0.016667
       },
       "recipeType": "brewing"
@@ -6411,8 +6404,8 @@
       "stackSize": 1,
       "icon": "icons/lingering_potion__strong_leaping.png",
       "recipe": {
-        "lingering_potion/leaping": 1,
-        "glowstone_dust": 0.333333,
+        "splash_potion/strong_leaping": 1,
+        "dragon_breath": 0.333333,
         "blaze_powder": 0.016667
       },
       "recipeType": "brewing"
@@ -6459,8 +6452,8 @@
       "stackSize": 1,
       "icon": "icons/lingering_potion__strong_strength.png",
       "recipe": {
-        "splash_potion/strong_strength": 1,
-        "dragon_breath": 0.333333,
+        "lingering_potion/strength": 1,
+        "glowstone_dust": 0.333333,
         "blaze_powder": 0.016667
       },
       "recipeType": "brewing"
@@ -6507,8 +6500,8 @@
       "stackSize": 1,
       "icon": "icons/lingering_potion__thick.png",
       "recipe": {
-        "lingering_potion/water": 1,
-        "glowstone_dust": 0.333333,
+        "splash_potion/thick": 1,
+        "dragon_breath": 0.333333,
         "blaze_powder": 0.016667
       },
       "recipeType": "brewing"
@@ -6567,8 +6560,8 @@
       "stackSize": 1,
       "icon": "icons/lingering_potion__weaving.png",
       "recipe": {
-        "splash_potion/weaving": 1,
-        "dragon_breath": 0.333333,
+        "lingering_potion/awkward": 1,
+        "cobweb": 0.333333,
         "blaze_powder": 0.016667
       },
       "recipeType": "brewing"
@@ -6635,10 +6628,10 @@
       "stackSize": 1,
       "icon": "icons/magenta_bed.png",
       "recipe": {
-        "magenta_wool": 3.0,
-        "oak_planks": 3.0
+        "magenta_dye": 1.0,
+        "white_bed": 1.0
       },
-      "recipeType": "crafting_shaped"
+      "recipeType": "crafting_shapeless"
     },
     "magenta_candle": {
       "name": "Magenta Candle",
@@ -6657,9 +6650,10 @@
       "stackSize": 64,
       "icon": "icons/magenta_carpet.png",
       "recipe": {
-        "magenta_wool": 0.666667
+        "magenta_dye": 1.0,
+        "red_carpet": 1.0
       },
-      "recipeType": "crafting_shaped"
+      "recipeType": "crafting_shapeless"
     },
     "magenta_concrete": {
       "name": "Magenta Concrete",
@@ -6736,10 +6730,11 @@
       "stackSize": 64,
       "icon": "icons/magenta_harness.png",
       "recipe": {
-        "magenta_dye": 1.0,
-        "red_harness": 1.0
+        "leather": 3.0,
+        "glass": 2.0,
+        "magenta_wool": 1.0
       },
-      "recipeType": "crafting_shapeless"
+      "recipeType": "crafting_shaped"
     },
     "magenta_stained_glass": {
       "name": "Magenta Stained Glass",
@@ -6800,10 +6795,9 @@
       "stackSize": 64,
       "icon": "icons/magenta_wool_stairs.png",
       "recipe": {
-        "magenta_dye": 1.0,
-        "red_wool_stairs": 1.0
+        "magenta_wool": 1.5
       },
-      "recipeType": "crafting_shapeless"
+      "recipeType": "crafting_shaped"
     },
     "magma_block": {
       "name": "Magma Block",
@@ -7785,10 +7779,9 @@
       "stackSize": 64,
       "icon": "icons/orange_carpet.png",
       "recipe": {
-        "orange_dye": 1.0,
-        "red_carpet": 1.0
+        "orange_wool": 0.666667
       },
-      "recipeType": "crafting_shapeless"
+      "recipeType": "crafting_shaped"
     },
     "orange_concrete": {
       "name": "Orange Concrete",
@@ -7865,10 +7858,11 @@
       "stackSize": 64,
       "icon": "icons/orange_harness.png",
       "recipe": {
-        "orange_dye": 1.0,
-        "red_harness": 1.0
+        "leather": 3.0,
+        "glass": 2.0,
+        "orange_wool": 1.0
       },
-      "recipeType": "crafting_shapeless"
+      "recipeType": "crafting_shaped"
     },
     "orange_stained_glass": {
       "name": "Orange Stained Glass",
@@ -7941,13 +7935,13 @@
     },
     "oxidized_chiseled_copper": {
       "name": "Oxidized Chiseled Copper",
-      "category": "building",
+      "category": "other",
       "stackSize": 64,
       "icon": "icons/oxidized_chiseled_copper.png",
       "recipe": {
-        "oxidized_cut_copper_slab": 2.0
+        "oxidized_copper": 0.25
       },
-      "recipeType": "crafting_shaped"
+      "recipeType": "stonecutting"
     },
     "oxidized_copper": {
       "name": "Oxidized Copper",
@@ -8031,13 +8025,13 @@
     },
     "oxidized_cut_copper_slab": {
       "name": "Oxidized Cut Copper Slab",
-      "category": "other",
+      "category": "building",
       "stackSize": 64,
       "icon": "icons/oxidized_cut_copper_slab.png",
       "recipe": {
-        "oxidized_copper": 0.125
+        "oxidized_cut_copper": 0.5
       },
-      "recipeType": "stonecutting"
+      "recipeType": "crafting_shaped"
     },
     "oxidized_cut_copper_stairs": {
       "name": "Oxidized Cut Copper Stairs",
@@ -8505,23 +8499,23 @@
     },
     "polished_andesite_slab": {
       "name": "Polished Andesite Slab",
-      "category": "other",
+      "category": "building",
       "stackSize": 64,
       "icon": "icons/polished_andesite_slab.png",
       "recipe": {
-        "andesite": 0.5
+        "polished_andesite": 0.5
       },
-      "recipeType": "stonecutting"
+      "recipeType": "crafting_shaped"
     },
     "polished_andesite_stairs": {
       "name": "Polished Andesite Stairs",
-      "category": "other",
+      "category": "building",
       "stackSize": 64,
       "icon": "icons/polished_andesite_stairs.png",
       "recipe": {
-        "andesite": 1.0
+        "polished_andesite": 1.5
       },
-      "recipeType": "stonecutting"
+      "recipeType": "crafting_shaped"
     },
     "polished_basalt": {
       "name": "Polished Basalt",
@@ -8569,19 +8563,19 @@
       "stackSize": 64,
       "icon": "icons/polished_blackstone_brick_wall.png",
       "recipe": {
-        "polished_blackstone_bricks": 1.0
+        "blackstone": 1.0
       },
-      "recipeType": "crafting_shaped"
+      "recipeType": "stonecutting"
     },
     "polished_blackstone_bricks": {
       "name": "Polished Blackstone Bricks",
-      "category": "building",
+      "category": "other",
       "stackSize": 64,
       "icon": "icons/polished_blackstone_bricks.png",
       "recipe": {
-        "polished_blackstone": 1.0
+        "blackstone": 1.0
       },
-      "recipeType": "crafting_shaped"
+      "recipeType": "stonecutting"
     },
     "polished_blackstone_button": {
       "name": "Polished Blackstone Button",
@@ -8615,13 +8609,13 @@
     },
     "polished_blackstone_stairs": {
       "name": "Polished Blackstone Stairs",
-      "category": "building",
+      "category": "other",
       "stackSize": 64,
       "icon": "icons/polished_blackstone_stairs.png",
       "recipe": {
-        "polished_blackstone": 1.5
+        "blackstone": 1.0
       },
-      "recipeType": "crafting_shaped"
+      "recipeType": "stonecutting"
     },
     "polished_blackstone_wall": {
       "name": "Polished Blackstone Wall",
@@ -8629,9 +8623,9 @@
       "stackSize": 64,
       "icon": "icons/polished_blackstone_wall.png",
       "recipe": {
-        "polished_blackstone": 1.0
+        "blackstone": 1.0
       },
-      "recipeType": "crafting_shaped"
+      "recipeType": "stonecutting"
     },
     "polished_cinnabar": {
       "name": "Polished Cinnabar",
@@ -8655,13 +8649,13 @@
     },
     "polished_cinnabar_stairs": {
       "name": "Polished Cinnabar Stairs",
-      "category": "building",
+      "category": "other",
       "stackSize": 64,
       "icon": "icons/polished_cinnabar_stairs.png",
       "recipe": {
-        "polished_cinnabar": 1.5
+        "cinnabar": 1.0
       },
-      "recipeType": "crafting_shaped"
+      "recipeType": "stonecutting"
     },
     "polished_cinnabar_wall": {
       "name": "Polished Cinnabar Wall",
@@ -8725,23 +8719,23 @@
     },
     "polished_diorite_slab": {
       "name": "Polished Diorite Slab",
-      "category": "other",
+      "category": "building",
       "stackSize": 64,
       "icon": "icons/polished_diorite_slab.png",
       "recipe": {
-        "diorite": 0.5
+        "polished_diorite": 0.5
       },
-      "recipeType": "stonecutting"
+      "recipeType": "crafting_shaped"
     },
     "polished_diorite_stairs": {
       "name": "Polished Diorite Stairs",
-      "category": "other",
+      "category": "building",
       "stackSize": 64,
       "icon": "icons/polished_diorite_stairs.png",
       "recipe": {
-        "diorite": 1.0
+        "polished_diorite": 1.5
       },
-      "recipeType": "stonecutting"
+      "recipeType": "crafting_shaped"
     },
     "polished_granite": {
       "name": "Polished Granite",
@@ -8755,23 +8749,23 @@
     },
     "polished_granite_slab": {
       "name": "Polished Granite Slab",
-      "category": "other",
+      "category": "building",
       "stackSize": 64,
       "icon": "icons/polished_granite_slab.png",
       "recipe": {
-        "granite": 0.5
+        "polished_granite": 0.5
       },
-      "recipeType": "stonecutting"
+      "recipeType": "crafting_shaped"
     },
     "polished_granite_stairs": {
       "name": "Polished Granite Stairs",
-      "category": "other",
+      "category": "building",
       "stackSize": 64,
       "icon": "icons/polished_granite_stairs.png",
       "recipe": {
-        "granite": 1.0
+        "polished_granite": 1.5
       },
-      "recipeType": "stonecutting"
+      "recipeType": "crafting_shaped"
     },
     "polished_sulfur": {
       "name": "Polished Sulfur",
@@ -8785,23 +8779,23 @@
     },
     "polished_sulfur_slab": {
       "name": "Polished Sulfur Slab",
-      "category": "other",
+      "category": "building",
       "stackSize": 64,
       "icon": "icons/polished_sulfur_slab.png",
       "recipe": {
-        "sulfur": 0.5
+        "polished_sulfur": 0.5
       },
-      "recipeType": "stonecutting"
+      "recipeType": "crafting_shaped"
     },
     "polished_sulfur_stairs": {
       "name": "Polished Sulfur Stairs",
-      "category": "other",
+      "category": "building",
       "stackSize": 64,
       "icon": "icons/polished_sulfur_stairs.png",
       "recipe": {
-        "sulfur": 1.0
+        "polished_sulfur": 1.5
       },
-      "recipeType": "stonecutting"
+      "recipeType": "crafting_shaped"
     },
     "polished_sulfur_wall": {
       "name": "Polished Sulfur Wall",
@@ -8809,9 +8803,9 @@
       "stackSize": 64,
       "icon": "icons/polished_sulfur_wall.png",
       "recipe": {
-        "polished_sulfur": 1.0
+        "sulfur": 1.0
       },
-      "recipeType": "crafting_shaped"
+      "recipeType": "stonecutting"
     },
     "polished_tuff": {
       "name": "Polished Tuff",
@@ -8825,23 +8819,23 @@
     },
     "polished_tuff_slab": {
       "name": "Polished Tuff Slab",
-      "category": "building",
+      "category": "other",
       "stackSize": 64,
       "icon": "icons/polished_tuff_slab.png",
       "recipe": {
-        "polished_tuff": 0.5
+        "tuff": 0.5
       },
-      "recipeType": "crafting_shaped"
+      "recipeType": "stonecutting"
     },
     "polished_tuff_stairs": {
       "name": "Polished Tuff Stairs",
-      "category": "building",
+      "category": "other",
       "stackSize": 64,
       "icon": "icons/polished_tuff_stairs.png",
       "recipe": {
-        "polished_tuff": 1.5
+        "tuff": 1.0
       },
-      "recipeType": "crafting_shaped"
+      "recipeType": "stonecutting"
     },
     "polished_tuff_wall": {
       "name": "Polished Tuff Wall",
@@ -8849,9 +8843,9 @@
       "stackSize": 64,
       "icon": "icons/polished_tuff_wall.png",
       "recipe": {
-        "polished_tuff": 1.0
+        "tuff": 1.0
       },
-      "recipeType": "crafting_shaped"
+      "recipeType": "stonecutting"
     },
     "poplar_boat": {
       "name": "Poplar Boat",
@@ -9221,7 +9215,7 @@
       "stackSize": 1,
       "icon": "icons/potion__long_slowness.png",
       "recipe": {
-        "potion/long_swiftness": 1,
+        "potion/long_leaping": 1,
         "fermented_spider_eye": 0.333333,
         "blaze_powder": 0.016667
       },
@@ -9364,7 +9358,7 @@
       "stackSize": 1,
       "icon": "icons/potion__slowness.png",
       "recipe": {
-        "potion/swiftness": 1,
+        "potion/leaping": 1,
         "fermented_spider_eye": 0.333333,
         "blaze_powder": 0.016667
       },
@@ -9826,10 +9820,11 @@
       "stackSize": 64,
       "icon": "icons/purple_harness.png",
       "recipe": {
-        "purple_dye": 1.0,
-        "red_harness": 1.0
+        "leather": 3.0,
+        "glass": 2.0,
+        "purple_wool": 1.0
       },
-      "recipeType": "crafting_shapeless"
+      "recipeType": "crafting_shaped"
     },
     "purple_stained_glass": {
       "name": "Purple Stained Glass",
@@ -9848,8 +9843,7 @@
       "stackSize": 64,
       "icon": "icons/purple_stained_glass_pane.png",
       "recipe": {
-        "glass_pane": 1.0,
-        "purple_dye": 0.125
+        "purple_stained_glass": 0.375
       },
       "recipeType": "crafting_shaped"
     },
@@ -10126,9 +10120,10 @@
       "stackSize": 64,
       "icon": "icons/red_carpet.png",
       "recipe": {
-        "red_wool": 0.666667
+        "red_dye": 1.0,
+        "white_carpet": 1.0
       },
-      "recipeType": "crafting_shaped"
+      "recipeType": "crafting_shapeless"
     },
     "red_concrete": {
       "name": "Red Concrete",
@@ -10321,7 +10316,8 @@
       "stackSize": 64,
       "icon": "icons/red_stained_glass_pane.png",
       "recipe": {
-        "red_stained_glass": 0.375
+        "glass_pane": 1.0,
+        "red_dye": 0.125
       },
       "recipeType": "crafting_shaped"
     },
@@ -10591,6 +10587,12 @@
         "prismarine_crystals": 5.0
       },
       "recipeType": "crafting_shaped"
+    },
+    "sea_pickle": {
+      "name": "Sea Pickle",
+      "category": "raw",
+      "stackSize": 64,
+      "icon": "icons/sea_pickle.png"
     },
     "shears": {
       "name": "Shears",
@@ -10906,8 +10908,8 @@
       "stackSize": 1,
       "icon": "icons/splash_potion__fire_resistance.png",
       "recipe": {
-        "potion/fire_resistance": 1,
-        "gunpowder": 0.333333,
+        "splash_potion/awkward": 1,
+        "magma_cream": 0.333333,
         "blaze_powder": 0.016667
       },
       "recipeType": "brewing"
@@ -10954,8 +10956,8 @@
       "stackSize": 1,
       "icon": "icons/splash_potion__invisibility.png",
       "recipe": {
-        "potion/invisibility": 1,
-        "gunpowder": 0.333333,
+        "splash_potion/night_vision": 1,
+        "fermented_spider_eye": 0.333333,
         "blaze_powder": 0.016667
       },
       "recipeType": "brewing"
@@ -10978,8 +10980,8 @@
       "stackSize": 1,
       "icon": "icons/splash_potion__long_fire_resistance.png",
       "recipe": {
-        "potion/long_fire_resistance": 1,
-        "gunpowder": 0.333333,
+        "splash_potion/fire_resistance": 1,
+        "redstone": 0.333333,
         "blaze_powder": 0.016667
       },
       "recipeType": "brewing"
@@ -11002,8 +11004,8 @@
       "stackSize": 1,
       "icon": "icons/splash_potion__long_leaping.png",
       "recipe": {
-        "splash_potion/leaping": 1,
-        "redstone": 0.333333,
+        "potion/long_leaping": 1,
+        "gunpowder": 0.333333,
         "blaze_powder": 0.016667
       },
       "recipeType": "brewing"
@@ -11074,8 +11076,8 @@
       "stackSize": 1,
       "icon": "icons/splash_potion__long_strength.png",
       "recipe": {
-        "potion/long_strength": 1,
-        "gunpowder": 0.333333,
+        "splash_potion/strength": 1,
+        "redstone": 0.333333,
         "blaze_powder": 0.016667
       },
       "recipeType": "brewing"
@@ -11086,8 +11088,8 @@
       "stackSize": 1,
       "icon": "icons/splash_potion__long_swiftness.png",
       "recipe": {
-        "potion/long_swiftness": 1,
-        "gunpowder": 0.333333,
+        "splash_potion/swiftness": 1,
+        "redstone": 0.333333,
         "blaze_powder": 0.016667
       },
       "recipeType": "brewing"
@@ -11110,8 +11112,8 @@
       "stackSize": 1,
       "icon": "icons/splash_potion__long_water_breathing.png",
       "recipe": {
-        "potion/long_water_breathing": 1,
-        "gunpowder": 0.333333,
+        "splash_potion/water_breathing": 1,
+        "redstone": 0.333333,
         "blaze_powder": 0.016667
       },
       "recipeType": "brewing"
@@ -11122,8 +11124,8 @@
       "stackSize": 1,
       "icon": "icons/splash_potion__long_weakness.png",
       "recipe": {
-        "potion/long_weakness": 1,
-        "gunpowder": 0.333333,
+        "splash_potion/weakness": 1,
+        "redstone": 0.333333,
         "blaze_powder": 0.016667
       },
       "recipeType": "brewing"
@@ -11193,8 +11195,8 @@
       "stackSize": 1,
       "icon": "icons/splash_potion__slow_falling.png",
       "recipe": {
-        "splash_potion/awkward": 1,
-        "phantom_membrane": 0.333333,
+        "potion/slow_falling": 1,
+        "gunpowder": 0.333333,
         "blaze_powder": 0.016667
       },
       "recipeType": "brewing"
@@ -11228,8 +11230,8 @@
       "stackSize": 1,
       "icon": "icons/splash_potion__strong_harming.png",
       "recipe": {
-        "potion/strong_harming": 1,
-        "gunpowder": 0.333333,
+        "splash_potion/strong_poison": 1,
+        "fermented_spider_eye": 0.333333,
         "blaze_powder": 0.016667
       },
       "recipeType": "brewing"
@@ -11240,8 +11242,8 @@
       "stackSize": 1,
       "icon": "icons/splash_potion__strong_healing.png",
       "recipe": {
-        "potion/strong_healing": 1,
-        "gunpowder": 0.333333,
+        "splash_potion/healing": 1,
+        "glowstone_dust": 0.333333,
         "blaze_powder": 0.016667
       },
       "recipeType": "brewing"
@@ -11288,8 +11290,8 @@
       "stackSize": 1,
       "icon": "icons/splash_potion__strong_slowness.png",
       "recipe": {
-        "potion/strong_slowness": 1,
-        "gunpowder": 0.333333,
+        "splash_potion/slowness": 1,
+        "glowstone_dust": 0.333333,
         "blaze_powder": 0.016667
       },
       "recipeType": "brewing"
@@ -11300,8 +11302,8 @@
       "stackSize": 1,
       "icon": "icons/splash_potion__strong_strength.png",
       "recipe": {
-        "potion/strong_strength": 1,
-        "gunpowder": 0.333333,
+        "splash_potion/strength": 1,
+        "glowstone_dust": 0.333333,
         "blaze_powder": 0.016667
       },
       "recipeType": "brewing"
@@ -11384,8 +11386,8 @@
       "stackSize": 1,
       "icon": "icons/splash_potion__water_breathing.png",
       "recipe": {
-        "potion/water_breathing": 1,
-        "gunpowder": 0.333333,
+        "splash_potion/awkward": 1,
+        "pufferfish": 0.333333,
         "blaze_powder": 0.016667
       },
       "recipeType": "brewing"
@@ -11615,7 +11617,7 @@
       "stackSize": 64,
       "icon": "icons/stick.png",
       "recipe": {
-        "bamboo": 2.0
+        "oak_planks": 0.5
       },
       "recipeType": "crafting_shaped"
     },
@@ -11664,13 +11666,13 @@
     },
     "stone_brick_stairs": {
       "name": "Stone Brick Stairs",
-      "category": "other",
+      "category": "building",
       "stackSize": 64,
       "icon": "icons/stone_brick_stairs.png",
       "recipe": {
-        "stone": 1.0
+        "stone_bricks": 1.5
       },
-      "recipeType": "stonecutting"
+      "recipeType": "crafting_shaped"
     },
     "stone_brick_wall": {
       "name": "Stone Brick Wall",
@@ -12040,23 +12042,23 @@
     },
     "sulfur_brick_slab": {
       "name": "Sulfur Brick Slab",
-      "category": "other",
+      "category": "building",
       "stackSize": 64,
       "icon": "icons/sulfur_brick_slab.png",
       "recipe": {
-        "sulfur": 0.5
+        "sulfur_bricks": 0.5
       },
-      "recipeType": "stonecutting"
+      "recipeType": "crafting_shaped"
     },
     "sulfur_brick_stairs": {
       "name": "Sulfur Brick Stairs",
-      "category": "other",
+      "category": "building",
       "stackSize": 64,
       "icon": "icons/sulfur_brick_stairs.png",
       "recipe": {
-        "sulfur": 1.0
+        "sulfur_bricks": 1.5
       },
-      "recipeType": "stonecutting"
+      "recipeType": "crafting_shaped"
     },
     "sulfur_brick_wall": {
       "name": "Sulfur Brick Wall",
@@ -12070,13 +12072,13 @@
     },
     "sulfur_bricks": {
       "name": "Sulfur Bricks",
-      "category": "building",
+      "category": "other",
       "stackSize": 64,
       "icon": "icons/sulfur_bricks.png",
       "recipe": {
-        "polished_sulfur": 1.0
+        "sulfur": 1.0
       },
-      "recipeType": "crafting_shaped"
+      "recipeType": "stonecutting"
     },
     "sulfur_slab": {
       "name": "Sulfur Slab",
@@ -12229,13 +12231,13 @@
     },
     "tuff_brick_slab": {
       "name": "Tuff Brick Slab",
-      "category": "other",
+      "category": "building",
       "stackSize": 64,
       "icon": "icons/tuff_brick_slab.png",
       "recipe": {
-        "tuff": 0.5
+        "tuff_bricks": 0.5
       },
-      "recipeType": "stonecutting"
+      "recipeType": "crafting_shaped"
     },
     "tuff_brick_stairs": {
       "name": "Tuff Brick Stairs",
@@ -12253,9 +12255,9 @@
       "stackSize": 64,
       "icon": "icons/tuff_brick_wall.png",
       "recipe": {
-        "tuff_bricks": 1.0
+        "tuff": 1.0
       },
-      "recipeType": "crafting_shaped"
+      "recipeType": "stonecutting"
     },
     "tuff_bricks": {
       "name": "Tuff Bricks",
@@ -12478,13 +12480,13 @@
     },
     "waxed_chiseled_copper": {
       "name": "Waxed Chiseled Copper",
-      "category": "building",
+      "category": "other",
       "stackSize": 64,
       "icon": "icons/waxed_chiseled_copper.png",
       "recipe": {
-        "waxed_cut_copper_slab": 2.0
+        "waxed_cut_copper": 1.0
       },
-      "recipeType": "crafting_shaped"
+      "recipeType": "stonecutting"
     },
     "waxed_copper_bars": {
       "name": "Waxed Copper Bars",
@@ -12628,13 +12630,14 @@
     },
     "waxed_exposed_chiseled_copper": {
       "name": "Waxed Exposed Chiseled Copper",
-      "category": "other",
+      "category": "building",
       "stackSize": 64,
       "icon": "icons/waxed_exposed_chiseled_copper.png",
       "recipe": {
-        "waxed_exposed_copper": 0.25
+        "exposed_chiseled_copper": 1.0,
+        "honeycomb": 1.0
       },
-      "recipeType": "stonecutting"
+      "recipeType": "crafting_shapeless"
     },
     "waxed_exposed_copper": {
       "name": "Waxed Exposed Copper",
@@ -12664,11 +12667,10 @@
       "stackSize": 64,
       "icon": "icons/waxed_exposed_copper_bulb.png",
       "recipe": {
-        "waxed_exposed_copper": 0.75,
-        "blaze_rod": 0.25,
-        "redstone": 0.25
+        "exposed_copper_bulb": 1.0,
+        "honeycomb": 1.0
       },
-      "recipeType": "crafting_shaped"
+      "recipeType": "crafting_shapeless"
     },
     "waxed_exposed_copper_chain": {
       "name": "Waxed Exposed Copper Chain",
@@ -12768,13 +12770,14 @@
     },
     "waxed_exposed_cut_copper_stairs": {
       "name": "Waxed Exposed Cut Copper Stairs",
-      "category": "other",
+      "category": "building",
       "stackSize": 64,
       "icon": "icons/waxed_exposed_cut_copper_stairs.png",
       "recipe": {
-        "waxed_exposed_copper": 0.25
+        "exposed_cut_copper_stairs": 1.0,
+        "honeycomb": 1.0
       },
-      "recipeType": "stonecutting"
+      "recipeType": "crafting_shapeless"
     },
     "waxed_exposed_lightning_rod": {
       "name": "Waxed Exposed Lightning Rod",
@@ -12804,9 +12807,10 @@
       "stackSize": 64,
       "icon": "icons/waxed_oxidized_chiseled_copper.png",
       "recipe": {
-        "waxed_oxidized_cut_copper_slab": 2.0
+        "oxidized_chiseled_copper": 1.0,
+        "honeycomb": 1.0
       },
-      "recipeType": "crafting_shaped"
+      "recipeType": "crafting_shapeless"
     },
     "waxed_oxidized_copper": {
       "name": "Waxed Oxidized Copper",
@@ -12924,10 +12928,9 @@
       "stackSize": 64,
       "icon": "icons/waxed_oxidized_cut_copper.png",
       "recipe": {
-        "oxidized_cut_copper": 1.0,
-        "honeycomb": 1.0
+        "waxed_oxidized_copper": 1.0
       },
-      "recipeType": "crafting_shapeless"
+      "recipeType": "crafting_shaped"
     },
     "waxed_oxidized_cut_copper_slab": {
       "name": "Waxed Oxidized Cut Copper Slab",
@@ -12935,10 +12938,9 @@
       "stackSize": 64,
       "icon": "icons/waxed_oxidized_cut_copper_slab.png",
       "recipe": {
-        "oxidized_cut_copper_slab": 1.0,
-        "honeycomb": 1.0
+        "waxed_oxidized_cut_copper": 0.5
       },
-      "recipeType": "crafting_shapeless"
+      "recipeType": "crafting_shaped"
     },
     "waxed_oxidized_cut_copper_stairs": {
       "name": "Waxed Oxidized Cut Copper Stairs",
@@ -12963,13 +12965,13 @@
     },
     "waxed_weathered_chiseled_copper": {
       "name": "Waxed Weathered Chiseled Copper",
-      "category": "building",
+      "category": "other",
       "stackSize": 64,
       "icon": "icons/waxed_weathered_chiseled_copper.png",
       "recipe": {
-        "waxed_weathered_cut_copper_slab": 2.0
+        "waxed_weathered_copper": 0.25
       },
-      "recipeType": "crafting_shaped"
+      "recipeType": "stonecutting"
     },
     "waxed_weathered_copper": {
       "name": "Waxed Weathered Copper",
@@ -13093,13 +13095,13 @@
     },
     "waxed_weathered_cut_copper_slab": {
       "name": "Waxed Weathered Cut Copper Slab",
-      "category": "other",
+      "category": "building",
       "stackSize": 64,
       "icon": "icons/waxed_weathered_cut_copper_slab.png",
       "recipe": {
-        "waxed_weathered_copper": 0.125
+        "waxed_weathered_cut_copper": 0.5
       },
-      "recipeType": "stonecutting"
+      "recipeType": "crafting_shaped"
     },
     "waxed_weathered_cut_copper_stairs": {
       "name": "Waxed Weathered Cut Copper Stairs",
@@ -13124,13 +13126,13 @@
     },
     "weathered_chiseled_copper": {
       "name": "Weathered Chiseled Copper",
-      "category": "other",
+      "category": "building",
       "stackSize": 64,
       "icon": "icons/weathered_chiseled_copper.png",
       "recipe": {
-        "weathered_copper": 0.25
+        "weathered_cut_copper_slab": 2.0
       },
-      "recipeType": "stonecutting"
+      "recipeType": "crafting_shaped"
     },
     "weathered_copper": {
       "name": "Weathered Copper",
@@ -13214,23 +13216,23 @@
     },
     "weathered_cut_copper_slab": {
       "name": "Weathered Cut Copper Slab",
-      "category": "building",
+      "category": "other",
       "stackSize": 64,
       "icon": "icons/weathered_cut_copper_slab.png",
       "recipe": {
-        "weathered_cut_copper": 0.5
+        "weathered_copper": 0.125
       },
-      "recipeType": "crafting_shaped"
+      "recipeType": "stonecutting"
     },
     "weathered_cut_copper_stairs": {
       "name": "Weathered Cut Copper Stairs",
-      "category": "building",
+      "category": "other",
       "stackSize": 64,
       "icon": "icons/weathered_cut_copper_stairs.png",
       "recipe": {
-        "weathered_cut_copper": 1.5
+        "weathered_copper": 0.25
       },
-      "recipeType": "crafting_shaped"
+      "recipeType": "stonecutting"
     },
     "weathered_lightning_rod": {
       "name": "Weathered Lightning Rod",
@@ -13347,7 +13349,7 @@
       "stackSize": 64,
       "icon": "icons/white_dye.png",
       "recipe": {
-        "lily_of_the_valley": 1.0
+        "bone_meal": 1.0
       },
       "recipeType": "crafting_shapeless"
     },
@@ -13557,10 +13559,10 @@
       "stackSize": 1,
       "icon": "icons/yellow_bed.png",
       "recipe": {
-        "yellow_wool": 3.0,
-        "oak_planks": 3.0
+        "yellow_dye": 1.0,
+        "white_bed": 1.0
       },
-      "recipeType": "crafting_shaped"
+      "recipeType": "crafting_shapeless"
     },
     "yellow_candle": {
       "name": "Yellow Candle",
@@ -13579,9 +13581,10 @@
       "stackSize": 64,
       "icon": "icons/yellow_carpet.png",
       "recipe": {
-        "yellow_wool": 0.666667
+        "yellow_dye": 1.0,
+        "red_carpet": 1.0
       },
-      "recipeType": "crafting_shaped"
+      "recipeType": "crafting_shapeless"
     },
     "yellow_concrete": {
       "name": "Yellow Concrete",
@@ -13627,10 +13630,9 @@
       "stackSize": 64,
       "icon": "icons/yellow_cushion.png",
       "recipe": {
-        "yellow_dye": 1.0,
-        "red_cushion": 1.0
+        "yellow_wool_slab": 3.0
       },
-      "recipeType": "crafting_shapeless"
+      "recipeType": "crafting_shaped"
     },
     "yellow_dye": {
       "name": "Yellow Dye",
@@ -13725,10 +13727,9 @@
       "stackSize": 64,
       "icon": "icons/yellow_wool_stairs.png",
       "recipe": {
-        "yellow_dye": 1.0,
-        "red_wool_stairs": 1.0
+        "yellow_wool": 1.5
       },
-      "recipeType": "crafting_shapeless"
+      "recipeType": "crafting_shaped"
     }
   },
   "fuel": {

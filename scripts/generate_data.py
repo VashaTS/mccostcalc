@@ -29,6 +29,13 @@ try:
 except ImportError:  # pragma: no cover
     Image = None
 
+import sys
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+try:
+    import render3d
+except ImportError:  # pragma: no cover
+    render3d = None
+
 ROOT = Path(__file__).resolve().parents[1]
 MANIFEST_URL = "https://piston-meta.mojang.com/mc/game/version_manifest_v2.json"
 USER_AGENT = "mccostcalc-data-generator/1.0 (https://github.com/VashaTS/mccostcalc)"
@@ -1126,10 +1133,31 @@ def potion_color(potion: str) -> tuple[int, int, int]:
     return table.get(key, (150, 80, 200))
 
 
-def extract_icon(zf: ZipFile, item: str, names: set[str], dest: Path) -> bool:
+def _save_icon(im: "Image.Image", dest: Path) -> None:
+    if im.size != (64, 64):
+        im = im.resize((64, 64), Image.NEAREST)
     dest.parent.mkdir(parents=True, exist_ok=True)
-    if dest.exists():
+    im.save(dest, optimize=True)
+
+
+def extract_icon(zf: ZipFile, item: str, names: set[str], dest: Path, tex_cache=None, skip_existing=True) -> bool:
+    dest.parent.mkdir(parents=True, exist_ok=True)
+    if skip_existing and dest.exists():
         return True
+    # Prefer an isometric inventory render for block models.
+    if (
+        render3d is not None
+        and Image is not None
+        and "/" not in item
+        and item not in {"fuel"}
+    ):
+        try:
+            rendered = render3d.render_item(zf, names, item, tex_cache)
+        except Exception:
+            rendered = None
+        if rendered is not None:
+            _save_icon(rendered, dest)
+            return True
     if item.startswith(("potion/", "splash_potion/", "lingering_potion/")) and Image is not None:
         bottle, potion = item.split("/", 1)
         bottle_tex = {
@@ -1164,14 +1192,77 @@ def extract_icon(zf: ZipFile, item: str, names: set[str], dest: Path) -> bool:
                         pa,
                     )
             base.alpha_composite(tinted)
-            base.save(dest)
+            _save_icon(base, dest)
             return True
     tex = find_texture(zf, item, names)
     if not tex:
         return False
-    dest.write_bytes(zf.read(tex))
+    raw = Image.open(io.BytesIO(zf.read(tex))).convert("RGBA")
+    # Animated textures: first frame only.
+    if raw.height > raw.width:
+        raw = raw.crop((0, 0, raw.width, raw.width))
+    _save_icon(raw, dest)
     return True
 
+
+
+MOB_ICON_FILES = [
+    "blaze.png", "chicken.png", "cow.png", "creeper.png", "drowned.png",
+    "enderman.png", "evoker.png", "ghast.png", "guardian.png", "iron_golem.png",
+    "phantom.png", "pig.png", "rabbit.png", "sheep.png", "shulker.png",
+    "skeleton.png", "spider.png", "squid.png", "tiny_slime.png", "vindicator.png",
+    "witch.png", "wither_skeleton.png", "zombie_pigmen.png",
+]
+
+
+def copy_mob_icons(icons_dir: Path) -> None:
+    gfx = ROOT / "gfx"
+    if not gfx.exists():
+        return
+    for name in MOB_ICON_FILES:
+        src = gfx / name
+        dest = icons_dir / name
+        if src.exists() and not dest.exists():
+            dest.write_bytes(src.read_bytes())
+    src = gfx / "zombie_pigmen.png"
+    dest = icons_dir / "zombified_piglin.png"
+    if src.exists() and not dest.exists():
+        dest.write_bytes(src.read_bytes())
+    copy_custom_set_icons(icons_dir)
+
+
+def write_icon_preview(icons_dir: Path, dest: Path) -> None:
+    if Image is None:
+        return
+    names = [
+        "oak_planks", "oak_slab", "oak_stairs",
+        "bricks", "brick_slab", "brick_stairs", "brick_wall", "oak_fence",
+        "glass", "grass_block", "piston", "chest",
+        "furnace", "crafting_table", "acacia_planks", "acacia_slab",
+    ]
+    cols, cell, label = 8, 80, 20
+    rows = (len(names) + cols - 1) // cols
+    sheet = Image.new("RGBA", (cols * cell, rows * (cell + label)), (36, 28, 22, 255))
+    try:
+        from PIL import ImageDraw
+        draw = ImageDraw.Draw(sheet)
+    except Exception:
+        draw = None
+    for i, name in enumerate(names):
+        path = icons_dir / f"{name}.png"
+        x, y = (i % cols) * cell, (i // cols) * (cell + label)
+        if path.exists():
+            im = Image.open(path).convert("RGBA").resize((64, 64), Image.NEAREST)
+            sheet.alpha_composite(im, (x + 8, y + 6))
+        if draw:
+            draw.text((x + 6, y + cell - 2), name, fill=(240, 220, 160))
+    sheet = sheet.resize((sheet.width * 2, sheet.height * 2), Image.NEAREST)
+    dest.parent.mkdir(parents=True, exist_ok=True)
+    sheet.save(dest)
+    # Also keep a copy next to the generator for easy inspection.
+    local = Path(__file__).resolve().parent / "icon_preview.png"
+    sheet.save(local)
+    log(f"  wrote icon preview {dest}")
 
 def copy_custom_set_icons(icons_dir: Path) -> None:
     gfx = ROOT / "gfx"
@@ -1206,6 +1297,7 @@ def icon_filename(item: str) -> str:
 
 def build_version(version: str, zf: ZipFile, icons_dir: Path) -> dict:
     names = set(zf.namelist())
+    tex_cache: dict = {}
     tags = load_tags(zf)
     lang = load_lang(zf)
     raw = collect_raw_recipes(zf, tags)
@@ -1306,7 +1398,7 @@ def build_version(version: str, zf: ZipFile, icons_dir: Path) -> dict:
         else:
             entry["category"] = "raw"
         items[item] = entry
-        extract_icon(zf, item, names, icons_dir / icon_filename(item))
+        extract_icon(zf, item, names, icons_dir / icon_filename(item), tex_cache)
 
     copy_custom_set_icons(icons_dir)
 
@@ -1458,7 +1550,14 @@ def main(argv: list[str] | None = None) -> int:
         log(f"Adding latest release {latest} to the version list")
         versions.append(latest)
 
-    for version in versions:
+    # Wipe stale 16x16 icons, then rebuild latest-first so older versions
+    # reuse the newest isometric renders.
+    preserve = {"x.png"}
+    for old_icon in icons_dir.glob("*"):
+        if old_icon.name not in preserve and old_icon.is_file():
+            old_icon.unlink()
+
+    for version in reversed(versions):
         log(f"== {version} ==")
         jar = download_client_jar(version, manifest, cache_dir)
         with ZipFile(jar) as zf:
@@ -1469,6 +1568,8 @@ def main(argv: list[str] | None = None) -> int:
         verify(data)
 
     write_versions_index(data_dir, versions, latest)
+    copy_mob_icons(icons_dir)
+    write_icon_preview(icons_dir, Path("/tmp/mccostcalc-icon-preview.png"))
     log(f"versions index written, latest={latest}")
     return 0
 

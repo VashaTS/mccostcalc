@@ -50,7 +50,7 @@ Output files:
 
 - `data/versions.json` — list of bundled versions and which one is latest
 - `data/<version>.json` — recipes, names, fuel, and mob rates for that version
-- `icons/` — 16×16 item textures extracted from the same jars
+- `icons/` — 64×64 icons from the same jars. Block items are rendered as isometric inventory models (so slabs, stairs and full blocks are easy to tell apart); items such as tools stay as flat sprites.
 
 The generator cache defaults to `/tmp/mc-jars`. Override with `--cache-dir`.
 

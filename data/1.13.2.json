@@ -1,6 +1,6 @@
 {
   "version": "1.13.2",
-  "itemCount": 665,
+  "itemCount": 664,
   "craftableCount": 573,
   "items": {
     "acacia_boat": {
@@ -480,10 +480,10 @@
       "stackSize": 1,
       "icon": "icons/blue_bed.png",
       "recipe": {
-        "blue_wool": 3.0,
-        "oak_planks": 3.0
+        "white_bed": 1.0,
+        "lapis_lazuli": 1.0
       },
-      "recipeType": "crafting_shaped"
+      "recipeType": "crafting_shapeless"
     },
     "blue_carpet": {
       "name": "Blue Carpet",
@@ -725,10 +725,10 @@
       "stackSize": 1,
       "icon": "icons/brown_bed.png",
       "recipe": {
-        "white_bed": 1.0,
-        "cocoa_beans": 1.0
+        "brown_wool": 3.0,
+        "oak_planks": 3.0
       },
-      "recipeType": "crafting_shapeless"
+      "recipeType": "crafting_shaped"
     },
     "brown_carpet": {
       "name": "Brown Carpet",
@@ -2305,10 +2305,10 @@
       "stackSize": 1,
       "icon": "icons/green_bed.png",
       "recipe": {
-        "green_wool": 3.0,
-        "oak_planks": 3.0
+        "white_bed": 1.0,
+        "cactus_green": 1.0
       },
-      "recipeType": "crafting_shaped"
+      "recipeType": "crafting_shapeless"
     },
     "green_carpet": {
       "name": "Green Carpet",
@@ -2871,10 +2871,10 @@
       "stackSize": 1,
       "icon": "icons/light_blue_bed.png",
       "recipe": {
-        "white_bed": 1.0,
-        "light_blue_dye": 1.0
+        "light_blue_wool": 3.0,
+        "oak_planks": 3.0
       },
-      "recipeType": "crafting_shapeless"
+      "recipeType": "crafting_shaped"
     },
     "light_blue_carpet": {
       "name": "Light Blue Carpet",
@@ -3136,10 +3136,10 @@
       "stackSize": 64,
       "icon": "icons/lime_dye.png",
       "recipe": {
-        "sea_pickle": 1.0,
-        "fuel": 1.0
+        "cactus_green": 0.5,
+        "bone_meal": 0.5
       },
-      "recipeType": "smelting"
+      "recipeType": "crafting_shapeless"
     },
     "lime_glazed_terracotta": {
       "name": "Lime Glazed Terracotta",
@@ -3297,8 +3297,8 @@
       "stackSize": 1,
       "icon": "icons/lingering_potion__long_leaping.png",
       "recipe": {
-        "lingering_potion/leaping": 1,
-        "redstone": 0.333333,
+        "splash_potion/long_leaping": 1,
+        "dragon_breath": 0.333333,
         "blaze_powder": 0.016667
       },
       "recipeType": "brewing"
@@ -3333,8 +3333,8 @@
       "stackSize": 1,
       "icon": "icons/lingering_potion__long_regeneration.png",
       "recipe": {
-        "splash_potion/long_regeneration": 1,
-        "dragon_breath": 0.333333,
+        "lingering_potion/regeneration": 1,
+        "redstone": 0.333333,
         "blaze_powder": 0.016667
       },
       "recipeType": "brewing"
@@ -3369,8 +3369,8 @@
       "stackSize": 1,
       "icon": "icons/lingering_potion__long_strength.png",
       "recipe": {
-        "splash_potion/long_strength": 1,
-        "dragon_breath": 0.333333,
+        "lingering_potion/strength": 1,
+        "redstone": 0.333333,
         "blaze_powder": 0.016667
       },
       "recipeType": "brewing"
@@ -3441,8 +3441,8 @@
       "stackSize": 1,
       "icon": "icons/lingering_potion__poison.png",
       "recipe": {
-        "splash_potion/poison": 1,
-        "dragon_breath": 0.333333,
+        "lingering_potion/awkward": 1,
+        "spider_eye": 0.333333,
         "blaze_powder": 0.016667
       },
       "recipeType": "brewing"
@@ -3453,8 +3453,8 @@
       "stackSize": 1,
       "icon": "icons/lingering_potion__regeneration.png",
       "recipe": {
-        "lingering_potion/awkward": 1,
-        "ghast_tear": 0.333333,
+        "splash_potion/regeneration": 1,
+        "dragon_breath": 0.333333,
         "blaze_powder": 0.016667
       },
       "recipeType": "brewing"
@@ -3477,8 +3477,8 @@
       "stackSize": 1,
       "icon": "icons/lingering_potion__slowness.png",
       "recipe": {
-        "splash_potion/slowness": 1,
-        "dragon_breath": 0.333333,
+        "lingering_potion/swiftness": 1,
+        "fermented_spider_eye": 0.333333,
         "blaze_powder": 0.016667
       },
       "recipeType": "brewing"
@@ -3524,8 +3524,8 @@
       "stackSize": 1,
       "icon": "icons/lingering_potion__strong_leaping.png",
       "recipe": {
-        "lingering_potion/leaping": 1,
-        "glowstone_dust": 0.333333,
+        "splash_potion/strong_leaping": 1,
+        "dragon_breath": 0.333333,
         "blaze_powder": 0.016667
       },
       "recipeType": "brewing"
@@ -3572,8 +3572,8 @@
       "stackSize": 1,
       "icon": "icons/lingering_potion__strong_strength.png",
       "recipe": {
-        "splash_potion/strong_strength": 1,
-        "dragon_breath": 0.333333,
+        "lingering_potion/strength": 1,
+        "glowstone_dust": 0.333333,
         "blaze_powder": 0.016667
       },
       "recipeType": "brewing"
@@ -3679,10 +3679,10 @@
       "stackSize": 1,
       "icon": "icons/magenta_bed.png",
       "recipe": {
-        "magenta_wool": 3.0,
-        "oak_planks": 3.0
+        "white_bed": 1.0,
+        "magenta_dye": 1.0
       },
-      "recipeType": "crafting_shaped"
+      "recipeType": "crafting_shapeless"
     },
     "magenta_carpet": {
       "name": "Magenta Carpet",
@@ -4755,7 +4755,7 @@
       "stackSize": 1,
       "icon": "icons/potion__slowness.png",
       "recipe": {
-        "potion/swiftness": 1,
+        "potion/leaping": 1,
         "fermented_spider_eye": 0.333333,
         "blaze_powder": 0.016667
       },
@@ -5560,12 +5560,6 @@
       },
       "recipeType": "crafting_shaped"
     },
-    "sea_pickle": {
-      "name": "Sea Pickle",
-      "category": "raw",
-      "stackSize": 64,
-      "icon": "icons/sea_pickle.png"
-    },
     "shears": {
       "name": "Shears",
       "category": "other",
@@ -5782,8 +5776,8 @@
       "stackSize": 1,
       "icon": "icons/splash_potion__long_leaping.png",
       "recipe": {
-        "splash_potion/leaping": 1,
-        "redstone": 0.333333,
+        "potion/long_leaping": 1,
+        "gunpowder": 0.333333,
         "blaze_powder": 0.016667
       },
       "recipeType": "brewing"
@@ -5818,8 +5812,8 @@
       "stackSize": 1,
       "icon": "icons/splash_potion__long_regeneration.png",
       "recipe": {
-        "potion/long_regeneration": 1,
-        "gunpowder": 0.333333,
+        "splash_potion/regeneration": 1,
+        "redstone": 0.333333,
         "blaze_powder": 0.016667
       },
       "recipeType": "brewing"
@@ -5914,8 +5908,8 @@
       "stackSize": 1,
       "icon": "icons/splash_potion__night_vision.png",
       "recipe": {
-        "potion/night_vision": 1,
-        "gunpowder": 0.333333,
+        "splash_potion/awkward": 1,
+        "golden_carrot": 0.333333,
         "blaze_powder": 0.016667
       },
       "recipeType": "brewing"
@@ -5962,8 +5956,8 @@
       "stackSize": 1,
       "icon": "icons/splash_potion__slowness.png",
       "recipe": {
-        "splash_potion/swiftness": 1,
-        "fermented_spider_eye": 0.333333,
+        "potion/slowness": 1,
+        "gunpowder": 0.333333,
         "blaze_powder": 0.016667
       },
       "recipeType": "brewing"
@@ -5985,8 +5979,8 @@
       "stackSize": 1,
       "icon": "icons/splash_potion__strong_harming.png",
       "recipe": {
-        "potion/strong_harming": 1,
-        "gunpowder": 0.333333,
+        "splash_potion/harming": 1,
+        "glowstone_dust": 0.333333,
         "blaze_powder": 0.016667
       },
       "recipeType": "brewing"
@@ -6093,8 +6087,8 @@
       "stackSize": 1,
       "icon": "icons/splash_potion__swiftness.png",
       "recipe": {
-        "potion/swiftness": 1,
-        "gunpowder": 0.333333,
+        "splash_potion/awkward": 1,
+        "sugar": 0.333333,
         "blaze_powder": 0.016667
       },
       "recipeType": "brewing"
@@ -6733,10 +6727,10 @@
       "stackSize": 1,
       "icon": "icons/yellow_bed.png",
       "recipe": {
-        "yellow_wool": 3.0,
-        "oak_planks": 3.0
+        "white_bed": 1.0,
+        "dandelion_yellow": 1.0
       },
-      "recipeType": "crafting_shaped"
+      "recipeType": "crafting_shapeless"
     },
     "yellow_carpet": {
       "name": "Yellow Carpet",
