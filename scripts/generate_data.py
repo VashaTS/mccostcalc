@@ -1231,6 +1231,44 @@ def copy_mob_icons(icons_dir: Path) -> None:
     copy_custom_set_icons(icons_dir)
 
 
+
+def write_armor_icon_preview(icons_dir: Path) -> None:
+    if Image is None:
+        return
+    from PIL import ImageDraw
+    names = [
+        "full_diamond_armor", "full_netherite_armor", "full_iron_armor",
+        "full_golden_armor", "full_leather_armor",
+        "enchanting_room", "nether_portal", "conduit_power_frame",
+        "netherite_helmet", "netherite_chestplate", "netherite_leggings", "netherite_boots",
+        "netherite_sword", "netherite_pickaxe", "netherite_axe", "netherite_shovel",
+        "netherite_hoe", "netherite_ingot", "netherite_block",
+        "diamond_helmet", "diamond_chestplate", "diamond_leggings", "diamond_boots",
+        "iron_helmet", "iron_chestplate", "iron_leggings", "iron_boots",
+        "golden_helmet", "golden_chestplate", "golden_leggings", "golden_boots",
+        "leather_helmet", "leather_chestplate", "leather_leggings", "leather_boots",
+        "chainmail_helmet", "chainmail_chestplate", "chainmail_leggings", "chainmail_boots",
+    ]
+    cols, cell, label = 8, 80, 22
+    rows = (len(names) + cols - 1) // cols
+    sheet = Image.new("RGBA", (cols * cell, rows * (cell + label)), (36, 28, 22, 255))
+    draw = ImageDraw.Draw(sheet)
+    for i, name in enumerate(names):
+        path = icons_dir / f"{name}.png"
+        x, y = (i % cols) * cell, (i // cols) * (cell + label)
+        if path.exists():
+            im = Image.open(path).convert("RGBA").resize((64, 64), Image.NEAREST)
+            sheet.alpha_composite(im, (x + 8, y + 6))
+        draw.text((x + 4, y + cell - 2), name.replace("_", " ")[:16], fill=(240, 220, 160))
+    sheet = sheet.resize((sheet.width * 2, sheet.height * 2), Image.NEAREST)
+    dest = Path("/tmp/mccostcalc-armor-preview.png")
+    dest.parent.mkdir(parents=True, exist_ok=True)
+    sheet.save(dest)
+    local = Path(__file__).resolve().parent / "armor_icon_preview.png"
+    sheet.save(local)
+    log(f"  wrote armor icon preview {dest}")
+
+
 def write_icon_preview(icons_dir: Path, dest: Path) -> None:
     if Image is None:
         return
@@ -1263,32 +1301,58 @@ def write_icon_preview(icons_dir: Path, dest: Path) -> None:
     local = Path(__file__).resolve().parent / "icon_preview.png"
     sheet.save(local)
     log(f"  wrote icon preview {dest}")
+    write_armor_icon_preview(icons_dir)
+
+ARMOR_SET_PIECES = {
+    "full_diamond_armor": ["diamond_helmet", "diamond_chestplate", "diamond_leggings", "diamond_boots"],
+    "full_iron_armor": ["iron_helmet", "iron_chestplate", "iron_leggings", "iron_boots"],
+    "full_golden_armor": ["golden_helmet", "golden_chestplate", "golden_leggings", "golden_boots"],
+    "full_leather_armor": ["leather_helmet", "leather_chestplate", "leather_leggings", "leather_boots"],
+    "full_netherite_armor": ["netherite_helmet", "netherite_chestplate", "netherite_leggings", "netherite_boots"],
+}
+
+# Icons to extract even when the item is not in the recipe graph (e.g. chainmail).
+EXTRA_ICON_ITEMS = [
+    "chainmail_helmet", "chainmail_chestplate", "chainmail_leggings", "chainmail_boots",
+]
+
+
+def compose_armor_set_icons(icons_dir: Path) -> None:
+    """Build 2x2 set icons from the four armor-piece sprites (helmet, chest, legs, boots)."""
+    if Image is None:
+        return
+    for set_id, pieces in ARMOR_SET_PIECES.items():
+        paths = [icons_dir / f"{p}.png" for p in pieces]
+        if not all(path.exists() for path in paths):
+            continue
+        size = 64
+        half = size // 2
+        canvas = Image.new("RGBA", (size, size), (0, 0, 0, 0))
+        for i, path in enumerate(paths):
+            im = Image.open(path).convert("RGBA").resize((half, half), Image.NEAREST)
+            canvas.alpha_composite(im, ((i % 2) * half, (i // 2) * half))
+        canvas.save(icons_dir / f"{set_id}.png", optimize=True)
+
 
 def copy_custom_set_icons(icons_dir: Path) -> None:
     gfx = ROOT / "gfx"
     legacy_gfx = ROOT / "legacy" / "gfx"
     src_dir = gfx if gfx.exists() else legacy_gfx
+    # Always compose armor sets from the current piece icons when possible,
+    # so Full Netherite Armor cannot fall back to the diamond composite.
+    compose_armor_set_icons(icons_dir)
     if not src_dir.exists():
         return
     mapping = {
-        "full_diamond_armor.png": "full_diamond_armor.png",
-        "full_iron_armor.png": "full_iron_armor.png",
-        "full_golden_armor.png": "full_golden_armor.png",
-        "full_leather_armor.png": "full_leather_armor.png",
         "enchanting_room.png": "enchanting_room.png",
         "nether_portal.png": "nether_portal.png",
         "conduit_power_frame.png": "conduit_power_frame.png",
     }
-    # netherite set: reuse diamond as fallback if no custom icon
     for src_name, dest_name in mapping.items():
         src = src_dir / src_name
         dest = icons_dir / dest_name
         if src.exists() and not dest.exists():
             dest.write_bytes(src.read_bytes())
-    src = src_dir / "full_diamond_armor.png"
-    dest = icons_dir / "full_netherite_armor.png"
-    if src.exists() and not dest.exists():
-        dest.write_bytes(src.read_bytes())
 
 
 def icon_filename(item: str) -> str:
@@ -1399,6 +1463,9 @@ def build_version(version: str, zf: ZipFile, icons_dir: Path) -> dict:
             entry["category"] = "raw"
         items[item] = entry
         extract_icon(zf, item, names, icons_dir / icon_filename(item), tex_cache)
+
+    for extra in EXTRA_ICON_ITEMS:
+        extract_icon(zf, extra, names, icons_dir / icon_filename(extra), tex_cache)
 
     copy_custom_set_icons(icons_dir)
 

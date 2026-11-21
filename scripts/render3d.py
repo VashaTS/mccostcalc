@@ -301,6 +301,121 @@ def render_model_from_dict(zf, names, data, tex_cache=None):
 
 # Split out the core of render_model so both paths can use it. We wrap by
 # monkeypatching load_chain for the chest case via a marker model name.
+LEATHER_DYE = (0xA0, 0x65, 0x40)  # vanilla default, tint -6265536 / 0xFFA06540
+LEATHER_ITEMS = {
+    "leather_helmet", "leather_chestplate", "leather_leggings", "leather_boots",
+    "leather_horse_armor",
+}
+
+
+def _int_rgb(n):
+    c = n & 0xFFFFFFFF
+    return ((c >> 16) & 255, (c >> 8) & 255, c & 255)
+
+
+def item_fallback_tints(zf, names, base):
+    """RGB tints from items/*.json fallback, indexed like vanilla tintindex."""
+    path = f"assets/minecraft/items/{base}.json"
+    if path not in names:
+        return []
+
+    def find(m):
+        if not isinstance(m, dict):
+            return None
+        typ = ns(m.get("type", "") or "")
+        if "tints" in m and typ in {"model", "minecraft:model"} or (
+            "tints" in m and typ.endswith("model") and typ != "special"
+        ):
+            return m.get("tints")
+        if "fallback" in m:
+            r = find(m["fallback"])
+            if r is not None:
+                return r
+        return None
+
+    try:
+        data = json.loads(zf.read(path))
+    except Exception:
+        return []
+    tints = find(data.get("model", data)) or []
+    out = []
+    for tint in tints:
+        if isinstance(tint, dict) and isinstance(tint.get("default"), int):
+            out.append(_int_rgb(tint["default"]))
+        else:
+            out.append(None)
+    return out
+
+
+def apply_tint(im, rgb):
+    arr = np.asarray(im).astype(np.float32)
+    arr[..., 0] *= rgb[0] / 255.0
+    arr[..., 1] *= rgb[1] / 255.0
+    arr[..., 2] *= rgb[2] / 255.0
+    return Image.fromarray(np.clip(arr, 0, 255).astype(np.uint8), "RGBA")
+
+
+def generated_layer_textures(zf, names, model):
+    """Return (kind, {layer0: tex, ...}) for item/generated or handheld models."""
+    model = ns(model)
+    path = f"assets/minecraft/models/{model}.json"
+    if path not in names:
+        return None, {}
+    try:
+        data = json.loads(zf.read(path))
+    except Exception:
+        return None, {}
+    textures = dict(data.get("textures") or {})
+    parent = ns(data.get("parent") or "")
+    kind = None
+    if parent in FLAT_PARENTS or parent.endswith("/generated") or "handheld" in parent:
+        kind = "generated"
+    elif not parent and any(k.startswith("layer") for k in textures):
+        kind = "generated"
+    return kind, textures
+
+
+def render_flat_item(zf, names, base, tex_cache=None):
+    """Composite item/generated (and handheld) layers, with leather dye tint."""
+    tex_cache = {} if tex_cache is None else tex_cache
+    model = item_model_name(zf, names, base)
+    if not model or (isinstance(model, str) and model.startswith("__chest__")):
+        model = f"item/{base}"
+    kind, textures = generated_layer_textures(zf, names, model)
+    if kind != "generated":
+        return None
+    layers = []
+    i = 0
+    while True:
+        key = f"layer{i}"
+        if key not in textures:
+            break
+        layers.append(textures[key])
+        i += 1
+    if not layers:
+        return None
+    tints = item_fallback_tints(zf, names, base)
+    if not any(tints) and base in LEATHER_ITEMS:
+        tints = [LEATHER_DYE]
+    canvas = None
+    for i, ref in enumerate(layers):
+        arr = load_tex(zf, names, ref, tex_cache)
+        if arr is None:
+            continue
+        # first frame of animated textures already handled in load_tex
+        im = Image.fromarray(np.clip(arr, 0, 255).astype(np.uint8), "RGBA")
+        tint = tints[i] if i < len(tints) else None
+        if tint:
+            im = apply_tint(im, tint)
+        if canvas is None:
+            canvas = im.convert("RGBA")
+        else:
+            if im.size != canvas.size:
+                im = im.resize(canvas.size, Image.NEAREST)
+            canvas.alpha_composite(im)
+    return canvas
+
+
 def render_item(zf, names, base, tex_cache=None):
     model = item_model_name(zf, names, base)
     if not model:
@@ -310,4 +425,7 @@ def render_item(zf, names, base, tex_cache=None):
         if f"assets/minecraft/textures/{tex}.png" in names:
             return render_chest(zf, names, tex, tex_cache)
         return None
-    return render_model(zf, names, model, tex_cache)
+    rendered = render_model(zf, names, model, tex_cache)
+    if rendered is not None:
+        return rendered
+    return render_flat_item(zf, names, base, tex_cache)
