@@ -1,0 +1,7071 @@
+{
+  "version": "1.13.2",
+  "itemCount": 665,
+  "craftableCount": 573,
+  "items": {
+    "acacia_boat": {
+      "name": "Acacia Boat",
+      "category": "other",
+      "stackSize": 1,
+      "icon": "icons/acacia_boat.png",
+      "recipe": {
+        "acacia_planks": 5.0
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "acacia_button": {
+      "name": "Acacia Button",
+      "category": "other",
+      "stackSize": 64,
+      "icon": "icons/acacia_button.png",
+      "recipe": {
+        "acacia_planks": 1.0
+      },
+      "recipeType": "crafting_shapeless"
+    },
+    "acacia_door": {
+      "name": "Acacia Door",
+      "category": "other",
+      "stackSize": 64,
+      "icon": "icons/acacia_door.png",
+      "recipe": {
+        "acacia_planks": 2.0
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "acacia_fence": {
+      "name": "Acacia Fence",
+      "category": "other",
+      "stackSize": 64,
+      "icon": "icons/acacia_fence.png",
+      "recipe": {
+        "acacia_planks": 1.333333,
+        "stick": 0.666667
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "acacia_fence_gate": {
+      "name": "Acacia Fence Gate",
+      "category": "other",
+      "stackSize": 64,
+      "icon": "icons/acacia_fence_gate.png",
+      "recipe": {
+        "stick": 4.0,
+        "acacia_planks": 2.0
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "acacia_log": {
+      "name": "Acacia Log",
+      "category": "raw",
+      "stackSize": 64,
+      "icon": "icons/acacia_log.png"
+    },
+    "acacia_planks": {
+      "name": "Acacia Planks",
+      "category": "other",
+      "stackSize": 64,
+      "icon": "icons/acacia_planks.png",
+      "recipe": {
+        "acacia_log": 0.25
+      },
+      "recipeType": "crafting_shapeless"
+    },
+    "acacia_pressure_plate": {
+      "name": "Acacia Pressure Plate",
+      "category": "other",
+      "stackSize": 64,
+      "icon": "icons/acacia_pressure_plate.png",
+      "recipe": {
+        "acacia_planks": 2.0
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "acacia_slab": {
+      "name": "Acacia Slab",
+      "category": "other",
+      "stackSize": 64,
+      "icon": "icons/acacia_slab.png",
+      "recipe": {
+        "acacia_planks": 0.5
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "acacia_stairs": {
+      "name": "Acacia Stairs",
+      "category": "other",
+      "stackSize": 64,
+      "icon": "icons/acacia_stairs.png",
+      "recipe": {
+        "acacia_planks": 1.5
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "acacia_trapdoor": {
+      "name": "Acacia Trapdoor",
+      "category": "other",
+      "stackSize": 64,
+      "icon": "icons/acacia_trapdoor.png",
+      "recipe": {
+        "acacia_planks": 3.0
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "acacia_wood": {
+      "name": "Acacia Wood",
+      "category": "other",
+      "stackSize": 64,
+      "icon": "icons/acacia_wood.png",
+      "recipe": {
+        "acacia_log": 1.333333
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "activator_rail": {
+      "name": "Activator Rail",
+      "category": "other",
+      "stackSize": 64,
+      "icon": "icons/activator_rail.png",
+      "recipe": {
+        "iron_ingot": 1.0,
+        "stick": 0.333333,
+        "redstone_torch": 0.166667
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "andesite": {
+      "name": "Andesite",
+      "category": "raw",
+      "stackSize": 64,
+      "icon": "icons/andesite.png"
+    },
+    "anvil": {
+      "name": "Anvil",
+      "category": "other",
+      "stackSize": 64,
+      "icon": "icons/anvil.png",
+      "recipe": {
+        "iron_block": 3.0,
+        "iron_ingot": 4.0
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "apple": {
+      "name": "Apple",
+      "category": "raw",
+      "stackSize": 64,
+      "icon": "icons/apple.png"
+    },
+    "armor_stand": {
+      "name": "Armor Stand",
+      "category": "other",
+      "stackSize": 1,
+      "icon": "icons/armor_stand.png",
+      "recipe": {
+        "stick": 6.0,
+        "stone_slab": 1.0
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "arrow": {
+      "name": "Arrow",
+      "category": "other",
+      "stackSize": 64,
+      "icon": "icons/arrow.png",
+      "recipe": {
+        "flint": 0.25,
+        "stick": 0.25,
+        "feather": 0.25
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "azure_bluet": {
+      "name": "Azure Bluet",
+      "category": "raw",
+      "stackSize": 64,
+      "icon": "icons/azure_bluet.png"
+    },
+    "baked_potato": {
+      "name": "Baked Potato",
+      "category": "other",
+      "stackSize": 64,
+      "icon": "icons/baked_potato.png",
+      "recipe": {
+        "potato": 1.0,
+        "fuel": 1.0
+      },
+      "recipeType": "smelting"
+    },
+    "beacon": {
+      "name": "Beacon",
+      "category": "other",
+      "stackSize": 64,
+      "icon": "icons/beacon.png",
+      "recipe": {
+        "glass": 5.0,
+        "nether_star": 1.0,
+        "obsidian": 3.0
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "beef": {
+      "name": "Raw Beef",
+      "category": "raw",
+      "stackSize": 64,
+      "icon": "icons/beef.png"
+    },
+    "beetroot": {
+      "name": "Beetroot",
+      "category": "raw",
+      "stackSize": 64,
+      "icon": "icons/beetroot.png"
+    },
+    "beetroot_soup": {
+      "name": "Beetroot Soup",
+      "category": "other",
+      "stackSize": 1,
+      "icon": "icons/beetroot_soup.png",
+      "recipe": {
+        "beetroot": 6.0,
+        "bowl": 1.0
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "birch_boat": {
+      "name": "Birch Boat",
+      "category": "other",
+      "stackSize": 1,
+      "icon": "icons/birch_boat.png",
+      "recipe": {
+        "birch_planks": 5.0
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "birch_button": {
+      "name": "Birch Button",
+      "category": "other",
+      "stackSize": 64,
+      "icon": "icons/birch_button.png",
+      "recipe": {
+        "birch_planks": 1.0
+      },
+      "recipeType": "crafting_shapeless"
+    },
+    "birch_door": {
+      "name": "Birch Door",
+      "category": "other",
+      "stackSize": 64,
+      "icon": "icons/birch_door.png",
+      "recipe": {
+        "birch_planks": 2.0
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "birch_fence": {
+      "name": "Birch Fence",
+      "category": "other",
+      "stackSize": 64,
+      "icon": "icons/birch_fence.png",
+      "recipe": {
+        "birch_planks": 1.333333,
+        "stick": 0.666667
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "birch_fence_gate": {
+      "name": "Birch Fence Gate",
+      "category": "other",
+      "stackSize": 64,
+      "icon": "icons/birch_fence_gate.png",
+      "recipe": {
+        "stick": 4.0,
+        "birch_planks": 2.0
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "birch_log": {
+      "name": "Birch Log",
+      "category": "raw",
+      "stackSize": 64,
+      "icon": "icons/birch_log.png"
+    },
+    "birch_planks": {
+      "name": "Birch Planks",
+      "category": "other",
+      "stackSize": 64,
+      "icon": "icons/birch_planks.png",
+      "recipe": {
+        "birch_log": 0.25
+      },
+      "recipeType": "crafting_shapeless"
+    },
+    "birch_pressure_plate": {
+      "name": "Birch Pressure Plate",
+      "category": "other",
+      "stackSize": 64,
+      "icon": "icons/birch_pressure_plate.png",
+      "recipe": {
+        "birch_planks": 2.0
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "birch_slab": {
+      "name": "Birch Slab",
+      "category": "other",
+      "stackSize": 64,
+      "icon": "icons/birch_slab.png",
+      "recipe": {
+        "birch_planks": 0.5
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "birch_stairs": {
+      "name": "Birch Stairs",
+      "category": "other",
+      "stackSize": 64,
+      "icon": "icons/birch_stairs.png",
+      "recipe": {
+        "birch_planks": 1.5
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "birch_trapdoor": {
+      "name": "Birch Trapdoor",
+      "category": "other",
+      "stackSize": 64,
+      "icon": "icons/birch_trapdoor.png",
+      "recipe": {
+        "birch_planks": 3.0
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "birch_wood": {
+      "name": "Birch Wood",
+      "category": "other",
+      "stackSize": 64,
+      "icon": "icons/birch_wood.png",
+      "recipe": {
+        "birch_log": 1.333333
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "black_banner": {
+      "name": "Black Banner",
+      "category": "colored",
+      "stackSize": 16,
+      "icon": "icons/black_banner.png",
+      "recipe": {
+        "black_wool": 6.0,
+        "stick": 1.0
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "black_bed": {
+      "name": "Black Bed",
+      "category": "colored",
+      "stackSize": 1,
+      "icon": "icons/black_bed.png",
+      "recipe": {
+        "white_bed": 1.0,
+        "ink_sac": 1.0
+      },
+      "recipeType": "crafting_shapeless"
+    },
+    "black_carpet": {
+      "name": "Black Carpet",
+      "category": "colored",
+      "stackSize": 64,
+      "icon": "icons/black_carpet.png",
+      "recipe": {
+        "black_wool": 0.666667
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "black_concrete_powder": {
+      "name": "Black Concrete Powder",
+      "category": "colored",
+      "stackSize": 64,
+      "icon": "icons/black_concrete_powder.png",
+      "recipe": {
+        "ink_sac": 0.125,
+        "sand": 0.5,
+        "gravel": 0.5
+      },
+      "recipeType": "crafting_shapeless"
+    },
+    "black_glazed_terracotta": {
+      "name": "Black Glazed Terracotta",
+      "category": "colored",
+      "stackSize": 64,
+      "icon": "icons/black_glazed_terracotta.png",
+      "recipe": {
+        "black_terracotta": 1.0,
+        "fuel": 1.0
+      },
+      "recipeType": "smelting"
+    },
+    "black_stained_glass": {
+      "name": "Black Stained Glass",
+      "category": "colored",
+      "stackSize": 64,
+      "icon": "icons/black_stained_glass.png",
+      "recipe": {
+        "glass": 1.0,
+        "ink_sac": 0.125
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "black_stained_glass_pane": {
+      "name": "Black Stained Glass Pane",
+      "category": "colored",
+      "stackSize": 64,
+      "icon": "icons/black_stained_glass_pane.png",
+      "recipe": {
+        "black_stained_glass": 0.375
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "black_terracotta": {
+      "name": "Black Terracotta",
+      "category": "colored",
+      "stackSize": 64,
+      "icon": "icons/black_terracotta.png",
+      "recipe": {
+        "terracotta": 1.0,
+        "ink_sac": 0.125
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "black_wool": {
+      "name": "Black Wool",
+      "category": "colored",
+      "stackSize": 64,
+      "icon": "icons/black_wool.png",
+      "recipe": {
+        "ink_sac": 1.0,
+        "white_wool": 1.0
+      },
+      "recipeType": "crafting_shapeless"
+    },
+    "blaze_powder": {
+      "name": "Blaze Powder",
+      "category": "other",
+      "stackSize": 64,
+      "icon": "icons/blaze_powder.png",
+      "recipe": {
+        "blaze_rod": 0.5
+      },
+      "recipeType": "crafting_shapeless"
+    },
+    "blaze_rod": {
+      "name": "Blaze Rod",
+      "category": "raw",
+      "stackSize": 64,
+      "icon": "icons/blaze_rod.png"
+    },
+    "blue_banner": {
+      "name": "Blue Banner",
+      "category": "colored",
+      "stackSize": 16,
+      "icon": "icons/blue_banner.png",
+      "recipe": {
+        "blue_wool": 6.0,
+        "stick": 1.0
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "blue_bed": {
+      "name": "Blue Bed",
+      "category": "colored",
+      "stackSize": 1,
+      "icon": "icons/blue_bed.png",
+      "recipe": {
+        "blue_wool": 3.0,
+        "oak_planks": 3.0
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "blue_carpet": {
+      "name": "Blue Carpet",
+      "category": "colored",
+      "stackSize": 64,
+      "icon": "icons/blue_carpet.png",
+      "recipe": {
+        "blue_wool": 0.666667
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "blue_concrete_powder": {
+      "name": "Blue Concrete Powder",
+      "category": "colored",
+      "stackSize": 64,
+      "icon": "icons/blue_concrete_powder.png",
+      "recipe": {
+        "lapis_lazuli": 0.125,
+        "sand": 0.5,
+        "gravel": 0.5
+      },
+      "recipeType": "crafting_shapeless"
+    },
+    "blue_glazed_terracotta": {
+      "name": "Blue Glazed Terracotta",
+      "category": "colored",
+      "stackSize": 64,
+      "icon": "icons/blue_glazed_terracotta.png",
+      "recipe": {
+        "blue_terracotta": 1.0,
+        "fuel": 1.0
+      },
+      "recipeType": "smelting"
+    },
+    "blue_ice": {
+      "name": "Blue Ice",
+      "category": "other",
+      "stackSize": 64,
+      "icon": "icons/blue_ice.png",
+      "recipe": {
+        "packed_ice": 9.0
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "blue_orchid": {
+      "name": "Blue Orchid",
+      "category": "raw",
+      "stackSize": 64,
+      "icon": "icons/blue_orchid.png"
+    },
+    "blue_stained_glass": {
+      "name": "Blue Stained Glass",
+      "category": "colored",
+      "stackSize": 64,
+      "icon": "icons/blue_stained_glass.png",
+      "recipe": {
+        "glass": 1.0,
+        "lapis_lazuli": 0.125
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "blue_stained_glass_pane": {
+      "name": "Blue Stained Glass Pane",
+      "category": "colored",
+      "stackSize": 64,
+      "icon": "icons/blue_stained_glass_pane.png",
+      "recipe": {
+        "blue_stained_glass": 0.375
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "blue_terracotta": {
+      "name": "Blue Terracotta",
+      "category": "colored",
+      "stackSize": 64,
+      "icon": "icons/blue_terracotta.png",
+      "recipe": {
+        "terracotta": 1.0,
+        "lapis_lazuli": 0.125
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "blue_wool": {
+      "name": "Blue Wool",
+      "category": "colored",
+      "stackSize": 64,
+      "icon": "icons/blue_wool.png",
+      "recipe": {
+        "lapis_lazuli": 1.0,
+        "white_wool": 1.0
+      },
+      "recipeType": "crafting_shapeless"
+    },
+    "bone": {
+      "name": "Bone",
+      "category": "raw",
+      "stackSize": 64,
+      "icon": "icons/bone.png"
+    },
+    "bone_block": {
+      "name": "Bone Block",
+      "category": "other",
+      "stackSize": 64,
+      "icon": "icons/bone_block.png",
+      "recipe": {
+        "bone_meal": 9.0
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "bone_meal": {
+      "name": "Bone Meal",
+      "category": "other",
+      "stackSize": 64,
+      "icon": "icons/bone_meal.png",
+      "recipe": {
+        "bone": 0.333333
+      },
+      "recipeType": "crafting_shapeless"
+    },
+    "book": {
+      "name": "Book",
+      "category": "other",
+      "stackSize": 64,
+      "icon": "icons/book.png",
+      "recipe": {
+        "paper": 3.0,
+        "leather": 1.0
+      },
+      "recipeType": "crafting_shapeless"
+    },
+    "bookshelf": {
+      "name": "Bookshelf",
+      "category": "other",
+      "stackSize": 64,
+      "icon": "icons/bookshelf.png",
+      "recipe": {
+        "oak_planks": 6.0,
+        "book": 3.0
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "bow": {
+      "name": "Bow",
+      "category": "other",
+      "stackSize": 1,
+      "icon": "icons/bow.png",
+      "recipe": {
+        "stick": 3.0,
+        "string": 3.0
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "bowl": {
+      "name": "Bowl",
+      "category": "other",
+      "stackSize": 64,
+      "icon": "icons/bowl.png",
+      "recipe": {
+        "oak_planks": 0.75
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "bread": {
+      "name": "Bread",
+      "category": "other",
+      "stackSize": 64,
+      "icon": "icons/bread.png",
+      "recipe": {
+        "wheat": 3.0
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "brewing_stand": {
+      "name": "Brewing Stand",
+      "category": "other",
+      "stackSize": 64,
+      "icon": "icons/brewing_stand.png",
+      "recipe": {
+        "blaze_rod": 1.0,
+        "cobblestone": 3.0
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "brick": {
+      "name": "Brick",
+      "category": "other",
+      "stackSize": 64,
+      "icon": "icons/brick.png",
+      "recipe": {
+        "clay_ball": 1.0,
+        "fuel": 1.0
+      },
+      "recipeType": "smelting"
+    },
+    "brick_slab": {
+      "name": "Brick Slab",
+      "category": "other",
+      "stackSize": 64,
+      "icon": "icons/brick_slab.png",
+      "recipe": {
+        "bricks": 0.5
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "brick_stairs": {
+      "name": "Brick Stairs",
+      "category": "other",
+      "stackSize": 64,
+      "icon": "icons/brick_stairs.png",
+      "recipe": {
+        "bricks": 1.5
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "bricks": {
+      "name": "Bricks",
+      "category": "other",
+      "stackSize": 64,
+      "icon": "icons/bricks.png",
+      "recipe": {
+        "brick": 4.0
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "brown_banner": {
+      "name": "Brown Banner",
+      "category": "colored",
+      "stackSize": 16,
+      "icon": "icons/brown_banner.png",
+      "recipe": {
+        "brown_wool": 6.0,
+        "stick": 1.0
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "brown_bed": {
+      "name": "Brown Bed",
+      "category": "colored",
+      "stackSize": 1,
+      "icon": "icons/brown_bed.png",
+      "recipe": {
+        "white_bed": 1.0,
+        "cocoa_beans": 1.0
+      },
+      "recipeType": "crafting_shapeless"
+    },
+    "brown_carpet": {
+      "name": "Brown Carpet",
+      "category": "colored",
+      "stackSize": 64,
+      "icon": "icons/brown_carpet.png",
+      "recipe": {
+        "brown_wool": 0.666667
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "brown_concrete_powder": {
+      "name": "Brown Concrete Powder",
+      "category": "colored",
+      "stackSize": 64,
+      "icon": "icons/brown_concrete_powder.png",
+      "recipe": {
+        "cocoa_beans": 0.125,
+        "sand": 0.5,
+        "gravel": 0.5
+      },
+      "recipeType": "crafting_shapeless"
+    },
+    "brown_glazed_terracotta": {
+      "name": "Brown Glazed Terracotta",
+      "category": "colored",
+      "stackSize": 64,
+      "icon": "icons/brown_glazed_terracotta.png",
+      "recipe": {
+        "brown_terracotta": 1.0,
+        "fuel": 1.0
+      },
+      "recipeType": "smelting"
+    },
+    "brown_mushroom": {
+      "name": "Brown Mushroom",
+      "category": "raw",
+      "stackSize": 64,
+      "icon": "icons/brown_mushroom.png"
+    },
+    "brown_stained_glass": {
+      "name": "Brown Stained Glass",
+      "category": "colored",
+      "stackSize": 64,
+      "icon": "icons/brown_stained_glass.png",
+      "recipe": {
+        "glass": 1.0,
+        "cocoa_beans": 0.125
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "brown_stained_glass_pane": {
+      "name": "Brown Stained Glass Pane",
+      "category": "colored",
+      "stackSize": 64,
+      "icon": "icons/brown_stained_glass_pane.png",
+      "recipe": {
+        "brown_stained_glass": 0.375
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "brown_terracotta": {
+      "name": "Brown Terracotta",
+      "category": "colored",
+      "stackSize": 64,
+      "icon": "icons/brown_terracotta.png",
+      "recipe": {
+        "terracotta": 1.0,
+        "cocoa_beans": 0.125
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "brown_wool": {
+      "name": "Brown Wool",
+      "category": "colored",
+      "stackSize": 64,
+      "icon": "icons/brown_wool.png",
+      "recipe": {
+        "cocoa_beans": 1.0,
+        "white_wool": 1.0
+      },
+      "recipeType": "crafting_shapeless"
+    },
+    "bucket": {
+      "name": "Bucket",
+      "category": "other",
+      "stackSize": 64,
+      "icon": "icons/bucket.png",
+      "recipe": {
+        "iron_ingot": 3.0
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "cactus": {
+      "name": "Cactus",
+      "category": "raw",
+      "stackSize": 64,
+      "icon": "icons/cactus.png"
+    },
+    "cactus_green": {
+      "name": "Cactus Green",
+      "category": "other",
+      "stackSize": 64,
+      "icon": "icons/cactus_green.png",
+      "recipe": {
+        "cactus": 1.0,
+        "fuel": 1.0
+      },
+      "recipeType": "smelting"
+    },
+    "cake": {
+      "name": "Cake",
+      "category": "other",
+      "stackSize": 1,
+      "icon": "icons/cake.png",
+      "recipe": {
+        "milk_bucket": 3.0,
+        "sugar": 2.0,
+        "egg": 1.0,
+        "wheat": 3.0
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "carrot": {
+      "name": "Carrot",
+      "category": "raw",
+      "stackSize": 64,
+      "icon": "icons/carrot.png"
+    },
+    "carrot_on_a_stick": {
+      "name": "Carrot on a Stick",
+      "category": "other",
+      "stackSize": 1,
+      "icon": "icons/carrot_on_a_stick.png",
+      "recipe": {
+        "fishing_rod": 1.0,
+        "carrot": 1.0
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "carved_pumpkin": {
+      "name": "Carved Pumpkin",
+      "category": "raw",
+      "stackSize": 64,
+      "icon": "icons/carved_pumpkin.png"
+    },
+    "cauldron": {
+      "name": "Cauldron",
+      "category": "other",
+      "stackSize": 64,
+      "icon": "icons/cauldron.png",
+      "recipe": {
+        "iron_ingot": 7.0
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "charcoal": {
+      "name": "Charcoal",
+      "category": "other",
+      "stackSize": 64,
+      "icon": "icons/charcoal.png",
+      "recipe": {
+        "dark_oak_log": 1.0
+      },
+      "recipeType": "smelting"
+    },
+    "chest": {
+      "name": "Chest",
+      "category": "other",
+      "stackSize": 64,
+      "icon": "icons/chest.png",
+      "recipe": {
+        "oak_planks": 8.0
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "chest_minecart": {
+      "name": "Minecart with Chest",
+      "category": "other",
+      "stackSize": 1,
+      "icon": "icons/chest_minecart.png",
+      "recipe": {
+        "chest": 1.0,
+        "minecart": 1.0
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "chicken": {
+      "name": "Raw Chicken",
+      "category": "raw",
+      "stackSize": 64,
+      "icon": "icons/chicken.png"
+    },
+    "chiseled_quartz_block": {
+      "name": "Chiseled Quartz Block",
+      "category": "other",
+      "stackSize": 64,
+      "icon": "icons/chiseled_quartz_block.png",
+      "recipe": {
+        "quartz_slab": 2.0
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "chiseled_red_sandstone": {
+      "name": "Chiseled Red Sandstone",
+      "category": "other",
+      "stackSize": 64,
+      "icon": "icons/chiseled_red_sandstone.png",
+      "recipe": {
+        "red_sandstone_slab": 2.0
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "chiseled_sandstone": {
+      "name": "Chiseled Sandstone",
+      "category": "other",
+      "stackSize": 64,
+      "icon": "icons/chiseled_sandstone.png",
+      "recipe": {
+        "sandstone_slab": 2.0
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "chiseled_stone_bricks": {
+      "name": "Chiseled Stone Bricks",
+      "category": "other",
+      "stackSize": 64,
+      "icon": "icons/chiseled_stone_bricks.png",
+      "recipe": {
+        "stone_brick_slab": 2.0
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "chorus_fruit": {
+      "name": "Chorus Fruit",
+      "category": "raw",
+      "stackSize": 64,
+      "icon": "icons/chorus_fruit.png"
+    },
+    "clay": {
+      "name": "Clay",
+      "category": "raw",
+      "stackSize": 64,
+      "icon": "icons/clay.png"
+    },
+    "clay_ball": {
+      "name": "Clay",
+      "category": "raw",
+      "stackSize": 64,
+      "icon": "icons/clay_ball.png"
+    },
+    "clock": {
+      "name": "Clock",
+      "category": "other",
+      "stackSize": 64,
+      "icon": "icons/clock.png",
+      "recipe": {
+        "gold_ingot": 4.0,
+        "redstone": 1.0
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "coal": {
+      "name": "Coal",
+      "category": "raw",
+      "stackSize": 64,
+      "icon": "icons/coal.png"
+    },
+    "coal_block": {
+      "name": "Block of Coal",
+      "category": "other",
+      "stackSize": 64,
+      "icon": "icons/coal_block.png",
+      "recipe": {
+        "coal": 9.0
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "coarse_dirt": {
+      "name": "Coarse Dirt",
+      "category": "other",
+      "stackSize": 64,
+      "icon": "icons/coarse_dirt.png",
+      "recipe": {
+        "dirt": 0.5,
+        "gravel": 0.5
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "cobblestone": {
+      "name": "Cobblestone",
+      "category": "raw",
+      "stackSize": 64,
+      "icon": "icons/cobblestone.png"
+    },
+    "cobblestone_slab": {
+      "name": "Cobblestone Slab",
+      "category": "other",
+      "stackSize": 64,
+      "icon": "icons/cobblestone_slab.png",
+      "recipe": {
+        "cobblestone": 0.5
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "cobblestone_stairs": {
+      "name": "Cobblestone Stairs",
+      "category": "other",
+      "stackSize": 64,
+      "icon": "icons/cobblestone_stairs.png",
+      "recipe": {
+        "cobblestone": 1.5
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "cobblestone_wall": {
+      "name": "Cobblestone Wall",
+      "category": "other",
+      "stackSize": 64,
+      "icon": "icons/cobblestone_wall.png",
+      "recipe": {
+        "cobblestone": 1.0
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "cocoa_beans": {
+      "name": "Cocoa Beans",
+      "category": "raw",
+      "stackSize": 64,
+      "icon": "icons/cocoa_beans.png"
+    },
+    "cod": {
+      "name": "Raw Cod",
+      "category": "raw",
+      "stackSize": 64,
+      "icon": "icons/cod.png"
+    },
+    "comparator": {
+      "name": "Redstone Comparator",
+      "category": "other",
+      "stackSize": 64,
+      "icon": "icons/comparator.png",
+      "recipe": {
+        "redstone_torch": 3.0,
+        "quartz": 1.0,
+        "stone": 3.0
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "compass": {
+      "name": "Compass",
+      "category": "other",
+      "stackSize": 64,
+      "icon": "icons/compass.png",
+      "recipe": {
+        "iron_ingot": 4.0,
+        "redstone": 1.0
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "conduit": {
+      "name": "Conduit",
+      "category": "other",
+      "stackSize": 64,
+      "icon": "icons/conduit.png",
+      "recipe": {
+        "nautilus_shell": 8.0,
+        "heart_of_the_sea": 1.0
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "conduit_power_frame": {
+      "name": "Max Conduit Frame",
+      "category": "sets",
+      "stackSize": 64,
+      "icon": "icons/conduit_power_frame.png",
+      "recipe": {
+        "prismarine": 42,
+        "conduit": 1
+      },
+      "recipeType": "set"
+    },
+    "cooked_beef": {
+      "name": "Steak",
+      "category": "other",
+      "stackSize": 64,
+      "icon": "icons/cooked_beef.png",
+      "recipe": {
+        "beef": 1.0,
+        "fuel": 1.0
+      },
+      "recipeType": "smelting"
+    },
+    "cooked_chicken": {
+      "name": "Cooked Chicken",
+      "category": "other",
+      "stackSize": 64,
+      "icon": "icons/cooked_chicken.png",
+      "recipe": {
+        "chicken": 1.0,
+        "fuel": 1.0
+      },
+      "recipeType": "smelting"
+    },
+    "cooked_cod": {
+      "name": "Cooked Cod",
+      "category": "other",
+      "stackSize": 64,
+      "icon": "icons/cooked_cod.png",
+      "recipe": {
+        "cod": 1.0,
+        "fuel": 1.0
+      },
+      "recipeType": "smelting"
+    },
+    "cooked_mutton": {
+      "name": "Cooked Mutton",
+      "category": "other",
+      "stackSize": 64,
+      "icon": "icons/cooked_mutton.png",
+      "recipe": {
+        "mutton": 1.0,
+        "fuel": 1.0
+      },
+      "recipeType": "smelting"
+    },
+    "cooked_porkchop": {
+      "name": "Cooked Porkchop",
+      "category": "other",
+      "stackSize": 64,
+      "icon": "icons/cooked_porkchop.png",
+      "recipe": {
+        "porkchop": 1.0,
+        "fuel": 1.0
+      },
+      "recipeType": "smelting"
+    },
+    "cooked_rabbit": {
+      "name": "Cooked Rabbit",
+      "category": "other",
+      "stackSize": 64,
+      "icon": "icons/cooked_rabbit.png",
+      "recipe": {
+        "rabbit": 1.0,
+        "fuel": 1.0
+      },
+      "recipeType": "smelting"
+    },
+    "cooked_salmon": {
+      "name": "Cooked Salmon",
+      "category": "other",
+      "stackSize": 64,
+      "icon": "icons/cooked_salmon.png",
+      "recipe": {
+        "salmon": 1.0,
+        "fuel": 1.0
+      },
+      "recipeType": "smelting"
+    },
+    "cookie": {
+      "name": "Cookie",
+      "category": "other",
+      "stackSize": 64,
+      "icon": "icons/cookie.png",
+      "recipe": {
+        "wheat": 0.25,
+        "cocoa_beans": 0.125
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "cracked_stone_bricks": {
+      "name": "Cracked Stone Bricks",
+      "category": "other",
+      "stackSize": 64,
+      "icon": "icons/cracked_stone_bricks.png",
+      "recipe": {
+        "stone_bricks": 1.0,
+        "fuel": 1.0
+      },
+      "recipeType": "smelting"
+    },
+    "crafting_table": {
+      "name": "Crafting Table",
+      "category": "other",
+      "stackSize": 64,
+      "icon": "icons/crafting_table.png",
+      "recipe": {
+        "oak_planks": 4.0
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "cut_red_sandstone": {
+      "name": "Cut Red Sandstone",
+      "category": "other",
+      "stackSize": 64,
+      "icon": "icons/cut_red_sandstone.png",
+      "recipe": {
+        "red_sandstone": 1.0
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "cut_sandstone": {
+      "name": "Cut Sandstone",
+      "category": "other",
+      "stackSize": 64,
+      "icon": "icons/cut_sandstone.png",
+      "recipe": {
+        "sandstone": 1.0
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "cyan_banner": {
+      "name": "Cyan Banner",
+      "category": "colored",
+      "stackSize": 16,
+      "icon": "icons/cyan_banner.png",
+      "recipe": {
+        "cyan_wool": 6.0,
+        "stick": 1.0
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "cyan_bed": {
+      "name": "Cyan Bed",
+      "category": "colored",
+      "stackSize": 1,
+      "icon": "icons/cyan_bed.png",
+      "recipe": {
+        "white_bed": 1.0,
+        "cyan_dye": 1.0
+      },
+      "recipeType": "crafting_shapeless"
+    },
+    "cyan_carpet": {
+      "name": "Cyan Carpet",
+      "category": "colored",
+      "stackSize": 64,
+      "icon": "icons/cyan_carpet.png",
+      "recipe": {
+        "cyan_wool": 0.666667
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "cyan_concrete_powder": {
+      "name": "Cyan Concrete Powder",
+      "category": "colored",
+      "stackSize": 64,
+      "icon": "icons/cyan_concrete_powder.png",
+      "recipe": {
+        "cyan_dye": 0.125,
+        "sand": 0.5,
+        "gravel": 0.5
+      },
+      "recipeType": "crafting_shapeless"
+    },
+    "cyan_dye": {
+      "name": "Cyan Dye",
+      "category": "other",
+      "stackSize": 64,
+      "icon": "icons/cyan_dye.png",
+      "recipe": {
+        "lapis_lazuli": 0.5,
+        "cactus_green": 0.5
+      },
+      "recipeType": "crafting_shapeless"
+    },
+    "cyan_glazed_terracotta": {
+      "name": "Cyan Glazed Terracotta",
+      "category": "colored",
+      "stackSize": 64,
+      "icon": "icons/cyan_glazed_terracotta.png",
+      "recipe": {
+        "cyan_terracotta": 1.0,
+        "fuel": 1.0
+      },
+      "recipeType": "smelting"
+    },
+    "cyan_stained_glass": {
+      "name": "Cyan Stained Glass",
+      "category": "colored",
+      "stackSize": 64,
+      "icon": "icons/cyan_stained_glass.png",
+      "recipe": {
+        "glass": 1.0,
+        "cyan_dye": 0.125
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "cyan_stained_glass_pane": {
+      "name": "Cyan Stained Glass Pane",
+      "category": "colored",
+      "stackSize": 64,
+      "icon": "icons/cyan_stained_glass_pane.png",
+      "recipe": {
+        "cyan_stained_glass": 0.375
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "cyan_terracotta": {
+      "name": "Cyan Terracotta",
+      "category": "colored",
+      "stackSize": 64,
+      "icon": "icons/cyan_terracotta.png",
+      "recipe": {
+        "terracotta": 1.0,
+        "cyan_dye": 0.125
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "cyan_wool": {
+      "name": "Cyan Wool",
+      "category": "colored",
+      "stackSize": 64,
+      "icon": "icons/cyan_wool.png",
+      "recipe": {
+        "cyan_dye": 1.0,
+        "white_wool": 1.0
+      },
+      "recipeType": "crafting_shapeless"
+    },
+    "dandelion_yellow": {
+      "name": "Dandelion Yellow",
+      "category": "other",
+      "stackSize": 64,
+      "icon": "icons/dandelion_yellow.png",
+      "recipe": {
+        "sunflower": 0.5
+      },
+      "recipeType": "crafting_shapeless"
+    },
+    "dark_oak_boat": {
+      "name": "Dark Oak Boat",
+      "category": "other",
+      "stackSize": 1,
+      "icon": "icons/dark_oak_boat.png",
+      "recipe": {
+        "dark_oak_planks": 5.0
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "dark_oak_button": {
+      "name": "Dark Oak Button",
+      "category": "other",
+      "stackSize": 64,
+      "icon": "icons/dark_oak_button.png",
+      "recipe": {
+        "dark_oak_planks": 1.0
+      },
+      "recipeType": "crafting_shapeless"
+    },
+    "dark_oak_door": {
+      "name": "Dark Oak Door",
+      "category": "other",
+      "stackSize": 64,
+      "icon": "icons/dark_oak_door.png",
+      "recipe": {
+        "dark_oak_planks": 2.0
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "dark_oak_fence": {
+      "name": "Dark Oak Fence",
+      "category": "other",
+      "stackSize": 64,
+      "icon": "icons/dark_oak_fence.png",
+      "recipe": {
+        "dark_oak_planks": 1.333333,
+        "stick": 0.666667
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "dark_oak_fence_gate": {
+      "name": "Dark Oak Fence Gate",
+      "category": "other",
+      "stackSize": 64,
+      "icon": "icons/dark_oak_fence_gate.png",
+      "recipe": {
+        "stick": 4.0,
+        "dark_oak_planks": 2.0
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "dark_oak_log": {
+      "name": "Dark Oak Log",
+      "category": "raw",
+      "stackSize": 64,
+      "icon": "icons/dark_oak_log.png"
+    },
+    "dark_oak_planks": {
+      "name": "Dark Oak Planks",
+      "category": "other",
+      "stackSize": 64,
+      "icon": "icons/dark_oak_planks.png",
+      "recipe": {
+        "dark_oak_log": 0.25
+      },
+      "recipeType": "crafting_shapeless"
+    },
+    "dark_oak_pressure_plate": {
+      "name": "Dark Oak Pressure Plate",
+      "category": "other",
+      "stackSize": 64,
+      "icon": "icons/dark_oak_pressure_plate.png",
+      "recipe": {
+        "dark_oak_planks": 2.0
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "dark_oak_slab": {
+      "name": "Dark Oak Slab",
+      "category": "other",
+      "stackSize": 64,
+      "icon": "icons/dark_oak_slab.png",
+      "recipe": {
+        "dark_oak_planks": 0.5
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "dark_oak_stairs": {
+      "name": "Dark Oak Stairs",
+      "category": "other",
+      "stackSize": 64,
+      "icon": "icons/dark_oak_stairs.png",
+      "recipe": {
+        "dark_oak_planks": 1.5
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "dark_oak_trapdoor": {
+      "name": "Dark Oak Trapdoor",
+      "category": "other",
+      "stackSize": 64,
+      "icon": "icons/dark_oak_trapdoor.png",
+      "recipe": {
+        "dark_oak_planks": 3.0
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "dark_oak_wood": {
+      "name": "Dark Oak Wood",
+      "category": "other",
+      "stackSize": 64,
+      "icon": "icons/dark_oak_wood.png",
+      "recipe": {
+        "dark_oak_log": 1.333333
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "dark_prismarine": {
+      "name": "Dark Prismarine",
+      "category": "other",
+      "stackSize": 64,
+      "icon": "icons/dark_prismarine.png",
+      "recipe": {
+        "prismarine_shard": 8.0,
+        "ink_sac": 1.0
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "dark_prismarine_slab": {
+      "name": "Dark Prismarine Slab",
+      "category": "other",
+      "stackSize": 64,
+      "icon": "icons/dark_prismarine_slab.png",
+      "recipe": {
+        "dark_prismarine": 0.5
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "dark_prismarine_stairs": {
+      "name": "Dark Prismarine Stairs",
+      "category": "other",
+      "stackSize": 64,
+      "icon": "icons/dark_prismarine_stairs.png",
+      "recipe": {
+        "dark_prismarine": 1.5
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "daylight_detector": {
+      "name": "Daylight Detector",
+      "category": "other",
+      "stackSize": 64,
+      "icon": "icons/daylight_detector.png",
+      "recipe": {
+        "glass": 3.0,
+        "quartz": 3.0,
+        "oak_slab": 3.0
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "detector_rail": {
+      "name": "Detector Rail",
+      "category": "other",
+      "stackSize": 64,
+      "icon": "icons/detector_rail.png",
+      "recipe": {
+        "iron_ingot": 1.0,
+        "stone_pressure_plate": 0.166667,
+        "redstone": 0.166667
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "diamond": {
+      "name": "Diamond",
+      "category": "raw",
+      "stackSize": 64,
+      "icon": "icons/diamond.png"
+    },
+    "diamond_axe": {
+      "name": "Diamond Axe",
+      "category": "other",
+      "stackSize": 1,
+      "icon": "icons/diamond_axe.png",
+      "recipe": {
+        "diamond": 3.0,
+        "stick": 2.0
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "diamond_block": {
+      "name": "Block of Diamond",
+      "category": "other",
+      "stackSize": 64,
+      "icon": "icons/diamond_block.png",
+      "recipe": {
+        "diamond": 9.0
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "diamond_boots": {
+      "name": "Diamond Boots",
+      "category": "other",
+      "stackSize": 1,
+      "icon": "icons/diamond_boots.png",
+      "recipe": {
+        "diamond": 4.0
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "diamond_chestplate": {
+      "name": "Diamond Chestplate",
+      "category": "other",
+      "stackSize": 1,
+      "icon": "icons/diamond_chestplate.png",
+      "recipe": {
+        "diamond": 8.0
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "diamond_helmet": {
+      "name": "Diamond Helmet",
+      "category": "other",
+      "stackSize": 1,
+      "icon": "icons/diamond_helmet.png",
+      "recipe": {
+        "diamond": 5.0
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "diamond_hoe": {
+      "name": "Diamond Hoe",
+      "category": "other",
+      "stackSize": 1,
+      "icon": "icons/diamond_hoe.png",
+      "recipe": {
+        "diamond": 2.0,
+        "stick": 2.0
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "diamond_leggings": {
+      "name": "Diamond Leggings",
+      "category": "other",
+      "stackSize": 1,
+      "icon": "icons/diamond_leggings.png",
+      "recipe": {
+        "diamond": 7.0
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "diamond_pickaxe": {
+      "name": "Diamond Pickaxe",
+      "category": "other",
+      "stackSize": 1,
+      "icon": "icons/diamond_pickaxe.png",
+      "recipe": {
+        "diamond": 3.0,
+        "stick": 2.0
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "diamond_shovel": {
+      "name": "Diamond Shovel",
+      "category": "other",
+      "stackSize": 1,
+      "icon": "icons/diamond_shovel.png",
+      "recipe": {
+        "diamond": 1.0,
+        "stick": 2.0
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "diamond_sword": {
+      "name": "Diamond Sword",
+      "category": "other",
+      "stackSize": 1,
+      "icon": "icons/diamond_sword.png",
+      "recipe": {
+        "diamond": 2.0,
+        "stick": 1.0
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "diorite": {
+      "name": "Diorite",
+      "category": "raw",
+      "stackSize": 64,
+      "icon": "icons/diorite.png"
+    },
+    "dirt": {
+      "name": "Dirt",
+      "category": "raw",
+      "stackSize": 64,
+      "icon": "icons/dirt.png"
+    },
+    "dispenser": {
+      "name": "Dispenser",
+      "category": "other",
+      "stackSize": 64,
+      "icon": "icons/dispenser.png",
+      "recipe": {
+        "cobblestone": 7.0,
+        "bow": 1.0,
+        "redstone": 1.0
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "dragon_breath": {
+      "name": "Dragon's Breath",
+      "category": "raw",
+      "stackSize": 64,
+      "icon": "icons/dragon_breath.png"
+    },
+    "dried_kelp": {
+      "name": "Dried Kelp",
+      "category": "other",
+      "stackSize": 64,
+      "icon": "icons/dried_kelp.png",
+      "recipe": {
+        "kelp": 1.0,
+        "fuel": 1.0
+      },
+      "recipeType": "smelting"
+    },
+    "dried_kelp_block": {
+      "name": "Dried Kelp Block",
+      "category": "other",
+      "stackSize": 64,
+      "icon": "icons/dried_kelp_block.png",
+      "recipe": {
+        "dried_kelp": 9.0
+      },
+      "recipeType": "crafting_shapeless"
+    },
+    "dropper": {
+      "name": "Dropper",
+      "category": "other",
+      "stackSize": 64,
+      "icon": "icons/dropper.png",
+      "recipe": {
+        "cobblestone": 7.0,
+        "redstone": 1.0
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "egg": {
+      "name": "Egg",
+      "category": "raw",
+      "stackSize": 16,
+      "icon": "icons/egg.png"
+    },
+    "emerald": {
+      "name": "Emerald",
+      "category": "raw",
+      "stackSize": 64,
+      "icon": "icons/emerald.png"
+    },
+    "emerald_block": {
+      "name": "Block of Emerald",
+      "category": "other",
+      "stackSize": 64,
+      "icon": "icons/emerald_block.png",
+      "recipe": {
+        "emerald": 9.0
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "enchanting_room": {
+      "name": "Enchanting Room",
+      "category": "sets",
+      "stackSize": 64,
+      "icon": "icons/enchanting_room.png",
+      "recipe": {
+        "bookshelf": 15,
+        "enchanting_table": 1
+      },
+      "recipeType": "set"
+    },
+    "enchanting_table": {
+      "name": "Enchanting Table",
+      "category": "other",
+      "stackSize": 64,
+      "icon": "icons/enchanting_table.png",
+      "recipe": {
+        "book": 1.0,
+        "diamond": 2.0,
+        "obsidian": 4.0
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "end_crystal": {
+      "name": "End Crystal",
+      "category": "other",
+      "stackSize": 64,
+      "icon": "icons/end_crystal.png",
+      "recipe": {
+        "glass": 7.0,
+        "ender_eye": 1.0,
+        "ghast_tear": 1.0
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "end_rod": {
+      "name": "End Rod",
+      "category": "other",
+      "stackSize": 64,
+      "icon": "icons/end_rod.png",
+      "recipe": {
+        "blaze_rod": 0.25,
+        "popped_chorus_fruit": 0.25
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "end_stone": {
+      "name": "End Stone",
+      "category": "raw",
+      "stackSize": 64,
+      "icon": "icons/end_stone.png"
+    },
+    "end_stone_bricks": {
+      "name": "End Stone Bricks",
+      "category": "other",
+      "stackSize": 64,
+      "icon": "icons/end_stone_bricks.png",
+      "recipe": {
+        "end_stone": 1.0
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "ender_chest": {
+      "name": "Ender Chest",
+      "category": "other",
+      "stackSize": 64,
+      "icon": "icons/ender_chest.png",
+      "recipe": {
+        "obsidian": 8.0,
+        "ender_eye": 1.0
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "ender_eye": {
+      "name": "Eye of Ender",
+      "category": "other",
+      "stackSize": 64,
+      "icon": "icons/ender_eye.png",
+      "recipe": {
+        "ender_pearl": 1.0,
+        "blaze_powder": 1.0
+      },
+      "recipeType": "crafting_shapeless"
+    },
+    "ender_pearl": {
+      "name": "Ender Pearl",
+      "category": "raw",
+      "stackSize": 16,
+      "icon": "icons/ender_pearl.png"
+    },
+    "feather": {
+      "name": "Feather",
+      "category": "raw",
+      "stackSize": 64,
+      "icon": "icons/feather.png"
+    },
+    "fermented_spider_eye": {
+      "name": "Fermented Spider Eye",
+      "category": "other",
+      "stackSize": 64,
+      "icon": "icons/fermented_spider_eye.png",
+      "recipe": {
+        "spider_eye": 1.0,
+        "brown_mushroom": 1.0,
+        "sugar": 1.0
+      },
+      "recipeType": "crafting_shapeless"
+    },
+    "fire_charge": {
+      "name": "Fire Charge",
+      "category": "other",
+      "stackSize": 64,
+      "icon": "icons/fire_charge.png",
+      "recipe": {
+        "gunpowder": 0.333333,
+        "blaze_powder": 0.333333,
+        "coal": 0.333333
+      },
+      "recipeType": "crafting_shapeless"
+    },
+    "fishing_rod": {
+      "name": "Fishing Rod",
+      "category": "other",
+      "stackSize": 1,
+      "icon": "icons/fishing_rod.png",
+      "recipe": {
+        "stick": 3.0,
+        "string": 2.0
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "flint": {
+      "name": "Flint",
+      "category": "raw",
+      "stackSize": 64,
+      "icon": "icons/flint.png"
+    },
+    "flint_and_steel": {
+      "name": "Flint and Steel",
+      "category": "other",
+      "stackSize": 1,
+      "icon": "icons/flint_and_steel.png",
+      "recipe": {
+        "iron_ingot": 1.0,
+        "flint": 1.0
+      },
+      "recipeType": "crafting_shapeless"
+    },
+    "flower_pot": {
+      "name": "Flower Pot",
+      "category": "other",
+      "stackSize": 64,
+      "icon": "icons/flower_pot.png",
+      "recipe": {
+        "brick": 3.0
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "fuel": {
+      "name": "Fuel",
+      "category": "raw",
+      "stackSize": 64,
+      "icon": "icons/fuel.png"
+    },
+    "full_diamond_armor": {
+      "name": "Full Diamond Armor",
+      "category": "sets",
+      "stackSize": 64,
+      "icon": "icons/full_diamond_armor.png",
+      "recipe": {
+        "diamond_helmet": 1,
+        "diamond_chestplate": 1,
+        "diamond_leggings": 1,
+        "diamond_boots": 1
+      },
+      "recipeType": "set"
+    },
+    "full_golden_armor": {
+      "name": "Full Golden Armor",
+      "category": "sets",
+      "stackSize": 64,
+      "icon": "icons/full_golden_armor.png",
+      "recipe": {
+        "golden_helmet": 1,
+        "golden_chestplate": 1,
+        "golden_leggings": 1,
+        "golden_boots": 1
+      },
+      "recipeType": "set"
+    },
+    "full_iron_armor": {
+      "name": "Full Iron Armor",
+      "category": "sets",
+      "stackSize": 64,
+      "icon": "icons/full_iron_armor.png",
+      "recipe": {
+        "iron_helmet": 1,
+        "iron_chestplate": 1,
+        "iron_leggings": 1,
+        "iron_boots": 1
+      },
+      "recipeType": "set"
+    },
+    "full_leather_armor": {
+      "name": "Full Leather Armor",
+      "category": "sets",
+      "stackSize": 64,
+      "icon": "icons/full_leather_armor.png",
+      "recipe": {
+        "leather_helmet": 1,
+        "leather_chestplate": 1,
+        "leather_leggings": 1,
+        "leather_boots": 1
+      },
+      "recipeType": "set"
+    },
+    "furnace": {
+      "name": "Furnace",
+      "category": "other",
+      "stackSize": 64,
+      "icon": "icons/furnace.png",
+      "recipe": {
+        "cobblestone": 8.0
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "furnace_minecart": {
+      "name": "Minecart with Furnace",
+      "category": "other",
+      "stackSize": 1,
+      "icon": "icons/furnace_minecart.png",
+      "recipe": {
+        "furnace": 1.0,
+        "minecart": 1.0
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "ghast_tear": {
+      "name": "Ghast Tear",
+      "category": "raw",
+      "stackSize": 64,
+      "icon": "icons/ghast_tear.png"
+    },
+    "glass": {
+      "name": "Glass",
+      "category": "other",
+      "stackSize": 64,
+      "icon": "icons/glass.png",
+      "recipe": {
+        "sand": 1.0,
+        "fuel": 1.0
+      },
+      "recipeType": "smelting"
+    },
+    "glass_bottle": {
+      "name": "Glass Bottle",
+      "category": "other",
+      "stackSize": 64,
+      "icon": "icons/glass_bottle.png",
+      "recipe": {
+        "glass": 1.0
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "glass_pane": {
+      "name": "Glass Pane",
+      "category": "other",
+      "stackSize": 64,
+      "icon": "icons/glass_pane.png",
+      "recipe": {
+        "glass": 0.375
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "glistering_melon_slice": {
+      "name": "Glistering Melon Slice",
+      "category": "other",
+      "stackSize": 64,
+      "icon": "icons/glistering_melon_slice.png",
+      "recipe": {
+        "gold_nugget": 8.0,
+        "melon_slice": 1.0
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "glowstone": {
+      "name": "Glowstone",
+      "category": "other",
+      "stackSize": 64,
+      "icon": "icons/glowstone.png",
+      "recipe": {
+        "glowstone_dust": 4.0
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "glowstone_dust": {
+      "name": "Glowstone Dust",
+      "category": "raw",
+      "stackSize": 64,
+      "icon": "icons/glowstone_dust.png"
+    },
+    "gold_block": {
+      "name": "Block of Gold",
+      "category": "other",
+      "stackSize": 64,
+      "icon": "icons/gold_block.png",
+      "recipe": {
+        "gold_ingot": 9.0
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "gold_ingot": {
+      "name": "Gold Ingot",
+      "category": "raw",
+      "stackSize": 64,
+      "icon": "icons/gold_ingot.png"
+    },
+    "gold_nugget": {
+      "name": "Gold Nugget",
+      "category": "raw",
+      "stackSize": 64,
+      "icon": "icons/gold_nugget.png"
+    },
+    "golden_apple": {
+      "name": "Golden Apple",
+      "category": "other",
+      "stackSize": 64,
+      "icon": "icons/golden_apple.png",
+      "recipe": {
+        "gold_ingot": 8.0,
+        "apple": 1.0
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "golden_axe": {
+      "name": "Golden Axe",
+      "category": "other",
+      "stackSize": 1,
+      "icon": "icons/golden_axe.png",
+      "recipe": {
+        "gold_ingot": 3.0,
+        "stick": 2.0
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "golden_boots": {
+      "name": "Golden Boots",
+      "category": "other",
+      "stackSize": 1,
+      "icon": "icons/golden_boots.png",
+      "recipe": {
+        "gold_ingot": 4.0
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "golden_carrot": {
+      "name": "Golden Carrot",
+      "category": "other",
+      "stackSize": 64,
+      "icon": "icons/golden_carrot.png",
+      "recipe": {
+        "gold_nugget": 8.0,
+        "carrot": 1.0
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "golden_chestplate": {
+      "name": "Golden Chestplate",
+      "category": "other",
+      "stackSize": 1,
+      "icon": "icons/golden_chestplate.png",
+      "recipe": {
+        "gold_ingot": 8.0
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "golden_helmet": {
+      "name": "Golden Helmet",
+      "category": "other",
+      "stackSize": 1,
+      "icon": "icons/golden_helmet.png",
+      "recipe": {
+        "gold_ingot": 5.0
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "golden_hoe": {
+      "name": "Golden Hoe",
+      "category": "other",
+      "stackSize": 1,
+      "icon": "icons/golden_hoe.png",
+      "recipe": {
+        "gold_ingot": 2.0,
+        "stick": 2.0
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "golden_leggings": {
+      "name": "Golden Leggings",
+      "category": "other",
+      "stackSize": 1,
+      "icon": "icons/golden_leggings.png",
+      "recipe": {
+        "gold_ingot": 7.0
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "golden_pickaxe": {
+      "name": "Golden Pickaxe",
+      "category": "other",
+      "stackSize": 1,
+      "icon": "icons/golden_pickaxe.png",
+      "recipe": {
+        "gold_ingot": 3.0,
+        "stick": 2.0
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "golden_shovel": {
+      "name": "Golden Shovel",
+      "category": "other",
+      "stackSize": 1,
+      "icon": "icons/golden_shovel.png",
+      "recipe": {
+        "gold_ingot": 1.0,
+        "stick": 2.0
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "golden_sword": {
+      "name": "Golden Sword",
+      "category": "other",
+      "stackSize": 1,
+      "icon": "icons/golden_sword.png",
+      "recipe": {
+        "gold_ingot": 2.0,
+        "stick": 1.0
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "granite": {
+      "name": "Granite",
+      "category": "raw",
+      "stackSize": 64,
+      "icon": "icons/granite.png"
+    },
+    "gravel": {
+      "name": "Gravel",
+      "category": "raw",
+      "stackSize": 64,
+      "icon": "icons/gravel.png"
+    },
+    "gray_banner": {
+      "name": "Gray Banner",
+      "category": "colored",
+      "stackSize": 16,
+      "icon": "icons/gray_banner.png",
+      "recipe": {
+        "gray_wool": 6.0,
+        "stick": 1.0
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "gray_bed": {
+      "name": "Gray Bed",
+      "category": "colored",
+      "stackSize": 1,
+      "icon": "icons/gray_bed.png",
+      "recipe": {
+        "white_bed": 1.0,
+        "gray_dye": 1.0
+      },
+      "recipeType": "crafting_shapeless"
+    },
+    "gray_carpet": {
+      "name": "Gray Carpet",
+      "category": "colored",
+      "stackSize": 64,
+      "icon": "icons/gray_carpet.png",
+      "recipe": {
+        "gray_wool": 0.666667
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "gray_concrete_powder": {
+      "name": "Gray Concrete Powder",
+      "category": "colored",
+      "stackSize": 64,
+      "icon": "icons/gray_concrete_powder.png",
+      "recipe": {
+        "gray_dye": 0.125,
+        "sand": 0.5,
+        "gravel": 0.5
+      },
+      "recipeType": "crafting_shapeless"
+    },
+    "gray_dye": {
+      "name": "Gray Dye",
+      "category": "other",
+      "stackSize": 64,
+      "icon": "icons/gray_dye.png",
+      "recipe": {
+        "ink_sac": 0.5,
+        "bone_meal": 0.5
+      },
+      "recipeType": "crafting_shapeless"
+    },
+    "gray_glazed_terracotta": {
+      "name": "Gray Glazed Terracotta",
+      "category": "colored",
+      "stackSize": 64,
+      "icon": "icons/gray_glazed_terracotta.png",
+      "recipe": {
+        "gray_terracotta": 1.0,
+        "fuel": 1.0
+      },
+      "recipeType": "smelting"
+    },
+    "gray_stained_glass": {
+      "name": "Gray Stained Glass",
+      "category": "colored",
+      "stackSize": 64,
+      "icon": "icons/gray_stained_glass.png",
+      "recipe": {
+        "glass": 1.0,
+        "gray_dye": 0.125
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "gray_stained_glass_pane": {
+      "name": "Gray Stained Glass Pane",
+      "category": "colored",
+      "stackSize": 64,
+      "icon": "icons/gray_stained_glass_pane.png",
+      "recipe": {
+        "gray_stained_glass": 0.375
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "gray_terracotta": {
+      "name": "Gray Terracotta",
+      "category": "colored",
+      "stackSize": 64,
+      "icon": "icons/gray_terracotta.png",
+      "recipe": {
+        "terracotta": 1.0,
+        "gray_dye": 0.125
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "gray_wool": {
+      "name": "Gray Wool",
+      "category": "colored",
+      "stackSize": 64,
+      "icon": "icons/gray_wool.png",
+      "recipe": {
+        "gray_dye": 1.0,
+        "white_wool": 1.0
+      },
+      "recipeType": "crafting_shapeless"
+    },
+    "green_banner": {
+      "name": "Green Banner",
+      "category": "colored",
+      "stackSize": 16,
+      "icon": "icons/green_banner.png",
+      "recipe": {
+        "green_wool": 6.0,
+        "stick": 1.0
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "green_bed": {
+      "name": "Green Bed",
+      "category": "colored",
+      "stackSize": 1,
+      "icon": "icons/green_bed.png",
+      "recipe": {
+        "green_wool": 3.0,
+        "oak_planks": 3.0
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "green_carpet": {
+      "name": "Green Carpet",
+      "category": "colored",
+      "stackSize": 64,
+      "icon": "icons/green_carpet.png",
+      "recipe": {
+        "green_wool": 0.666667
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "green_concrete_powder": {
+      "name": "Green Concrete Powder",
+      "category": "colored",
+      "stackSize": 64,
+      "icon": "icons/green_concrete_powder.png",
+      "recipe": {
+        "cactus_green": 0.125,
+        "sand": 0.5,
+        "gravel": 0.5
+      },
+      "recipeType": "crafting_shapeless"
+    },
+    "green_glazed_terracotta": {
+      "name": "Green Glazed Terracotta",
+      "category": "colored",
+      "stackSize": 64,
+      "icon": "icons/green_glazed_terracotta.png",
+      "recipe": {
+        "green_terracotta": 1.0,
+        "fuel": 1.0
+      },
+      "recipeType": "smelting"
+    },
+    "green_stained_glass": {
+      "name": "Green Stained Glass",
+      "category": "colored",
+      "stackSize": 64,
+      "icon": "icons/green_stained_glass.png",
+      "recipe": {
+        "glass": 1.0,
+        "cactus_green": 0.125
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "green_stained_glass_pane": {
+      "name": "Green Stained Glass Pane",
+      "category": "colored",
+      "stackSize": 64,
+      "icon": "icons/green_stained_glass_pane.png",
+      "recipe": {
+        "green_stained_glass": 0.375
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "green_terracotta": {
+      "name": "Green Terracotta",
+      "category": "colored",
+      "stackSize": 64,
+      "icon": "icons/green_terracotta.png",
+      "recipe": {
+        "terracotta": 1.0,
+        "cactus_green": 0.125
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "green_wool": {
+      "name": "Green Wool",
+      "category": "colored",
+      "stackSize": 64,
+      "icon": "icons/green_wool.png",
+      "recipe": {
+        "cactus_green": 1.0,
+        "white_wool": 1.0
+      },
+      "recipeType": "crafting_shapeless"
+    },
+    "gunpowder": {
+      "name": "Gunpowder",
+      "category": "raw",
+      "stackSize": 64,
+      "icon": "icons/gunpowder.png"
+    },
+    "hay_block": {
+      "name": "Hay Bale",
+      "category": "other",
+      "stackSize": 64,
+      "icon": "icons/hay_block.png",
+      "recipe": {
+        "wheat": 9.0
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "heart_of_the_sea": {
+      "name": "Heart of the Sea",
+      "category": "raw",
+      "stackSize": 64,
+      "icon": "icons/heart_of_the_sea.png"
+    },
+    "heavy_weighted_pressure_plate": {
+      "name": "Heavy Weighted Pressure Plate",
+      "category": "other",
+      "stackSize": 64,
+      "icon": "icons/heavy_weighted_pressure_plate.png",
+      "recipe": {
+        "iron_ingot": 2.0
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "hopper": {
+      "name": "Hopper",
+      "category": "other",
+      "stackSize": 64,
+      "icon": "icons/hopper.png",
+      "recipe": {
+        "iron_ingot": 5.0,
+        "chest": 1.0
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "hopper_minecart": {
+      "name": "Minecart with Hopper",
+      "category": "other",
+      "stackSize": 1,
+      "icon": "icons/hopper_minecart.png",
+      "recipe": {
+        "hopper": 1.0,
+        "minecart": 1.0
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "ice": {
+      "name": "Ice",
+      "category": "raw",
+      "stackSize": 64,
+      "icon": "icons/ice.png"
+    },
+    "ink_sac": {
+      "name": "Ink Sac",
+      "category": "raw",
+      "stackSize": 64,
+      "icon": "icons/ink_sac.png"
+    },
+    "iron_axe": {
+      "name": "Iron Axe",
+      "category": "other",
+      "stackSize": 1,
+      "icon": "icons/iron_axe.png",
+      "recipe": {
+        "iron_ingot": 3.0,
+        "stick": 2.0
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "iron_bars": {
+      "name": "Iron Bars",
+      "category": "other",
+      "stackSize": 64,
+      "icon": "icons/iron_bars.png",
+      "recipe": {
+        "iron_ingot": 0.375
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "iron_block": {
+      "name": "Block of Iron",
+      "category": "other",
+      "stackSize": 64,
+      "icon": "icons/iron_block.png",
+      "recipe": {
+        "iron_ingot": 9.0
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "iron_boots": {
+      "name": "Iron Boots",
+      "category": "other",
+      "stackSize": 1,
+      "icon": "icons/iron_boots.png",
+      "recipe": {
+        "iron_ingot": 4.0
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "iron_chestplate": {
+      "name": "Iron Chestplate",
+      "category": "other",
+      "stackSize": 1,
+      "icon": "icons/iron_chestplate.png",
+      "recipe": {
+        "iron_ingot": 8.0
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "iron_door": {
+      "name": "Iron Door",
+      "category": "other",
+      "stackSize": 64,
+      "icon": "icons/iron_door.png",
+      "recipe": {
+        "iron_ingot": 2.0
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "iron_helmet": {
+      "name": "Iron Helmet",
+      "category": "other",
+      "stackSize": 1,
+      "icon": "icons/iron_helmet.png",
+      "recipe": {
+        "iron_ingot": 5.0
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "iron_hoe": {
+      "name": "Iron Hoe",
+      "category": "other",
+      "stackSize": 1,
+      "icon": "icons/iron_hoe.png",
+      "recipe": {
+        "iron_ingot": 2.0,
+        "stick": 2.0
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "iron_ingot": {
+      "name": "Iron Ingot",
+      "category": "raw",
+      "stackSize": 64,
+      "icon": "icons/iron_ingot.png"
+    },
+    "iron_leggings": {
+      "name": "Iron Leggings",
+      "category": "other",
+      "stackSize": 1,
+      "icon": "icons/iron_leggings.png",
+      "recipe": {
+        "iron_ingot": 7.0
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "iron_nugget": {
+      "name": "Iron Nugget",
+      "category": "other",
+      "stackSize": 64,
+      "icon": "icons/iron_nugget.png",
+      "recipe": {
+        "iron_ingot": 0.111111
+      },
+      "recipeType": "crafting_shapeless"
+    },
+    "iron_pickaxe": {
+      "name": "Iron Pickaxe",
+      "category": "other",
+      "stackSize": 1,
+      "icon": "icons/iron_pickaxe.png",
+      "recipe": {
+        "iron_ingot": 3.0,
+        "stick": 2.0
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "iron_shovel": {
+      "name": "Iron Shovel",
+      "category": "other",
+      "stackSize": 1,
+      "icon": "icons/iron_shovel.png",
+      "recipe": {
+        "iron_ingot": 1.0,
+        "stick": 2.0
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "iron_sword": {
+      "name": "Iron Sword",
+      "category": "other",
+      "stackSize": 1,
+      "icon": "icons/iron_sword.png",
+      "recipe": {
+        "iron_ingot": 2.0,
+        "stick": 1.0
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "iron_trapdoor": {
+      "name": "Iron Trapdoor",
+      "category": "other",
+      "stackSize": 64,
+      "icon": "icons/iron_trapdoor.png",
+      "recipe": {
+        "iron_ingot": 4.0
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "item_frame": {
+      "name": "Item Frame",
+      "category": "other",
+      "stackSize": 64,
+      "icon": "icons/item_frame.png",
+      "recipe": {
+        "stick": 8.0,
+        "leather": 1.0
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "jack_o_lantern": {
+      "name": "Jack o'Lantern",
+      "category": "other",
+      "stackSize": 64,
+      "icon": "icons/jack_o_lantern.png",
+      "recipe": {
+        "carved_pumpkin": 1.0,
+        "torch": 1.0
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "jukebox": {
+      "name": "Jukebox",
+      "category": "other",
+      "stackSize": 64,
+      "icon": "icons/jukebox.png",
+      "recipe": {
+        "oak_planks": 8.0,
+        "diamond": 1.0
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "jungle_boat": {
+      "name": "Jungle Boat",
+      "category": "other",
+      "stackSize": 1,
+      "icon": "icons/jungle_boat.png",
+      "recipe": {
+        "jungle_planks": 5.0
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "jungle_button": {
+      "name": "Jungle Button",
+      "category": "other",
+      "stackSize": 64,
+      "icon": "icons/jungle_button.png",
+      "recipe": {
+        "jungle_planks": 1.0
+      },
+      "recipeType": "crafting_shapeless"
+    },
+    "jungle_door": {
+      "name": "Jungle Door",
+      "category": "other",
+      "stackSize": 64,
+      "icon": "icons/jungle_door.png",
+      "recipe": {
+        "jungle_planks": 2.0
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "jungle_fence": {
+      "name": "Jungle Fence",
+      "category": "other",
+      "stackSize": 64,
+      "icon": "icons/jungle_fence.png",
+      "recipe": {
+        "jungle_planks": 1.333333,
+        "stick": 0.666667
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "jungle_fence_gate": {
+      "name": "Jungle Fence Gate",
+      "category": "other",
+      "stackSize": 64,
+      "icon": "icons/jungle_fence_gate.png",
+      "recipe": {
+        "stick": 4.0,
+        "jungle_planks": 2.0
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "jungle_log": {
+      "name": "Jungle Log",
+      "category": "raw",
+      "stackSize": 64,
+      "icon": "icons/jungle_log.png"
+    },
+    "jungle_planks": {
+      "name": "Jungle Planks",
+      "category": "other",
+      "stackSize": 64,
+      "icon": "icons/jungle_planks.png",
+      "recipe": {
+        "jungle_log": 0.25
+      },
+      "recipeType": "crafting_shapeless"
+    },
+    "jungle_pressure_plate": {
+      "name": "Jungle Pressure Plate",
+      "category": "other",
+      "stackSize": 64,
+      "icon": "icons/jungle_pressure_plate.png",
+      "recipe": {
+        "jungle_planks": 2.0
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "jungle_slab": {
+      "name": "Jungle Slab",
+      "category": "other",
+      "stackSize": 64,
+      "icon": "icons/jungle_slab.png",
+      "recipe": {
+        "jungle_planks": 0.5
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "jungle_stairs": {
+      "name": "Jungle Stairs",
+      "category": "other",
+      "stackSize": 64,
+      "icon": "icons/jungle_stairs.png",
+      "recipe": {
+        "jungle_planks": 1.5
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "jungle_trapdoor": {
+      "name": "Jungle Trapdoor",
+      "category": "other",
+      "stackSize": 64,
+      "icon": "icons/jungle_trapdoor.png",
+      "recipe": {
+        "jungle_planks": 3.0
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "jungle_wood": {
+      "name": "Jungle Wood",
+      "category": "other",
+      "stackSize": 64,
+      "icon": "icons/jungle_wood.png",
+      "recipe": {
+        "jungle_log": 1.333333
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "kelp": {
+      "name": "Kelp",
+      "category": "raw",
+      "stackSize": 64,
+      "icon": "icons/kelp.png"
+    },
+    "ladder": {
+      "name": "Ladder",
+      "category": "other",
+      "stackSize": 64,
+      "icon": "icons/ladder.png",
+      "recipe": {
+        "stick": 2.333333
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "lapis_block": {
+      "name": "Lapis Lazuli Block",
+      "category": "other",
+      "stackSize": 64,
+      "icon": "icons/lapis_block.png",
+      "recipe": {
+        "lapis_lazuli": 9.0
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "lapis_lazuli": {
+      "name": "Lapis Lazuli",
+      "category": "raw",
+      "stackSize": 64,
+      "icon": "icons/lapis_lazuli.png"
+    },
+    "lead": {
+      "name": "Lead",
+      "category": "other",
+      "stackSize": 64,
+      "icon": "icons/lead.png",
+      "recipe": {
+        "string": 2.0,
+        "slime_ball": 0.5
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "leather": {
+      "name": "Leather",
+      "category": "raw",
+      "stackSize": 64,
+      "icon": "icons/leather.png"
+    },
+    "leather_boots": {
+      "name": "Leather Boots",
+      "category": "other",
+      "stackSize": 1,
+      "icon": "icons/leather_boots.png",
+      "recipe": {
+        "leather": 4.0
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "leather_chestplate": {
+      "name": "Leather Tunic",
+      "category": "other",
+      "stackSize": 1,
+      "icon": "icons/leather_chestplate.png",
+      "recipe": {
+        "leather": 8.0
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "leather_helmet": {
+      "name": "Leather Cap",
+      "category": "other",
+      "stackSize": 1,
+      "icon": "icons/leather_helmet.png",
+      "recipe": {
+        "leather": 5.0
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "leather_leggings": {
+      "name": "Leather Pants",
+      "category": "other",
+      "stackSize": 1,
+      "icon": "icons/leather_leggings.png",
+      "recipe": {
+        "leather": 7.0
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "lever": {
+      "name": "Lever",
+      "category": "other",
+      "stackSize": 64,
+      "icon": "icons/lever.png",
+      "recipe": {
+        "stick": 1.0,
+        "cobblestone": 1.0
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "light_blue_banner": {
+      "name": "Light Blue Banner",
+      "category": "colored",
+      "stackSize": 16,
+      "icon": "icons/light_blue_banner.png",
+      "recipe": {
+        "light_blue_wool": 6.0,
+        "stick": 1.0
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "light_blue_bed": {
+      "name": "Light Blue Bed",
+      "category": "colored",
+      "stackSize": 1,
+      "icon": "icons/light_blue_bed.png",
+      "recipe": {
+        "white_bed": 1.0,
+        "light_blue_dye": 1.0
+      },
+      "recipeType": "crafting_shapeless"
+    },
+    "light_blue_carpet": {
+      "name": "Light Blue Carpet",
+      "category": "colored",
+      "stackSize": 64,
+      "icon": "icons/light_blue_carpet.png",
+      "recipe": {
+        "light_blue_wool": 0.666667
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "light_blue_concrete_powder": {
+      "name": "Light Blue Concrete Powder",
+      "category": "colored",
+      "stackSize": 64,
+      "icon": "icons/light_blue_concrete_powder.png",
+      "recipe": {
+        "light_blue_dye": 0.125,
+        "sand": 0.5,
+        "gravel": 0.5
+      },
+      "recipeType": "crafting_shapeless"
+    },
+    "light_blue_dye": {
+      "name": "Light Blue Dye",
+      "category": "other",
+      "stackSize": 64,
+      "icon": "icons/light_blue_dye.png",
+      "recipe": {
+        "blue_orchid": 1.0
+      },
+      "recipeType": "crafting_shapeless"
+    },
+    "light_blue_glazed_terracotta": {
+      "name": "Light Blue Glazed Terracotta",
+      "category": "colored",
+      "stackSize": 64,
+      "icon": "icons/light_blue_glazed_terracotta.png",
+      "recipe": {
+        "light_blue_terracotta": 1.0,
+        "fuel": 1.0
+      },
+      "recipeType": "smelting"
+    },
+    "light_blue_stained_glass": {
+      "name": "Light Blue Stained Glass",
+      "category": "colored",
+      "stackSize": 64,
+      "icon": "icons/light_blue_stained_glass.png",
+      "recipe": {
+        "glass": 1.0,
+        "light_blue_dye": 0.125
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "light_blue_stained_glass_pane": {
+      "name": "Light Blue Stained Glass Pane",
+      "category": "colored",
+      "stackSize": 64,
+      "icon": "icons/light_blue_stained_glass_pane.png",
+      "recipe": {
+        "light_blue_stained_glass": 0.375
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "light_blue_terracotta": {
+      "name": "Light Blue Terracotta",
+      "category": "colored",
+      "stackSize": 64,
+      "icon": "icons/light_blue_terracotta.png",
+      "recipe": {
+        "terracotta": 1.0,
+        "light_blue_dye": 0.125
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "light_blue_wool": {
+      "name": "Light Blue Wool",
+      "category": "colored",
+      "stackSize": 64,
+      "icon": "icons/light_blue_wool.png",
+      "recipe": {
+        "light_blue_dye": 1.0,
+        "white_wool": 1.0
+      },
+      "recipeType": "crafting_shapeless"
+    },
+    "light_gray_banner": {
+      "name": "Light Gray Banner",
+      "category": "colored",
+      "stackSize": 16,
+      "icon": "icons/light_gray_banner.png",
+      "recipe": {
+        "light_gray_wool": 6.0,
+        "stick": 1.0
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "light_gray_bed": {
+      "name": "Light Gray Bed",
+      "category": "colored",
+      "stackSize": 1,
+      "icon": "icons/light_gray_bed.png",
+      "recipe": {
+        "light_gray_wool": 3.0,
+        "oak_planks": 3.0
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "light_gray_carpet": {
+      "name": "Light Gray Carpet",
+      "category": "colored",
+      "stackSize": 64,
+      "icon": "icons/light_gray_carpet.png",
+      "recipe": {
+        "light_gray_wool": 0.666667
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "light_gray_concrete_powder": {
+      "name": "Light Gray Concrete Powder",
+      "category": "colored",
+      "stackSize": 64,
+      "icon": "icons/light_gray_concrete_powder.png",
+      "recipe": {
+        "light_gray_dye": 0.125,
+        "sand": 0.5,
+        "gravel": 0.5
+      },
+      "recipeType": "crafting_shapeless"
+    },
+    "light_gray_dye": {
+      "name": "Light Gray Dye",
+      "category": "other",
+      "stackSize": 64,
+      "icon": "icons/light_gray_dye.png",
+      "recipe": {
+        "azure_bluet": 1.0
+      },
+      "recipeType": "crafting_shapeless"
+    },
+    "light_gray_glazed_terracotta": {
+      "name": "Light Gray Glazed Terracotta",
+      "category": "colored",
+      "stackSize": 64,
+      "icon": "icons/light_gray_glazed_terracotta.png",
+      "recipe": {
+        "light_gray_terracotta": 1.0,
+        "fuel": 1.0
+      },
+      "recipeType": "smelting"
+    },
+    "light_gray_stained_glass": {
+      "name": "Light Gray Stained Glass",
+      "category": "colored",
+      "stackSize": 64,
+      "icon": "icons/light_gray_stained_glass.png",
+      "recipe": {
+        "glass": 1.0,
+        "light_gray_dye": 0.125
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "light_gray_stained_glass_pane": {
+      "name": "Light Gray Stained Glass Pane",
+      "category": "colored",
+      "stackSize": 64,
+      "icon": "icons/light_gray_stained_glass_pane.png",
+      "recipe": {
+        "light_gray_stained_glass": 0.375
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "light_gray_terracotta": {
+      "name": "Light Gray Terracotta",
+      "category": "colored",
+      "stackSize": 64,
+      "icon": "icons/light_gray_terracotta.png",
+      "recipe": {
+        "terracotta": 1.0,
+        "light_gray_dye": 0.125
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "light_gray_wool": {
+      "name": "Light Gray Wool",
+      "category": "colored",
+      "stackSize": 64,
+      "icon": "icons/light_gray_wool.png",
+      "recipe": {
+        "light_gray_dye": 1.0,
+        "white_wool": 1.0
+      },
+      "recipeType": "crafting_shapeless"
+    },
+    "light_weighted_pressure_plate": {
+      "name": "Light Weighted Pressure Plate",
+      "category": "other",
+      "stackSize": 64,
+      "icon": "icons/light_weighted_pressure_plate.png",
+      "recipe": {
+        "gold_ingot": 2.0
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "lilac": {
+      "name": "Lilac",
+      "category": "raw",
+      "stackSize": 64,
+      "icon": "icons/lilac.png"
+    },
+    "lime_banner": {
+      "name": "Lime Banner",
+      "category": "colored",
+      "stackSize": 16,
+      "icon": "icons/lime_banner.png",
+      "recipe": {
+        "lime_wool": 6.0,
+        "stick": 1.0
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "lime_bed": {
+      "name": "Lime Bed",
+      "category": "colored",
+      "stackSize": 1,
+      "icon": "icons/lime_bed.png",
+      "recipe": {
+        "lime_wool": 3.0,
+        "oak_planks": 3.0
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "lime_carpet": {
+      "name": "Lime Carpet",
+      "category": "colored",
+      "stackSize": 64,
+      "icon": "icons/lime_carpet.png",
+      "recipe": {
+        "lime_wool": 0.666667
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "lime_concrete_powder": {
+      "name": "Lime Concrete Powder",
+      "category": "colored",
+      "stackSize": 64,
+      "icon": "icons/lime_concrete_powder.png",
+      "recipe": {
+        "lime_dye": 0.125,
+        "sand": 0.5,
+        "gravel": 0.5
+      },
+      "recipeType": "crafting_shapeless"
+    },
+    "lime_dye": {
+      "name": "Lime Dye",
+      "category": "other",
+      "stackSize": 64,
+      "icon": "icons/lime_dye.png",
+      "recipe": {
+        "sea_pickle": 1.0,
+        "fuel": 1.0
+      },
+      "recipeType": "smelting"
+    },
+    "lime_glazed_terracotta": {
+      "name": "Lime Glazed Terracotta",
+      "category": "colored",
+      "stackSize": 64,
+      "icon": "icons/lime_glazed_terracotta.png",
+      "recipe": {
+        "lime_terracotta": 1.0,
+        "fuel": 1.0
+      },
+      "recipeType": "smelting"
+    },
+    "lime_stained_glass": {
+      "name": "Lime Stained Glass",
+      "category": "colored",
+      "stackSize": 64,
+      "icon": "icons/lime_stained_glass.png",
+      "recipe": {
+        "glass": 1.0,
+        "lime_dye": 0.125
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "lime_stained_glass_pane": {
+      "name": "Lime Stained Glass Pane",
+      "category": "colored",
+      "stackSize": 64,
+      "icon": "icons/lime_stained_glass_pane.png",
+      "recipe": {
+        "lime_stained_glass": 0.375
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "lime_terracotta": {
+      "name": "Lime Terracotta",
+      "category": "colored",
+      "stackSize": 64,
+      "icon": "icons/lime_terracotta.png",
+      "recipe": {
+        "terracotta": 1.0,
+        "lime_dye": 0.125
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "lime_wool": {
+      "name": "Lime Wool",
+      "category": "colored",
+      "stackSize": 64,
+      "icon": "icons/lime_wool.png",
+      "recipe": {
+        "lime_dye": 1.0,
+        "white_wool": 1.0
+      },
+      "recipeType": "crafting_shapeless"
+    },
+    "lingering_potion/awkward": {
+      "name": "Awkward Lingering Potion",
+      "category": "potions",
+      "stackSize": 1,
+      "icon": "icons/lingering_potion__awkward.png",
+      "recipe": {
+        "lingering_potion/water": 1,
+        "nether_wart": 0.333333,
+        "blaze_powder": 0.016667
+      },
+      "recipeType": "brewing"
+    },
+    "lingering_potion/fire_resistance": {
+      "name": "Lingering Potion of Fire Resistance",
+      "category": "potions",
+      "stackSize": 1,
+      "icon": "icons/lingering_potion__fire_resistance.png",
+      "recipe": {
+        "lingering_potion/awkward": 1,
+        "magma_cream": 0.333333,
+        "blaze_powder": 0.016667
+      },
+      "recipeType": "brewing"
+    },
+    "lingering_potion/harming": {
+      "name": "Lingering Potion of Harming",
+      "category": "potions",
+      "stackSize": 1,
+      "icon": "icons/lingering_potion__harming.png",
+      "recipe": {
+        "lingering_potion/healing": 1,
+        "fermented_spider_eye": 0.333333,
+        "blaze_powder": 0.016667
+      },
+      "recipeType": "brewing"
+    },
+    "lingering_potion/healing": {
+      "name": "Lingering Potion of Healing",
+      "category": "potions",
+      "stackSize": 1,
+      "icon": "icons/lingering_potion__healing.png",
+      "recipe": {
+        "lingering_potion/awkward": 1,
+        "glistering_melon_slice": 0.333333,
+        "blaze_powder": 0.016667
+      },
+      "recipeType": "brewing"
+    },
+    "lingering_potion/invisibility": {
+      "name": "Lingering Potion of Invisibility",
+      "category": "potions",
+      "stackSize": 1,
+      "icon": "icons/lingering_potion__invisibility.png",
+      "recipe": {
+        "lingering_potion/night_vision": 1,
+        "fermented_spider_eye": 0.333333,
+        "blaze_powder": 0.016667
+      },
+      "recipeType": "brewing"
+    },
+    "lingering_potion/leaping": {
+      "name": "Lingering Potion of Leaping",
+      "category": "potions",
+      "stackSize": 1,
+      "icon": "icons/lingering_potion__leaping.png",
+      "recipe": {
+        "lingering_potion/awkward": 1,
+        "rabbit_foot": 0.333333,
+        "blaze_powder": 0.016667
+      },
+      "recipeType": "brewing"
+    },
+    "lingering_potion/long_fire_resistance": {
+      "name": "Lingering Potion of Fire Resistance (long)",
+      "category": "potions",
+      "stackSize": 1,
+      "icon": "icons/lingering_potion__long_fire_resistance.png",
+      "recipe": {
+        "lingering_potion/fire_resistance": 1,
+        "redstone": 0.333333,
+        "blaze_powder": 0.016667
+      },
+      "recipeType": "brewing"
+    },
+    "lingering_potion/long_invisibility": {
+      "name": "Lingering Potion of Invisibility (long)",
+      "category": "potions",
+      "stackSize": 1,
+      "icon": "icons/lingering_potion__long_invisibility.png",
+      "recipe": {
+        "lingering_potion/invisibility": 1,
+        "redstone": 0.333333,
+        "blaze_powder": 0.016667
+      },
+      "recipeType": "brewing"
+    },
+    "lingering_potion/long_leaping": {
+      "name": "Lingering Potion of Leaping (long)",
+      "category": "potions",
+      "stackSize": 1,
+      "icon": "icons/lingering_potion__long_leaping.png",
+      "recipe": {
+        "lingering_potion/leaping": 1,
+        "redstone": 0.333333,
+        "blaze_powder": 0.016667
+      },
+      "recipeType": "brewing"
+    },
+    "lingering_potion/long_night_vision": {
+      "name": "Lingering Potion of Night Vision (long)",
+      "category": "potions",
+      "stackSize": 1,
+      "icon": "icons/lingering_potion__long_night_vision.png",
+      "recipe": {
+        "lingering_potion/night_vision": 1,
+        "redstone": 0.333333,
+        "blaze_powder": 0.016667
+      },
+      "recipeType": "brewing"
+    },
+    "lingering_potion/long_poison": {
+      "name": "Lingering Potion of Poison (long)",
+      "category": "potions",
+      "stackSize": 1,
+      "icon": "icons/lingering_potion__long_poison.png",
+      "recipe": {
+        "lingering_potion/poison": 1,
+        "redstone": 0.333333,
+        "blaze_powder": 0.016667
+      },
+      "recipeType": "brewing"
+    },
+    "lingering_potion/long_regeneration": {
+      "name": "Lingering Potion of Regeneration (long)",
+      "category": "potions",
+      "stackSize": 1,
+      "icon": "icons/lingering_potion__long_regeneration.png",
+      "recipe": {
+        "splash_potion/long_regeneration": 1,
+        "dragon_breath": 0.333333,
+        "blaze_powder": 0.016667
+      },
+      "recipeType": "brewing"
+    },
+    "lingering_potion/long_slow_falling": {
+      "name": "Lingering Potion of Slow Falling (long)",
+      "category": "potions",
+      "stackSize": 1,
+      "icon": "icons/lingering_potion__long_slow_falling.png",
+      "recipe": {
+        "lingering_potion/slow_falling": 1,
+        "redstone": 0.333333,
+        "blaze_powder": 0.016667
+      },
+      "recipeType": "brewing"
+    },
+    "lingering_potion/long_slowness": {
+      "name": "Lingering Potion of Slowness (long)",
+      "category": "potions",
+      "stackSize": 1,
+      "icon": "icons/lingering_potion__long_slowness.png",
+      "recipe": {
+        "lingering_potion/slowness": 1,
+        "redstone": 0.333333,
+        "blaze_powder": 0.016667
+      },
+      "recipeType": "brewing"
+    },
+    "lingering_potion/long_strength": {
+      "name": "Lingering Potion of Strength (long)",
+      "category": "potions",
+      "stackSize": 1,
+      "icon": "icons/lingering_potion__long_strength.png",
+      "recipe": {
+        "splash_potion/long_strength": 1,
+        "dragon_breath": 0.333333,
+        "blaze_powder": 0.016667
+      },
+      "recipeType": "brewing"
+    },
+    "lingering_potion/long_swiftness": {
+      "name": "Lingering Potion of Swiftness (long)",
+      "category": "potions",
+      "stackSize": 1,
+      "icon": "icons/lingering_potion__long_swiftness.png",
+      "recipe": {
+        "lingering_potion/swiftness": 1,
+        "redstone": 0.333333,
+        "blaze_powder": 0.016667
+      },
+      "recipeType": "brewing"
+    },
+    "lingering_potion/long_turtle_master": {
+      "name": "Lingering Potion of Turtle Master (long)",
+      "category": "potions",
+      "stackSize": 1,
+      "icon": "icons/lingering_potion__long_turtle_master.png",
+      "recipe": {
+        "lingering_potion/turtle_master": 1,
+        "redstone": 0.333333,
+        "blaze_powder": 0.016667
+      },
+      "recipeType": "brewing"
+    },
+    "lingering_potion/long_water_breathing": {
+      "name": "Lingering Potion of Water Breathing (long)",
+      "category": "potions",
+      "stackSize": 1,
+      "icon": "icons/lingering_potion__long_water_breathing.png",
+      "recipe": {
+        "lingering_potion/water_breathing": 1,
+        "redstone": 0.333333,
+        "blaze_powder": 0.016667
+      },
+      "recipeType": "brewing"
+    },
+    "lingering_potion/long_weakness": {
+      "name": "Lingering Potion of Weakness (long)",
+      "category": "potions",
+      "stackSize": 1,
+      "icon": "icons/lingering_potion__long_weakness.png",
+      "recipe": {
+        "lingering_potion/weakness": 1,
+        "redstone": 0.333333,
+        "blaze_powder": 0.016667
+      },
+      "recipeType": "brewing"
+    },
+    "lingering_potion/night_vision": {
+      "name": "Lingering Potion of Night Vision",
+      "category": "potions",
+      "stackSize": 1,
+      "icon": "icons/lingering_potion__night_vision.png",
+      "recipe": {
+        "lingering_potion/awkward": 1,
+        "golden_carrot": 0.333333,
+        "blaze_powder": 0.016667
+      },
+      "recipeType": "brewing"
+    },
+    "lingering_potion/poison": {
+      "name": "Lingering Potion of Poison",
+      "category": "potions",
+      "stackSize": 1,
+      "icon": "icons/lingering_potion__poison.png",
+      "recipe": {
+        "splash_potion/poison": 1,
+        "dragon_breath": 0.333333,
+        "blaze_powder": 0.016667
+      },
+      "recipeType": "brewing"
+    },
+    "lingering_potion/regeneration": {
+      "name": "Lingering Potion of Regeneration",
+      "category": "potions",
+      "stackSize": 1,
+      "icon": "icons/lingering_potion__regeneration.png",
+      "recipe": {
+        "lingering_potion/awkward": 1,
+        "ghast_tear": 0.333333,
+        "blaze_powder": 0.016667
+      },
+      "recipeType": "brewing"
+    },
+    "lingering_potion/slow_falling": {
+      "name": "Lingering Potion of Slow Falling",
+      "category": "potions",
+      "stackSize": 1,
+      "icon": "icons/lingering_potion__slow_falling.png",
+      "recipe": {
+        "lingering_potion/awkward": 1,
+        "phantom_membrane": 0.333333,
+        "blaze_powder": 0.016667
+      },
+      "recipeType": "brewing"
+    },
+    "lingering_potion/slowness": {
+      "name": "Lingering Potion of Slowness",
+      "category": "potions",
+      "stackSize": 1,
+      "icon": "icons/lingering_potion__slowness.png",
+      "recipe": {
+        "splash_potion/slowness": 1,
+        "dragon_breath": 0.333333,
+        "blaze_powder": 0.016667
+      },
+      "recipeType": "brewing"
+    },
+    "lingering_potion/strength": {
+      "name": "Lingering Potion of Strength",
+      "category": "potions",
+      "stackSize": 1,
+      "icon": "icons/lingering_potion__strength.png",
+      "recipe": {
+        "lingering_potion/awkward": 1,
+        "blaze_powder": 0.016667
+      },
+      "recipeType": "brewing"
+    },
+    "lingering_potion/strong_harming": {
+      "name": "Lingering Potion of Harming II",
+      "category": "potions",
+      "stackSize": 1,
+      "icon": "icons/lingering_potion__strong_harming.png",
+      "recipe": {
+        "lingering_potion/harming": 1,
+        "glowstone_dust": 0.333333,
+        "blaze_powder": 0.016667
+      },
+      "recipeType": "brewing"
+    },
+    "lingering_potion/strong_healing": {
+      "name": "Lingering Potion of Healing II",
+      "category": "potions",
+      "stackSize": 1,
+      "icon": "icons/lingering_potion__strong_healing.png",
+      "recipe": {
+        "lingering_potion/healing": 1,
+        "glowstone_dust": 0.333333,
+        "blaze_powder": 0.016667
+      },
+      "recipeType": "brewing"
+    },
+    "lingering_potion/strong_leaping": {
+      "name": "Lingering Potion of Leaping II",
+      "category": "potions",
+      "stackSize": 1,
+      "icon": "icons/lingering_potion__strong_leaping.png",
+      "recipe": {
+        "lingering_potion/leaping": 1,
+        "glowstone_dust": 0.333333,
+        "blaze_powder": 0.016667
+      },
+      "recipeType": "brewing"
+    },
+    "lingering_potion/strong_poison": {
+      "name": "Lingering Potion of Poison II",
+      "category": "potions",
+      "stackSize": 1,
+      "icon": "icons/lingering_potion__strong_poison.png",
+      "recipe": {
+        "lingering_potion/poison": 1,
+        "glowstone_dust": 0.333333,
+        "blaze_powder": 0.016667
+      },
+      "recipeType": "brewing"
+    },
+    "lingering_potion/strong_regeneration": {
+      "name": "Lingering Potion of Regeneration II",
+      "category": "potions",
+      "stackSize": 1,
+      "icon": "icons/lingering_potion__strong_regeneration.png",
+      "recipe": {
+        "lingering_potion/regeneration": 1,
+        "glowstone_dust": 0.333333,
+        "blaze_powder": 0.016667
+      },
+      "recipeType": "brewing"
+    },
+    "lingering_potion/strong_slowness": {
+      "name": "Lingering Potion of Slowness II",
+      "category": "potions",
+      "stackSize": 1,
+      "icon": "icons/lingering_potion__strong_slowness.png",
+      "recipe": {
+        "lingering_potion/slowness": 1,
+        "glowstone_dust": 0.333333,
+        "blaze_powder": 0.016667
+      },
+      "recipeType": "brewing"
+    },
+    "lingering_potion/strong_strength": {
+      "name": "Lingering Potion of Strength II",
+      "category": "potions",
+      "stackSize": 1,
+      "icon": "icons/lingering_potion__strong_strength.png",
+      "recipe": {
+        "splash_potion/strong_strength": 1,
+        "dragon_breath": 0.333333,
+        "blaze_powder": 0.016667
+      },
+      "recipeType": "brewing"
+    },
+    "lingering_potion/strong_swiftness": {
+      "name": "Lingering Potion of Swiftness II",
+      "category": "potions",
+      "stackSize": 1,
+      "icon": "icons/lingering_potion__strong_swiftness.png",
+      "recipe": {
+        "lingering_potion/swiftness": 1,
+        "glowstone_dust": 0.333333,
+        "blaze_powder": 0.016667
+      },
+      "recipeType": "brewing"
+    },
+    "lingering_potion/strong_turtle_master": {
+      "name": "Lingering Potion of Turtle Master II",
+      "category": "potions",
+      "stackSize": 1,
+      "icon": "icons/lingering_potion__strong_turtle_master.png",
+      "recipe": {
+        "lingering_potion/turtle_master": 1,
+        "glowstone_dust": 0.333333,
+        "blaze_powder": 0.016667
+      },
+      "recipeType": "brewing"
+    },
+    "lingering_potion/swiftness": {
+      "name": "Lingering Potion of Swiftness",
+      "category": "potions",
+      "stackSize": 1,
+      "icon": "icons/lingering_potion__swiftness.png",
+      "recipe": {
+        "lingering_potion/awkward": 1,
+        "sugar": 0.333333,
+        "blaze_powder": 0.016667
+      },
+      "recipeType": "brewing"
+    },
+    "lingering_potion/turtle_master": {
+      "name": "Lingering Potion of the Turtle Master",
+      "category": "potions",
+      "stackSize": 1,
+      "icon": "icons/lingering_potion__turtle_master.png",
+      "recipe": {
+        "lingering_potion/awkward": 1,
+        "turtle_helmet": 0.333333,
+        "blaze_powder": 0.016667
+      },
+      "recipeType": "brewing"
+    },
+    "lingering_potion/water": {
+      "name": "Lingering Water Bottle",
+      "category": "potions",
+      "stackSize": 1,
+      "icon": "icons/lingering_potion__water.png",
+      "recipe": {
+        "splash_potion/water": 1,
+        "dragon_breath": 0.333333,
+        "blaze_powder": 0.016667
+      },
+      "recipeType": "brewing"
+    },
+    "lingering_potion/water_breathing": {
+      "name": "Lingering Potion of Water Breathing",
+      "category": "potions",
+      "stackSize": 1,
+      "icon": "icons/lingering_potion__water_breathing.png",
+      "recipe": {
+        "lingering_potion/awkward": 1,
+        "pufferfish": 0.333333,
+        "blaze_powder": 0.016667
+      },
+      "recipeType": "brewing"
+    },
+    "lingering_potion/weakness": {
+      "name": "Lingering Potion of Weakness",
+      "category": "potions",
+      "stackSize": 1,
+      "icon": "icons/lingering_potion__weakness.png",
+      "recipe": {
+        "lingering_potion/water": 1,
+        "fermented_spider_eye": 0.333333,
+        "blaze_powder": 0.016667
+      },
+      "recipeType": "brewing"
+    },
+    "magenta_banner": {
+      "name": "Magenta Banner",
+      "category": "colored",
+      "stackSize": 16,
+      "icon": "icons/magenta_banner.png",
+      "recipe": {
+        "magenta_wool": 6.0,
+        "stick": 1.0
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "magenta_bed": {
+      "name": "Magenta Bed",
+      "category": "colored",
+      "stackSize": 1,
+      "icon": "icons/magenta_bed.png",
+      "recipe": {
+        "magenta_wool": 3.0,
+        "oak_planks": 3.0
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "magenta_carpet": {
+      "name": "Magenta Carpet",
+      "category": "colored",
+      "stackSize": 64,
+      "icon": "icons/magenta_carpet.png",
+      "recipe": {
+        "magenta_wool": 0.666667
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "magenta_concrete_powder": {
+      "name": "Magenta Concrete Powder",
+      "category": "colored",
+      "stackSize": 64,
+      "icon": "icons/magenta_concrete_powder.png",
+      "recipe": {
+        "magenta_dye": 0.125,
+        "sand": 0.5,
+        "gravel": 0.5
+      },
+      "recipeType": "crafting_shapeless"
+    },
+    "magenta_dye": {
+      "name": "Magenta Dye",
+      "category": "other",
+      "stackSize": 64,
+      "icon": "icons/magenta_dye.png",
+      "recipe": {
+        "lilac": 0.5
+      },
+      "recipeType": "crafting_shapeless"
+    },
+    "magenta_glazed_terracotta": {
+      "name": "Magenta Glazed Terracotta",
+      "category": "colored",
+      "stackSize": 64,
+      "icon": "icons/magenta_glazed_terracotta.png",
+      "recipe": {
+        "magenta_terracotta": 1.0,
+        "fuel": 1.0
+      },
+      "recipeType": "smelting"
+    },
+    "magenta_stained_glass": {
+      "name": "Magenta Stained Glass",
+      "category": "colored",
+      "stackSize": 64,
+      "icon": "icons/magenta_stained_glass.png",
+      "recipe": {
+        "glass": 1.0,
+        "magenta_dye": 0.125
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "magenta_stained_glass_pane": {
+      "name": "Magenta Stained Glass Pane",
+      "category": "colored",
+      "stackSize": 64,
+      "icon": "icons/magenta_stained_glass_pane.png",
+      "recipe": {
+        "magenta_stained_glass": 0.375
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "magenta_terracotta": {
+      "name": "Magenta Terracotta",
+      "category": "colored",
+      "stackSize": 64,
+      "icon": "icons/magenta_terracotta.png",
+      "recipe": {
+        "terracotta": 1.0,
+        "magenta_dye": 0.125
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "magenta_wool": {
+      "name": "Magenta Wool",
+      "category": "colored",
+      "stackSize": 64,
+      "icon": "icons/magenta_wool.png",
+      "recipe": {
+        "magenta_dye": 1.0,
+        "white_wool": 1.0
+      },
+      "recipeType": "crafting_shapeless"
+    },
+    "magma_block": {
+      "name": "Magma Block",
+      "category": "other",
+      "stackSize": 64,
+      "icon": "icons/magma_block.png",
+      "recipe": {
+        "magma_cream": 4.0
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "magma_cream": {
+      "name": "Magma Cream",
+      "category": "other",
+      "stackSize": 64,
+      "icon": "icons/magma_cream.png",
+      "recipe": {
+        "blaze_powder": 1.0,
+        "slime_ball": 1.0
+      },
+      "recipeType": "crafting_shapeless"
+    },
+    "map": {
+      "name": "Empty Map",
+      "category": "other",
+      "stackSize": 64,
+      "icon": "icons/map.png",
+      "recipe": {
+        "paper": 8.0,
+        "compass": 1.0
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "melon": {
+      "name": "Melon",
+      "category": "other",
+      "stackSize": 64,
+      "icon": "icons/melon.png",
+      "recipe": {
+        "melon_slice": 9.0
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "melon_seeds": {
+      "name": "Melon Seeds",
+      "category": "other",
+      "stackSize": 64,
+      "icon": "icons/melon_seeds.png",
+      "recipe": {
+        "melon_slice": 1.0
+      },
+      "recipeType": "crafting_shapeless"
+    },
+    "melon_slice": {
+      "name": "Melon Slice",
+      "category": "raw",
+      "stackSize": 64,
+      "icon": "icons/melon_slice.png"
+    },
+    "milk_bucket": {
+      "name": "Milk Bucket",
+      "category": "raw",
+      "stackSize": 1,
+      "icon": "icons/milk_bucket.png"
+    },
+    "minecart": {
+      "name": "Minecart",
+      "category": "other",
+      "stackSize": 64,
+      "icon": "icons/minecart.png",
+      "recipe": {
+        "iron_ingot": 5.0
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "mossy_cobblestone": {
+      "name": "Mossy Cobblestone",
+      "category": "other",
+      "stackSize": 64,
+      "icon": "icons/mossy_cobblestone.png",
+      "recipe": {
+        "cobblestone": 1.0,
+        "vine": 1.0
+      },
+      "recipeType": "crafting_shapeless"
+    },
+    "mossy_cobblestone_wall": {
+      "name": "Mossy Cobblestone Wall",
+      "category": "other",
+      "stackSize": 64,
+      "icon": "icons/mossy_cobblestone_wall.png",
+      "recipe": {
+        "mossy_cobblestone": 1.0
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "mossy_stone_bricks": {
+      "name": "Mossy Stone Bricks",
+      "category": "other",
+      "stackSize": 64,
+      "icon": "icons/mossy_stone_bricks.png",
+      "recipe": {
+        "stone_bricks": 1.0,
+        "vine": 1.0
+      },
+      "recipeType": "crafting_shapeless"
+    },
+    "mushroom_stew": {
+      "name": "Mushroom Stew",
+      "category": "other",
+      "stackSize": 1,
+      "icon": "icons/mushroom_stew.png",
+      "recipe": {
+        "brown_mushroom": 1.0,
+        "red_mushroom": 1.0,
+        "bowl": 1.0
+      },
+      "recipeType": "crafting_shapeless"
+    },
+    "mutton": {
+      "name": "Raw Mutton",
+      "category": "raw",
+      "stackSize": 64,
+      "icon": "icons/mutton.png"
+    },
+    "nautilus_shell": {
+      "name": "Nautilus Shell",
+      "category": "raw",
+      "stackSize": 64,
+      "icon": "icons/nautilus_shell.png"
+    },
+    "nether_brick": {
+      "name": "Nether Brick",
+      "category": "other",
+      "stackSize": 64,
+      "icon": "icons/nether_brick.png",
+      "recipe": {
+        "netherrack": 1.0,
+        "fuel": 1.0
+      },
+      "recipeType": "smelting"
+    },
+    "nether_brick_fence": {
+      "name": "Nether Brick Fence",
+      "category": "other",
+      "stackSize": 64,
+      "icon": "icons/nether_brick_fence.png",
+      "recipe": {
+        "nether_bricks": 1.0
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "nether_brick_slab": {
+      "name": "Nether Brick Slab",
+      "category": "other",
+      "stackSize": 64,
+      "icon": "icons/nether_brick_slab.png",
+      "recipe": {
+        "nether_bricks": 0.5
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "nether_brick_stairs": {
+      "name": "Nether Brick Stairs",
+      "category": "other",
+      "stackSize": 64,
+      "icon": "icons/nether_brick_stairs.png",
+      "recipe": {
+        "nether_bricks": 1.5
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "nether_bricks": {
+      "name": "Nether Bricks",
+      "category": "other",
+      "stackSize": 64,
+      "icon": "icons/nether_bricks.png",
+      "recipe": {
+        "nether_brick": 4.0
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "nether_portal": {
+      "name": "Nether Portal",
+      "category": "sets",
+      "stackSize": 64,
+      "icon": "icons/nether_portal.png",
+      "recipe": {
+        "obsidian": 14,
+        "flint_and_steel": 1
+      },
+      "recipeType": "set"
+    },
+    "nether_star": {
+      "name": "Nether Star",
+      "category": "other",
+      "stackSize": 64,
+      "icon": "icons/nether_star.png",
+      "recipe": {
+        "wither_skeleton_skull": 3,
+        "soul_sand": 4
+      },
+      "recipeType": "custom"
+    },
+    "nether_wart": {
+      "name": "Nether Wart",
+      "category": "raw",
+      "stackSize": 64,
+      "icon": "icons/nether_wart.png"
+    },
+    "nether_wart_block": {
+      "name": "Nether Wart Block",
+      "category": "other",
+      "stackSize": 64,
+      "icon": "icons/nether_wart_block.png",
+      "recipe": {
+        "nether_wart": 9.0
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "netherrack": {
+      "name": "Netherrack",
+      "category": "raw",
+      "stackSize": 64,
+      "icon": "icons/netherrack.png"
+    },
+    "note_block": {
+      "name": "Note Block",
+      "category": "other",
+      "stackSize": 64,
+      "icon": "icons/note_block.png",
+      "recipe": {
+        "oak_planks": 8.0,
+        "redstone": 1.0
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "oak_boat": {
+      "name": "Oak Boat",
+      "category": "other",
+      "stackSize": 1,
+      "icon": "icons/oak_boat.png",
+      "recipe": {
+        "oak_planks": 5.0
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "oak_button": {
+      "name": "Oak Button",
+      "category": "other",
+      "stackSize": 64,
+      "icon": "icons/oak_button.png",
+      "recipe": {
+        "oak_planks": 1.0
+      },
+      "recipeType": "crafting_shapeless"
+    },
+    "oak_door": {
+      "name": "Oak Door",
+      "category": "other",
+      "stackSize": 64,
+      "icon": "icons/oak_door.png",
+      "recipe": {
+        "oak_planks": 2.0
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "oak_fence": {
+      "name": "Oak Fence",
+      "category": "other",
+      "stackSize": 64,
+      "icon": "icons/oak_fence.png",
+      "recipe": {
+        "oak_planks": 1.333333,
+        "stick": 0.666667
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "oak_fence_gate": {
+      "name": "Oak Fence Gate",
+      "category": "other",
+      "stackSize": 64,
+      "icon": "icons/oak_fence_gate.png",
+      "recipe": {
+        "stick": 4.0,
+        "oak_planks": 2.0
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "oak_log": {
+      "name": "Oak Log",
+      "category": "raw",
+      "stackSize": 64,
+      "icon": "icons/oak_log.png"
+    },
+    "oak_planks": {
+      "name": "Oak Planks",
+      "category": "other",
+      "stackSize": 64,
+      "icon": "icons/oak_planks.png",
+      "recipe": {
+        "oak_log": 0.25
+      },
+      "recipeType": "crafting_shapeless"
+    },
+    "oak_pressure_plate": {
+      "name": "Oak Pressure Plate",
+      "category": "other",
+      "stackSize": 64,
+      "icon": "icons/oak_pressure_plate.png",
+      "recipe": {
+        "oak_planks": 2.0
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "oak_slab": {
+      "name": "Oak Slab",
+      "category": "other",
+      "stackSize": 64,
+      "icon": "icons/oak_slab.png",
+      "recipe": {
+        "oak_planks": 0.5
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "oak_stairs": {
+      "name": "Oak Stairs",
+      "category": "other",
+      "stackSize": 64,
+      "icon": "icons/oak_stairs.png",
+      "recipe": {
+        "oak_planks": 1.5
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "oak_trapdoor": {
+      "name": "Oak Trapdoor",
+      "category": "other",
+      "stackSize": 64,
+      "icon": "icons/oak_trapdoor.png",
+      "recipe": {
+        "oak_planks": 3.0
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "oak_wood": {
+      "name": "Oak Wood",
+      "category": "other",
+      "stackSize": 64,
+      "icon": "icons/oak_wood.png",
+      "recipe": {
+        "oak_log": 1.333333
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "observer": {
+      "name": "Observer",
+      "category": "other",
+      "stackSize": 64,
+      "icon": "icons/observer.png",
+      "recipe": {
+        "cobblestone": 6.0,
+        "redstone": 2.0,
+        "quartz": 1.0
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "obsidian": {
+      "name": "Obsidian",
+      "category": "raw",
+      "stackSize": 64,
+      "icon": "icons/obsidian.png"
+    },
+    "orange_banner": {
+      "name": "Orange Banner",
+      "category": "colored",
+      "stackSize": 16,
+      "icon": "icons/orange_banner.png",
+      "recipe": {
+        "orange_wool": 6.0,
+        "stick": 1.0
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "orange_bed": {
+      "name": "Orange Bed",
+      "category": "colored",
+      "stackSize": 1,
+      "icon": "icons/orange_bed.png",
+      "recipe": {
+        "orange_wool": 3.0,
+        "oak_planks": 3.0
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "orange_carpet": {
+      "name": "Orange Carpet",
+      "category": "colored",
+      "stackSize": 64,
+      "icon": "icons/orange_carpet.png",
+      "recipe": {
+        "orange_wool": 0.666667
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "orange_concrete_powder": {
+      "name": "Orange Concrete Powder",
+      "category": "colored",
+      "stackSize": 64,
+      "icon": "icons/orange_concrete_powder.png",
+      "recipe": {
+        "orange_dye": 0.125,
+        "sand": 0.5,
+        "gravel": 0.5
+      },
+      "recipeType": "crafting_shapeless"
+    },
+    "orange_dye": {
+      "name": "Orange Dye",
+      "category": "other",
+      "stackSize": 64,
+      "icon": "icons/orange_dye.png",
+      "recipe": {
+        "orange_tulip": 1.0
+      },
+      "recipeType": "crafting_shapeless"
+    },
+    "orange_glazed_terracotta": {
+      "name": "Orange Glazed Terracotta",
+      "category": "colored",
+      "stackSize": 64,
+      "icon": "icons/orange_glazed_terracotta.png",
+      "recipe": {
+        "orange_terracotta": 1.0,
+        "fuel": 1.0
+      },
+      "recipeType": "smelting"
+    },
+    "orange_stained_glass": {
+      "name": "Orange Stained Glass",
+      "category": "colored",
+      "stackSize": 64,
+      "icon": "icons/orange_stained_glass.png",
+      "recipe": {
+        "glass": 1.0,
+        "orange_dye": 0.125
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "orange_stained_glass_pane": {
+      "name": "Orange Stained Glass Pane",
+      "category": "colored",
+      "stackSize": 64,
+      "icon": "icons/orange_stained_glass_pane.png",
+      "recipe": {
+        "orange_stained_glass": 0.375
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "orange_terracotta": {
+      "name": "Orange Terracotta",
+      "category": "colored",
+      "stackSize": 64,
+      "icon": "icons/orange_terracotta.png",
+      "recipe": {
+        "terracotta": 1.0,
+        "orange_dye": 0.125
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "orange_tulip": {
+      "name": "Orange Tulip",
+      "category": "raw",
+      "stackSize": 64,
+      "icon": "icons/orange_tulip.png"
+    },
+    "orange_wool": {
+      "name": "Orange Wool",
+      "category": "colored",
+      "stackSize": 64,
+      "icon": "icons/orange_wool.png",
+      "recipe": {
+        "orange_dye": 1.0,
+        "white_wool": 1.0
+      },
+      "recipeType": "crafting_shapeless"
+    },
+    "packed_ice": {
+      "name": "Packed Ice",
+      "category": "other",
+      "stackSize": 64,
+      "icon": "icons/packed_ice.png",
+      "recipe": {
+        "ice": 9.0
+      },
+      "recipeType": "crafting_shapeless"
+    },
+    "painting": {
+      "name": "Painting",
+      "category": "other",
+      "stackSize": 64,
+      "icon": "icons/painting.png",
+      "recipe": {
+        "stick": 8.0,
+        "white_wool": 1.0
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "paper": {
+      "name": "Paper",
+      "category": "other",
+      "stackSize": 64,
+      "icon": "icons/paper.png",
+      "recipe": {
+        "sugar_cane": 1.0
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "peony": {
+      "name": "Peony",
+      "category": "raw",
+      "stackSize": 64,
+      "icon": "icons/peony.png"
+    },
+    "phantom_membrane": {
+      "name": "Phantom Membrane",
+      "category": "raw",
+      "stackSize": 64,
+      "icon": "icons/phantom_membrane.png"
+    },
+    "pink_banner": {
+      "name": "Pink Banner",
+      "category": "colored",
+      "stackSize": 16,
+      "icon": "icons/pink_banner.png",
+      "recipe": {
+        "pink_wool": 6.0,
+        "stick": 1.0
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "pink_bed": {
+      "name": "Pink Bed",
+      "category": "colored",
+      "stackSize": 1,
+      "icon": "icons/pink_bed.png",
+      "recipe": {
+        "pink_wool": 3.0,
+        "oak_planks": 3.0
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "pink_carpet": {
+      "name": "Pink Carpet",
+      "category": "colored",
+      "stackSize": 64,
+      "icon": "icons/pink_carpet.png",
+      "recipe": {
+        "pink_wool": 0.666667
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "pink_concrete_powder": {
+      "name": "Pink Concrete Powder",
+      "category": "colored",
+      "stackSize": 64,
+      "icon": "icons/pink_concrete_powder.png",
+      "recipe": {
+        "pink_dye": 0.125,
+        "sand": 0.5,
+        "gravel": 0.5
+      },
+      "recipeType": "crafting_shapeless"
+    },
+    "pink_dye": {
+      "name": "Pink Dye",
+      "category": "other",
+      "stackSize": 64,
+      "icon": "icons/pink_dye.png",
+      "recipe": {
+        "peony": 0.5
+      },
+      "recipeType": "crafting_shapeless"
+    },
+    "pink_glazed_terracotta": {
+      "name": "Pink Glazed Terracotta",
+      "category": "colored",
+      "stackSize": 64,
+      "icon": "icons/pink_glazed_terracotta.png",
+      "recipe": {
+        "pink_terracotta": 1.0,
+        "fuel": 1.0
+      },
+      "recipeType": "smelting"
+    },
+    "pink_stained_glass": {
+      "name": "Pink Stained Glass",
+      "category": "colored",
+      "stackSize": 64,
+      "icon": "icons/pink_stained_glass.png",
+      "recipe": {
+        "glass": 1.0,
+        "pink_dye": 0.125
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "pink_stained_glass_pane": {
+      "name": "Pink Stained Glass Pane",
+      "category": "colored",
+      "stackSize": 64,
+      "icon": "icons/pink_stained_glass_pane.png",
+      "recipe": {
+        "pink_stained_glass": 0.375
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "pink_terracotta": {
+      "name": "Pink Terracotta",
+      "category": "colored",
+      "stackSize": 64,
+      "icon": "icons/pink_terracotta.png",
+      "recipe": {
+        "terracotta": 1.0,
+        "pink_dye": 0.125
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "pink_wool": {
+      "name": "Pink Wool",
+      "category": "colored",
+      "stackSize": 64,
+      "icon": "icons/pink_wool.png",
+      "recipe": {
+        "pink_dye": 1.0,
+        "white_wool": 1.0
+      },
+      "recipeType": "crafting_shapeless"
+    },
+    "piston": {
+      "name": "Piston",
+      "category": "other",
+      "stackSize": 64,
+      "icon": "icons/piston.png",
+      "recipe": {
+        "oak_planks": 3.0,
+        "cobblestone": 4.0,
+        "iron_ingot": 1.0,
+        "redstone": 1.0
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "polished_andesite": {
+      "name": "Polished Andesite",
+      "category": "other",
+      "stackSize": 64,
+      "icon": "icons/polished_andesite.png",
+      "recipe": {
+        "andesite": 1.0
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "polished_diorite": {
+      "name": "Polished Diorite",
+      "category": "other",
+      "stackSize": 64,
+      "icon": "icons/polished_diorite.png",
+      "recipe": {
+        "diorite": 1.0
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "polished_granite": {
+      "name": "Polished Granite",
+      "category": "other",
+      "stackSize": 64,
+      "icon": "icons/polished_granite.png",
+      "recipe": {
+        "granite": 1.0
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "popped_chorus_fruit": {
+      "name": "Popped Chorus Fruit",
+      "category": "other",
+      "stackSize": 64,
+      "icon": "icons/popped_chorus_fruit.png",
+      "recipe": {
+        "chorus_fruit": 1.0,
+        "fuel": 1.0
+      },
+      "recipeType": "smelting"
+    },
+    "porkchop": {
+      "name": "Raw Porkchop",
+      "category": "raw",
+      "stackSize": 64,
+      "icon": "icons/porkchop.png"
+    },
+    "potato": {
+      "name": "Potato",
+      "category": "raw",
+      "stackSize": 64,
+      "icon": "icons/potato.png"
+    },
+    "potion/awkward": {
+      "name": "Awkward Potion",
+      "category": "potions",
+      "stackSize": 1,
+      "icon": "icons/potion__awkward.png",
+      "recipe": {
+        "potion/water": 1,
+        "nether_wart": 0.333333,
+        "blaze_powder": 0.016667
+      },
+      "recipeType": "brewing"
+    },
+    "potion/fire_resistance": {
+      "name": "Potion of Fire Resistance",
+      "category": "potions",
+      "stackSize": 1,
+      "icon": "icons/potion__fire_resistance.png",
+      "recipe": {
+        "potion/awkward": 1,
+        "magma_cream": 0.333333,
+        "blaze_powder": 0.016667
+      },
+      "recipeType": "brewing"
+    },
+    "potion/harming": {
+      "name": "Potion of Harming",
+      "category": "potions",
+      "stackSize": 1,
+      "icon": "icons/potion__harming.png",
+      "recipe": {
+        "potion/healing": 1,
+        "fermented_spider_eye": 0.333333,
+        "blaze_powder": 0.016667
+      },
+      "recipeType": "brewing"
+    },
+    "potion/healing": {
+      "name": "Potion of Healing",
+      "category": "potions",
+      "stackSize": 1,
+      "icon": "icons/potion__healing.png",
+      "recipe": {
+        "potion/awkward": 1,
+        "glistering_melon_slice": 0.333333,
+        "blaze_powder": 0.016667
+      },
+      "recipeType": "brewing"
+    },
+    "potion/invisibility": {
+      "name": "Potion of Invisibility",
+      "category": "potions",
+      "stackSize": 1,
+      "icon": "icons/potion__invisibility.png",
+      "recipe": {
+        "potion/night_vision": 1,
+        "fermented_spider_eye": 0.333333,
+        "blaze_powder": 0.016667
+      },
+      "recipeType": "brewing"
+    },
+    "potion/leaping": {
+      "name": "Potion of Leaping",
+      "category": "potions",
+      "stackSize": 1,
+      "icon": "icons/potion__leaping.png",
+      "recipe": {
+        "potion/awkward": 1,
+        "rabbit_foot": 0.333333,
+        "blaze_powder": 0.016667
+      },
+      "recipeType": "brewing"
+    },
+    "potion/long_fire_resistance": {
+      "name": "Potion of Fire Resistance (long)",
+      "category": "potions",
+      "stackSize": 1,
+      "icon": "icons/potion__long_fire_resistance.png",
+      "recipe": {
+        "potion/fire_resistance": 1,
+        "redstone": 0.333333,
+        "blaze_powder": 0.016667
+      },
+      "recipeType": "brewing"
+    },
+    "potion/long_invisibility": {
+      "name": "Potion of Invisibility (long)",
+      "category": "potions",
+      "stackSize": 1,
+      "icon": "icons/potion__long_invisibility.png",
+      "recipe": {
+        "potion/invisibility": 1,
+        "redstone": 0.333333,
+        "blaze_powder": 0.016667
+      },
+      "recipeType": "brewing"
+    },
+    "potion/long_leaping": {
+      "name": "Potion of Leaping (long)",
+      "category": "potions",
+      "stackSize": 1,
+      "icon": "icons/potion__long_leaping.png",
+      "recipe": {
+        "potion/leaping": 1,
+        "redstone": 0.333333,
+        "blaze_powder": 0.016667
+      },
+      "recipeType": "brewing"
+    },
+    "potion/long_night_vision": {
+      "name": "Potion of Night Vision (long)",
+      "category": "potions",
+      "stackSize": 1,
+      "icon": "icons/potion__long_night_vision.png",
+      "recipe": {
+        "potion/night_vision": 1,
+        "redstone": 0.333333,
+        "blaze_powder": 0.016667
+      },
+      "recipeType": "brewing"
+    },
+    "potion/long_poison": {
+      "name": "Potion of Poison (long)",
+      "category": "potions",
+      "stackSize": 1,
+      "icon": "icons/potion__long_poison.png",
+      "recipe": {
+        "potion/poison": 1,
+        "redstone": 0.333333,
+        "blaze_powder": 0.016667
+      },
+      "recipeType": "brewing"
+    },
+    "potion/long_regeneration": {
+      "name": "Potion of Regeneration (long)",
+      "category": "potions",
+      "stackSize": 1,
+      "icon": "icons/potion__long_regeneration.png",
+      "recipe": {
+        "potion/regeneration": 1,
+        "redstone": 0.333333,
+        "blaze_powder": 0.016667
+      },
+      "recipeType": "brewing"
+    },
+    "potion/long_slow_falling": {
+      "name": "Potion of Slow Falling (long)",
+      "category": "potions",
+      "stackSize": 1,
+      "icon": "icons/potion__long_slow_falling.png",
+      "recipe": {
+        "potion/slow_falling": 1,
+        "redstone": 0.333333,
+        "blaze_powder": 0.016667
+      },
+      "recipeType": "brewing"
+    },
+    "potion/long_slowness": {
+      "name": "Potion of Slowness (long)",
+      "category": "potions",
+      "stackSize": 1,
+      "icon": "icons/potion__long_slowness.png",
+      "recipe": {
+        "potion/slowness": 1,
+        "redstone": 0.333333,
+        "blaze_powder": 0.016667
+      },
+      "recipeType": "brewing"
+    },
+    "potion/long_strength": {
+      "name": "Potion of Strength (long)",
+      "category": "potions",
+      "stackSize": 1,
+      "icon": "icons/potion__long_strength.png",
+      "recipe": {
+        "potion/strength": 1,
+        "redstone": 0.333333,
+        "blaze_powder": 0.016667
+      },
+      "recipeType": "brewing"
+    },
+    "potion/long_swiftness": {
+      "name": "Potion of Swiftness (long)",
+      "category": "potions",
+      "stackSize": 1,
+      "icon": "icons/potion__long_swiftness.png",
+      "recipe": {
+        "potion/swiftness": 1,
+        "redstone": 0.333333,
+        "blaze_powder": 0.016667
+      },
+      "recipeType": "brewing"
+    },
+    "potion/long_turtle_master": {
+      "name": "Potion of Turtle Master (long)",
+      "category": "potions",
+      "stackSize": 1,
+      "icon": "icons/potion__long_turtle_master.png",
+      "recipe": {
+        "potion/turtle_master": 1,
+        "redstone": 0.333333,
+        "blaze_powder": 0.016667
+      },
+      "recipeType": "brewing"
+    },
+    "potion/long_water_breathing": {
+      "name": "Potion of Water Breathing (long)",
+      "category": "potions",
+      "stackSize": 1,
+      "icon": "icons/potion__long_water_breathing.png",
+      "recipe": {
+        "potion/water_breathing": 1,
+        "redstone": 0.333333,
+        "blaze_powder": 0.016667
+      },
+      "recipeType": "brewing"
+    },
+    "potion/long_weakness": {
+      "name": "Potion of Weakness (long)",
+      "category": "potions",
+      "stackSize": 1,
+      "icon": "icons/potion__long_weakness.png",
+      "recipe": {
+        "potion/weakness": 1,
+        "redstone": 0.333333,
+        "blaze_powder": 0.016667
+      },
+      "recipeType": "brewing"
+    },
+    "potion/night_vision": {
+      "name": "Potion of Night Vision",
+      "category": "potions",
+      "stackSize": 1,
+      "icon": "icons/potion__night_vision.png",
+      "recipe": {
+        "potion/awkward": 1,
+        "golden_carrot": 0.333333,
+        "blaze_powder": 0.016667
+      },
+      "recipeType": "brewing"
+    },
+    "potion/poison": {
+      "name": "Potion of Poison",
+      "category": "potions",
+      "stackSize": 1,
+      "icon": "icons/potion__poison.png",
+      "recipe": {
+        "potion/awkward": 1,
+        "spider_eye": 0.333333,
+        "blaze_powder": 0.016667
+      },
+      "recipeType": "brewing"
+    },
+    "potion/regeneration": {
+      "name": "Potion of Regeneration",
+      "category": "potions",
+      "stackSize": 1,
+      "icon": "icons/potion__regeneration.png",
+      "recipe": {
+        "potion/awkward": 1,
+        "ghast_tear": 0.333333,
+        "blaze_powder": 0.016667
+      },
+      "recipeType": "brewing"
+    },
+    "potion/slow_falling": {
+      "name": "Potion of Slow Falling",
+      "category": "potions",
+      "stackSize": 1,
+      "icon": "icons/potion__slow_falling.png",
+      "recipe": {
+        "potion/awkward": 1,
+        "phantom_membrane": 0.333333,
+        "blaze_powder": 0.016667
+      },
+      "recipeType": "brewing"
+    },
+    "potion/slowness": {
+      "name": "Potion of Slowness",
+      "category": "potions",
+      "stackSize": 1,
+      "icon": "icons/potion__slowness.png",
+      "recipe": {
+        "potion/swiftness": 1,
+        "fermented_spider_eye": 0.333333,
+        "blaze_powder": 0.016667
+      },
+      "recipeType": "brewing"
+    },
+    "potion/strength": {
+      "name": "Potion of Strength",
+      "category": "potions",
+      "stackSize": 1,
+      "icon": "icons/potion__strength.png",
+      "recipe": {
+        "potion/awkward": 1,
+        "blaze_powder": 0.016667
+      },
+      "recipeType": "brewing"
+    },
+    "potion/strong_harming": {
+      "name": "Potion of Harming II",
+      "category": "potions",
+      "stackSize": 1,
+      "icon": "icons/potion__strong_harming.png",
+      "recipe": {
+        "potion/harming": 1,
+        "glowstone_dust": 0.333333,
+        "blaze_powder": 0.016667
+      },
+      "recipeType": "brewing"
+    },
+    "potion/strong_healing": {
+      "name": "Potion of Healing II",
+      "category": "potions",
+      "stackSize": 1,
+      "icon": "icons/potion__strong_healing.png",
+      "recipe": {
+        "potion/healing": 1,
+        "glowstone_dust": 0.333333,
+        "blaze_powder": 0.016667
+      },
+      "recipeType": "brewing"
+    },
+    "potion/strong_leaping": {
+      "name": "Potion of Leaping II",
+      "category": "potions",
+      "stackSize": 1,
+      "icon": "icons/potion__strong_leaping.png",
+      "recipe": {
+        "potion/leaping": 1,
+        "glowstone_dust": 0.333333,
+        "blaze_powder": 0.016667
+      },
+      "recipeType": "brewing"
+    },
+    "potion/strong_poison": {
+      "name": "Potion of Poison II",
+      "category": "potions",
+      "stackSize": 1,
+      "icon": "icons/potion__strong_poison.png",
+      "recipe": {
+        "potion/poison": 1,
+        "glowstone_dust": 0.333333,
+        "blaze_powder": 0.016667
+      },
+      "recipeType": "brewing"
+    },
+    "potion/strong_regeneration": {
+      "name": "Potion of Regeneration II",
+      "category": "potions",
+      "stackSize": 1,
+      "icon": "icons/potion__strong_regeneration.png",
+      "recipe": {
+        "potion/regeneration": 1,
+        "glowstone_dust": 0.333333,
+        "blaze_powder": 0.016667
+      },
+      "recipeType": "brewing"
+    },
+    "potion/strong_slowness": {
+      "name": "Potion of Slowness II",
+      "category": "potions",
+      "stackSize": 1,
+      "icon": "icons/potion__strong_slowness.png",
+      "recipe": {
+        "potion/slowness": 1,
+        "glowstone_dust": 0.333333,
+        "blaze_powder": 0.016667
+      },
+      "recipeType": "brewing"
+    },
+    "potion/strong_strength": {
+      "name": "Potion of Strength II",
+      "category": "potions",
+      "stackSize": 1,
+      "icon": "icons/potion__strong_strength.png",
+      "recipe": {
+        "potion/strength": 1,
+        "glowstone_dust": 0.333333,
+        "blaze_powder": 0.016667
+      },
+      "recipeType": "brewing"
+    },
+    "potion/strong_swiftness": {
+      "name": "Potion of Swiftness II",
+      "category": "potions",
+      "stackSize": 1,
+      "icon": "icons/potion__strong_swiftness.png",
+      "recipe": {
+        "potion/swiftness": 1,
+        "glowstone_dust": 0.333333,
+        "blaze_powder": 0.016667
+      },
+      "recipeType": "brewing"
+    },
+    "potion/strong_turtle_master": {
+      "name": "Potion of Turtle Master II",
+      "category": "potions",
+      "stackSize": 1,
+      "icon": "icons/potion__strong_turtle_master.png",
+      "recipe": {
+        "potion/turtle_master": 1,
+        "glowstone_dust": 0.333333,
+        "blaze_powder": 0.016667
+      },
+      "recipeType": "brewing"
+    },
+    "potion/swiftness": {
+      "name": "Potion of Swiftness",
+      "category": "potions",
+      "stackSize": 1,
+      "icon": "icons/potion__swiftness.png",
+      "recipe": {
+        "potion/awkward": 1,
+        "sugar": 0.333333,
+        "blaze_powder": 0.016667
+      },
+      "recipeType": "brewing"
+    },
+    "potion/turtle_master": {
+      "name": "Potion of the Turtle Master",
+      "category": "potions",
+      "stackSize": 1,
+      "icon": "icons/potion__turtle_master.png",
+      "recipe": {
+        "potion/awkward": 1,
+        "turtle_helmet": 0.333333,
+        "blaze_powder": 0.016667
+      },
+      "recipeType": "brewing"
+    },
+    "potion/water": {
+      "name": "Water Bottle",
+      "category": "raw",
+      "stackSize": 1,
+      "icon": "icons/potion__water.png"
+    },
+    "potion/water_breathing": {
+      "name": "Potion of Water Breathing",
+      "category": "potions",
+      "stackSize": 1,
+      "icon": "icons/potion__water_breathing.png",
+      "recipe": {
+        "potion/awkward": 1,
+        "pufferfish": 0.333333,
+        "blaze_powder": 0.016667
+      },
+      "recipeType": "brewing"
+    },
+    "potion/weakness": {
+      "name": "Potion of Weakness",
+      "category": "potions",
+      "stackSize": 1,
+      "icon": "icons/potion__weakness.png",
+      "recipe": {
+        "potion/water": 1,
+        "fermented_spider_eye": 0.333333,
+        "blaze_powder": 0.016667
+      },
+      "recipeType": "brewing"
+    },
+    "powered_rail": {
+      "name": "Powered Rail",
+      "category": "other",
+      "stackSize": 64,
+      "icon": "icons/powered_rail.png",
+      "recipe": {
+        "gold_ingot": 1.0,
+        "stick": 0.166667,
+        "redstone": 0.166667
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "prismarine": {
+      "name": "Prismarine",
+      "category": "other",
+      "stackSize": 64,
+      "icon": "icons/prismarine.png",
+      "recipe": {
+        "prismarine_shard": 4.0
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "prismarine_brick_slab": {
+      "name": "Prismarine Brick Slab",
+      "category": "other",
+      "stackSize": 64,
+      "icon": "icons/prismarine_brick_slab.png",
+      "recipe": {
+        "prismarine_bricks": 0.5
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "prismarine_brick_stairs": {
+      "name": "Prismarine Brick Stairs",
+      "category": "other",
+      "stackSize": 64,
+      "icon": "icons/prismarine_brick_stairs.png",
+      "recipe": {
+        "prismarine_bricks": 1.5
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "prismarine_bricks": {
+      "name": "Prismarine Bricks",
+      "category": "other",
+      "stackSize": 64,
+      "icon": "icons/prismarine_bricks.png",
+      "recipe": {
+        "prismarine_shard": 9.0
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "prismarine_crystals": {
+      "name": "Prismarine Crystals",
+      "category": "raw",
+      "stackSize": 64,
+      "icon": "icons/prismarine_crystals.png"
+    },
+    "prismarine_shard": {
+      "name": "Prismarine Shard",
+      "category": "raw",
+      "stackSize": 64,
+      "icon": "icons/prismarine_shard.png"
+    },
+    "prismarine_slab": {
+      "name": "Prismarine Slab",
+      "category": "other",
+      "stackSize": 64,
+      "icon": "icons/prismarine_slab.png",
+      "recipe": {
+        "prismarine": 0.5
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "prismarine_stairs": {
+      "name": "Prismarine Stairs",
+      "category": "other",
+      "stackSize": 64,
+      "icon": "icons/prismarine_stairs.png",
+      "recipe": {
+        "prismarine": 1.5
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "pufferfish": {
+      "name": "Pufferfish",
+      "category": "raw",
+      "stackSize": 64,
+      "icon": "icons/pufferfish.png"
+    },
+    "pumpkin": {
+      "name": "Pumpkin",
+      "category": "raw",
+      "stackSize": 64,
+      "icon": "icons/pumpkin.png"
+    },
+    "pumpkin_pie": {
+      "name": "Pumpkin Pie",
+      "category": "other",
+      "stackSize": 64,
+      "icon": "icons/pumpkin_pie.png",
+      "recipe": {
+        "pumpkin": 1.0,
+        "sugar": 1.0,
+        "egg": 1.0
+      },
+      "recipeType": "crafting_shapeless"
+    },
+    "pumpkin_seeds": {
+      "name": "Pumpkin Seeds",
+      "category": "other",
+      "stackSize": 64,
+      "icon": "icons/pumpkin_seeds.png",
+      "recipe": {
+        "pumpkin": 0.25
+      },
+      "recipeType": "crafting_shapeless"
+    },
+    "purple_banner": {
+      "name": "Purple Banner",
+      "category": "colored",
+      "stackSize": 16,
+      "icon": "icons/purple_banner.png",
+      "recipe": {
+        "purple_wool": 6.0,
+        "stick": 1.0
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "purple_bed": {
+      "name": "Purple Bed",
+      "category": "colored",
+      "stackSize": 1,
+      "icon": "icons/purple_bed.png",
+      "recipe": {
+        "purple_wool": 3.0,
+        "oak_planks": 3.0
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "purple_carpet": {
+      "name": "Purple Carpet",
+      "category": "colored",
+      "stackSize": 64,
+      "icon": "icons/purple_carpet.png",
+      "recipe": {
+        "purple_wool": 0.666667
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "purple_concrete_powder": {
+      "name": "Purple Concrete Powder",
+      "category": "colored",
+      "stackSize": 64,
+      "icon": "icons/purple_concrete_powder.png",
+      "recipe": {
+        "purple_dye": 0.125,
+        "sand": 0.5,
+        "gravel": 0.5
+      },
+      "recipeType": "crafting_shapeless"
+    },
+    "purple_dye": {
+      "name": "Purple Dye",
+      "category": "other",
+      "stackSize": 64,
+      "icon": "icons/purple_dye.png",
+      "recipe": {
+        "lapis_lazuli": 0.5,
+        "rose_red": 0.5
+      },
+      "recipeType": "crafting_shapeless"
+    },
+    "purple_glazed_terracotta": {
+      "name": "Purple Glazed Terracotta",
+      "category": "colored",
+      "stackSize": 64,
+      "icon": "icons/purple_glazed_terracotta.png",
+      "recipe": {
+        "purple_terracotta": 1.0,
+        "fuel": 1.0
+      },
+      "recipeType": "smelting"
+    },
+    "purple_stained_glass": {
+      "name": "Purple Stained Glass",
+      "category": "colored",
+      "stackSize": 64,
+      "icon": "icons/purple_stained_glass.png",
+      "recipe": {
+        "glass": 1.0,
+        "purple_dye": 0.125
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "purple_stained_glass_pane": {
+      "name": "Purple Stained Glass Pane",
+      "category": "colored",
+      "stackSize": 64,
+      "icon": "icons/purple_stained_glass_pane.png",
+      "recipe": {
+        "purple_stained_glass": 0.375
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "purple_terracotta": {
+      "name": "Purple Terracotta",
+      "category": "colored",
+      "stackSize": 64,
+      "icon": "icons/purple_terracotta.png",
+      "recipe": {
+        "terracotta": 1.0,
+        "purple_dye": 0.125
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "purple_wool": {
+      "name": "Purple Wool",
+      "category": "colored",
+      "stackSize": 64,
+      "icon": "icons/purple_wool.png",
+      "recipe": {
+        "purple_dye": 1.0,
+        "white_wool": 1.0
+      },
+      "recipeType": "crafting_shapeless"
+    },
+    "purpur_block": {
+      "name": "Purpur Block",
+      "category": "other",
+      "stackSize": 64,
+      "icon": "icons/purpur_block.png",
+      "recipe": {
+        "popped_chorus_fruit": 1.0
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "purpur_pillar": {
+      "name": "Purpur Pillar",
+      "category": "other",
+      "stackSize": 64,
+      "icon": "icons/purpur_pillar.png",
+      "recipe": {
+        "purpur_slab": 2.0
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "purpur_slab": {
+      "name": "Purpur Slab",
+      "category": "other",
+      "stackSize": 64,
+      "icon": "icons/purpur_slab.png",
+      "recipe": {
+        "purpur_block": 0.5
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "purpur_stairs": {
+      "name": "Purpur Stairs",
+      "category": "other",
+      "stackSize": 64,
+      "icon": "icons/purpur_stairs.png",
+      "recipe": {
+        "purpur_block": 1.5
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "quartz": {
+      "name": "Nether Quartz",
+      "category": "raw",
+      "stackSize": 64,
+      "icon": "icons/quartz.png"
+    },
+    "quartz_block": {
+      "name": "Block of Quartz",
+      "category": "other",
+      "stackSize": 64,
+      "icon": "icons/quartz_block.png",
+      "recipe": {
+        "quartz": 4.0
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "quartz_pillar": {
+      "name": "Quartz Pillar",
+      "category": "other",
+      "stackSize": 64,
+      "icon": "icons/quartz_pillar.png",
+      "recipe": {
+        "quartz_block": 1.0
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "quartz_slab": {
+      "name": "Quartz Slab",
+      "category": "other",
+      "stackSize": 64,
+      "icon": "icons/quartz_slab.png",
+      "recipe": {
+        "quartz_block": 0.5
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "quartz_stairs": {
+      "name": "Quartz Stairs",
+      "category": "other",
+      "stackSize": 64,
+      "icon": "icons/quartz_stairs.png",
+      "recipe": {
+        "quartz_block": 1.5
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "rabbit": {
+      "name": "Raw Rabbit",
+      "category": "raw",
+      "stackSize": 64,
+      "icon": "icons/rabbit.png"
+    },
+    "rabbit_foot": {
+      "name": "Rabbit's Foot",
+      "category": "raw",
+      "stackSize": 64,
+      "icon": "icons/rabbit_foot.png"
+    },
+    "rabbit_stew": {
+      "name": "Rabbit Stew",
+      "category": "other",
+      "stackSize": 1,
+      "icon": "icons/rabbit_stew.png",
+      "recipe": {
+        "cooked_rabbit": 1.0,
+        "carrot": 1.0,
+        "baked_potato": 1.0,
+        "brown_mushroom": 1.0,
+        "bowl": 1.0
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "rail": {
+      "name": "Rail",
+      "category": "other",
+      "stackSize": 64,
+      "icon": "icons/rail.png",
+      "recipe": {
+        "iron_ingot": 0.375,
+        "stick": 0.0625
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "red_banner": {
+      "name": "Red Banner",
+      "category": "colored",
+      "stackSize": 16,
+      "icon": "icons/red_banner.png",
+      "recipe": {
+        "red_wool": 6.0,
+        "stick": 1.0
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "red_bed": {
+      "name": "Red Bed",
+      "category": "colored",
+      "stackSize": 1,
+      "icon": "icons/red_bed.png",
+      "recipe": {
+        "red_wool": 3.0,
+        "oak_planks": 3.0
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "red_carpet": {
+      "name": "Red Carpet",
+      "category": "colored",
+      "stackSize": 64,
+      "icon": "icons/red_carpet.png",
+      "recipe": {
+        "red_wool": 0.666667
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "red_concrete_powder": {
+      "name": "Red Concrete Powder",
+      "category": "colored",
+      "stackSize": 64,
+      "icon": "icons/red_concrete_powder.png",
+      "recipe": {
+        "rose_red": 0.125,
+        "sand": 0.5,
+        "gravel": 0.5
+      },
+      "recipeType": "crafting_shapeless"
+    },
+    "red_glazed_terracotta": {
+      "name": "Red Glazed Terracotta",
+      "category": "colored",
+      "stackSize": 64,
+      "icon": "icons/red_glazed_terracotta.png",
+      "recipe": {
+        "red_terracotta": 1.0,
+        "fuel": 1.0
+      },
+      "recipeType": "smelting"
+    },
+    "red_mushroom": {
+      "name": "Red Mushroom",
+      "category": "raw",
+      "stackSize": 64,
+      "icon": "icons/red_mushroom.png"
+    },
+    "red_nether_bricks": {
+      "name": "Red Nether Bricks",
+      "category": "other",
+      "stackSize": 64,
+      "icon": "icons/red_nether_bricks.png",
+      "recipe": {
+        "nether_brick": 2.0,
+        "nether_wart": 2.0
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "red_sand": {
+      "name": "Red Sand",
+      "category": "raw",
+      "stackSize": 64,
+      "icon": "icons/red_sand.png"
+    },
+    "red_sandstone": {
+      "name": "Red Sandstone",
+      "category": "other",
+      "stackSize": 64,
+      "icon": "icons/red_sandstone.png",
+      "recipe": {
+        "red_sand": 4.0
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "red_sandstone_slab": {
+      "name": "Red Sandstone Slab",
+      "category": "other",
+      "stackSize": 64,
+      "icon": "icons/red_sandstone_slab.png",
+      "recipe": {
+        "red_sandstone": 0.5
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "red_sandstone_stairs": {
+      "name": "Red Sandstone Stairs",
+      "category": "other",
+      "stackSize": 64,
+      "icon": "icons/red_sandstone_stairs.png",
+      "recipe": {
+        "red_sandstone": 1.5
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "red_stained_glass": {
+      "name": "Red Stained Glass",
+      "category": "colored",
+      "stackSize": 64,
+      "icon": "icons/red_stained_glass.png",
+      "recipe": {
+        "glass": 1.0,
+        "rose_red": 0.125
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "red_stained_glass_pane": {
+      "name": "Red Stained Glass Pane",
+      "category": "colored",
+      "stackSize": 64,
+      "icon": "icons/red_stained_glass_pane.png",
+      "recipe": {
+        "red_stained_glass": 0.375
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "red_terracotta": {
+      "name": "Red Terracotta",
+      "category": "colored",
+      "stackSize": 64,
+      "icon": "icons/red_terracotta.png",
+      "recipe": {
+        "terracotta": 1.0,
+        "rose_red": 0.125
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "red_wool": {
+      "name": "Red Wool",
+      "category": "colored",
+      "stackSize": 64,
+      "icon": "icons/red_wool.png",
+      "recipe": {
+        "rose_red": 1.0,
+        "white_wool": 1.0
+      },
+      "recipeType": "crafting_shapeless"
+    },
+    "redstone": {
+      "name": "Redstone",
+      "category": "raw",
+      "stackSize": 64,
+      "icon": "icons/redstone.png"
+    },
+    "redstone_block": {
+      "name": "Block of Redstone",
+      "category": "other",
+      "stackSize": 64,
+      "icon": "icons/redstone_block.png",
+      "recipe": {
+        "redstone": 9.0
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "redstone_lamp": {
+      "name": "Redstone Lamp",
+      "category": "other",
+      "stackSize": 64,
+      "icon": "icons/redstone_lamp.png",
+      "recipe": {
+        "redstone": 4.0,
+        "glowstone": 1.0
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "redstone_torch": {
+      "name": "Redstone Torch",
+      "category": "other",
+      "stackSize": 64,
+      "icon": "icons/redstone_torch.png",
+      "recipe": {
+        "redstone": 1.0,
+        "stick": 1.0
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "repeater": {
+      "name": "Redstone Repeater",
+      "category": "other",
+      "stackSize": 64,
+      "icon": "icons/repeater.png",
+      "recipe": {
+        "redstone_torch": 2.0,
+        "redstone": 1.0,
+        "stone": 3.0
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "rose_bush": {
+      "name": "Rose Bush",
+      "category": "raw",
+      "stackSize": 64,
+      "icon": "icons/rose_bush.png"
+    },
+    "rose_red": {
+      "name": "Rose Red",
+      "category": "other",
+      "stackSize": 64,
+      "icon": "icons/rose_red.png",
+      "recipe": {
+        "rose_bush": 0.5
+      },
+      "recipeType": "crafting_shapeless"
+    },
+    "salmon": {
+      "name": "Raw Salmon",
+      "category": "raw",
+      "stackSize": 64,
+      "icon": "icons/salmon.png"
+    },
+    "sand": {
+      "name": "Sand",
+      "category": "raw",
+      "stackSize": 64,
+      "icon": "icons/sand.png"
+    },
+    "sandstone": {
+      "name": "Sandstone",
+      "category": "other",
+      "stackSize": 64,
+      "icon": "icons/sandstone.png",
+      "recipe": {
+        "sand": 4.0
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "sandstone_slab": {
+      "name": "Sandstone Slab",
+      "category": "other",
+      "stackSize": 64,
+      "icon": "icons/sandstone_slab.png",
+      "recipe": {
+        "sandstone": 0.5
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "sandstone_stairs": {
+      "name": "Sandstone Stairs",
+      "category": "other",
+      "stackSize": 64,
+      "icon": "icons/sandstone_stairs.png",
+      "recipe": {
+        "sandstone": 1.5
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "scute": {
+      "name": "Scute",
+      "category": "raw",
+      "stackSize": 64,
+      "icon": "icons/scute.png"
+    },
+    "sea_lantern": {
+      "name": "Sea Lantern",
+      "category": "other",
+      "stackSize": 64,
+      "icon": "icons/sea_lantern.png",
+      "recipe": {
+        "prismarine_shard": 4.0,
+        "prismarine_crystals": 5.0
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "sea_pickle": {
+      "name": "Sea Pickle",
+      "category": "raw",
+      "stackSize": 64,
+      "icon": "icons/sea_pickle.png"
+    },
+    "shears": {
+      "name": "Shears",
+      "category": "other",
+      "stackSize": 1,
+      "icon": "icons/shears.png",
+      "recipe": {
+        "iron_ingot": 2.0
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "shield": {
+      "name": "Shield",
+      "category": "other",
+      "stackSize": 1,
+      "icon": "icons/shield.png",
+      "recipe": {
+        "oak_planks": 6.0,
+        "iron_ingot": 1.0
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "shulker_box": {
+      "name": "Shulker Box",
+      "category": "other",
+      "stackSize": 64,
+      "icon": "icons/shulker_box.png",
+      "recipe": {
+        "shulker_shell": 2.0,
+        "chest": 1.0
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "shulker_shell": {
+      "name": "Shulker Shell",
+      "category": "raw",
+      "stackSize": 64,
+      "icon": "icons/shulker_shell.png"
+    },
+    "sign": {
+      "name": "Sign",
+      "category": "other",
+      "stackSize": 16,
+      "icon": "icons/sign.png",
+      "recipe": {
+        "oak_planks": 2.0,
+        "stick": 0.333333
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "slime_ball": {
+      "name": "Slimeball",
+      "category": "raw",
+      "stackSize": 64,
+      "icon": "icons/slime_ball.png"
+    },
+    "slime_block": {
+      "name": "Slime Block",
+      "category": "other",
+      "stackSize": 64,
+      "icon": "icons/slime_block.png",
+      "recipe": {
+        "slime_ball": 9.0
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "snow": {
+      "name": "Snow",
+      "category": "other",
+      "stackSize": 64,
+      "icon": "icons/snow.png",
+      "recipe": {
+        "snow_block": 0.5
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "snow_block": {
+      "name": "Snow Block",
+      "category": "other",
+      "stackSize": 64,
+      "icon": "icons/snow_block.png",
+      "recipe": {
+        "snowball": 4.0
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "snowball": {
+      "name": "Snowball",
+      "category": "raw",
+      "stackSize": 16,
+      "icon": "icons/snowball.png"
+    },
+    "soul_sand": {
+      "name": "Soul Sand",
+      "category": "raw",
+      "stackSize": 64,
+      "icon": "icons/soul_sand.png"
+    },
+    "spectral_arrow": {
+      "name": "Spectral Arrow",
+      "category": "other",
+      "stackSize": 64,
+      "icon": "icons/spectral_arrow.png",
+      "recipe": {
+        "glowstone_dust": 2.0,
+        "arrow": 0.5
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "spider_eye": {
+      "name": "Spider Eye",
+      "category": "raw",
+      "stackSize": 64,
+      "icon": "icons/spider_eye.png"
+    },
+    "splash_potion/awkward": {
+      "name": "Awkward Splash Potion",
+      "category": "potions",
+      "stackSize": 1,
+      "icon": "icons/splash_potion__awkward.png",
+      "recipe": {
+        "splash_potion/water": 1,
+        "nether_wart": 0.333333,
+        "blaze_powder": 0.016667
+      },
+      "recipeType": "brewing"
+    },
+    "splash_potion/fire_resistance": {
+      "name": "Splash Potion of Fire Resistance",
+      "category": "potions",
+      "stackSize": 1,
+      "icon": "icons/splash_potion__fire_resistance.png",
+      "recipe": {
+        "splash_potion/awkward": 1,
+        "magma_cream": 0.333333,
+        "blaze_powder": 0.016667
+      },
+      "recipeType": "brewing"
+    },
+    "splash_potion/harming": {
+      "name": "Splash Potion of Harming",
+      "category": "potions",
+      "stackSize": 1,
+      "icon": "icons/splash_potion__harming.png",
+      "recipe": {
+        "splash_potion/healing": 1,
+        "fermented_spider_eye": 0.333333,
+        "blaze_powder": 0.016667
+      },
+      "recipeType": "brewing"
+    },
+    "splash_potion/healing": {
+      "name": "Splash Potion of Healing",
+      "category": "potions",
+      "stackSize": 1,
+      "icon": "icons/splash_potion__healing.png",
+      "recipe": {
+        "splash_potion/awkward": 1,
+        "glistering_melon_slice": 0.333333,
+        "blaze_powder": 0.016667
+      },
+      "recipeType": "brewing"
+    },
+    "splash_potion/invisibility": {
+      "name": "Splash Potion of Invisibility",
+      "category": "potions",
+      "stackSize": 1,
+      "icon": "icons/splash_potion__invisibility.png",
+      "recipe": {
+        "splash_potion/night_vision": 1,
+        "fermented_spider_eye": 0.333333,
+        "blaze_powder": 0.016667
+      },
+      "recipeType": "brewing"
+    },
+    "splash_potion/leaping": {
+      "name": "Splash Potion of Leaping",
+      "category": "potions",
+      "stackSize": 1,
+      "icon": "icons/splash_potion__leaping.png",
+      "recipe": {
+        "splash_potion/awkward": 1,
+        "rabbit_foot": 0.333333,
+        "blaze_powder": 0.016667
+      },
+      "recipeType": "brewing"
+    },
+    "splash_potion/long_fire_resistance": {
+      "name": "Splash Potion of Fire Resistance (long)",
+      "category": "potions",
+      "stackSize": 1,
+      "icon": "icons/splash_potion__long_fire_resistance.png",
+      "recipe": {
+        "splash_potion/fire_resistance": 1,
+        "redstone": 0.333333,
+        "blaze_powder": 0.016667
+      },
+      "recipeType": "brewing"
+    },
+    "splash_potion/long_invisibility": {
+      "name": "Splash Potion of Invisibility (long)",
+      "category": "potions",
+      "stackSize": 1,
+      "icon": "icons/splash_potion__long_invisibility.png",
+      "recipe": {
+        "splash_potion/invisibility": 1,
+        "redstone": 0.333333,
+        "blaze_powder": 0.016667
+      },
+      "recipeType": "brewing"
+    },
+    "splash_potion/long_leaping": {
+      "name": "Splash Potion of Leaping (long)",
+      "category": "potions",
+      "stackSize": 1,
+      "icon": "icons/splash_potion__long_leaping.png",
+      "recipe": {
+        "splash_potion/leaping": 1,
+        "redstone": 0.333333,
+        "blaze_powder": 0.016667
+      },
+      "recipeType": "brewing"
+    },
+    "splash_potion/long_night_vision": {
+      "name": "Splash Potion of Night Vision (long)",
+      "category": "potions",
+      "stackSize": 1,
+      "icon": "icons/splash_potion__long_night_vision.png",
+      "recipe": {
+        "splash_potion/night_vision": 1,
+        "redstone": 0.333333,
+        "blaze_powder": 0.016667
+      },
+      "recipeType": "brewing"
+    },
+    "splash_potion/long_poison": {
+      "name": "Splash Potion of Poison (long)",
+      "category": "potions",
+      "stackSize": 1,
+      "icon": "icons/splash_potion__long_poison.png",
+      "recipe": {
+        "splash_potion/poison": 1,
+        "redstone": 0.333333,
+        "blaze_powder": 0.016667
+      },
+      "recipeType": "brewing"
+    },
+    "splash_potion/long_regeneration": {
+      "name": "Splash Potion of Regeneration (long)",
+      "category": "potions",
+      "stackSize": 1,
+      "icon": "icons/splash_potion__long_regeneration.png",
+      "recipe": {
+        "potion/long_regeneration": 1,
+        "gunpowder": 0.333333,
+        "blaze_powder": 0.016667
+      },
+      "recipeType": "brewing"
+    },
+    "splash_potion/long_slow_falling": {
+      "name": "Splash Potion of Slow Falling (long)",
+      "category": "potions",
+      "stackSize": 1,
+      "icon": "icons/splash_potion__long_slow_falling.png",
+      "recipe": {
+        "splash_potion/slow_falling": 1,
+        "redstone": 0.333333,
+        "blaze_powder": 0.016667
+      },
+      "recipeType": "brewing"
+    },
+    "splash_potion/long_slowness": {
+      "name": "Splash Potion of Slowness (long)",
+      "category": "potions",
+      "stackSize": 1,
+      "icon": "icons/splash_potion__long_slowness.png",
+      "recipe": {
+        "splash_potion/slowness": 1,
+        "redstone": 0.333333,
+        "blaze_powder": 0.016667
+      },
+      "recipeType": "brewing"
+    },
+    "splash_potion/long_strength": {
+      "name": "Splash Potion of Strength (long)",
+      "category": "potions",
+      "stackSize": 1,
+      "icon": "icons/splash_potion__long_strength.png",
+      "recipe": {
+        "splash_potion/strength": 1,
+        "redstone": 0.333333,
+        "blaze_powder": 0.016667
+      },
+      "recipeType": "brewing"
+    },
+    "splash_potion/long_swiftness": {
+      "name": "Splash Potion of Swiftness (long)",
+      "category": "potions",
+      "stackSize": 1,
+      "icon": "icons/splash_potion__long_swiftness.png",
+      "recipe": {
+        "splash_potion/swiftness": 1,
+        "redstone": 0.333333,
+        "blaze_powder": 0.016667
+      },
+      "recipeType": "brewing"
+    },
+    "splash_potion/long_turtle_master": {
+      "name": "Splash Potion of Turtle Master (long)",
+      "category": "potions",
+      "stackSize": 1,
+      "icon": "icons/splash_potion__long_turtle_master.png",
+      "recipe": {
+        "splash_potion/turtle_master": 1,
+        "redstone": 0.333333,
+        "blaze_powder": 0.016667
+      },
+      "recipeType": "brewing"
+    },
+    "splash_potion/long_water_breathing": {
+      "name": "Splash Potion of Water Breathing (long)",
+      "category": "potions",
+      "stackSize": 1,
+      "icon": "icons/splash_potion__long_water_breathing.png",
+      "recipe": {
+        "splash_potion/water_breathing": 1,
+        "redstone": 0.333333,
+        "blaze_powder": 0.016667
+      },
+      "recipeType": "brewing"
+    },
+    "splash_potion/long_weakness": {
+      "name": "Splash Potion of Weakness (long)",
+      "category": "potions",
+      "stackSize": 1,
+      "icon": "icons/splash_potion__long_weakness.png",
+      "recipe": {
+        "splash_potion/weakness": 1,
+        "redstone": 0.333333,
+        "blaze_powder": 0.016667
+      },
+      "recipeType": "brewing"
+    },
+    "splash_potion/night_vision": {
+      "name": "Splash Potion of Night Vision",
+      "category": "potions",
+      "stackSize": 1,
+      "icon": "icons/splash_potion__night_vision.png",
+      "recipe": {
+        "potion/night_vision": 1,
+        "gunpowder": 0.333333,
+        "blaze_powder": 0.016667
+      },
+      "recipeType": "brewing"
+    },
+    "splash_potion/poison": {
+      "name": "Splash Potion of Poison",
+      "category": "potions",
+      "stackSize": 1,
+      "icon": "icons/splash_potion__poison.png",
+      "recipe": {
+        "splash_potion/awkward": 1,
+        "spider_eye": 0.333333,
+        "blaze_powder": 0.016667
+      },
+      "recipeType": "brewing"
+    },
+    "splash_potion/regeneration": {
+      "name": "Splash Potion of Regeneration",
+      "category": "potions",
+      "stackSize": 1,
+      "icon": "icons/splash_potion__regeneration.png",
+      "recipe": {
+        "splash_potion/awkward": 1,
+        "ghast_tear": 0.333333,
+        "blaze_powder": 0.016667
+      },
+      "recipeType": "brewing"
+    },
+    "splash_potion/slow_falling": {
+      "name": "Splash Potion of Slow Falling",
+      "category": "potions",
+      "stackSize": 1,
+      "icon": "icons/splash_potion__slow_falling.png",
+      "recipe": {
+        "splash_potion/awkward": 1,
+        "phantom_membrane": 0.333333,
+        "blaze_powder": 0.016667
+      },
+      "recipeType": "brewing"
+    },
+    "splash_potion/slowness": {
+      "name": "Splash Potion of Slowness",
+      "category": "potions",
+      "stackSize": 1,
+      "icon": "icons/splash_potion__slowness.png",
+      "recipe": {
+        "splash_potion/swiftness": 1,
+        "fermented_spider_eye": 0.333333,
+        "blaze_powder": 0.016667
+      },
+      "recipeType": "brewing"
+    },
+    "splash_potion/strength": {
+      "name": "Splash Potion of Strength",
+      "category": "potions",
+      "stackSize": 1,
+      "icon": "icons/splash_potion__strength.png",
+      "recipe": {
+        "splash_potion/awkward": 1,
+        "blaze_powder": 0.016667
+      },
+      "recipeType": "brewing"
+    },
+    "splash_potion/strong_harming": {
+      "name": "Splash Potion of Harming II",
+      "category": "potions",
+      "stackSize": 1,
+      "icon": "icons/splash_potion__strong_harming.png",
+      "recipe": {
+        "potion/strong_harming": 1,
+        "gunpowder": 0.333333,
+        "blaze_powder": 0.016667
+      },
+      "recipeType": "brewing"
+    },
+    "splash_potion/strong_healing": {
+      "name": "Splash Potion of Healing II",
+      "category": "potions",
+      "stackSize": 1,
+      "icon": "icons/splash_potion__strong_healing.png",
+      "recipe": {
+        "splash_potion/healing": 1,
+        "glowstone_dust": 0.333333,
+        "blaze_powder": 0.016667
+      },
+      "recipeType": "brewing"
+    },
+    "splash_potion/strong_leaping": {
+      "name": "Splash Potion of Leaping II",
+      "category": "potions",
+      "stackSize": 1,
+      "icon": "icons/splash_potion__strong_leaping.png",
+      "recipe": {
+        "splash_potion/leaping": 1,
+        "glowstone_dust": 0.333333,
+        "blaze_powder": 0.016667
+      },
+      "recipeType": "brewing"
+    },
+    "splash_potion/strong_poison": {
+      "name": "Splash Potion of Poison II",
+      "category": "potions",
+      "stackSize": 1,
+      "icon": "icons/splash_potion__strong_poison.png",
+      "recipe": {
+        "splash_potion/poison": 1,
+        "glowstone_dust": 0.333333,
+        "blaze_powder": 0.016667
+      },
+      "recipeType": "brewing"
+    },
+    "splash_potion/strong_regeneration": {
+      "name": "Splash Potion of Regeneration II",
+      "category": "potions",
+      "stackSize": 1,
+      "icon": "icons/splash_potion__strong_regeneration.png",
+      "recipe": {
+        "splash_potion/regeneration": 1,
+        "glowstone_dust": 0.333333,
+        "blaze_powder": 0.016667
+      },
+      "recipeType": "brewing"
+    },
+    "splash_potion/strong_slowness": {
+      "name": "Splash Potion of Slowness II",
+      "category": "potions",
+      "stackSize": 1,
+      "icon": "icons/splash_potion__strong_slowness.png",
+      "recipe": {
+        "splash_potion/slowness": 1,
+        "glowstone_dust": 0.333333,
+        "blaze_powder": 0.016667
+      },
+      "recipeType": "brewing"
+    },
+    "splash_potion/strong_strength": {
+      "name": "Splash Potion of Strength II",
+      "category": "potions",
+      "stackSize": 1,
+      "icon": "icons/splash_potion__strong_strength.png",
+      "recipe": {
+        "splash_potion/strength": 1,
+        "glowstone_dust": 0.333333,
+        "blaze_powder": 0.016667
+      },
+      "recipeType": "brewing"
+    },
+    "splash_potion/strong_swiftness": {
+      "name": "Splash Potion of Swiftness II",
+      "category": "potions",
+      "stackSize": 1,
+      "icon": "icons/splash_potion__strong_swiftness.png",
+      "recipe": {
+        "splash_potion/swiftness": 1,
+        "glowstone_dust": 0.333333,
+        "blaze_powder": 0.016667
+      },
+      "recipeType": "brewing"
+    },
+    "splash_potion/strong_turtle_master": {
+      "name": "Splash Potion of Turtle Master II",
+      "category": "potions",
+      "stackSize": 1,
+      "icon": "icons/splash_potion__strong_turtle_master.png",
+      "recipe": {
+        "splash_potion/turtle_master": 1,
+        "glowstone_dust": 0.333333,
+        "blaze_powder": 0.016667
+      },
+      "recipeType": "brewing"
+    },
+    "splash_potion/swiftness": {
+      "name": "Splash Potion of Swiftness",
+      "category": "potions",
+      "stackSize": 1,
+      "icon": "icons/splash_potion__swiftness.png",
+      "recipe": {
+        "potion/swiftness": 1,
+        "gunpowder": 0.333333,
+        "blaze_powder": 0.016667
+      },
+      "recipeType": "brewing"
+    },
+    "splash_potion/turtle_master": {
+      "name": "Splash Potion of the Turtle Master",
+      "category": "potions",
+      "stackSize": 1,
+      "icon": "icons/splash_potion__turtle_master.png",
+      "recipe": {
+        "splash_potion/awkward": 1,
+        "turtle_helmet": 0.333333,
+        "blaze_powder": 0.016667
+      },
+      "recipeType": "brewing"
+    },
+    "splash_potion/water": {
+      "name": "Splash Water Bottle",
+      "category": "potions",
+      "stackSize": 1,
+      "icon": "icons/splash_potion__water.png",
+      "recipe": {
+        "potion/water": 1,
+        "gunpowder": 0.333333,
+        "blaze_powder": 0.016667
+      },
+      "recipeType": "brewing"
+    },
+    "splash_potion/water_breathing": {
+      "name": "Splash Potion of Water Breathing",
+      "category": "potions",
+      "stackSize": 1,
+      "icon": "icons/splash_potion__water_breathing.png",
+      "recipe": {
+        "splash_potion/awkward": 1,
+        "pufferfish": 0.333333,
+        "blaze_powder": 0.016667
+      },
+      "recipeType": "brewing"
+    },
+    "splash_potion/weakness": {
+      "name": "Splash Potion of Weakness",
+      "category": "potions",
+      "stackSize": 1,
+      "icon": "icons/splash_potion__weakness.png",
+      "recipe": {
+        "splash_potion/water": 1,
+        "fermented_spider_eye": 0.333333,
+        "blaze_powder": 0.016667
+      },
+      "recipeType": "brewing"
+    },
+    "sponge": {
+      "name": "Sponge",
+      "category": "other",
+      "stackSize": 64,
+      "icon": "icons/sponge.png",
+      "recipe": {
+        "wet_sponge": 1.0,
+        "fuel": 1.0
+      },
+      "recipeType": "smelting"
+    },
+    "spruce_boat": {
+      "name": "Spruce Boat",
+      "category": "other",
+      "stackSize": 1,
+      "icon": "icons/spruce_boat.png",
+      "recipe": {
+        "spruce_planks": 5.0
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "spruce_button": {
+      "name": "Spruce Button",
+      "category": "other",
+      "stackSize": 64,
+      "icon": "icons/spruce_button.png",
+      "recipe": {
+        "spruce_planks": 1.0
+      },
+      "recipeType": "crafting_shapeless"
+    },
+    "spruce_door": {
+      "name": "Spruce Door",
+      "category": "other",
+      "stackSize": 64,
+      "icon": "icons/spruce_door.png",
+      "recipe": {
+        "spruce_planks": 2.0
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "spruce_fence": {
+      "name": "Spruce Fence",
+      "category": "other",
+      "stackSize": 64,
+      "icon": "icons/spruce_fence.png",
+      "recipe": {
+        "spruce_planks": 1.333333,
+        "stick": 0.666667
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "spruce_fence_gate": {
+      "name": "Spruce Fence Gate",
+      "category": "other",
+      "stackSize": 64,
+      "icon": "icons/spruce_fence_gate.png",
+      "recipe": {
+        "stick": 4.0,
+        "spruce_planks": 2.0
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "spruce_log": {
+      "name": "Spruce Log",
+      "category": "raw",
+      "stackSize": 64,
+      "icon": "icons/spruce_log.png"
+    },
+    "spruce_planks": {
+      "name": "Spruce Planks",
+      "category": "other",
+      "stackSize": 64,
+      "icon": "icons/spruce_planks.png",
+      "recipe": {
+        "spruce_log": 0.25
+      },
+      "recipeType": "crafting_shapeless"
+    },
+    "spruce_pressure_plate": {
+      "name": "Spruce Pressure Plate",
+      "category": "other",
+      "stackSize": 64,
+      "icon": "icons/spruce_pressure_plate.png",
+      "recipe": {
+        "spruce_planks": 2.0
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "spruce_slab": {
+      "name": "Spruce Slab",
+      "category": "other",
+      "stackSize": 64,
+      "icon": "icons/spruce_slab.png",
+      "recipe": {
+        "spruce_planks": 0.5
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "spruce_stairs": {
+      "name": "Spruce Stairs",
+      "category": "other",
+      "stackSize": 64,
+      "icon": "icons/spruce_stairs.png",
+      "recipe": {
+        "spruce_planks": 1.5
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "spruce_trapdoor": {
+      "name": "Spruce Trapdoor",
+      "category": "other",
+      "stackSize": 64,
+      "icon": "icons/spruce_trapdoor.png",
+      "recipe": {
+        "spruce_planks": 3.0
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "spruce_wood": {
+      "name": "Spruce Wood",
+      "category": "other",
+      "stackSize": 64,
+      "icon": "icons/spruce_wood.png",
+      "recipe": {
+        "spruce_log": 1.333333
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "stick": {
+      "name": "Stick",
+      "category": "other",
+      "stackSize": 64,
+      "icon": "icons/stick.png",
+      "recipe": {
+        "oak_planks": 0.5
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "sticky_piston": {
+      "name": "Sticky Piston",
+      "category": "other",
+      "stackSize": 64,
+      "icon": "icons/sticky_piston.png",
+      "recipe": {
+        "slime_ball": 1.0,
+        "piston": 1.0
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "stone": {
+      "name": "Stone",
+      "category": "other",
+      "stackSize": 64,
+      "icon": "icons/stone.png",
+      "recipe": {
+        "cobblestone": 1.0,
+        "fuel": 1.0
+      },
+      "recipeType": "smelting"
+    },
+    "stone_axe": {
+      "name": "Stone Axe",
+      "category": "other",
+      "stackSize": 1,
+      "icon": "icons/stone_axe.png",
+      "recipe": {
+        "cobblestone": 3.0,
+        "stick": 2.0
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "stone_brick_slab": {
+      "name": "Stone Brick Slab",
+      "category": "other",
+      "stackSize": 64,
+      "icon": "icons/stone_brick_slab.png",
+      "recipe": {
+        "stone_bricks": 0.5
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "stone_brick_stairs": {
+      "name": "Stone Brick Stairs",
+      "category": "other",
+      "stackSize": 64,
+      "icon": "icons/stone_brick_stairs.png",
+      "recipe": {
+        "stone_bricks": 1.5
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "stone_bricks": {
+      "name": "Stone Bricks",
+      "category": "other",
+      "stackSize": 64,
+      "icon": "icons/stone_bricks.png",
+      "recipe": {
+        "stone": 1.0
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "stone_button": {
+      "name": "Stone Button",
+      "category": "other",
+      "stackSize": 64,
+      "icon": "icons/stone_button.png",
+      "recipe": {
+        "stone": 1.0
+      },
+      "recipeType": "crafting_shapeless"
+    },
+    "stone_hoe": {
+      "name": "Stone Hoe",
+      "category": "other",
+      "stackSize": 1,
+      "icon": "icons/stone_hoe.png",
+      "recipe": {
+        "cobblestone": 2.0,
+        "stick": 2.0
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "stone_pickaxe": {
+      "name": "Stone Pickaxe",
+      "category": "other",
+      "stackSize": 1,
+      "icon": "icons/stone_pickaxe.png",
+      "recipe": {
+        "cobblestone": 3.0,
+        "stick": 2.0
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "stone_pressure_plate": {
+      "name": "Stone Pressure Plate",
+      "category": "other",
+      "stackSize": 64,
+      "icon": "icons/stone_pressure_plate.png",
+      "recipe": {
+        "stone": 2.0
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "stone_shovel": {
+      "name": "Stone Shovel",
+      "category": "other",
+      "stackSize": 1,
+      "icon": "icons/stone_shovel.png",
+      "recipe": {
+        "cobblestone": 1.0,
+        "stick": 2.0
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "stone_slab": {
+      "name": "Stone Slab",
+      "category": "other",
+      "stackSize": 64,
+      "icon": "icons/stone_slab.png",
+      "recipe": {
+        "stone": 0.5
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "stone_sword": {
+      "name": "Stone Sword",
+      "category": "other",
+      "stackSize": 1,
+      "icon": "icons/stone_sword.png",
+      "recipe": {
+        "cobblestone": 2.0,
+        "stick": 1.0
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "string": {
+      "name": "String",
+      "category": "raw",
+      "stackSize": 64,
+      "icon": "icons/string.png"
+    },
+    "sugar": {
+      "name": "Sugar",
+      "category": "other",
+      "stackSize": 64,
+      "icon": "icons/sugar.png",
+      "recipe": {
+        "sugar_cane": 1.0
+      },
+      "recipeType": "crafting_shapeless"
+    },
+    "sugar_cane": {
+      "name": "Sugar Cane",
+      "category": "raw",
+      "stackSize": 64,
+      "icon": "icons/sugar_cane.png"
+    },
+    "sunflower": {
+      "name": "Sunflower",
+      "category": "raw",
+      "stackSize": 64,
+      "icon": "icons/sunflower.png"
+    },
+    "terracotta": {
+      "name": "Terracotta",
+      "category": "other",
+      "stackSize": 64,
+      "icon": "icons/terracotta.png",
+      "recipe": {
+        "clay": 1.0,
+        "fuel": 1.0
+      },
+      "recipeType": "smelting"
+    },
+    "tnt": {
+      "name": "TNT",
+      "category": "other",
+      "stackSize": 64,
+      "icon": "icons/tnt.png",
+      "recipe": {
+        "gunpowder": 5.0,
+        "sand": 4.0
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "tnt_minecart": {
+      "name": "Minecart with TNT",
+      "category": "other",
+      "stackSize": 1,
+      "icon": "icons/tnt_minecart.png",
+      "recipe": {
+        "tnt": 1.0,
+        "minecart": 1.0
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "torch": {
+      "name": "Torch",
+      "category": "other",
+      "stackSize": 64,
+      "icon": "icons/torch.png",
+      "recipe": {
+        "coal": 0.25,
+        "stick": 0.25
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "trapped_chest": {
+      "name": "Trapped Chest",
+      "category": "other",
+      "stackSize": 64,
+      "icon": "icons/trapped_chest.png",
+      "recipe": {
+        "chest": 1.0,
+        "tripwire_hook": 1.0
+      },
+      "recipeType": "crafting_shapeless"
+    },
+    "tripwire_hook": {
+      "name": "Tripwire Hook",
+      "category": "other",
+      "stackSize": 64,
+      "icon": "icons/tripwire_hook.png",
+      "recipe": {
+        "iron_ingot": 0.5,
+        "stick": 0.5,
+        "oak_planks": 0.5
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "turtle_helmet": {
+      "name": "Turtle Shell",
+      "category": "other",
+      "stackSize": 1,
+      "icon": "icons/turtle_helmet.png",
+      "recipe": {
+        "scute": 5.0
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "vine": {
+      "name": "Vines",
+      "category": "raw",
+      "stackSize": 64,
+      "icon": "icons/vine.png"
+    },
+    "wet_sponge": {
+      "name": "Wet Sponge",
+      "category": "raw",
+      "stackSize": 64,
+      "icon": "icons/wet_sponge.png"
+    },
+    "wheat": {
+      "name": "Wheat",
+      "category": "raw",
+      "stackSize": 64,
+      "icon": "icons/wheat.png"
+    },
+    "white_banner": {
+      "name": "White Banner",
+      "category": "colored",
+      "stackSize": 16,
+      "icon": "icons/white_banner.png",
+      "recipe": {
+        "white_wool": 6.0,
+        "stick": 1.0
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "white_bed": {
+      "name": "White Bed",
+      "category": "colored",
+      "stackSize": 1,
+      "icon": "icons/white_bed.png",
+      "recipe": {
+        "white_wool": 3.0,
+        "oak_planks": 3.0
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "white_carpet": {
+      "name": "White Carpet",
+      "category": "colored",
+      "stackSize": 64,
+      "icon": "icons/white_carpet.png",
+      "recipe": {
+        "white_wool": 0.666667
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "white_concrete_powder": {
+      "name": "White Concrete Powder",
+      "category": "colored",
+      "stackSize": 64,
+      "icon": "icons/white_concrete_powder.png",
+      "recipe": {
+        "bone_meal": 0.125,
+        "sand": 0.5,
+        "gravel": 0.5
+      },
+      "recipeType": "crafting_shapeless"
+    },
+    "white_glazed_terracotta": {
+      "name": "White Glazed Terracotta",
+      "category": "colored",
+      "stackSize": 64,
+      "icon": "icons/white_glazed_terracotta.png",
+      "recipe": {
+        "white_terracotta": 1.0,
+        "fuel": 1.0
+      },
+      "recipeType": "smelting"
+    },
+    "white_stained_glass": {
+      "name": "White Stained Glass",
+      "category": "colored",
+      "stackSize": 64,
+      "icon": "icons/white_stained_glass.png",
+      "recipe": {
+        "glass": 1.0,
+        "bone_meal": 0.125
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "white_stained_glass_pane": {
+      "name": "White Stained Glass Pane",
+      "category": "colored",
+      "stackSize": 64,
+      "icon": "icons/white_stained_glass_pane.png",
+      "recipe": {
+        "white_stained_glass": 0.375
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "white_terracotta": {
+      "name": "White Terracotta",
+      "category": "colored",
+      "stackSize": 64,
+      "icon": "icons/white_terracotta.png",
+      "recipe": {
+        "terracotta": 1.0,
+        "bone_meal": 0.125
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "white_wool": {
+      "name": "White Wool",
+      "category": "colored",
+      "stackSize": 64,
+      "icon": "icons/white_wool.png",
+      "recipe": {
+        "string": 4.0
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "wither_skeleton_skull": {
+      "name": "Wither Skeleton Skull",
+      "category": "raw",
+      "stackSize": 64,
+      "icon": "icons/wither_skeleton_skull.png"
+    },
+    "wooden_axe": {
+      "name": "Wooden Axe",
+      "category": "other",
+      "stackSize": 1,
+      "icon": "icons/wooden_axe.png",
+      "recipe": {
+        "oak_planks": 3.0,
+        "stick": 2.0
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "wooden_hoe": {
+      "name": "Wooden Hoe",
+      "category": "other",
+      "stackSize": 1,
+      "icon": "icons/wooden_hoe.png",
+      "recipe": {
+        "oak_planks": 2.0,
+        "stick": 2.0
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "wooden_pickaxe": {
+      "name": "Wooden Pickaxe",
+      "category": "other",
+      "stackSize": 1,
+      "icon": "icons/wooden_pickaxe.png",
+      "recipe": {
+        "oak_planks": 3.0,
+        "stick": 2.0
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "wooden_shovel": {
+      "name": "Wooden Shovel",
+      "category": "other",
+      "stackSize": 1,
+      "icon": "icons/wooden_shovel.png",
+      "recipe": {
+        "oak_planks": 1.0,
+        "stick": 2.0
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "wooden_sword": {
+      "name": "Wooden Sword",
+      "category": "other",
+      "stackSize": 1,
+      "icon": "icons/wooden_sword.png",
+      "recipe": {
+        "oak_planks": 2.0,
+        "stick": 1.0
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "writable_book": {
+      "name": "Book and Quill",
+      "category": "other",
+      "stackSize": 64,
+      "icon": "icons/writable_book.png",
+      "recipe": {
+        "book": 1.0,
+        "ink_sac": 1.0,
+        "feather": 1.0
+      },
+      "recipeType": "crafting_shapeless"
+    },
+    "yellow_banner": {
+      "name": "Yellow Banner",
+      "category": "colored",
+      "stackSize": 16,
+      "icon": "icons/yellow_banner.png",
+      "recipe": {
+        "yellow_wool": 6.0,
+        "stick": 1.0
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "yellow_bed": {
+      "name": "Yellow Bed",
+      "category": "colored",
+      "stackSize": 1,
+      "icon": "icons/yellow_bed.png",
+      "recipe": {
+        "yellow_wool": 3.0,
+        "oak_planks": 3.0
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "yellow_carpet": {
+      "name": "Yellow Carpet",
+      "category": "colored",
+      "stackSize": 64,
+      "icon": "icons/yellow_carpet.png",
+      "recipe": {
+        "yellow_wool": 0.666667
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "yellow_concrete_powder": {
+      "name": "Yellow Concrete Powder",
+      "category": "colored",
+      "stackSize": 64,
+      "icon": "icons/yellow_concrete_powder.png",
+      "recipe": {
+        "dandelion_yellow": 0.125,
+        "sand": 0.5,
+        "gravel": 0.5
+      },
+      "recipeType": "crafting_shapeless"
+    },
+    "yellow_glazed_terracotta": {
+      "name": "Yellow Glazed Terracotta",
+      "category": "colored",
+      "stackSize": 64,
+      "icon": "icons/yellow_glazed_terracotta.png",
+      "recipe": {
+        "yellow_terracotta": 1.0,
+        "fuel": 1.0
+      },
+      "recipeType": "smelting"
+    },
+    "yellow_stained_glass": {
+      "name": "Yellow Stained Glass",
+      "category": "colored",
+      "stackSize": 64,
+      "icon": "icons/yellow_stained_glass.png",
+      "recipe": {
+        "glass": 1.0,
+        "dandelion_yellow": 0.125
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "yellow_stained_glass_pane": {
+      "name": "Yellow Stained Glass Pane",
+      "category": "colored",
+      "stackSize": 64,
+      "icon": "icons/yellow_stained_glass_pane.png",
+      "recipe": {
+        "yellow_stained_glass": 0.375
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "yellow_terracotta": {
+      "name": "Yellow Terracotta",
+      "category": "colored",
+      "stackSize": 64,
+      "icon": "icons/yellow_terracotta.png",
+      "recipe": {
+        "terracotta": 1.0,
+        "dandelion_yellow": 0.125
+      },
+      "recipeType": "crafting_shaped"
+    },
+    "yellow_wool": {
+      "name": "Yellow Wool",
+      "category": "colored",
+      "stackSize": 64,
+      "icon": "icons/yellow_wool.png",
+      "recipe": {
+        "dandelion_yellow": 1.0,
+        "white_wool": 1.0
+      },
+      "recipeType": "crafting_shapeless"
+    }
+  },
+  "fuel": {
+    "coal": 8,
+    "charcoal": 8,
+    "coal_block": 80,
+    "blaze_rod": 12,
+    "oak_planks": 1.5,
+    "oak_log": 1.5,
+    "stick": 0.5
+  },
+  "mobs": {
+    "rabbit_foot": {
+      "entity": "rabbit",
+      "kills": 40
+    },
+    "beef": {
+      "entity": "cow",
+      "kills": 0.5
+    },
+    "leather": {
+      "entity": "cow",
+      "kills": 1
+    },
+    "ghast_tear": {
+      "entity": "ghast",
+      "kills": 2
+    },
+    "gunpowder": {
+      "entity": "creeper",
+      "kills": 1
+    },
+    "slime_ball": {
+      "entity": "tiny_slime",
+      "kills": 1
+    },
+    "porkchop": {
+      "entity": "pig",
+      "kills": 0.5
+    },
+    "feather": {
+      "entity": "chicken",
+      "kills": 1
+    },
+    "chicken": {
+      "entity": "chicken",
+      "kills": 1
+    },
+    "rabbit": {
+      "entity": "rabbit",
+      "kills": 1
+    },
+    "ink_sac": {
+      "entity": "squid",
+      "kills": 0.5
+    },
+    "prismarine_crystals": {
+      "entity": "guardian",
+      "kills": 4.9
+    },
+    "prismarine_shard": {
+      "entity": "guardian",
+      "kills": 2.45
+    },
+    "string": {
+      "entity": "spider",
+      "kills": 1
+    },
+    "spider_eye": {
+      "entity": "spider",
+      "kills": 3
+    },
+    "mutton": {
+      "entity": "sheep",
+      "kills": 0.6667
+    },
+    "blaze_rod": {
+      "entity": "blaze",
+      "kills": 2
+    },
+    "bone": {
+      "entity": "skeleton",
+      "kills": 1
+    },
+    "ender_pearl": {
+      "entity": "enderman",
+      "kills": 2
+    },
+    "wither_skeleton_skull": {
+      "entity": "wither_skeleton",
+      "kills": 40
+    },
+    "iron_ingot": {
+      "entity": "iron_golem",
+      "kills": 0.25
+    },
+    "glowstone_dust": {
+      "entity": "witch",
+      "kills": 2.58
+    },
+    "redstone": {
+      "entity": "witch",
+      "kills": 2.58
+    },
+    "cod": {
+      "entity": "guardian",
+      "kills": 2.45
+    },
+    "shulker_shell": {
+      "entity": "shulker",
+      "kills": 2
+    },
+    "emerald": {
+      "entity": "vindicator",
+      "kills": 2
+    },
+    "nautilus_shell": {
+      "entity": "drowned",
+      "kills": 6.666
+    },
+    "phantom_membrane": {
+      "entity": "phantom",
+      "kills": 2
+    },
+    "gold_nugget": {
+      "entity": "zombie_pigman",
+      "kills": 1.667
+    },
+    "gold_ingot": {
+      "entity": "zombie_pigman",
+      "kills": 15
+    }
+  },
+  "mobsLooting3": {
+    "rabbit_foot": {
+      "entity": "rabbit",
+      "kills": 18.1818
+    },
+    "beef": {
+      "entity": "cow",
+      "kills": 0.2857
+    },
+    "leather": {
+      "entity": "cow",
+      "kills": 0.4
+    },
+    "ghast_tear": {
+      "entity": "ghast",
+      "kills": 0.5
+    },
+    "gunpowder": {
+      "entity": "creeper",
+      "kills": 0.4
+    },
+    "slime_ball": {
+      "entity": "tiny_slime",
+      "kills": 0.4
+    },
+    "porkchop": {
+      "entity": "pig",
+      "kills": 0.2857
+    },
+    "feather": {
+      "entity": "chicken",
+      "kills": 0.4
+    },
+    "chicken": {
+      "entity": "chicken",
+      "kills": 0.5
+    },
+    "rabbit": {
+      "entity": "rabbit",
+      "kills": 0.5
+    },
+    "ink_sac": {
+      "entity": "squid",
+      "kills": 0.2857
+    },
+    "prismarine_crystals": {
+      "entity": "guardian",
+      "kills": 1.984
+    },
+    "prismarine_shard": {
+      "entity": "guardian",
+      "kills": 0.992
+    },
+    "string": {
+      "entity": "spider",
+      "kills": 0.4
+    },
+    "spider_eye": {
+      "entity": "spider",
+      "kills": 1.2165
+    },
+    "mutton": {
+      "entity": "sheep",
+      "kills": 0.6667
+    },
+    "blaze_rod": {
+      "entity": "blaze",
+      "kills": 0.5
+    },
+    "bone": {
+      "entity": "skeleton",
+      "kills": 0.4
+    },
+    "ender_pearl": {
+      "entity": "enderman",
+      "kills": 0.5
+    },
+    "wither_skeleton_skull": {
+      "entity": "wither_skeleton",
+      "kills": 18.1818
+    },
+    "iron_ingot": {
+      "entity": "iron_golem",
+      "kills": 0.25
+    },
+    "glowstone_dust": {
+      "entity": "witch",
+      "kills": 1.57
+    },
+    "redstone": {
+      "entity": "witch",
+      "kills": 1.57
+    },
+    "cod": {
+      "entity": "guardian",
+      "kills": 0.992
+    },
+    "shulker_shell": {
+      "entity": "shulker",
+      "kills": 1.4545
+    },
+    "emerald": {
+      "entity": "vindicator",
+      "kills": 0.5
+    },
+    "nautilus_shell": {
+      "entity": "drowned",
+      "kills": 6.666
+    },
+    "phantom_membrane": {
+      "entity": "phantom",
+      "kills": 0.5
+    },
+    "gold_nugget": {
+      "entity": "zombie_pigman",
+      "kills": 0.407
+    },
+    "gold_ingot": {
+      "entity": "zombie_pigman",
+      "kills": 3.667
+    }
+  }
+}

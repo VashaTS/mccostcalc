@@ -1,0 +1,80 @@
+{
+  "latest": "26.3",
+  "versions": [
+    {
+      "id": "1.13.2",
+      "itemCount": 665,
+      "craftableCount": 573
+    },
+    {
+      "id": "1.14.4",
+      "itemCount": 744,
+      "craftableCount": 648
+    },
+    {
+      "id": "1.15.2",
+      "itemCount": 761,
+      "craftableCount": 657
+    },
+    {
+      "id": "1.16.5",
+      "itemCount": 834,
+      "craftableCount": 721
+    },
+    {
+      "id": "1.17.1",
+      "itemCount": 920,
+      "craftableCount": 797
+    },
+    {
+      "id": "1.18.2",
+      "itemCount": 920,
+      "craftableCount": 797
+    },
+    {
+      "id": "1.19.4",
+      "itemCount": 954,
+      "craftableCount": 825
+    },
+    {
+      "id": "1.20.1",
+      "itemCount": 1005,
+      "craftableCount": 870
+    },
+    {
+      "id": "1.20.6",
+      "itemCount": 1007,
+      "craftableCount": 871
+    },
+    {
+      "id": "1.21.1",
+      "itemCount": 1066,
+      "craftableCount": 921
+    },
+    {
+      "id": "1.21.4",
+      "itemCount": 1101,
+      "craftableCount": 949
+    },
+    {
+      "id": "1.21.11",
+      "itemCount": 1202,
+      "craftableCount": 1028
+    },
+    {
+      "id": "26.1.2",
+      "itemCount": 1205,
+      "craftableCount": 1030
+    },
+    {
+      "id": "26.2",
+      "itemCount": 1233,
+      "craftableCount": 1056
+    },
+    {
+      "id": "26.3",
+      "itemCount": 1367,
+      "craftableCount": 1171
+    }
+  ]
+}

@@ -1,3 +1,6 @@
-Clipboard01.jpg
-aaa.jpg
-gfxnew
+.cache/
+__pycache__/
+*.pyc
+/tmp/
+.DS_Store
+*.jar
